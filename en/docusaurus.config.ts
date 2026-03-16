@@ -11,7 +11,7 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://dev.integrator.docs.wso2.com',
+  url: 'https://integrator.docs.wso2.com',
   baseUrl: '/',
 
   organizationName: 'wso2',
