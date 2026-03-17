@@ -1,0 +1,63 @@
+---
+sidebar_position: 1
+title: Overview & Architecture
+description: What WSO2 Integrator is and how it works at a high level.
+---
+
+# Overview & Architecture
+
+WSO2 Integrator is a Ballerina-powered integration platform that allows you to connect anything and solve any integration challenge. It combines low-code simplicity with pro-code power, enabling you to build AI agents, APIs, data, and events across cloud, on-prem, and hybrid environments.
+
+You design integrations visually in the [WSO2 Integrator IDE](https://wso2.com/integration-platform/integrator/), and the platform generates production-ready Ballerina code or you write code directly and see it reflected in the visual designer.
+
+## High-level architecture
+
+![WSO2 Integrator architecture diagram](@site/src/assets/img/get-started/overview-&-architecture/integrator_diagram.webp)
+
+The platform follows a three-layer architecture:
+
+1. Design time : WSO2 Integrator IDE with visual designer, code editor, and AI assistance.
+2. Runtime : Ballerina-powered execution engine with built-in networking, concurrency, and type safety.
+3. Deployment : Deploy anywhere: Docker, Kubernetes, cloud providers, or as a SaaS.
+
+## Run it your way
+
+WSO2 Integrator is available as 100% open-source self-hostable software or as a SaaS.
+
+### Self-hosted
+Full control over your stack. Deploy directly to your own servers, bare metal, or a private cloud environment. Your data never leaves your perimeter.
+- Complete data sovereignty
+- Air-gapped environment support
+- Kubernetes, Docker, VM, or bare metal
+- Bring your own CI/CD pipeline
+
+### SaaS
+Zero infrastructure to manage. WSO2 handles provisioning, upgrades, scaling, and availability. Get started in minutes.
+- Data plane anywhere you want
+- Centralized control and observability
+- Continuous updates, zero downtime
+- Multi-region availability
+
+## Low-code / pro-code duality
+
+This is the key differentiator. Every integration can be built two ways, and both stay in sync:
+
+- Low-code (visual designer) : Drag-and-drop components, configure properties visually, see the flow as a diagram
+- Pro-code (Ballerina editor) : Write code directly with full IDE support, auto-complete, and type checking
+
+Changes in one view are instantly reflected in the other. There's no "export" step and no loss of fidelity.
+
+## Powered by Ballerina
+
+Under the hood, every integration is a Ballerina program. This means:
+
+- Cloud-native by design : Built-in support for HTTP, gRPC, GraphQL, WebSocket, Kafka, and more
+- Type-safe data handling : Catch data mapping errors at compile time, not in production
+- Sequence diagrams as code : Ballerina's unique sequence diagram view shows exactly how your integration communicates with external systems
+- Standard library : Rich set of packages for data formats (JSON, XML, CSV, EDI), protocols, and connectors
+
+## Next steps
+
+- [Why WSO2 Integrator](why-wso2-integrator.md) : How it compares to alternatives
+- [Key Concepts](key-concepts.md) : Learn the vocabulary
+- [Install WSO2 Integrator IDE](install.md) : Get set up

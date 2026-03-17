@@ -27,6 +27,7 @@ const sidebars: SidebarsConfig = {
       collapsed: true,
       link: { type: 'doc', id: 'get-started/overview' },
       items: [
+        'get-started/overview-&-architecture',
         'get-started/why-wso2-integrator',
         'get-started/key-concepts',
         {
