@@ -4,7 +4,7 @@ Documentation source for WSO2 Integrator, built with Docusaurus.
 
 ## Repository Layout
 
-- `wso2-integrator-docs/` - Docusaurus site source
+- `docs-integrator/en` - Docusaurus site source
 - `issue_template.md` - issue template
 - `pull_request_template.md` - PR template
 
@@ -16,7 +16,7 @@ Documentation source for WSO2 Integrator, built with Docusaurus.
 ## Quick Start
 
 ```bash
-cd wso2-integrator-docs
+cd en
 npm install
 npm run start
 ```
@@ -25,7 +25,7 @@ Then open the local URL printed in the terminal (usually `http://localhost:3000`
 
 ## Common Commands
 
-Run these from `wso2-integrator-docs/`:
+Run these from `en`:
 
 ```bash
 npm run start      # local dev server (hot reload)
@@ -47,15 +47,15 @@ git checkout -b docs/<short-topic>
 
 Typical files:
 
-- Markdown docs: `wso2-integrator-docs/docs/`
-- Site config: `wso2-integrator-docs/docusaurus.config.ts`
-- Sidebar structure: `wso2-integrator-docs/sidebars.ts`
-- Styling overrides: `wso2-integrator-docs/src/css/custom.css`
+- Markdown docs: `docs-integrator/en`
+- Site config: `docs-integrator/en/docusaurus.config.ts`
+- Sidebar structure: `docs-integrator/en/sidebars.ts`
+- Styling overrides: `docs-integrator/en/src/css/custom.css`
 
 ### 3) Validate Locally
 
 ```bash
-cd wso2-integrator-docs
+cd en
 npm run typecheck
 npm run build
 ```
