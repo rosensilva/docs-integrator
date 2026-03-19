@@ -112,7 +112,7 @@ const sections: SectionCard[] = [
   {
     title: 'Connectors',
     description: 'Browse 200+ pre-built connectors for SaaS, databases, messaging, and AI.',
-    link: '/docs/connectors/ai-llms',
+    link: '/docs/connectors/',
     icon: <IconConnectors />,
     iconBg: '#F0EDFF',
     iconBgDark: 'rgba(124, 58, 237, 0.15)',
