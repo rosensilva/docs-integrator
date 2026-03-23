@@ -266,1462 +266,1258 @@ const sidebars: SidebarsConfig = {
   // "Can I connect to Y?"
   // ─────────────────────────────────────────────
   connectorsSidebar: [
+    { type: 'doc', id: 'connectors/overview' },
     // ── Connector Catalog ──
-    // Each category links to its overview page; per-connector docs are nested beneath.
     {
       type: 'category',
       label: 'Connector Catalog',
-      link: {type: 'doc', id: 'connectors/index'},
+      link: { type: 'doc', id: 'connectors/catalog/index' },
       items: [
+        // ── Connector categories (alphabetical) ──
         {
           type: 'category',
-          label: 'AI & Machine Learning',
-          link: { type: 'doc', id: 'connectors/catalog/ai-ml/index' },
+          label: 'AI Devant',
+          link: { type: 'doc', id: 'connectors/catalog/ai-ml/ai.devant/overview' },
           items: [
-            {
-              type: 'category',
-              label: 'Anthropic LLM',
-              link: { type: 'doc', id: 'connectors/catalog/ai-ml/ai.anthropic/overview' },
-              items: [
-                'connectors/catalog/ai-ml/ai.anthropic/setup-guide',
-                'connectors/catalog/ai-ml/ai.anthropic/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Mistral AI',
-              link: { type: 'doc', id: 'connectors/catalog/ai-ml/ai.mistral/overview' },
-              items: [
-                'connectors/catalog/ai-ml/ai.mistral/setup-guide',
-                'connectors/catalog/ai-ml/ai.mistral/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'pgvector',
-              link: { type: 'doc', id: 'connectors/catalog/ai-ml/ai.pgvector/overview' },
-              items: [
-                'connectors/catalog/ai-ml/ai.pgvector/setup-guide',
-                'connectors/catalog/ai-ml/ai.pgvector/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Pinecone',
-              link: { type: 'doc', id: 'connectors/catalog/ai-ml/ai.pinecone/overview' },
-              items: [
-                'connectors/catalog/ai-ml/ai.pinecone/setup-guide',
-                'connectors/catalog/ai-ml/ai.pinecone/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Weaviate',
-              link: { type: 'doc', id: 'connectors/catalog/ai-ml/ai.weaviate/overview' },
-              items: [
-                'connectors/catalog/ai-ml/ai.weaviate/setup-guide',
-                'connectors/catalog/ai-ml/ai.weaviate/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Milvus',
-              link: { type: 'doc', id: 'connectors/catalog/ai-ml/milvus/overview' },
-              items: [
-                'connectors/catalog/ai-ml/milvus/setup-guide',
-                'connectors/catalog/ai-ml/milvus/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Mistral',
-              link: { type: 'doc', id: 'connectors/catalog/ai-ml/mistral/overview' },
-              items: [
-                'connectors/catalog/ai-ml/mistral/setup-guide',
-                'connectors/catalog/ai-ml/mistral/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'DeepSeek',
-              link: { type: 'doc', id: 'connectors/catalog/ai-ml/ai.deepseek/overview' },
-              items: [
-                'connectors/catalog/ai-ml/ai.deepseek/setup-guide',
-                'connectors/catalog/ai-ml/ai.deepseek/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Ollama',
-              link: { type: 'doc', id: 'connectors/catalog/ai-ml/ai.ollama/overview' },
-              items: [
-                'connectors/catalog/ai-ml/ai.ollama/setup-guide',
-                'connectors/catalog/ai-ml/ai.ollama/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'OpenAI (AI)',
-              link: { type: 'doc', id: 'connectors/catalog/ai-ml/ai.openai/overview' },
-              items: [
-                'connectors/catalog/ai-ml/ai.openai/setup-guide',
-                'connectors/catalog/ai-ml/ai.openai/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'OpenAI Audio',
-              link: { type: 'doc', id: 'connectors/catalog/ai-ml/openai.audio/overview' },
-              items: [
-                'connectors/catalog/ai-ml/openai.audio/setup-guide',
-                'connectors/catalog/ai-ml/openai.audio/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'OpenAI',
-              link: { type: 'doc', id: 'connectors/catalog/ai-ml/openai/overview' },
-              items: [
-                'connectors/catalog/ai-ml/openai/setup-guide',
-                'connectors/catalog/ai-ml/openai/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Azure OpenAI',
-              link: { type: 'doc', id: 'connectors/catalog/ai-ml/ai.azure/overview' },
-              items: [
-                'connectors/catalog/ai-ml/ai.azure/setup-guide',
-                'connectors/catalog/ai-ml/ai.azure/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Azure AI Search Index',
-              link: { type: 'doc', id: 'connectors/catalog/ai-ml/azure.ai.search.index/overview' },
-              items: [
-                'connectors/catalog/ai-ml/azure.ai.search.index/setup-guide',
-                'connectors/catalog/ai-ml/azure.ai.search.index/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'OpenAI Fine-Tunes',
-              link: { type: 'doc', id: 'connectors/catalog/ai-ml/openai.finetunes/overview' },
-              items: [
-                'connectors/catalog/ai-ml/openai.finetunes/setup-guide',
-                'connectors/catalog/ai-ml/openai.finetunes/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Azure AI Search',
-              link: { type: 'doc', id: 'connectors/catalog/ai-ml/azure.ai.search/overview' },
-              items: [
-                'connectors/catalog/ai-ml/azure.ai.search/setup-guide',
-                'connectors/catalog/ai-ml/azure.ai.search/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'AI Devant',
-              link: { type: 'doc', id: 'connectors/catalog/ai-ml/ai.devant/overview' },
-              items: [
-                'connectors/catalog/ai-ml/ai.devant/setup-guide',
-                'connectors/catalog/ai-ml/ai.devant/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'AI Memory MSSQL',
-              link: { type: 'doc', id: 'connectors/catalog/ai-ml/ai.memory.mssql/overview' },
-              items: [
-                'connectors/catalog/ai-ml/ai.memory.mssql/setup-guide',
-                'connectors/catalog/ai-ml/ai.memory.mssql/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'NP',
-              link: { type: 'doc', id: 'connectors/catalog/ai-ml/np/overview' },
-              items: [
-                'connectors/catalog/ai-ml/np/setup-guide',
-                'connectors/catalog/ai-ml/np/action-reference',
-              ],
-            },
+            'connectors/catalog/ai-ml/ai.devant/setup-guide',
+            'connectors/catalog/ai-ml/ai.devant/action-reference',
           ],
         },
         {
           type: 'category',
-          label: 'Cloud & Infrastructure',
-          link: { type: 'doc', id: 'connectors/catalog/cloud-infrastructure/index' },
+          label: 'AI Memory MSSQL',
+          link: { type: 'doc', id: 'connectors/catalog/ai-ml/ai.memory.mssql/overview' },
           items: [
-            {
-              type: 'category',
-              label: 'AWS Lambda',
-              link: { type: 'doc', id: 'connectors/catalog/cloud-infrastructure/aws.lambda/overview' },
-              items: [
-                'connectors/catalog/cloud-infrastructure/aws.lambda/setup-guide',
-                'connectors/catalog/cloud-infrastructure/aws.lambda/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'AWS Marketplace MPE',
-              link: { type: 'doc', id: 'connectors/catalog/cloud-infrastructure/aws.marketplace.mpe/overview' },
-              items: [
-                'connectors/catalog/cloud-infrastructure/aws.marketplace.mpe/setup-guide',
-                'connectors/catalog/cloud-infrastructure/aws.marketplace.mpe/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'AWS Marketplace MPM',
-              link: { type: 'doc', id: 'connectors/catalog/cloud-infrastructure/aws.marketplace.mpm/overview' },
-              items: [
-                'connectors/catalog/cloud-infrastructure/aws.marketplace.mpm/setup-guide',
-                'connectors/catalog/cloud-infrastructure/aws.marketplace.mpm/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Elastic Cloud',
-              link: { type: 'doc', id: 'connectors/catalog/cloud-infrastructure/elastic.elasticcloud/overview' },
-              items: [
-                'connectors/catalog/cloud-infrastructure/elastic.elasticcloud/setup-guide',
-                'connectors/catalog/cloud-infrastructure/elastic.elasticcloud/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Azure Functions',
-              link: { type: 'doc', id: 'connectors/catalog/cloud-infrastructure/azure.functions/overview' },
-              items: [
-                'connectors/catalog/cloud-infrastructure/azure.functions/setup-guide',
-                'connectors/catalog/cloud-infrastructure/azure.functions/trigger-reference',
-              ],
-            },
+            'connectors/catalog/ai-ml/ai.memory.mssql/setup-guide',
+            'connectors/catalog/ai-ml/ai.memory.mssql/action-reference',
           ],
         },
         {
           type: 'category',
-          label: 'Communication',
-          link: { type: 'doc', id: 'connectors/catalog/communication/index' },
+          label: 'Alfresco',
+          link: { type: 'doc', id: 'connectors/catalog/storage-file/alfresco/overview' },
           items: [
-
-            {
-              type: 'category',
-              label: 'Twilio',
-              link: { type: 'doc', id: 'connectors/catalog/communication/twilio/overview' },
-              items: [
-                'connectors/catalog/communication/twilio/setup-guide',
-                'connectors/catalog/communication/twilio/action-reference',
-                ...connectorVersionedDocs('connectors/catalog/communication/twilio'),
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'AWS SNS',
-              link: { type: 'doc', id: 'connectors/catalog/communication/aws.sns/overview' },
-              items: [
-                'connectors/catalog/communication/aws.sns/setup-guide',
-                'connectors/catalog/communication/aws.sns/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Gmail',
-              link: { type: 'doc', id: 'connectors/catalog/communication/googleapis.gmail/overview' },
-              items: [
-                'connectors/catalog/communication/googleapis.gmail/setup-guide',
-                'connectors/catalog/communication/googleapis.gmail/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Discord',
-              link: { type: 'doc', id: 'connectors/catalog/communication/discord/overview' },
-              items: [
-                'connectors/catalog/communication/discord/setup-guide',
-                'connectors/catalog/communication/discord/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Zoom Scheduler',
-              link: { type: 'doc', id: 'connectors/catalog/communication/zoom.scheduler/overview' },
-              items: [
-                'connectors/catalog/communication/zoom.scheduler/setup-guide',
-                'connectors/catalog/communication/zoom.scheduler/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Slack',
-              link: { type: 'doc', id: 'connectors/catalog/communication/slack/overview' },
-              items: [
-                'connectors/catalog/communication/slack/setup-guide',
-                'connectors/catalog/communication/slack/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Zoom Meetings',
-              link: { type: 'doc', id: 'connectors/catalog/communication/zoom.meetings/overview' },
-              items: [
-                'connectors/catalog/communication/zoom.meetings/setup-guide',
-                'connectors/catalog/communication/zoom.meetings/action-reference',
-              ],
-            },
+            'connectors/catalog/storage-file/alfresco/setup-guide',
+            'connectors/catalog/storage-file/alfresco/action-reference',
           ],
         },
         {
           type: 'category',
-          label: 'CRM & Sales',
-          link: { type: 'doc', id: 'connectors/catalog/crm-sales/index' },
+          label: 'AMP',
+          link: { type: 'doc', id: 'connectors/catalog/developer-tools/amp/overview' },
           items: [
-            {
-              type: 'category',
-              label: 'Salesforce',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/salesforce/overview' },
-              items: [
-                'connectors/catalog/crm-sales/salesforce/setup-guide',
-                'connectors/catalog/crm-sales/salesforce/action-reference',
-                'connectors/catalog/crm-sales/salesforce/trigger-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'HubSpot Automation Actions',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.automation.actions/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.automation.actions/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.automation.actions/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'HubSpot CRM Engagement Meeting',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.engagement.meeting/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.crm.engagement.meeting/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.crm.engagement.meeting/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'HubSpot CRM Associations',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.associations/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.crm.associations/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.crm.associations/action-reference',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'HubSpot CRM Associations Schema',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.associations.schema/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.crm.associations.schema/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.crm.associations.schema/action-reference',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'HubSpot CRM Commerce Carts',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.commerce.carts/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.crm.commerce.carts/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.crm.commerce.carts/action-reference',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'HubSpot CRM Commerce Discounts',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.commerce.discounts/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.crm.commerce.discounts/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.crm.commerce.discounts/action-reference',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'HubSpot CRM Commerce Orders',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.commerce.orders/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.crm.commerce.orders/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.crm.commerce.orders/action-reference',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'HubSpot CRM Commerce Quotes',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.commerce.quotes/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.crm.commerce.quotes/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.crm.commerce.quotes/action-reference',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'HubSpot CRM Commerce Taxes',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.commerce.taxes/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.crm.commerce.taxes/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.crm.commerce.taxes/action-reference',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'HubSpot CRM Companies',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.obj.companies/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.crm.obj.companies/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.crm.obj.companies/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'HubSpot CRM Contacts',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.obj.contacts/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.crm.obj.contacts/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.crm.obj.contacts/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'HubSpot CRM Import',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.import/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.crm.import/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.crm.import/action-reference',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'HubSpot CRM Leads',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.obj.leads/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.crm.obj.leads/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.crm.obj.leads/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'HubSpot CRM Engagement Notes',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.engagement.notes/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.crm.engagement.notes/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.crm.engagement.notes/action-reference',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'HubSpot CRM Engagements Calls',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.engagements.calls/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.crm.engagements.calls/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.crm.engagements.calls/action-reference',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'HubSpot CRM Engagements Communications',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.engagements.communications/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.crm.engagements.communications/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.crm.engagements.communications/action-reference',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'HubSpot CRM Engagements Email',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.engagements.email/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.crm.engagements.email/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.crm.engagements.email/action-reference',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'HubSpot CRM Engagements Tasks',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.engagements.tasks/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.crm.engagements.tasks/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.crm.engagements.tasks/action-reference',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'HubSpot CRM Extensions Timelines',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.extensions.timelines/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.crm.extensions.timelines/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.crm.extensions.timelines/action-reference',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'HubSpot CRM Extensions Videoconferencing',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/action-reference',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'HubSpot CRM Feedback',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.obj.feedback/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.crm.obj.feedback/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.crm.obj.feedback/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'HubSpot CRM Deals',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.obj.deals/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.crm.obj.deals/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.crm.obj.deals/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'HubSpot CRM Line Items',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.obj.lineitems/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.crm.obj.lineitems/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.crm.obj.lineitems/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'HubSpot CRM Lists',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.lists/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.crm.lists/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.crm.lists/action-reference',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'HubSpot CRM Owners',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.owners/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.crm.owners/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.crm.owners/action-reference',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'HubSpot CRM Pipelines',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.pipelines/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.crm.pipelines/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.crm.pipelines/action-reference',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'HubSpot CRM Products',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.obj.products/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.crm.obj.products/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.crm.obj.products/action-reference',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'HubSpot CRM Properties',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.properties/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.crm.properties/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.crm.properties/action-reference',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'HubSpot CRM Schemas',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.obj.schemas/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.crm.obj.schemas/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.crm.obj.schemas/action-reference',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'HubSpot CRM Tickets',
-              link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.obj.tickets/overview' },
-              items: [
-                'connectors/catalog/crm-sales/hubspot.crm.obj.tickets/setup-guide',
-                'connectors/catalog/crm-sales/hubspot.crm.obj.tickets/action-reference',
-              ],
-            },
+            'connectors/catalog/developer-tools/amp/setup-guide',
+            'connectors/catalog/developer-tools/amp/action-reference',
           ],
         },
         {
           type: 'category',
-          label: 'Database',
-          link: { type: 'doc', id: 'connectors/catalog/database/index' },
+          label: 'Anthropic LLM',
+          link: { type: 'doc', id: 'connectors/catalog/ai-ml/ai.anthropic/overview' },
           items: [
-            {
-              type: 'category',
-              label: 'MySQL',
-              link: { type: 'doc', id: 'connectors/catalog/database/mysql/overview' },
-              items: [
-                'connectors/catalog/database/mysql/setup-guide',
-                'connectors/catalog/database/mysql/action-reference',
-                'connectors/catalog/database/mysql/trigger-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'AWS Redshift',
-              link: { type: 'doc', id: 'connectors/catalog/database/aws.redshift/overview' },
-              items: [
-                'connectors/catalog/database/aws.redshift/setup-guide',
-                'connectors/catalog/database/aws.redshift/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'AWS Redshift Data',
-              link: { type: 'doc', id: 'connectors/catalog/database/aws.redshiftdata/overview' },
-              items: [
-                'connectors/catalog/database/aws.redshiftdata/setup-guide',
-                'connectors/catalog/database/aws.redshiftdata/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Java JDBC',
-              link: { type: 'doc', id: 'connectors/catalog/database/java.jdbc/overview' },
-              items: [
-                'connectors/catalog/database/java.jdbc/setup-guide',
-                'connectors/catalog/database/java.jdbc/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'MongoDB',
-              link: { type: 'doc', id: 'connectors/catalog/database/mongodb/overview' },
-              items: [
-                'connectors/catalog/database/mongodb/setup-guide',
-                'connectors/catalog/database/mongodb/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'MSSQL',
-              link: { type: 'doc', id: 'connectors/catalog/database/mssql/overview' },
-              items: [
-                'connectors/catalog/database/mssql/setup-guide',
-                'connectors/catalog/database/mssql/action-reference',
-                'connectors/catalog/database/mssql/trigger-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Oracle DB',
-              link: { type: 'doc', id: 'connectors/catalog/database/oracledb/overview' },
-              items: [
-                'connectors/catalog/database/oracledb/setup-guide',
-                'connectors/catalog/database/oracledb/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'PostgreSQL',
-              link: { type: 'doc', id: 'connectors/catalog/database/postgresql/overview' },
-              items: [
-                'connectors/catalog/database/postgresql/setup-guide',
-                'connectors/catalog/database/postgresql/action-reference',
-                'connectors/catalog/database/postgresql/trigger-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Redis',
-              link: { type: 'doc', id: 'connectors/catalog/database/redis/overview' },
-              items: [
-                'connectors/catalog/database/redis/setup-guide',
-                'connectors/catalog/database/redis/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Snowflake',
-              link: { type: 'doc', id: 'connectors/catalog/database/snowflake/overview' },
-              items: [
-                'connectors/catalog/database/snowflake/setup-guide',
-                'connectors/catalog/database/snowflake/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'CDC',
-              link: { type: 'doc', id: 'connectors/catalog/database/cdc/overview' },
-              items: [
-                'connectors/catalog/database/cdc/setup-guide',
-                'connectors/catalog/database/cdc/trigger-reference',
-              ],
-            },
+            'connectors/catalog/ai-ml/ai.anthropic/setup-guide',
+            'connectors/catalog/ai-ml/ai.anthropic/action-reference',
           ],
         },
         {
           type: 'category',
-          label: 'Developer Tools',
-          link: { type: 'doc', id: 'connectors/catalog/developer-tools/index' },
+          label: 'Asana',
+          link: { type: 'doc', id: 'connectors/catalog/productivity-collaboration/asana/overview' },
           items: [
-            {
-              type: 'category',
-              label: 'Github',
-              link: { type: 'doc', id: 'connectors/catalog/developer-tools/github/overview' },
-              items: [
-                'connectors/catalog/developer-tools/github/setup-guide',
-                'connectors/catalog/developer-tools/github/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'AMP',
-              link: { type: 'doc', id: 'connectors/catalog/developer-tools/amp/overview' },
-              items: [
-                'connectors/catalog/developer-tools/amp/setup-guide',
-                'connectors/catalog/developer-tools/amp/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Copybook',
-              link: { type: 'doc', id: 'connectors/catalog/developer-tools/copybook/overview' },
-              items: [
-                'connectors/catalog/developer-tools/copybook/setup-guide',
-                'connectors/catalog/developer-tools/copybook/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'IDE Trace Provider',
-              link: { type: 'doc', id: 'connectors/catalog/developer-tools/idetraceprovider/overview' },
-              items: [
-                'connectors/catalog/developer-tools/idetraceprovider/setup-guide',
-                'connectors/catalog/developer-tools/idetraceprovider/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'New Relic',
-              link: { type: 'doc', id: 'connectors/catalog/developer-tools/newrelic/overview' },
-              items: [
-                'connectors/catalog/developer-tools/newrelic/setup-guide',
-                'connectors/catalog/developer-tools/newrelic/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Moesif',
-              link: { type: 'doc', id: 'connectors/catalog/developer-tools/moesif/overview' },
-              items: [
-                'connectors/catalog/developer-tools/moesif/setup-guide',
-                'connectors/catalog/developer-tools/moesif/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'WSO2 APIM Catalog',
-              link: { type: 'doc', id: 'connectors/catalog/developer-tools/wso2.apim.catalog/overview' },
-              items: [
-                'connectors/catalog/developer-tools/wso2.apim.catalog/setup-guide',
-                'connectors/catalog/developer-tools/wso2.apim.catalog/action-reference',
-              ],
-            },
+            'connectors/catalog/productivity-collaboration/asana/setup-guide',
+            'connectors/catalog/productivity-collaboration/asana/action-reference',
           ],
         },
         {
           type: 'category',
-          label: 'E-Commerce',
-          link: { type: 'doc', id: 'connectors/catalog/ecommerce/index' },
+          label: 'AWS Lambda',
+          link: { type: 'doc', id: 'connectors/catalog/cloud-infrastructure/aws.lambda/overview' },
           items: [
-            {
-              type: 'category',
-              label: 'Shopify Admin',
-              link: { type: 'doc', id: 'connectors/catalog/ecommerce/shopify.admin/overview' },
-              items: [
-                'connectors/catalog/ecommerce/shopify.admin/setup-guide',
-                'connectors/catalog/ecommerce/shopify.admin/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'SAP Commerce',
-              link: { type: 'doc', id: 'connectors/catalog/ecommerce/sap.commerce.webservices/overview' },
-              items: [
-                'connectors/catalog/ecommerce/sap.commerce.webservices/setup-guide',
-                'connectors/catalog/ecommerce/sap.commerce.webservices/action-reference',
-              ],
-            },
+            'connectors/catalog/cloud-infrastructure/aws.lambda/setup-guide',
+            'connectors/catalog/cloud-infrastructure/aws.lambda/action-reference',
           ],
         },
         {
           type: 'category',
-          label: 'ERP & Business Operations',
-          link: { type: 'doc', id: 'connectors/catalog/erp-business/index' },
+          label: 'AWS Marketplace MPE',
+          link: { type: 'doc', id: 'connectors/catalog/cloud-infrastructure/aws.marketplace.mpe/overview' },
           items: [
-            {
-              type: 'category',
-              label: 'SAP',
-              link: { type: 'doc', id: 'connectors/catalog/erp-business/sap/overview' },
-              items: [
-                'connectors/catalog/erp-business/sap/setup-guide',
-                'connectors/catalog/erp-business/sap/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Guidewire InsuranceNow',
-              link: { type: 'doc', id: 'connectors/catalog/erp-business/guidewire.insnow/overview' },
-              items: [
-                'connectors/catalog/erp-business/guidewire.insnow/setup-guide',
-                'connectors/catalog/erp-business/guidewire.insnow/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'IBM CTG',
-              link: { type: 'doc', id: 'connectors/catalog/erp-business/ibm.ctg/overview' },
-              items: [
-                'connectors/catalog/erp-business/ibm.ctg/setup-guide',
-                'connectors/catalog/erp-business/ibm.ctg/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'SAP Sales Inquiry',
-              link: { type: 'doc', id: 'connectors/catalog/erp-business/sap.s4hana.api_sales_inquiry_srv/overview' },
-              items: [
-                'connectors/catalog/erp-business/sap.s4hana.api_sales_inquiry_srv/setup-guide',
-                'connectors/catalog/erp-business/sap.s4hana.api_sales_inquiry_srv/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'SAP Sales Order',
-              link: { type: 'doc', id: 'connectors/catalog/erp-business/sap.s4hana.api_sales_order_srv/overview' },
-              items: [
-                'connectors/catalog/erp-business/sap.s4hana.api_sales_order_srv/setup-guide',
-                'connectors/catalog/erp-business/sap.s4hana.api_sales_order_srv/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'SAP Sales Order Simulation',
-              link: { type: 'doc', id: 'connectors/catalog/erp-business/sap.s4hana.api_sales_order_simulation_srv/overview' },
-              items: [
-                'connectors/catalog/erp-business/sap.s4hana.api_sales_order_simulation_srv/setup-guide',
-                'connectors/catalog/erp-business/sap.s4hana.api_sales_order_simulation_srv/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'SAP Sales District',
-              link: { type: 'doc', id: 'connectors/catalog/erp-business/sap.s4hana.api_salesdistrict_srv/overview' },
-              items: [
-                'connectors/catalog/erp-business/sap.s4hana.api_salesdistrict_srv/setup-guide',
-                'connectors/catalog/erp-business/sap.s4hana.api_salesdistrict_srv/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'SAP Sales Organization',
-              link: { type: 'doc', id: 'connectors/catalog/erp-business/sap.s4hana.api_salesorganization_srv/overview' },
-              items: [
-                'connectors/catalog/erp-business/sap.s4hana.api_salesorganization_srv/setup-guide',
-                'connectors/catalog/erp-business/sap.s4hana.api_salesorganization_srv/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'SAP SD Sold-to-Party Determination',
-              link: { type: 'doc', id: 'connectors/catalog/erp-business/sap.s4hana.api_sd_sa_soldtopartydetn/overview' },
-              items: [
-                'connectors/catalog/erp-business/sap.s4hana.api_sd_sa_soldtopartydetn/setup-guide',
-                'connectors/catalog/erp-business/sap.s4hana.api_sd_sa_soldtopartydetn/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'SAP SD Incoterms',
-              link: { type: 'doc', id: 'connectors/catalog/erp-business/sap.s4hana.api_sd_incoterms_srv/overview' },
-              items: [
-                'connectors/catalog/erp-business/sap.s4hana.api_sd_incoterms_srv/setup-guide',
-                'connectors/catalog/erp-business/sap.s4hana.api_sd_incoterms_srv/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'SAP Sales Area',
-              link: { type: 'doc', id: 'connectors/catalog/erp-business/sap.s4hana.salesarea_0001/overview' },
-              items: [
-                'connectors/catalog/erp-business/sap.s4hana.salesarea_0001/setup-guide',
-                'connectors/catalog/erp-business/sap.s4hana.salesarea_0001/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'SAP Sales Quotation',
-              link: { type: 'doc', id: 'connectors/catalog/erp-business/sap.s4hana.api_sales_quotation_srv/overview' },
-              items: [
-                'connectors/catalog/erp-business/sap.s4hana.api_sales_quotation_srv/setup-guide',
-                'connectors/catalog/erp-business/sap.s4hana.api_sales_quotation_srv/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'SAP Sales Order Analytics',
-              link: { type: 'doc', id: 'connectors/catalog/erp-business/sap.s4hana.ce_salesorder_0001/overview' },
-              items: [
-                'connectors/catalog/erp-business/sap.s4hana.ce_salesorder_0001/setup-guide',
-                'connectors/catalog/erp-business/sap.s4hana.ce_salesorder_0001/action-reference',
-              ],
-            },
+            'connectors/catalog/cloud-infrastructure/aws.marketplace.mpe/setup-guide',
+            'connectors/catalog/cloud-infrastructure/aws.marketplace.mpe/action-reference',
           ],
         },
         {
           type: 'category',
-          label: 'Finance & Accounting',
-          link: { type: 'doc', id: 'connectors/catalog/finance-accounting/index' },
+          label: 'AWS Marketplace MPM',
+          link: { type: 'doc', id: 'connectors/catalog/cloud-infrastructure/aws.marketplace.mpm/overview' },
           items: [
-            {
-              type: 'category',
-              label: 'Stripe',
-              link: { type: 'doc', id: 'connectors/catalog/finance-accounting/stripe/overview' },
-              items: [
-                'connectors/catalog/finance-accounting/stripe/setup-guide',
-                'connectors/catalog/finance-accounting/stripe/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'PayPal Invoices',
-              link: { type: 'doc', id: 'connectors/catalog/finance-accounting/paypal.invoices/overview' },
-              items: [
-                'connectors/catalog/finance-accounting/paypal.invoices/setup-guide',
-                'connectors/catalog/finance-accounting/paypal.invoices/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'PayPal Payments',
-              link: { type: 'doc', id: 'connectors/catalog/finance-accounting/paypal.payments/overview' },
-              items: [
-                'connectors/catalog/finance-accounting/paypal.payments/setup-guide',
-                'connectors/catalog/finance-accounting/paypal.payments/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'PayPal Orders',
-              link: { type: 'doc', id: 'connectors/catalog/finance-accounting/paypal.orders/overview' },
-              items: [
-                'connectors/catalog/finance-accounting/paypal.orders/setup-guide',
-                'connectors/catalog/finance-accounting/paypal.orders/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'PayPal Subscriptions',
-              link: { type: 'doc', id: 'connectors/catalog/finance-accounting/paypal.subscriptions/overview' },
-              items: [
-                'connectors/catalog/finance-accounting/paypal.subscriptions/setup-guide',
-                'connectors/catalog/finance-accounting/paypal.subscriptions/action-reference',
-              ],
-            },
+            'connectors/catalog/cloud-infrastructure/aws.marketplace.mpm/setup-guide',
+            'connectors/catalog/cloud-infrastructure/aws.marketplace.mpm/action-reference',
           ],
         },
         {
           type: 'category',
-          label: 'Healthcare',
-          link: { type: 'doc', id: 'connectors/catalog/healthcare/index' },
-          items: [],
-        },
-        {
-          type: 'category',
-          label: 'HRMS',
-          link: { type: 'doc', id: 'connectors/catalog/hrms/index' },
+          label: 'AWS Redshift',
+          link: { type: 'doc', id: 'connectors/catalog/database/aws.redshift/overview' },
           items: [
-            {
-              type: 'category',
-              label: 'People HR',
-              link: { type: 'doc', id: 'connectors/catalog/hrms/peoplehr/overview' },
-              items: [
-                'connectors/catalog/hrms/peoplehr/setup-guide',
-                'connectors/catalog/hrms/peoplehr/action-reference',
-              ],
-            },
+            'connectors/catalog/database/aws.redshift/setup-guide',
+            'connectors/catalog/database/aws.redshift/action-reference',
           ],
         },
         {
           type: 'category',
-          label: 'Marketing & Social Media',
-          link: { type: 'doc', id: 'connectors/catalog/marketing-social/index' },
+          label: 'AWS Redshift Data',
+          link: { type: 'doc', id: 'connectors/catalog/database/aws.redshiftdata/overview' },
           items: [
-            {
-              type: 'category',
-              label: 'Twitter',
-              link: { type: 'doc', id: 'connectors/catalog/marketing-social/twitter/overview' },
-              items: [
-                'connectors/catalog/marketing-social/twitter/setup-guide',
-                'connectors/catalog/marketing-social/twitter/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'HubSpot Marketing Campaigns',
-              link: { type: 'doc', id: 'connectors/catalog/marketing-social/hubspot.marketing.campaigns/overview' },
-              items: [
-                'connectors/catalog/marketing-social/hubspot.marketing.campaigns/setup-guide',
-                'connectors/catalog/marketing-social/hubspot.marketing.campaigns/action-reference',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'HubSpot Marketing Emails',
-              link: { type: 'doc', id: 'connectors/catalog/marketing-social/hubspot.marketing.emails/overview' },
-              items: [
-                'connectors/catalog/marketing-social/hubspot.marketing.emails/setup-guide',
-                'connectors/catalog/marketing-social/hubspot.marketing.emails/action-reference',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'HubSpot Marketing Events',
-              link: { type: 'doc', id: 'connectors/catalog/marketing-social/hubspot.marketing.events/overview' },
-              items: [
-                'connectors/catalog/marketing-social/hubspot.marketing.events/setup-guide',
-                'connectors/catalog/marketing-social/hubspot.marketing.events/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'HubSpot Marketing Forms',
-              link: { type: 'doc', id: 'connectors/catalog/marketing-social/hubspot.marketing.forms/overview' },
-              items: [
-                'connectors/catalog/marketing-social/hubspot.marketing.forms/setup-guide',
-                'connectors/catalog/marketing-social/hubspot.marketing.forms/action-reference',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'HubSpot Marketing Subscriptions',
-              link: { type: 'doc', id: 'connectors/catalog/marketing-social/hubspot.marketing.subscriptions/overview' },
-              items: [
-                'connectors/catalog/marketing-social/hubspot.marketing.subscriptions/setup-guide',
-                'connectors/catalog/marketing-social/hubspot.marketing.subscriptions/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'HubSpot Marketing Transactional',
-              link: { type: 'doc', id: 'connectors/catalog/marketing-social/hubspot.marketing.transactional/overview' },
-              items: [
-                'connectors/catalog/marketing-social/hubspot.marketing.transactional/setup-guide',
-                'connectors/catalog/marketing-social/hubspot.marketing.transactional/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Mailchimp Marketing',
-              link: { type: 'doc', id: 'connectors/catalog/marketing-social/mailchimp.marketing/overview' },
-              items: [
-                'connectors/catalog/marketing-social/mailchimp.marketing/setup-guide',
-                'connectors/catalog/marketing-social/mailchimp.marketing/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Salesforce Marketing Cloud',
-              link: { type: 'doc', id: 'connectors/catalog/marketing-social/salesforce.marketingcloud/overview' },
-              items: [
-                'connectors/catalog/marketing-social/salesforce.marketingcloud/setup-guide',
-                'connectors/catalog/marketing-social/salesforce.marketingcloud/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Mailchimp Transactional',
-              link: { type: 'doc', id: 'connectors/catalog/marketing-social/mailchimp.transactional/overview' },
-              items: [
-                'connectors/catalog/marketing-social/mailchimp.transactional/setup-guide',
-                'connectors/catalog/marketing-social/mailchimp.transactional/action-reference',
-              ],
-            },
+            'connectors/catalog/database/aws.redshiftdata/setup-guide',
+            'connectors/catalog/database/aws.redshiftdata/action-reference',
           ],
         },
         {
           type: 'category',
-          label: 'Messaging',
-          link: { type: 'doc', id: 'connectors/catalog/messaging/index' },
+          label: 'AWS S3',
+          link: { type: 'doc', id: 'connectors/catalog/storage-file/aws.s3/overview' },
           items: [
-            {
-              type: 'category',
-              label: 'NATS',
-              link: { type: 'doc', id: 'connectors/catalog/messaging/nats/overview' },
-              items: [
-                'connectors/catalog/messaging/nats/setup-guide',
-                'connectors/catalog/messaging/nats/action-reference',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'RabbitMQ',
-              link: { type: 'doc', id: 'connectors/catalog/messaging/rabbitmq/overview' },
-              items: [
-                'connectors/catalog/messaging/rabbitmq/setup-guide',
-                'connectors/catalog/messaging/rabbitmq/action-reference',
-                'connectors/catalog/messaging/rabbitmq/trigger-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Azure Service Bus',
-              link: { type: 'doc', id: 'connectors/catalog/messaging/asb/overview' },
-              items: [
-                'connectors/catalog/messaging/asb/setup-guide',
-                'connectors/catalog/messaging/asb/action-reference',
-                'connectors/catalog/messaging/asb/trigger-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Kafka',
-              link: { type: 'doc', id: 'connectors/catalog/messaging/kafka/overview' },
-              items: [
-                'connectors/catalog/messaging/kafka/setup-guide',
-                'connectors/catalog/messaging/kafka/action-reference',
-                'connectors/catalog/messaging/kafka/trigger-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'JMS',
-              link: { type: 'doc', id: 'connectors/catalog/messaging/java.jms/overview' },
-              items: [
-                'connectors/catalog/messaging/java.jms/setup-guide',
-                'connectors/catalog/messaging/java.jms/action-reference',
-                'connectors/catalog/messaging/java.jms/trigger-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Solace',
-              link: { type: 'doc', id: 'connectors/catalog/messaging/solace/overview' },
-              items: [
-                'connectors/catalog/messaging/solace/setup-guide',
-                'connectors/catalog/messaging/solace/action-reference',
-                'connectors/catalog/messaging/solace/trigger-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'IBM MQ',
-              link: { type: 'doc', id: 'connectors/catalog/messaging/ibm.ibmmq/overview' },
-              items: [
-                'connectors/catalog/messaging/ibm.ibmmq/setup-guide',
-                'connectors/catalog/messaging/ibm.ibmmq/action-reference',
-                'connectors/catalog/messaging/ibm.ibmmq/trigger-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'AWS SQS',
-              link: { type: 'doc', id: 'connectors/catalog/messaging/aws.sqs/overview' },
-              items: [
-                'connectors/catalog/messaging/aws.sqs/setup-guide',
-                'connectors/catalog/messaging/aws.sqs/action-reference',
-                'connectors/catalog/messaging/aws.sqs/trigger-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Google Cloud Pub/Sub',
-              link: { type: 'doc', id: 'connectors/catalog/messaging/gcloud.pubsub/overview' },
-              items: [
-                'connectors/catalog/messaging/gcloud.pubsub/setup-guide',
-                'connectors/catalog/messaging/gcloud.pubsub/action-reference',
-                'connectors/catalog/messaging/gcloud.pubsub/trigger-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Confluent Schema Registry',
-              link: { type: 'doc', id: 'connectors/catalog/messaging/confluent.cregistry/overview' },
-              items: [
-                'connectors/catalog/messaging/confluent.cregistry/setup-guide',
-                'connectors/catalog/messaging/confluent.cregistry/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Confluent Avro SerDes',
-              link: { type: 'doc', id: 'connectors/catalog/messaging/confluent.cavroserdes/overview' },
-              items: [
-                'connectors/catalog/messaging/confluent.cavroserdes/setup-guide',
-                'connectors/catalog/messaging/confluent.cavroserdes/action-reference',
-              ],
-            },
+            'connectors/catalog/storage-file/aws.s3/setup-guide',
+            'connectors/catalog/storage-file/aws.s3/action-reference',
           ],
         },
         {
           type: 'category',
-          label: 'Productivity & Collaboration',
-          link: { type: 'doc', id: 'connectors/catalog/productivity-collaboration/index' },
+          label: 'AWS Secrets Manager',
+          link: { type: 'doc', id: 'connectors/catalog/security-identity/aws.secretmanager/overview' },
           items: [
-            {
-              type: 'category',
-              label: 'Google Sheets',
-              link: { type: 'doc', id: 'connectors/catalog/productivity-collaboration/googleapis.sheets/overview' },
-              items: [
-                'connectors/catalog/productivity-collaboration/googleapis.sheets/setup-guide',
-                'connectors/catalog/productivity-collaboration/googleapis.sheets/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'DocuSign Admin',
-              link: { type: 'doc', id: 'connectors/catalog/productivity-collaboration/docusign.dsadmin/overview' },
-              items: [
-                'connectors/catalog/productivity-collaboration/docusign.dsadmin/setup-guide',
-                'connectors/catalog/productivity-collaboration/docusign.dsadmin/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Google Calendar',
-              link: { type: 'doc', id: 'connectors/catalog/productivity-collaboration/googleapis.calendar/overview' },
-              items: [
-                'connectors/catalog/productivity-collaboration/googleapis.calendar/setup-guide',
-                'connectors/catalog/productivity-collaboration/googleapis.calendar/action-reference',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Google GCalendar',
-              link: { type: 'doc', id: 'connectors/catalog/productivity-collaboration/googleapis.gcalendar/overview' },
-              items: [
-                'connectors/catalog/productivity-collaboration/googleapis.gcalendar/setup-guide',
-                'connectors/catalog/productivity-collaboration/googleapis.gcalendar/action-reference',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Asana',
-              link: { type: 'doc', id: 'connectors/catalog/productivity-collaboration/asana/overview' },
-              items: [
-                'connectors/catalog/productivity-collaboration/asana/setup-guide',
-                'connectors/catalog/productivity-collaboration/asana/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Smartsheet',
-              link: { type: 'doc', id: 'connectors/catalog/productivity-collaboration/smartsheet/overview' },
-              items: [
-                'connectors/catalog/productivity-collaboration/smartsheet/setup-guide',
-                'connectors/catalog/productivity-collaboration/smartsheet/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Jira',
-              link: { type: 'doc', id: 'connectors/catalog/productivity-collaboration/jira/overview' },
-              items: [
-                'connectors/catalog/productivity-collaboration/jira/setup-guide',
-                'connectors/catalog/productivity-collaboration/jira/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Trello',
-              link: { type: 'doc', id: 'connectors/catalog/productivity-collaboration/trello/overview' },
-              items: [
-                'connectors/catalog/productivity-collaboration/trello/setup-guide',
-                'connectors/catalog/productivity-collaboration/trello/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Candid',
-              link: { type: 'doc', id: 'connectors/catalog/productivity-collaboration/candid/overview' },
-              items: [
-                'connectors/catalog/productivity-collaboration/candid/setup-guide',
-                'connectors/catalog/productivity-collaboration/candid/action-reference',
-              ],
-            },
+            'connectors/catalog/security-identity/aws.secretmanager/setup-guide',
+            'connectors/catalog/security-identity/aws.secretmanager/action-reference',
           ],
         },
         {
           type: 'category',
-          label: 'Security & Identity',
-          link: { type: 'doc', id: 'connectors/catalog/security-identity/index' },
+          label: 'AWS SNS',
+          link: { type: 'doc', id: 'connectors/catalog/communication/aws.sns/overview' },
           items: [
-            {
-              type: 'category',
-              label: 'SCIM',
-              link: { type: 'doc', id: 'connectors/catalog/security-identity/scim/overview' },
-              items: [
-                'connectors/catalog/security-identity/scim/setup-guide',
-                'connectors/catalog/security-identity/scim/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'AWS Secrets Manager',
-              link: { type: 'doc', id: 'connectors/catalog/security-identity/aws.secretmanager/overview' },
-              items: [
-                'connectors/catalog/security-identity/aws.secretmanager/setup-guide',
-                'connectors/catalog/security-identity/aws.secretmanager/action-reference',
-              ],
-            },
+            'connectors/catalog/communication/aws.sns/setup-guide',
+            'connectors/catalog/communication/aws.sns/action-reference',
           ],
         },
         {
           type: 'category',
-          label: 'Storage & File Management',
-          link: { type: 'doc', id: 'connectors/catalog/storage-file/index' },
+          label: 'AWS SQS',
+          link: { type: 'doc', id: 'connectors/catalog/messaging/aws.sqs/overview' },
           items: [
-            {
-              type: 'category',
-              label: 'AWS S3',
-              link: { type: 'doc', id: 'connectors/catalog/storage-file/aws.s3/overview' },
-              items: [
-                'connectors/catalog/storage-file/aws.s3/setup-guide',
-                'connectors/catalog/storage-file/aws.s3/action-reference',
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'Alfresco',
-              link: { type: 'doc', id: 'connectors/catalog/storage-file/alfresco/overview' },
-              items: [
-                'connectors/catalog/storage-file/alfresco/setup-guide',
-                'connectors/catalog/storage-file/alfresco/action-reference',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Azure Storage Service',
-              link: { type: 'doc', id: 'connectors/catalog/storage-file/azure_storage_service/overview' },
-              items: [
-                'connectors/catalog/storage-file/azure_storage_service/setup-guide',
-                'connectors/catalog/storage-file/azure_storage_service/action-reference',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Microsoft OneDrive',
-              link: { type: 'doc', id: 'connectors/catalog/storage-file/microsoft.onedrive/overview' },
-              items: [
-                'connectors/catalog/storage-file/microsoft.onedrive/setup-guide',
-                'connectors/catalog/storage-file/microsoft.onedrive/action-reference',
-              ],
-            },
+            'connectors/catalog/messaging/aws.sqs/setup-guide',
+            'connectors/catalog/messaging/aws.sqs/action-reference',
+            'connectors/catalog/messaging/aws.sqs/trigger-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Azure AI Search',
+          link: { type: 'doc', id: 'connectors/catalog/ai-ml/azure.ai.search/overview' },
+          items: [
+            'connectors/catalog/ai-ml/azure.ai.search/setup-guide',
+            'connectors/catalog/ai-ml/azure.ai.search/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Azure AI Search Index',
+          link: { type: 'doc', id: 'connectors/catalog/ai-ml/azure.ai.search.index/overview' },
+          items: [
+            'connectors/catalog/ai-ml/azure.ai.search.index/setup-guide',
+            'connectors/catalog/ai-ml/azure.ai.search.index/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Azure Functions',
+          link: { type: 'doc', id: 'connectors/catalog/cloud-infrastructure/azure.functions/overview' },
+          items: [
+            'connectors/catalog/cloud-infrastructure/azure.functions/setup-guide',
+            'connectors/catalog/cloud-infrastructure/azure.functions/trigger-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Azure OpenAI',
+          link: { type: 'doc', id: 'connectors/catalog/ai-ml/ai.azure/overview' },
+          items: [
+            'connectors/catalog/ai-ml/ai.azure/setup-guide',
+            'connectors/catalog/ai-ml/ai.azure/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Azure Service Bus',
+          link: { type: 'doc', id: 'connectors/catalog/messaging/asb/overview' },
+          items: [
+            'connectors/catalog/messaging/asb/setup-guide',
+            'connectors/catalog/messaging/asb/action-reference',
+            'connectors/catalog/messaging/asb/trigger-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Azure Storage Service',
+          link: { type: 'doc', id: 'connectors/catalog/storage-file/azure_storage_service/overview' },
+          items: [
+            'connectors/catalog/storage-file/azure_storage_service/setup-guide',
+            'connectors/catalog/storage-file/azure_storage_service/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Candid',
+          link: { type: 'doc', id: 'connectors/catalog/productivity-collaboration/candid/overview' },
+          items: [
+            'connectors/catalog/productivity-collaboration/candid/setup-guide',
+            'connectors/catalog/productivity-collaboration/candid/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'CDC',
+          link: { type: 'doc', id: 'connectors/catalog/database/cdc/overview' },
+          items: [
+            'connectors/catalog/database/cdc/setup-guide',
+            'connectors/catalog/database/cdc/trigger-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Confluent Avro SerDes',
+          link: { type: 'doc', id: 'connectors/catalog/messaging/confluent.cavroserdes/overview' },
+          items: [
+            'connectors/catalog/messaging/confluent.cavroserdes/setup-guide',
+            'connectors/catalog/messaging/confluent.cavroserdes/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Confluent Schema Registry',
+          link: { type: 'doc', id: 'connectors/catalog/messaging/confluent.cregistry/overview' },
+          items: [
+            'connectors/catalog/messaging/confluent.cregistry/setup-guide',
+            'connectors/catalog/messaging/confluent.cregistry/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Copybook',
+          link: { type: 'doc', id: 'connectors/catalog/developer-tools/copybook/overview' },
+          items: [
+            'connectors/catalog/developer-tools/copybook/setup-guide',
+            'connectors/catalog/developer-tools/copybook/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'DeepSeek',
+          link: { type: 'doc', id: 'connectors/catalog/ai-ml/ai.deepseek/overview' },
+          items: [
+            'connectors/catalog/ai-ml/ai.deepseek/setup-guide',
+            'connectors/catalog/ai-ml/ai.deepseek/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Discord',
+          link: { type: 'doc', id: 'connectors/catalog/communication/discord/overview' },
+          items: [
+            'connectors/catalog/communication/discord/setup-guide',
+            'connectors/catalog/communication/discord/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'DocuSign Admin',
+          link: { type: 'doc', id: 'connectors/catalog/productivity-collaboration/docusign.dsadmin/overview' },
+          items: [
+            'connectors/catalog/productivity-collaboration/docusign.dsadmin/setup-guide',
+            'connectors/catalog/productivity-collaboration/docusign.dsadmin/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Elastic Cloud',
+          link: { type: 'doc', id: 'connectors/catalog/cloud-infrastructure/elastic.elasticcloud/overview' },
+          items: [
+            'connectors/catalog/cloud-infrastructure/elastic.elasticcloud/setup-guide',
+            'connectors/catalog/cloud-infrastructure/elastic.elasticcloud/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Github',
+          link: { type: 'doc', id: 'connectors/catalog/developer-tools/github/overview' },
+          items: [
+            'connectors/catalog/developer-tools/github/setup-guide',
+            'connectors/catalog/developer-tools/github/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Gmail',
+          link: { type: 'doc', id: 'connectors/catalog/communication/googleapis.gmail/overview' },
+          items: [
+            'connectors/catalog/communication/googleapis.gmail/setup-guide',
+            'connectors/catalog/communication/googleapis.gmail/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Google Calendar',
+          link: { type: 'doc', id: 'connectors/catalog/productivity-collaboration/googleapis.calendar/overview' },
+          items: [
+            'connectors/catalog/productivity-collaboration/googleapis.calendar/setup-guide',
+            'connectors/catalog/productivity-collaboration/googleapis.calendar/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Google Cloud Pub/Sub',
+          link: { type: 'doc', id: 'connectors/catalog/messaging/gcloud.pubsub/overview' },
+          items: [
+            'connectors/catalog/messaging/gcloud.pubsub/setup-guide',
+            'connectors/catalog/messaging/gcloud.pubsub/action-reference',
+            'connectors/catalog/messaging/gcloud.pubsub/trigger-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Google GCalendar',
+          link: { type: 'doc', id: 'connectors/catalog/productivity-collaboration/googleapis.gcalendar/overview' },
+          items: [
+            'connectors/catalog/productivity-collaboration/googleapis.gcalendar/setup-guide',
+            'connectors/catalog/productivity-collaboration/googleapis.gcalendar/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Google Sheets',
+          link: { type: 'doc', id: 'connectors/catalog/productivity-collaboration/googleapis.sheets/overview' },
+          items: [
+            'connectors/catalog/productivity-collaboration/googleapis.sheets/setup-guide',
+            'connectors/catalog/productivity-collaboration/googleapis.sheets/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Guidewire InsuranceNow',
+          link: { type: 'doc', id: 'connectors/catalog/erp-business/guidewire.insnow/overview' },
+          items: [
+            'connectors/catalog/erp-business/guidewire.insnow/setup-guide',
+            'connectors/catalog/erp-business/guidewire.insnow/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot Automation Actions',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.automation.actions/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.automation.actions/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.automation.actions/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot CRM Associations',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.associations/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.crm.associations/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.crm.associations/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot CRM Associations Schema',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.associations.schema/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.crm.associations.schema/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.crm.associations.schema/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot CRM Commerce Carts',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.commerce.carts/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.crm.commerce.carts/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.crm.commerce.carts/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot CRM Commerce Discounts',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.commerce.discounts/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.crm.commerce.discounts/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.crm.commerce.discounts/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot CRM Commerce Orders',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.commerce.orders/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.crm.commerce.orders/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.crm.commerce.orders/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot CRM Commerce Quotes',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.commerce.quotes/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.crm.commerce.quotes/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.crm.commerce.quotes/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot CRM Commerce Taxes',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.commerce.taxes/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.crm.commerce.taxes/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.crm.commerce.taxes/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot CRM Companies',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.obj.companies/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.crm.obj.companies/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.crm.obj.companies/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot CRM Contacts',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.obj.contacts/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.crm.obj.contacts/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.crm.obj.contacts/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot CRM Deals',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.obj.deals/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.crm.obj.deals/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.crm.obj.deals/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot CRM Engagement Meeting',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.engagement.meeting/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.crm.engagement.meeting/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.crm.engagement.meeting/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot CRM Engagement Notes',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.engagement.notes/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.crm.engagement.notes/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.crm.engagement.notes/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot CRM Engagements Calls',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.engagements.calls/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.crm.engagements.calls/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.crm.engagements.calls/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot CRM Engagements Communications',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.engagements.communications/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.crm.engagements.communications/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.crm.engagements.communications/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot CRM Engagements Email',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.engagements.email/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.crm.engagements.email/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.crm.engagements.email/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot CRM Engagements Tasks',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.engagements.tasks/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.crm.engagements.tasks/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.crm.engagements.tasks/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot CRM Extensions Timelines',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.extensions.timelines/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.crm.extensions.timelines/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.crm.extensions.timelines/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot CRM Extensions Videoconferencing',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot CRM Feedback',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.obj.feedback/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.crm.obj.feedback/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.crm.obj.feedback/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot CRM Import',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.import/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.crm.import/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.crm.import/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot CRM Leads',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.obj.leads/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.crm.obj.leads/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.crm.obj.leads/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot CRM Line Items',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.obj.lineitems/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.crm.obj.lineitems/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.crm.obj.lineitems/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot CRM Lists',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.lists/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.crm.lists/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.crm.lists/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot CRM Owners',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.owners/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.crm.owners/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.crm.owners/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot CRM Pipelines',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.pipelines/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.crm.pipelines/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.crm.pipelines/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot CRM Products',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.obj.products/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.crm.obj.products/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.crm.obj.products/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot CRM Properties',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.properties/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.crm.properties/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.crm.properties/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot CRM Schemas',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.obj.schemas/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.crm.obj.schemas/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.crm.obj.schemas/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot CRM Tickets',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/hubspot.crm.obj.tickets/overview' },
+          items: [
+            'connectors/catalog/crm-sales/hubspot.crm.obj.tickets/setup-guide',
+            'connectors/catalog/crm-sales/hubspot.crm.obj.tickets/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot Marketing Campaigns',
+          link: { type: 'doc', id: 'connectors/catalog/marketing-social/hubspot.marketing.campaigns/overview' },
+          items: [
+            'connectors/catalog/marketing-social/hubspot.marketing.campaigns/setup-guide',
+            'connectors/catalog/marketing-social/hubspot.marketing.campaigns/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot Marketing Emails',
+          link: { type: 'doc', id: 'connectors/catalog/marketing-social/hubspot.marketing.emails/overview' },
+          items: [
+            'connectors/catalog/marketing-social/hubspot.marketing.emails/setup-guide',
+            'connectors/catalog/marketing-social/hubspot.marketing.emails/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot Marketing Events',
+          link: { type: 'doc', id: 'connectors/catalog/marketing-social/hubspot.marketing.events/overview' },
+          items: [
+            'connectors/catalog/marketing-social/hubspot.marketing.events/setup-guide',
+            'connectors/catalog/marketing-social/hubspot.marketing.events/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot Marketing Forms',
+          link: { type: 'doc', id: 'connectors/catalog/marketing-social/hubspot.marketing.forms/overview' },
+          items: [
+            'connectors/catalog/marketing-social/hubspot.marketing.forms/setup-guide',
+            'connectors/catalog/marketing-social/hubspot.marketing.forms/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot Marketing Subscriptions',
+          link: { type: 'doc', id: 'connectors/catalog/marketing-social/hubspot.marketing.subscriptions/overview' },
+          items: [
+            'connectors/catalog/marketing-social/hubspot.marketing.subscriptions/setup-guide',
+            'connectors/catalog/marketing-social/hubspot.marketing.subscriptions/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HubSpot Marketing Transactional',
+          link: { type: 'doc', id: 'connectors/catalog/marketing-social/hubspot.marketing.transactional/overview' },
+          items: [
+            'connectors/catalog/marketing-social/hubspot.marketing.transactional/setup-guide',
+            'connectors/catalog/marketing-social/hubspot.marketing.transactional/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'IBM CTG',
+          link: { type: 'doc', id: 'connectors/catalog/erp-business/ibm.ctg/overview' },
+          items: [
+            'connectors/catalog/erp-business/ibm.ctg/setup-guide',
+            'connectors/catalog/erp-business/ibm.ctg/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'IBM MQ',
+          link: { type: 'doc', id: 'connectors/catalog/messaging/ibm.ibmmq/overview' },
+          items: [
+            'connectors/catalog/messaging/ibm.ibmmq/setup-guide',
+            'connectors/catalog/messaging/ibm.ibmmq/action-reference',
+            'connectors/catalog/messaging/ibm.ibmmq/trigger-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'IDE Trace Provider',
+          link: { type: 'doc', id: 'connectors/catalog/developer-tools/idetraceprovider/overview' },
+          items: [
+            'connectors/catalog/developer-tools/idetraceprovider/setup-guide',
+            'connectors/catalog/developer-tools/idetraceprovider/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Java JDBC',
+          link: { type: 'doc', id: 'connectors/catalog/database/java.jdbc/overview' },
+          items: [
+            'connectors/catalog/database/java.jdbc/setup-guide',
+            'connectors/catalog/database/java.jdbc/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Jira',
+          link: { type: 'doc', id: 'connectors/catalog/productivity-collaboration/jira/overview' },
+          items: [
+            'connectors/catalog/productivity-collaboration/jira/setup-guide',
+            'connectors/catalog/productivity-collaboration/jira/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'JMS',
+          link: { type: 'doc', id: 'connectors/catalog/messaging/java.jms/overview' },
+          items: [
+            'connectors/catalog/messaging/java.jms/setup-guide',
+            'connectors/catalog/messaging/java.jms/action-reference',
+            'connectors/catalog/messaging/java.jms/trigger-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Kafka',
+          link: { type: 'doc', id: 'connectors/catalog/messaging/kafka/overview' },
+          items: [
+            'connectors/catalog/messaging/kafka/setup-guide',
+            'connectors/catalog/messaging/kafka/action-reference',
+            'connectors/catalog/messaging/kafka/trigger-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Mailchimp Marketing',
+          link: { type: 'doc', id: 'connectors/catalog/marketing-social/mailchimp.marketing/overview' },
+          items: [
+            'connectors/catalog/marketing-social/mailchimp.marketing/setup-guide',
+            'connectors/catalog/marketing-social/mailchimp.marketing/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Mailchimp Transactional',
+          link: { type: 'doc', id: 'connectors/catalog/marketing-social/mailchimp.transactional/overview' },
+          items: [
+            'connectors/catalog/marketing-social/mailchimp.transactional/setup-guide',
+            'connectors/catalog/marketing-social/mailchimp.transactional/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Microsoft OneDrive',
+          link: { type: 'doc', id: 'connectors/catalog/storage-file/microsoft.onedrive/overview' },
+          items: [
+            'connectors/catalog/storage-file/microsoft.onedrive/setup-guide',
+            'connectors/catalog/storage-file/microsoft.onedrive/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Milvus',
+          link: { type: 'doc', id: 'connectors/catalog/ai-ml/milvus/overview' },
+          items: [
+            'connectors/catalog/ai-ml/milvus/setup-guide',
+            'connectors/catalog/ai-ml/milvus/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Mistral',
+          link: { type: 'doc', id: 'connectors/catalog/ai-ml/mistral/overview' },
+          items: [
+            'connectors/catalog/ai-ml/mistral/setup-guide',
+            'connectors/catalog/ai-ml/mistral/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Mistral AI',
+          link: { type: 'doc', id: 'connectors/catalog/ai-ml/ai.mistral/overview' },
+          items: [
+            'connectors/catalog/ai-ml/ai.mistral/setup-guide',
+            'connectors/catalog/ai-ml/ai.mistral/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Moesif',
+          link: { type: 'doc', id: 'connectors/catalog/developer-tools/moesif/overview' },
+          items: [
+            'connectors/catalog/developer-tools/moesif/setup-guide',
+            'connectors/catalog/developer-tools/moesif/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'MongoDB',
+          link: { type: 'doc', id: 'connectors/catalog/database/mongodb/overview' },
+          items: [
+            'connectors/catalog/database/mongodb/setup-guide',
+            'connectors/catalog/database/mongodb/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'MSSQL',
+          link: { type: 'doc', id: 'connectors/catalog/database/mssql/overview' },
+          items: [
+            'connectors/catalog/database/mssql/setup-guide',
+            'connectors/catalog/database/mssql/action-reference',
+            'connectors/catalog/database/mssql/trigger-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'MySQL',
+          link: { type: 'doc', id: 'connectors/catalog/database/mysql/overview' },
+          items: [
+            'connectors/catalog/database/mysql/setup-guide',
+            'connectors/catalog/database/mysql/action-reference',
+            'connectors/catalog/database/mysql/trigger-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'NATS',
+          link: { type: 'doc', id: 'connectors/catalog/messaging/nats/overview' },
+          items: [
+            'connectors/catalog/messaging/nats/setup-guide',
+            'connectors/catalog/messaging/nats/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'New Relic',
+          link: { type: 'doc', id: 'connectors/catalog/developer-tools/newrelic/overview' },
+          items: [
+            'connectors/catalog/developer-tools/newrelic/setup-guide',
+            'connectors/catalog/developer-tools/newrelic/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'NP',
+          link: { type: 'doc', id: 'connectors/catalog/ai-ml/np/overview' },
+          items: [
+            'connectors/catalog/ai-ml/np/setup-guide',
+            'connectors/catalog/ai-ml/np/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Ollama',
+          link: { type: 'doc', id: 'connectors/catalog/ai-ml/ai.ollama/overview' },
+          items: [
+            'connectors/catalog/ai-ml/ai.ollama/setup-guide',
+            'connectors/catalog/ai-ml/ai.ollama/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'OpenAI',
+          link: { type: 'doc', id: 'connectors/catalog/ai-ml/openai/overview' },
+          items: [
+            'connectors/catalog/ai-ml/openai/setup-guide',
+            'connectors/catalog/ai-ml/openai/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'OpenAI (AI)',
+          link: { type: 'doc', id: 'connectors/catalog/ai-ml/ai.openai/overview' },
+          items: [
+            'connectors/catalog/ai-ml/ai.openai/setup-guide',
+            'connectors/catalog/ai-ml/ai.openai/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'OpenAI Audio',
+          link: { type: 'doc', id: 'connectors/catalog/ai-ml/openai.audio/overview' },
+          items: [
+            'connectors/catalog/ai-ml/openai.audio/setup-guide',
+            'connectors/catalog/ai-ml/openai.audio/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'OpenAI Fine-Tunes',
+          link: { type: 'doc', id: 'connectors/catalog/ai-ml/openai.finetunes/overview' },
+          items: [
+            'connectors/catalog/ai-ml/openai.finetunes/setup-guide',
+            'connectors/catalog/ai-ml/openai.finetunes/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Oracle DB',
+          link: { type: 'doc', id: 'connectors/catalog/database/oracledb/overview' },
+          items: [
+            'connectors/catalog/database/oracledb/setup-guide',
+            'connectors/catalog/database/oracledb/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'PayPal Invoices',
+          link: { type: 'doc', id: 'connectors/catalog/finance-accounting/paypal.invoices/overview' },
+          items: [
+            'connectors/catalog/finance-accounting/paypal.invoices/setup-guide',
+            'connectors/catalog/finance-accounting/paypal.invoices/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'PayPal Orders',
+          link: { type: 'doc', id: 'connectors/catalog/finance-accounting/paypal.orders/overview' },
+          items: [
+            'connectors/catalog/finance-accounting/paypal.orders/setup-guide',
+            'connectors/catalog/finance-accounting/paypal.orders/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'PayPal Payments',
+          link: { type: 'doc', id: 'connectors/catalog/finance-accounting/paypal.payments/overview' },
+          items: [
+            'connectors/catalog/finance-accounting/paypal.payments/setup-guide',
+            'connectors/catalog/finance-accounting/paypal.payments/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'PayPal Subscriptions',
+          link: { type: 'doc', id: 'connectors/catalog/finance-accounting/paypal.subscriptions/overview' },
+          items: [
+            'connectors/catalog/finance-accounting/paypal.subscriptions/setup-guide',
+            'connectors/catalog/finance-accounting/paypal.subscriptions/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'People HR',
+          link: { type: 'doc', id: 'connectors/catalog/hrms/peoplehr/overview' },
+          items: [
+            'connectors/catalog/hrms/peoplehr/setup-guide',
+            'connectors/catalog/hrms/peoplehr/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'pgvector',
+          link: { type: 'doc', id: 'connectors/catalog/ai-ml/ai.pgvector/overview' },
+          items: [
+            'connectors/catalog/ai-ml/ai.pgvector/setup-guide',
+            'connectors/catalog/ai-ml/ai.pgvector/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Pinecone',
+          link: { type: 'doc', id: 'connectors/catalog/ai-ml/ai.pinecone/overview' },
+          items: [
+            'connectors/catalog/ai-ml/ai.pinecone/setup-guide',
+            'connectors/catalog/ai-ml/ai.pinecone/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'PostgreSQL',
+          link: { type: 'doc', id: 'connectors/catalog/database/postgresql/overview' },
+          items: [
+            'connectors/catalog/database/postgresql/setup-guide',
+            'connectors/catalog/database/postgresql/action-reference',
+            'connectors/catalog/database/postgresql/trigger-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'RabbitMQ',
+          link: { type: 'doc', id: 'connectors/catalog/messaging/rabbitmq/overview' },
+          items: [
+            'connectors/catalog/messaging/rabbitmq/setup-guide',
+            'connectors/catalog/messaging/rabbitmq/action-reference',
+            'connectors/catalog/messaging/rabbitmq/trigger-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Redis',
+          link: { type: 'doc', id: 'connectors/catalog/database/redis/overview' },
+          items: [
+            'connectors/catalog/database/redis/setup-guide',
+            'connectors/catalog/database/redis/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'SAP',
+          link: { type: 'doc', id: 'connectors/catalog/erp-business/sap/overview' },
+          items: [
+            'connectors/catalog/erp-business/sap/setup-guide',
+            'connectors/catalog/erp-business/sap/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'SAP Commerce',
+          link: { type: 'doc', id: 'connectors/catalog/ecommerce/sap.commerce.webservices/overview' },
+          items: [
+            'connectors/catalog/ecommerce/sap.commerce.webservices/setup-guide',
+            'connectors/catalog/ecommerce/sap.commerce.webservices/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'SAP Sales Area',
+          link: { type: 'doc', id: 'connectors/catalog/erp-business/sap.s4hana.salesarea_0001/overview' },
+          items: [
+            'connectors/catalog/erp-business/sap.s4hana.salesarea_0001/setup-guide',
+            'connectors/catalog/erp-business/sap.s4hana.salesarea_0001/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'SAP Sales District',
+          link: { type: 'doc', id: 'connectors/catalog/erp-business/sap.s4hana.api_salesdistrict_srv/overview' },
+          items: [
+            'connectors/catalog/erp-business/sap.s4hana.api_salesdistrict_srv/setup-guide',
+            'connectors/catalog/erp-business/sap.s4hana.api_salesdistrict_srv/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'SAP Sales Inquiry',
+          link: { type: 'doc', id: 'connectors/catalog/erp-business/sap.s4hana.api_sales_inquiry_srv/overview' },
+          items: [
+            'connectors/catalog/erp-business/sap.s4hana.api_sales_inquiry_srv/setup-guide',
+            'connectors/catalog/erp-business/sap.s4hana.api_sales_inquiry_srv/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'SAP Sales Order',
+          link: { type: 'doc', id: 'connectors/catalog/erp-business/sap.s4hana.api_sales_order_srv/overview' },
+          items: [
+            'connectors/catalog/erp-business/sap.s4hana.api_sales_order_srv/setup-guide',
+            'connectors/catalog/erp-business/sap.s4hana.api_sales_order_srv/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'SAP Sales Order Analytics',
+          link: { type: 'doc', id: 'connectors/catalog/erp-business/sap.s4hana.ce_salesorder_0001/overview' },
+          items: [
+            'connectors/catalog/erp-business/sap.s4hana.ce_salesorder_0001/setup-guide',
+            'connectors/catalog/erp-business/sap.s4hana.ce_salesorder_0001/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'SAP Sales Order Simulation',
+          link: { type: 'doc', id: 'connectors/catalog/erp-business/sap.s4hana.api_sales_order_simulation_srv/overview' },
+          items: [
+            'connectors/catalog/erp-business/sap.s4hana.api_sales_order_simulation_srv/setup-guide',
+            'connectors/catalog/erp-business/sap.s4hana.api_sales_order_simulation_srv/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'SAP Sales Organization',
+          link: { type: 'doc', id: 'connectors/catalog/erp-business/sap.s4hana.api_salesorganization_srv/overview' },
+          items: [
+            'connectors/catalog/erp-business/sap.s4hana.api_salesorganization_srv/setup-guide',
+            'connectors/catalog/erp-business/sap.s4hana.api_salesorganization_srv/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'SAP Sales Quotation',
+          link: { type: 'doc', id: 'connectors/catalog/erp-business/sap.s4hana.api_sales_quotation_srv/overview' },
+          items: [
+            'connectors/catalog/erp-business/sap.s4hana.api_sales_quotation_srv/setup-guide',
+            'connectors/catalog/erp-business/sap.s4hana.api_sales_quotation_srv/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'SAP SD Incoterms',
+          link: { type: 'doc', id: 'connectors/catalog/erp-business/sap.s4hana.api_sd_incoterms_srv/overview' },
+          items: [
+            'connectors/catalog/erp-business/sap.s4hana.api_sd_incoterms_srv/setup-guide',
+            'connectors/catalog/erp-business/sap.s4hana.api_sd_incoterms_srv/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'SAP SD Sold-to-Party Determination',
+          link: { type: 'doc', id: 'connectors/catalog/erp-business/sap.s4hana.api_sd_sa_soldtopartydetn/overview' },
+          items: [
+            'connectors/catalog/erp-business/sap.s4hana.api_sd_sa_soldtopartydetn/setup-guide',
+            'connectors/catalog/erp-business/sap.s4hana.api_sd_sa_soldtopartydetn/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Salesforce',
+          link: { type: 'doc', id: 'connectors/catalog/crm-sales/salesforce/overview' },
+          items: [
+            'connectors/catalog/crm-sales/salesforce/setup-guide',
+            'connectors/catalog/crm-sales/salesforce/action-reference',
+            'connectors/catalog/crm-sales/salesforce/trigger-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Salesforce Marketing Cloud',
+          link: { type: 'doc', id: 'connectors/catalog/marketing-social/salesforce.marketingcloud/overview' },
+          items: [
+            'connectors/catalog/marketing-social/salesforce.marketingcloud/setup-guide',
+            'connectors/catalog/marketing-social/salesforce.marketingcloud/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'SCIM',
+          link: { type: 'doc', id: 'connectors/catalog/security-identity/scim/overview' },
+          items: [
+            'connectors/catalog/security-identity/scim/setup-guide',
+            'connectors/catalog/security-identity/scim/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Shopify Admin',
+          link: { type: 'doc', id: 'connectors/catalog/ecommerce/shopify.admin/overview' },
+          items: [
+            'connectors/catalog/ecommerce/shopify.admin/setup-guide',
+            'connectors/catalog/ecommerce/shopify.admin/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Slack',
+          link: { type: 'doc', id: 'connectors/catalog/communication/slack/overview' },
+          items: [
+            'connectors/catalog/communication/slack/setup-guide',
+            'connectors/catalog/communication/slack/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Smartsheet',
+          link: { type: 'doc', id: 'connectors/catalog/productivity-collaboration/smartsheet/overview' },
+          items: [
+            'connectors/catalog/productivity-collaboration/smartsheet/setup-guide',
+            'connectors/catalog/productivity-collaboration/smartsheet/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Snowflake',
+          link: { type: 'doc', id: 'connectors/catalog/database/snowflake/overview' },
+          items: [
+            'connectors/catalog/database/snowflake/setup-guide',
+            'connectors/catalog/database/snowflake/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Solace',
+          link: { type: 'doc', id: 'connectors/catalog/messaging/solace/overview' },
+          items: [
+            'connectors/catalog/messaging/solace/setup-guide',
+            'connectors/catalog/messaging/solace/action-reference',
+            'connectors/catalog/messaging/solace/trigger-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Stripe',
+          link: { type: 'doc', id: 'connectors/catalog/finance-accounting/stripe/overview' },
+          items: [
+            'connectors/catalog/finance-accounting/stripe/setup-guide',
+            'connectors/catalog/finance-accounting/stripe/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Trello',
+          link: { type: 'doc', id: 'connectors/catalog/productivity-collaboration/trello/overview' },
+          items: [
+            'connectors/catalog/productivity-collaboration/trello/setup-guide',
+            'connectors/catalog/productivity-collaboration/trello/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Twilio',
+          link: { type: 'doc', id: 'connectors/catalog/communication/twilio/overview' },
+          items: [
+            'connectors/catalog/communication/twilio/setup-guide',
+            'connectors/catalog/communication/twilio/action-reference',
+            ...connectorVersionedDocs('connectors/catalog/communication/twilio'),
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Twitter',
+          link: { type: 'doc', id: 'connectors/catalog/marketing-social/twitter/overview' },
+          items: [
+            'connectors/catalog/marketing-social/twitter/setup-guide',
+            'connectors/catalog/marketing-social/twitter/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Weaviate',
+          link: { type: 'doc', id: 'connectors/catalog/ai-ml/ai.weaviate/overview' },
+          items: [
+            'connectors/catalog/ai-ml/ai.weaviate/setup-guide',
+            'connectors/catalog/ai-ml/ai.weaviate/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'WSO2 APIM Catalog',
+          link: { type: 'doc', id: 'connectors/catalog/developer-tools/wso2.apim.catalog/overview' },
+          items: [
+            'connectors/catalog/developer-tools/wso2.apim.catalog/setup-guide',
+            'connectors/catalog/developer-tools/wso2.apim.catalog/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Zoom Meetings',
+          link: { type: 'doc', id: 'connectors/catalog/communication/zoom.meetings/overview' },
+          items: [
+            'connectors/catalog/communication/zoom.meetings/setup-guide',
+            'connectors/catalog/communication/zoom.meetings/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Zoom Scheduler',
+          link: { type: 'doc', id: 'connectors/catalog/communication/zoom.scheduler/overview' },
+          items: [
+            'connectors/catalog/communication/zoom.scheduler/setup-guide',
+            'connectors/catalog/communication/zoom.scheduler/action-reference',
           ],
         },
       ],

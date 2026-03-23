@@ -1,40 +1,92 @@
 ---
-title: Connectors Overview
-sidebar_label: Overview
-slug: /connectors/overview
+title: "Connectors Overview"
+description: "What are connectors and how they work in WSO2 Integrator."
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-# Connectors
+# Connectors Overview
 
-WSO2 Integrator provides 200+ pre-built connectors for SaaS applications, databases, messaging systems, cloud services, and AI platforms. Connectors let you integrate with external systems without writing low-level protocol code.
+Connectors are pre-built integration components that let you connect WSO2 Integrator to external services, APIs, databases, and messaging systems — without writing low-level HTTP or protocol code.
 
-## Connector Catalog
+## What Is a Connector?
 
-Browse connectors by category:
+A connector is a Ballerina package that wraps an external service's API into a set of typed, ready-to-use clients and operations. Instead of manually constructing HTTP requests, handling authentication, and parsing responses, you work with strongly-typed Ballerina records and function calls.
 
-- **[AI & Machine Learning](catalog/ai-ml/index.md)** — OpenAI, Claude, Vertex, Bedrock, and more
-- **[Cloud & Infrastructure](catalog/cloud-infrastructure/index.md)** — AWS, Azure, GCP, Terraform, and more
-- **[Communication](catalog/communication/index.md)** — Twilio, Email, Slack, and more
-- **[CRM & Sales](catalog/crm-sales/index.md)** — Salesforce, HubSpot, Pipedrive, Zoho CRM, and more
-- **[Database](catalog/database/index.md)** — MySQL, PostgreSQL, MSSQL, Oracle, MongoDB, Redis, and more
-- **[Developer Tools](catalog/developer-tools/index.md)** — GitHub, GitLab, Jira, Jenkins, and more
-- **[E-Commerce](catalog/ecommerce/index.md)** — Shopify, WooCommerce, Stripe, and more
-- **[ERP & Business Operations](catalog/erp-business/index.md)** — SAP, NetSuite, Workday, and more
-- **[Finance & Accounting](catalog/finance-accounting/index.md)** — QuickBooks, Xero, Plaid, and more
-- **[Healthcare](catalog/healthcare/index.md)** — FHIR/HL7, Epic, Cerner, and more
-- **[HRMS](catalog/hrms/index.md)** — BambooHR, Workday HCM, ADP, and more
-- **[Marketing & Social Media](catalog/marketing-social/index.md)** — Mailchimp, Meta Ads, Google Ads, and more
-- **[Messaging](catalog/messaging/index.md)** — Kafka, RabbitMQ, NATS, MQTT, JMS
-- **[Productivity & Collaboration](catalog/productivity-collaboration/index.md)** — Google Workspace, Microsoft 365, Notion, and more
-- **[Security & Identity](catalog/security-identity/index.md)** — OAuth, LDAP, Okta, Auth0, and more
-- **[Storage & File Management](catalog/storage-file/index.md)** — S3, Azure Blob, Google Drive, FTP, SFTP
+![Connection Page](/img/connectors/overview/connection-landing-page.png)
 
-## Using Connectors
+For example, to send an SMS via Twilio:
+<Tabs>
+<TabItem value="ui" label="Visual Designer" default>
 
-- **[Configuration](configuration.md)** — How to configure connectors in your project
-- **[Error Handling](error-handling.md)** — Handling connector errors and retries
+1. Create a Twilio connection by following the steps in [Connections](../develop/integration-artifacts/supporting/connections.md).
 
-## Build Your Own
+2. In the canvas, click **+** to add a new operation.
 
-- **[Create from OpenAPI Spec](build-your-own/create-from-openapi.md)** — Generate connectors directly in the IDE from an OpenAPI definition
-- **[Custom Development](build-your-own/custom-development.md)** — Build a connector from scratch using Ballerina
+3. From the connector list, select the client you created, then choose the **Create Message** action.
+
+   ![Select Twilio Client](/img/connectors/overview/select-twilio.png)
+
+4. In the action configuration panel, fill the following values,
+    ```
+    Payload: 
+    {
+	To: "+1234567890",
+	From: "+0987654321",
+	Body: "Hello from WSO2 Integrator!"
+    }
+    ```
+
+   ![Fill Twilio Create Message](/img/connectors/overview/fill-twilio-create-message.png)
+
+5. Click **Save**. The action is now part of your integration flow.
+
+   ![Twilio Create Message Completed](/img/connectors/overview/twilio-completed.png)
+
+</TabItem>
+<TabItem value="source" label="Source" default>
+
+    ```ballerina
+    import ballerinax/twilio;
+
+    twilio:Client twilio = check new ({
+        auth: {
+            username: accountSid,
+            password: authToken
+        }
+    });
+
+    twilio:CreateMessageRequest message = {
+        to: "+1234567890",
+        from_: "+0987654321",
+        body: "Hello from WSO2 Integrator!"
+    };
+
+    twilio:Message response = check twilio->createMessage(message);
+    ```
+</TabItem>
+</Tabs>
+
+## How Connectors Work in WSO2 Integrator
+
+WSO2 Integrator is built on Ballerina, and connectors are distributed as packages on [Ballerina Central](https://central.ballerina.io). When you add a connector to your integration project:
+
+1. **Import** — Add the connector package as a dependency in your `Ballerina.toml`
+2. **Configure** — Provide credentials and connection settings (API keys, OAuth tokens, endpoints) using Ballerina's `configurable` variables
+3. **Invoke** — Call connector operations directly in your integration logic using Ballerina's `check` expression for error handling
+
+## Actions and Triggers
+
+Connectors expose two types of integration points:
+
+| Type | Description | Example |
+|------|-------------|---------|
+| **Actions** | Outbound calls you make to the external service | Send a message, create a record, query data |
+| **Triggers** | Inbound events the external service sends to your integration | New database row, incoming message, file upload |
+
+Not all connectors support both — see each connector's documentation for what's available.
+
+## Next Steps
+
+- [Connector Catalog](index.md) — Browse all available connectors
+- [Build Your Own](build-your-own/custom-development.md) — Create a custom connector
