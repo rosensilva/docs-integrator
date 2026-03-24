@@ -8,6 +8,38 @@ import Link from '@docusaurus/Link';
 import { useConnectorVersion } from '@site/src/utils/connectorVersion';
 import styles from './styles.module.css';
 
+const CATEGORY_TAGS = {
+  'ai-ml':                      { label: 'AI & Machine Learning',       color: '#7c3aed', bg: '#f5f3ff', border: '#ddd6fe' },
+  'cloud-infrastructure':       { label: 'Cloud & Infrastructure',       color: '#0369a1', bg: '#f0f9ff', border: '#bae6fd' },
+  'communication':              { label: 'Communication',                color: '#0d9488', bg: '#f0fdfa', border: '#99f6e4' },
+  'crm-sales':                  { label: 'CRM & Sales',                  color: '#ea580c', bg: '#fff7ed', border: '#fed7aa' },
+  'database':                   { label: 'Database',                     color: '#0891b2', bg: '#ecfeff', border: '#a5f3fc' },
+  'developer-tools':            { label: 'Developer Tools',              color: '#475569', bg: '#f8fafc', border: '#cbd5e1' },
+  'ecommerce':                  { label: 'E-Commerce',                   color: '#db2777', bg: '#fdf2f8', border: '#f9a8d4' },
+  'erp-business':               { label: 'ERP & Business Operations',    color: '#b45309', bg: '#fffbeb', border: '#fde68a' },
+  'finance-accounting':         { label: 'Finance & Accounting',         color: '#15803d', bg: '#f0fdf4', border: '#bbf7d0' },
+  'healthcare':                 { label: 'Healthcare',                   color: '#0f766e', bg: '#f0fdfa', border: '#99f6e4' },
+  'hrms':                       { label: 'HRMS',                         color: '#7e22ce', bg: '#faf5ff', border: '#e9d5ff' },
+  'marketing-social':           { label: 'Marketing & Social Media',     color: '#e11d48', bg: '#fff1f2', border: '#fecdd3' },
+  'messaging':                  { label: 'Messaging',                    color: '#ca8a04', bg: '#fefce8', border: '#fef08a' },
+  'productivity-collaboration': { label: 'Productivity & Collaboration',  color: '#2563eb', bg: '#eff6ff', border: '#bfdbfe' },
+  'security-identity':          { label: 'Security & Identity',          color: '#dc2626', bg: '#fef2f2', border: '#fecaca' },
+  'storage-file':               { label: 'Storage & File Management',    color: '#64748b', bg: '#f8fafc', border: '#e2e8f0' },
+};
+
+function CategoryBadge({ categorySlug }) {
+  const category = CATEGORY_TAGS[categorySlug];
+  if (!category) return null;
+  return (
+    <span
+      className={styles.categoryBadge}
+      style={{ color: category.color, backgroundColor: category.bg, borderColor: category.border }}
+    >
+      {category.label}
+    </span>
+  );
+}
+
 function sortVersionsDesc(versions) {
   return [...versions].sort((a, b) => {
     const pa = a.split('.').map(Number);
@@ -114,6 +146,11 @@ export default function DocBreadcrumbsWrapper(props) {
     // Plugin not loaded — no connector versions available.
   }
 
+  // Derive category slug from URL: /connectors/catalog/<category>/...
+  const pathParts = location.pathname.split('/').filter(Boolean);
+  const catalogIdx = pathParts.indexOf('catalog');
+  const categorySlug = catalogIdx !== -1 ? pathParts[catalogIdx + 1] : null;
+
   const isConnector = frontMatter.connector === true;
   const connectorName = frontMatter.connector_name;
 
@@ -208,13 +245,23 @@ export default function DocBreadcrumbsWrapper(props) {
     };
   }, [isConnector, hasMultipleVersions, isDefaultPage, location.pathname]);
 
-  // Not a versioned connector page — render default breadcrumbs.
+  // Not a versioned connector page — render default breadcrumbs + badge.
   if (!isConnector || !hasMultipleVersions) {
-    return <DocBreadcrumbs {...props} />;
+    return (
+      <>
+        <DocBreadcrumbs {...props} />
+        {pageSlug === 'overview' && <CategoryBadge categorySlug={categorySlug} />}
+      </>
+    );
   }
 
   if (!breadcrumbs || breadcrumbs.length === 0) {
-    return <DocBreadcrumbs {...props} />;
+    return (
+      <>
+        <DocBreadcrumbs {...props} />
+        {pageSlug === 'overview' && <CategoryBadge categorySlug={categorySlug} />}
+      </>
+    );
   }
 
   const handleVersionSelect = (newVersion) => {
@@ -256,6 +303,8 @@ export default function DocBreadcrumbsWrapper(props) {
   const afterConnector = isOverviewPage ? [] : allAfterConnector;
 
   return (
+    <>
+    {pageSlug === 'overview' && <CategoryBadge categorySlug={categorySlug} />}
     <nav className={styles.breadcrumbRow} aria-label="Breadcrumbs">
       {beforeConnector.map((crumb, i) => (
         <React.Fragment key={i}>
@@ -291,5 +340,6 @@ export default function DocBreadcrumbsWrapper(props) {
         </React.Fragment>
       ))}
     </nav>
+    </>
   );
 }

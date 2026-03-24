@@ -104,6 +104,19 @@
   background-color: rgba(255, 103, 0, 0.06);
 }
 
+/* Category badge */
+.categoryBadge {
+  display: inline-block;
+  margin: 0.5rem 0 0.25rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: 1px solid;
+}
+
 /* Dark mode adjustments */
 [data-theme='dark'] .versionButton {
   border-color: var(--ifm-color-emphasis-400, #555);
