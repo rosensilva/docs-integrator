@@ -27,9 +27,9 @@ Actions are operations you invoke on the Anthropic model provider from your inte
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## Anthropic LLM connector documentation
+## Documentation
 
-* **[Anthropic LLM Connector Setup Guide](setup-guide.md)**: This guide walks you through creating an Anthropic account and obtaining the API key required to use the Anthropic LLM connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating an Anthropic account and obtaining the API key required to use the Anthropic LLM connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

@@ -6,7 +6,7 @@ description: "Overview of the ballerinax/hubspot.crm.properties connector for WS
 HubSpot CRM Properties API allows you to manage custom and default properties on HubSpot CRM objects such as Contacts, Companies, Deals, and Tickets. The Ballerina `ballerinax/hubspot.crm.properties` connector (v2.0.0) provides programmatic access to create, read, update, and archive properties and property groups, as well as batch operations for managing multiple properties at once.
 
 
-## Key features
+## Key Features
 
 - Full CRUD operations on CRM object properties (create, read, update, archive)
 - Property group management for organizing related properties together
@@ -26,14 +26,14 @@ Actions are operations you invoke on the HubSpot CRM Properties API from your in
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## HubSpot CRM properties connector documentation
+## Documentation
 
-* **[HubSpot CRM Properties Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot developer app and obtaining the OAuth 2.0 credentials required to use the HubSpot CRM Properties connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot developer app and obtaining the OAuth 2.0 credentials required to use the HubSpot CRM Properties connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

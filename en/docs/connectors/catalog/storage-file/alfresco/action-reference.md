@@ -17,7 +17,7 @@ The `ballerinax/alfresco` package exposes the following clients:
 
 Provides access to the core features of Alfresco Content Services via the REST API.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

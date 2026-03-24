@@ -17,7 +17,7 @@ The `ballerinax/docusign.dsadmin` package exposes the following clients:
 
 DocuSign Admin API — organization, user, permission, group, export/import, and asset group management.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

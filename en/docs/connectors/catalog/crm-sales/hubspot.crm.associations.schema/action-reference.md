@@ -17,7 +17,7 @@ The `ballerinax/hubspot.crm.associations.schema` package exposes the following c
 
 Manage association definitions and configurations between HubSpot CRM object types.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

@@ -1,5 +1,4 @@
 ---
-title: Actions
 toc_max_heading_level: 4
 ---
 
@@ -18,7 +17,7 @@ The `ballerinax/ai.devant` package exposes the following clients:
 
 Sends binary documents to the Devant AI API and returns an array of semantic chunks.
 
-### Configuration (`Chunker init Parameters`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
@@ -29,7 +28,7 @@ Sends binary documents to the Devant AI API and returns an array of semantic chu
 | `strategy` | `devant:ChunkStrategy` | `RECURSIVE` | Chunking strategy: `RECURSIVE`, `SENTENCE`, `PARAGRAPH`, or `CHARACTER`. |
 | `connectionConfig` | `ai:ConnectionConfig` | `{}` | Additional HTTP connection configuration (timeouts, proxy, SSL, etc.). |
 
-### Initializing the client
+### Initializing the Client
 
 ```ballerina
 import ballerinax/ai.devant;
@@ -48,7 +47,7 @@ devant:Chunker chunker = check new (
 
 ### Operations
 
-#### Document chunking
+#### Document Chunking
 
 <details>
 <summary>chunk</summary>
@@ -57,15 +56,15 @@ devant:Chunker chunker = check new (
 
 Sends a binary document to the Devant AI service and returns the document split into an array of semantic chunks according to the configured strategy.
 
-Parameters:
+**Parameters:**
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
 | `document` | `ai:Document` | Yes | The binary document to chunk. Must be an `ai:BinaryDocument` with `metadata.fileName` set. |
 
-Returns: `ai:Chunk[]|ai:Error`
+**Returns:** `ai:Chunk[]|ai:Error`
 
-Sample code:
+**Sample code:**
 
 ```ballerina
 devant:BinaryDataLoader loader = check new ("./documents/sample.pdf");
@@ -74,7 +73,7 @@ ai:Document doc = check loader.load();
 ai:Chunk[] chunks = check chunker.chunk(doc);
 ```
 
-Sample response:
+**Sample response:**
 
 ```ballerina
 [
@@ -99,17 +98,17 @@ Sample response:
 
 ---
 
-## Binary data loader
+## Binary Data Loader
 
 Loads binary documents from a local file or directory into `ai:Document` objects ready for processing.
 
-### Configuration (`BinaryDataLoader init Parameters`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
 | `path` | `string` | Required | The absolute or relative file system path to a single file or a directory of files to load. |
 
-### Initializing the client
+### Initializing the Client
 
 ```ballerina
 import ballerinax/ai.devant;
@@ -119,7 +118,7 @@ devant:BinaryDataLoader loader = check new ("./documents/sample.pdf");
 
 ### Operations
 
-#### Document loading
+#### Document Loading
 
 <details>
 <summary>load</summary>
@@ -130,9 +129,9 @@ Loads documents from the configured file system path. Returns a single `ai:Docum
 
 
 
-Returns: `ai:Document[]|ai:Document|ai:Error`
+**Returns:** `ai:Document[]|ai:Document|ai:Error`
 
-Sample code:
+**Sample code:**
 
 ```ballerina
 // Load a single file
@@ -144,7 +143,7 @@ devant:BinaryDataLoader dirLoader = check new ("./documents/");
 ai:Document[] docs = check dirLoader.load();
 ```
 
-Sample response:
+**Sample response:**
 
 ```ballerina
 {

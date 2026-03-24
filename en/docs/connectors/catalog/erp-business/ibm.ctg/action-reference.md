@@ -17,7 +17,7 @@ The `ballerinax/ibm.ctg` package exposes the following clients:
 
 Invokes CICS programs via ECI and manages the IBM CTG gateway connection lifecycle.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

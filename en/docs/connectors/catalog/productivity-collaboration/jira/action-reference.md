@@ -17,7 +17,7 @@ The `ballerinax/jira` package exposes the following clients:
 
 Jira Cloud REST API v3 — issues, projects, search, comments, workflows, users, and more.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

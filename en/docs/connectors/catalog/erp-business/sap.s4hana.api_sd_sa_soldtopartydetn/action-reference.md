@@ -17,7 +17,7 @@ The `ballerinax/sap.s4hana.api_sd_sa_soldtopartydetn` package exposes the follow
 
 Provides access to sold-to party determination records for sales scheduling agreements in SAP S/4HANA.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

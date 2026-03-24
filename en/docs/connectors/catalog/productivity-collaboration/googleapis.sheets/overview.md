@@ -1,12 +1,9 @@
----
-title: Google Sheets Connector Overview
----
 # Google Sheets Connector Overview
 
 Google Sheets is a cloud-based spreadsheet application by Google that enables collaborative data management, analysis, and automation. The Ballerina `ballerinax/googleapis.sheets` connector (v3.5.1) provides programmatic access to the Google Sheets API v4, enabling you to manage spreadsheets, worksheets, and perform row-level, column-level, and cell-level data operations from your Ballerina integration flows.
 
 
-## Key features
+## Key Features
 
 - Spreadsheet management — create, open (by ID or URL), list, and rename spreadsheets
 - Worksheet management — add, remove, rename, copy, and clear worksheets
@@ -28,14 +25,14 @@ Actions are operations you invoke on Google Sheets from your integration — cre
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## Google sheets connector documentation
+## Documentation
 
-* **[Google Sheets Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a Google Cloud Platform project, enabling the Google Sheets API, and obtaining the OAuth 2.0 credentials required to use the Google Sheets connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a Google Cloud Platform project, enabling the Google Sheets API, and obtaining the OAuth 2.0 credentials required to use the Google Sheets connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

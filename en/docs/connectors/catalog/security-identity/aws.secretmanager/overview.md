@@ -1,12 +1,9 @@
----
-title: AWS Secrets Manager Connector Overview
----
 # AWS Secrets Manager Connector Overview
 
 AWS Secrets Manager is a managed service that helps you protect access to your applications, services, and IT resources by enabling you to easily rotate, manage, and retrieve database credentials, API keys, and other secrets. The Ballerina `ballerinax/aws.secretmanager` connector (v0.4.0) provides programmatic access to the AWS Secrets Manager API, allowing you to describe, retrieve, and batch-retrieve secrets from your Ballerina integration flows.
 
 
-## Key features
+## Key Features
 
 - Retrieve secret metadata including rotation configuration, replication status, and tags
 - Fetch secret values (string or binary) by secret name or ARN
@@ -27,14 +24,14 @@ Actions are operations you invoke on AWS Secrets Manager from your integration â
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## AWS secrets manager connector documentation
+## Documentation
 
-* **[AWS Secrets Manager Connector Setup Guide](setup-guide.md)**: This guide walks you through setting up AWS IAM credentials with the necessary permissions to access AWS Secrets Manager.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through setting up AWS IAM credentials with the necessary permissions to access AWS Secrets Manager.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients â€” operations, parameters, return types, and sample code.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

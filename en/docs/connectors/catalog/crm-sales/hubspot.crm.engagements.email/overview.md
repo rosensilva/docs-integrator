@@ -6,7 +6,7 @@ description: "Overview of the ballerinax/hubspot.crm.engagements.email connector
 HubSpot CRM Engagements Email is part of HubSpot's CRM platform, providing programmatic access to email engagement records — tracking sent, received, scheduled, and failed emails associated with CRM contacts. The Ballerina `ballerinax/hubspot.crm.engagements.email` connector (v2.0.0) enables you to create, read, update, delete, search, and batch-manage email engagement objects through the HubSpot CRM v3 API.
 
 
-## Key features
+## Key Features
 
 - Full CRUD operations on email engagement records by ID
 - Paginated listing of email engagements with property and association filtering
@@ -26,14 +26,14 @@ Actions are operations you invoke on HubSpot from your integration — creating 
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## HubSpot CRM engagements email connector documentation
+## Documentation
 
-* **[HubSpot CRM Engagements Email Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot private app or OAuth app and obtaining the credentials required to use the HubSpot CRM Engagements Email connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot private app or OAuth app and obtaining the credentials required to use the HubSpot CRM Engagements Email connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

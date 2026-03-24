@@ -17,7 +17,7 @@ The `ballerinax/sap.s4hana.api_salesorganization_srv` package exposes the follow
 
 Provides read access to SAP S/4HANA sales organization master data via the API_SALESORGANIZATION_SRV OData v2 service.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

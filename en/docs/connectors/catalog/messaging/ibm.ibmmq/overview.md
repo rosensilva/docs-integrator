@@ -1,12 +1,9 @@
----
-title: IBM MQ Connector Overview
----
 # IBM MQ Connector Overview
 
 IBM MQ is an enterprise messaging middleware that enables applications to communicate reliably across distributed systems using message queues and publish/subscribe topics. The Ballerina `ballerinax/ibm.ibmmq` connector (v1.4.2) provides programmatic access to IBM MQ queue managers, queues, and topics, enabling you to produce and consume messages within your Ballerina integration flows.
 
 
-## Key features
+## Key Features
 
 - Connect to IBM MQ queue managers with full authentication and SSL/TLS support
 - Put and get messages on queues using the native MQ API
@@ -43,16 +40,16 @@ Supported trigger events:
 
 See the **[Trigger Reference](trigger-reference.md)** for listener configuration, service callbacks, and the `EventData` payload structure.
 
-## IBM MQ connector documentation
+## Documentation
 
-* **[IBM MQ Connector Setup Guide](setup-guide.md)**: This guide walks you through setting up an IBM MQ queue manager and creating the queues and topics required to use the IBM MQ connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through setting up an IBM MQ queue manager and creating the queues and topics required to use the IBM MQ connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 
 * **[Trigger Reference](trigger-reference.md)**: Reference for event-driven integration using the listener and service model.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

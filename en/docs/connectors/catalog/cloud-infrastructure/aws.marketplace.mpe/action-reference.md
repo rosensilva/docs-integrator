@@ -17,7 +17,7 @@ The `ballerinax/aws.marketplace.mpe` package exposes the following clients:
 
 Retrieves customer entitlements for AWS Marketplace products.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

@@ -1,12 +1,9 @@
----
-title: IDE Trace Provider Connector Overview
----
 # IDE Trace Provider Connector Overview
 
 The `ballerinax/idetraceprovider` (v0.9.0) is a Ballerina observability extension that exports traces using the OpenTelemetry Protocol (OTLP) over HTTP to a configurable endpoint, designed specifically for IDE and development environments. It integrates transparently with the Ballerina observability framework and activates automatically at program startup, sending trace data to any OTLP-compatible receiver such as the Ballerina VSCode extension's built-in trace viewer at `http://localhost:59500/v1/traces`.
 
 
-## Key features
+## Key Features
 
 - Exports Ballerina program traces using the OpenTelemetry Protocol (OTLP) over HTTP
 - Zero-code activation via side-effect import (`import ballerinax/idetraceprovider as _`) — no client instantiation required
@@ -26,14 +23,14 @@ The IDE Trace Provider does not expose a traditional client. Instead, it activat
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## IDE trace provider connector documentation
+## Documentation
 
-* **[IDE Trace Provider Connector Setup Guide](setup-guide.md)**: This guide walks you through setting up an OTLP-compatible trace receiver endpoint so the IDE Trace Provider can deliver Ballerina traces for visualization.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through setting up an OTLP-compatible trace receiver endpoint so the IDE Trace Provider can deliver Ballerina traces for visualization.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

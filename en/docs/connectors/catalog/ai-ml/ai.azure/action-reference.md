@@ -19,7 +19,7 @@ The `ballerinax/ai.azure` package exposes the following clients:
 
 Provides chat completion and structured generation using Azure-hosted OpenAI language models.
 
-### Configuration (`init parameters`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
@@ -138,7 +138,7 @@ Sample response:
 
 Generates text embeddings using Azure-hosted OpenAI embedding models.
 
-### Configuration (`init parameters`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
@@ -249,7 +249,7 @@ Sample response:
 
 Implements the ai:KnowledgeBase interface for Azure AI Search — document ingestion, vector retrieval, and deletion.
 
-### Configuration (`init parameters`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

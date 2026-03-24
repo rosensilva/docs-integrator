@@ -17,7 +17,7 @@ The `ballerinax/hubspot.crm.obj.lineitems` package exposes the following clients
 
 Provides full CRUD, batch operations, and search for HubSpot CRM Line Item records.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

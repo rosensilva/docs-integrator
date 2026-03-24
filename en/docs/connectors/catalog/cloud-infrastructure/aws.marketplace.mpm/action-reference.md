@@ -17,7 +17,7 @@ The `ballerinax/aws.marketplace.mpm` package exposes the following clients:
 
 Interacts with the AWS Marketplace Metering Service for customer resolution and usage metering.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

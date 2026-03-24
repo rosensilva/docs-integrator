@@ -1,12 +1,9 @@
----
-title: Solace Connector Overview
----
 # Solace Connector Overview
 
 Solace PubSub+ is an advanced event broker that supports publish/subscribe, queueing, request/reply, and streaming patterns. The Ballerina `ballerinax/solace` connector (v0.3.0) provides programmatic access to Solace PubSub+ through its JMS-based API, enabling you to produce and consume messages on queues and topics, with support for durable subscriptions, transacted sessions, and event-driven listener services.
 
 
-## Key features
+## Key Features
 
 - Publish messages to Solace queues and topics via `MessageProducer`
 - Consume messages from queues and topics with blocking and non-blocking receive via `MessageConsumer`
@@ -43,16 +40,16 @@ Supported trigger events:
 
 See the **[Trigger Reference](trigger-reference.md)** for listener configuration, service callbacks, and the `EventData` payload structure.
 
-## Solace connector documentation
+## Documentation
 
-* **[Solace Connector Setup Guide](setup-guide.md)**: This guide walks you through setting up a Solace PubSub+ broker and obtaining the connection details required to use the Solace connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through setting up a Solace PubSub+ broker and obtaining the connection details required to use the Solace connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 
 * **[Trigger Reference](trigger-reference.md)**: Reference for event-driven integration using the listener and service model.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

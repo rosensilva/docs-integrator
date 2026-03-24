@@ -17,7 +17,7 @@ The `ballerinax/ai.pinecone` package exposes the following clients:
 
 Implements the ai:VectorStore interface for Pinecone — vector upsert, similarity query, and deletion.
 
-### Configuration (`init parameters`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

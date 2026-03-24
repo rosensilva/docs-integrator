@@ -17,7 +17,7 @@ The `ballerinax/azure.ai.search` package exposes the following clients:
 
 Manages search indexes, indexers, data sources, skillsets, and synonym maps; retrieves service statistics.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

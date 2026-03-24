@@ -1,12 +1,9 @@
----
-title: SAP Sales Area Connector Overview
----
 # SAP Sales Area Connector Overview
 
 SAP Sales Area is a core organizational unit in SAP S/4HANA Sales and Distribution that defines the combination of Sales Organization, Distribution Channel, and Division used for sales transactions. The Ballerina `ballerinax/sap.s4hana.salesarea_0001` connector provides programmatic access to the SAP S/4HANA Sales Area OData API (srvd_a2x/sap/salesarea/0001), enabling you to retrieve and query sales area master data within your integration flows.
 
 
-## Key features
+## Key Features
 
 - Retrieve a specific Sales Area record by its composite key (Sales Organization, Distribution Channel, Division)
 - List all Sales Area records with support for OData query options (`$filter`, `$orderby`, `$skip`, `$top`, `$count`, `$select`)
@@ -26,14 +23,14 @@ Actions are operations you invoke on SAP S/4HANA from your integration — query
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## SAP sales area connector documentation
+## Documentation
 
-* **[SAP Sales Area Connector Setup Guide](setup-guide.md)**: This guide walks you through enabling the SAP Sales Area OData API on your SAP S/4HANA system and obtaining the credentials needed to use the connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through enabling the SAP Sales Area OData API on your SAP S/4HANA system and obtaining the credentials needed to use the connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

@@ -19,7 +19,7 @@ The `ballerinax/twilio` package exposes the following clients:
 
 Primary client for all Twilio REST API operations: messaging, calls, phone number management, and account operations.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

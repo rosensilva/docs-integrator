@@ -18,7 +18,7 @@ The `ballerinax/confluent.cavroserdes` package exposes the following clients:
 Provides two module-level functions — `serialize` and `deserialize` — for encoding Ballerina values to Avro bytes and decoding them back, using the Confluent Schema Registry to manage schemas automatically.
 
 
-### Configuration (`cregistry:ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

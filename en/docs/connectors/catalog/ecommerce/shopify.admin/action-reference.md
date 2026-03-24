@@ -17,7 +17,7 @@ The `ballerinax/shopify.admin` package exposes the following clients:
 
 Shopify Admin REST API — manage customers, products, orders, fulfillments, webhooks, and more.
 
-### Configuration (`ApiKeysConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

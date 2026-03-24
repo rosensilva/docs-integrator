@@ -17,7 +17,7 @@ The `ballerinax/idetraceprovider` package exposes the following clients:
 
 Automatically initializes an OTLP HTTP trace exporter when the Ballerina runtime starts with tracing enabled.
 
-### Configuration (`Module-Level Configurable`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

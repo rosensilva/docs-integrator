@@ -17,7 +17,7 @@ The `ballerinax/hubspot.crm.lists` package exposes the following clients:
 
 Manages HubSpot CRM lists, memberships, folders, search, and legacy ID mapping.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

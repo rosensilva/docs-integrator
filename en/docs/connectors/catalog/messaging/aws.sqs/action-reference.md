@@ -19,7 +19,7 @@ For event-driven integration, see the [Trigger Reference](trigger-reference.md).
 
 Send, receive, and manage messages and queues in Amazon SQS.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

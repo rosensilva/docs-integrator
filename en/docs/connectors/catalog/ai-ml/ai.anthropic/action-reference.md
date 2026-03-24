@@ -15,7 +15,7 @@ The `ballerinax/ai.anthropic` package exposes the following clients:
 
 Provides chat completion and structured generation using Anthropic Claude models.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

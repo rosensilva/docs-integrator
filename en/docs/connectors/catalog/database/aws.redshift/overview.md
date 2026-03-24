@@ -1,12 +1,9 @@
----
-title: AWS Redshift Connector Overview
----
 # AWS Redshift Connector Overview
 
 Amazon Redshift is a fully managed, petabyte-scale cloud data warehouse service. The Ballerina `ballerinax/aws.redshift` connector (v1.2.1) provides programmatic access to Redshift clusters via JDBC, enabling you to execute queries, perform DML/DDL operations, run batch statements, and call stored procedures from your Ballerina integration flows.
 
 
-## Key features
+## Key Features
 
 - Execute SQL queries and retrieve results as typed record streams using `query` and `queryRow`
 - Perform DML and DDL operations (INSERT, UPDATE, DELETE, CREATE TABLE, etc.) with `execute`
@@ -27,14 +24,14 @@ Actions are operations you invoke on your Redshift data warehouse from your inte
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## AWS Redshift connector documentation
+## Documentation
 
-* **[AWS Redshift Connector Setup Guide](setup-guide.md)**: This guide walks you through setting up an Amazon Redshift cluster and obtaining the JDBC connection details required to use the AWS Redshift connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through setting up an Amazon Redshift cluster and obtaining the JDBC connection details required to use the AWS Redshift connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

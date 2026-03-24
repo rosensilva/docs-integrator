@@ -1,12 +1,9 @@
----
-title: Smartsheet Connector Overview
----
 # Smartsheet Connector Overview
 
 Smartsheet is a cloud-based work management platform for project tracking, task automation, and collaborative spreadsheets. The Ballerina `ballerinax/smartsheet` connector (v1.0.1) provides programmatic access to the Smartsheet API v2.0, enabling you to manage sheets, rows, columns, folders, workspaces, users, reports, and more from your Ballerina integration flows.
 
 
-## Key features
+## Key Features
 
 - Full CRUD operations on sheets, rows, columns, folders, and workspaces
 - Sharing and collaboration management for sheets, reports, sights, and workspaces
@@ -28,14 +25,14 @@ Actions are operations you invoke on Smartsheet from your integration — managi
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## Smartsheet connector documentation
+## Documentation
 
-* **[Smartsheet Connector Setup Guide](setup-guide.md)**: This guide walks you through obtaining the API access token or OAuth 2.0 credentials required to use the Smartsheet connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through obtaining the API access token or OAuth 2.0 credentials required to use the Smartsheet connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

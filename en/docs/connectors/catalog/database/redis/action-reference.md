@@ -17,7 +17,7 @@ The `ballerinax/redis` package exposes the following clients:
 
 Provides operations to interact with a Redis server or cluster for data storage and retrieval.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

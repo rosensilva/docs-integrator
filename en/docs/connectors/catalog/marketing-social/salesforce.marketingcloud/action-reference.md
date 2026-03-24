@@ -17,7 +17,7 @@ The `ballerinax/salesforce.marketingcloud` package exposes the following clients
 
 Provides programmatic access to Salesforce Marketing Cloud REST APIs for journeys, events, campaigns, contacts, data extensions, assets, and messaging.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

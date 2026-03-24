@@ -1,12 +1,9 @@
----
-title: AWS S3 Connector Overview
----
 # AWS S3 Connector Overview
 
 Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. The Ballerina `ballerinax/aws.s3` connector (v3.5.1) provides programmatic access to the Amazon S3 REST API (2006-03-01), enabling you to manage buckets and objects directly from your Ballerina integration flows.
 
 
-## Key features
+## Key Features
 
 - Create, list, and delete S3 buckets with optional canned ACL policies
 - Upload objects from strings, JSON, XML, byte arrays, or byte streams with configurable metadata and ACL
@@ -28,14 +25,14 @@ Actions are operations you invoke on AWS S3 from your integration — creating b
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## AWS S3 connector documentation
+## Documentation
 
-* **[AWS S3 Connector Setup Guide](setup-guide.md)**: This guide walks you through creating an AWS account and obtaining the access credentials required to use the AWS S3 connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating an AWS account and obtaining the access credentials required to use the AWS S3 connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

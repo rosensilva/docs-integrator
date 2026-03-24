@@ -17,7 +17,7 @@ The `ballerinax/hubspot.crm.engagement.meeting` package exposes the following cl
 
 HubSpot Meetings API v3 — meeting CRUD, batch operations, and search.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

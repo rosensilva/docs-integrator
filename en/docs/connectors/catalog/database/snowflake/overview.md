@@ -1,12 +1,9 @@
----
-title: Snowflake Connector Overview
----
 # Snowflake Connector Overview
 
 Snowflake is a cloud-based data warehousing platform that enables scalable storage, processing, and analytics of structured and semi-structured data. The Ballerina `ballerinax/snowflake` connector (v2.2.1) provides programmatic access to Snowflake through JDBC, enabling you to execute SQL queries, perform DML/DDL operations, call stored procedures, and run batch operations from your Ballerina integration flows.
 
 
-## Key features
+## Key Features
 
 - Execute SQL queries and retrieve results as typed Ballerina record streams
 - Single-row query support for lookups and aggregations via `queryRow`
@@ -29,14 +26,14 @@ Actions are operations you invoke on Snowflake from your integration — queryin
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## Snowflake connector documentation
+## Documentation
 
-* **[Snowflake Connector Setup Guide](setup-guide.md)**: This guide walks you through setting up a Snowflake account, creating a warehouse and database, and obtaining the credentials required to use the Snowflake connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through setting up a Snowflake account, creating a warehouse and database, and obtaining the credentials required to use the Snowflake connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

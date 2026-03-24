@@ -17,7 +17,7 @@ The `ballerinax/ai.deepseek` package exposes the following clients:
 
 Provides chat completion and structured generation using DeepSeek LLM models.
 
-### Configuration (`ModelProvider init parameters`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

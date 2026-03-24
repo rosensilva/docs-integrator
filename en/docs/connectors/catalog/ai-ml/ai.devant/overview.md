@@ -1,12 +1,9 @@
----
-title: AI Devant Connector Overview
----
 # AI Devant Connector Overview
 
 Devant by WSO2 is an AI-powered document processing service that enables intelligent chunking of binary documents such as PDFs into semantically meaningful segments. The Ballerina `ballerinax/ai.devant` connector (v1.0.2) provides a `Chunker` class that sends documents to the Devant API for chunking using configurable strategies, and a `BinaryDataLoader` utility for loading documents from the local file system — making it straightforward to build document ingestion pipelines for retrieval-augmented generation (RAG) and AI applications.
 
 
-## Key features
+## Key Features
 
 - Binary document chunking via the Devant AI API — splits PDFs and other binary files into semantically meaningful `ai:Chunk` arrays
 - Four configurable chunking strategies: `RECURSIVE`, `SENTENCE`, `PARAGRAPH`, and `CHARACTER`
@@ -27,14 +24,14 @@ Actions are operations you invoke on Devant from your integration — loading bi
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## AI Devant connector documentation
+## Documentation
 
-* **[AI Devant Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a Devant project and obtaining the service URL and access token required to use the AI Devant connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a Devant project and obtaining the service URL and access token required to use the AI Devant connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

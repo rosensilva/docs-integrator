@@ -1,12 +1,9 @@
----
-title: Elastic Cloud Connector Overview
----
 # Elastic Cloud Connector Overview
 
 Elastic Cloud is a cloud-hosted Elasticsearch service provided by Elastic, offering scalable search and analytics capabilities with enterprise-grade security and management features. The Ballerina `ballerinax/elastic.elasticcloud` connector (v1.0.0) provides programmatic access to the Elastic Cloud REST API, enabling you to manage deployments, extensions, traffic filters, organizations, API keys, and stack versions from your Ballerina integration flows.
 
 
-## Key features
+## Key Features
 
 - Full deployment lifecycle management — create, list, search, update, shutdown, and restore deployments
 - Elasticsearch resource operations including password resets, keystore management, ILM/SLM/CCR enablement, and remote cluster configuration
@@ -28,14 +25,14 @@ Actions are operations you invoke on Elastic Cloud from your integration — man
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## Elastic cloud connector documentation
+## Documentation
 
-* **[Elastic Cloud Connector Setup Guide](setup-guide.md)**: This guide walks you through creating an Elastic Cloud account and generating the API key required to authenticate the Elastic Cloud connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating an Elastic Cloud account and generating the API key required to authenticate the Elastic Cloud connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

@@ -6,7 +6,7 @@ description: "Overview of the ballerinax/hubspot.marketing.campaigns connector f
 HubSpot Marketing Campaigns is a tool within HubSpot's marketing platform for organizing and tracking marketing efforts across channels. The Ballerina `ballerinax/hubspot.marketing.campaigns` connector (v2.0.0) provides programmatic access to the HubSpot Marketing Campaigns API, enabling you to create, update, search, and report on campaigns and their associated assets from your Ballerina integration flows.
 
 
-## Key features
+## Key Features
 
 - Full CRUD operations on marketing campaigns — create, read, update, delete, and search
 - Batch operations for creating, reading, updating, and archiving multiple campaigns in a single request
@@ -27,14 +27,14 @@ Actions are operations you invoke on HubSpot Marketing Campaigns from your integ
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## HubSpot marketing campaigns connector documentation
+## Documentation
 
-* **[HubSpot Marketing Campaigns Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot developer app and obtaining the OAuth 2.0 credentials required to use the HubSpot Marketing Campaigns connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot developer app and obtaining the OAuth 2.0 credentials required to use the HubSpot Marketing Campaigns connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

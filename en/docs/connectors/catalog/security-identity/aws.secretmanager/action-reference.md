@@ -17,7 +17,7 @@ The `ballerinax/aws.secretmanager` package exposes the following clients:
 
 Interact with AWS Secrets Manager to describe and retrieve secrets.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

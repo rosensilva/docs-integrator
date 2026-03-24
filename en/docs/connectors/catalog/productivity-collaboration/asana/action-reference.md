@@ -17,7 +17,7 @@ The `ballerinax/asana` package exposes the following clients:
 
 Provides access to the Asana REST API for managing tasks, projects, sections, teams, users, and all other Asana resources.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

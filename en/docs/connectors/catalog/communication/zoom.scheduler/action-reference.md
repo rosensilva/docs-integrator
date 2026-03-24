@@ -17,7 +17,7 @@ The `ballerinax/zoom.scheduler` package exposes the following clients:
 
 Provides access to all Zoom Scheduler API operations including schedules, availability, events, analytics, and user management.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

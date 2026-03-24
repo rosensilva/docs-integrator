@@ -19,7 +19,7 @@ The `ballerinax/moesif` package exposes the following clients:
 Activates the Moesif observability provider at module initialization, automatically forwarding distributed traces and runtime metrics from your Ballerina service to Moesif.
 
 
-### Configuration (`MoesifConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

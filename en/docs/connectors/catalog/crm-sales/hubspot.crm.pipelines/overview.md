@@ -6,7 +6,7 @@ description: "Overview of the ballerinax/hubspot.crm.pipelines connector for WSO
 HubSpot CRM Pipelines is a feature of the HubSpot CRM platform that lets you define and manage sales, support, and order pipelines with configurable stages. The Ballerina `ballerinax/hubspot.crm.pipelines` connector (v2.0.0) provides programmatic access to the HubSpot Pipelines API, enabling you to create, read, update, delete, and audit pipelines and their stages from your Ballerina integration flows.
 
 
-## Key features
+## Key Features
 
 - Full CRUD operations on CRM pipelines (create, list, get, update, replace, delete)
 - Full CRUD operations on pipeline stages within any pipeline
@@ -26,14 +26,14 @@ Actions are operations you invoke on HubSpot from your integration — managing 
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## HubSpot CRM pipelines connector documentation
+## Documentation
 
-* **[HubSpot CRM Pipelines Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot developer app and obtaining the OAuth 2.0 credentials required to use the HubSpot CRM Pipelines connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot developer app and obtaining the OAuth 2.0 credentials required to use the HubSpot CRM Pipelines connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

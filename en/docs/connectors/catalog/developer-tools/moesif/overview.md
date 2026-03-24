@@ -1,12 +1,9 @@
----
-title: Moesif Connector Overview
----
 # Moesif Connector Overview
 
 Moesif is an API observability and analytics platform that captures distributed traces, runtime metrics, and API event data for monitoring and debugging. The Ballerina `ballerinax/moesif` connector (v1.0.3) is an observability provider extension that integrates with Ballerina's built-in observability framework to automatically forward distributed traces and application metrics from your Ballerina services to the Moesif platform — no manual API calls required.
 
 
-## Key features
+## Key Features
 
 - Automatic distributed tracing using OpenTelemetry/OTLP, forwarded to Moesif's trace ingestion endpoint
 - Automatic Ballerina runtime metrics collection and periodic reporting to the Moesif metrics API
@@ -27,14 +24,14 @@ The Moesif connector operates as a Ballerina observability provider — it does 
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## Moesif connector documentation
+## Documentation
 
-* **[Moesif Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a Moesif account, creating an application, and obtaining the Application ID required to configure the Ballerina Moesif observability provider.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a Moesif account, creating an application, and obtaining the Application ID required to configure the Ballerina Moesif observability provider.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

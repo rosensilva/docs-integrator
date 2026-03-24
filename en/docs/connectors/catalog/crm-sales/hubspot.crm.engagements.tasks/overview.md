@@ -6,7 +6,7 @@ description: "Overview of the ballerinax/hubspot.crm.engagements.tasks connector
 HubSpot CRM Engagements Tasks is part of HubSpot's CRM platform, enabling tracking and management of task engagements associated with contacts, companies, and deals. The Ballerina `ballerinax/hubspot.crm.engagements.tasks` connector (v2.0.0) provides programmatic access to the HubSpot Tasks API v3, allowing you to create, retrieve, update, archive, and search task records within your Ballerina integration flows.
 
 
-## Key features
+## Key Features
 
 - Create, retrieve, update, and archive individual task engagement records
 - Batch operations for creating, reading, updating, upserting, and archiving tasks in bulk
@@ -26,14 +26,14 @@ Actions are operations you invoke on HubSpot to manage task engagement records â
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## HubSpot CRM engagements tasks connector documentation
+## Documentation
 
-* **[HubSpot CRM Engagements Tasks Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot developer app and obtaining the OAuth 2.0 credentials required to use the HubSpot CRM Engagements Tasks connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot developer app and obtaining the OAuth 2.0 credentials required to use the HubSpot CRM Engagements Tasks connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients â€” operations, parameters, return types, and sample code.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

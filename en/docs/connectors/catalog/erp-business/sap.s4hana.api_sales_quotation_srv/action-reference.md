@@ -17,7 +17,7 @@ The `ballerinax/sap.s4hana.api_sales_quotation_srv` package exposes the followin
 
 Provides full CRUD access to SAP S/4HANA sales quotation data via the API_SALES_QUOTATION_SRV OData v2 service.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

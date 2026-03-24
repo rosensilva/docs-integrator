@@ -17,7 +17,7 @@ The `ballerinax/hubspot.crm.obj.contacts` package exposes the following clients:
 
 Provides all HubSpot CRM Contacts API operations — CRUD, batch, search, merge, and GDPR deletion.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

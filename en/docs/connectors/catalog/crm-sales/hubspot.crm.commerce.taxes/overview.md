@@ -6,7 +6,7 @@ description: "Overview of the ballerinax/hubspot.crm.commerce.taxes connector fo
 HubSpot CRM Commerce Taxes is part of HubSpot's CRM Commerce API suite, providing programmatic management of tax objects used in quotes, invoices, and other commerce documents. The Ballerina `ballerinax/hubspot.crm.commerce.taxes` connector (v2.0.0) enables you to create, read, update, archive, search, and batch-manage tax records through the HubSpot REST API.
 
 
-## Key features
+## Key Features
 
 - Full CRUD operations on HubSpot commerce tax objects (create, read, update, archive)
 - Batch operations for creating, reading, updating, upserting, and archiving multiple tax records in a single call
@@ -26,14 +26,14 @@ Actions are operations you invoke on HubSpot to manage commerce tax objects — 
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## HubSpot CRM commerce taxes connector documentation
+## Documentation
 
-* **[HubSpot CRM Commerce Taxes Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot private app or OAuth app and obtaining the credentials required to use the HubSpot CRM Commerce Taxes connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot private app or OAuth app and obtaining the credentials required to use the HubSpot CRM Commerce Taxes connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

@@ -23,7 +23,7 @@ For event-driven integration, see the [Trigger Reference](trigger-reference.md).
 
 Executes SQL queries, DML/DDL statements, batch operations, and stored procedures against a PostgreSQL database.
 
-### Configuration (`Client init parameters`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

@@ -6,7 +6,7 @@ description: "Overview of the ballerinax/hubspot.crm.associations.schema connect
 HubSpot is an AI-powered customer relationship management (CRM) platform. The Ballerina `ballerinax/hubspot.crm.associations.schema` connector (v2.0.0) provides programmatic access to HubSpot's CRM Associations Schema API, enabling you to manage association definitions and configurations between CRM object types such as contacts, companies, deals, and line items.
 
 
-## Key features
+## Key Features
 
 - Read association definitions and labels between any two CRM object types
 - Create custom user-defined association definitions with labels and inverse labels
@@ -27,14 +27,14 @@ Actions are operations you invoke on HubSpot from your integration — reading a
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## HubSpot CRM associations schema connector documentation
+## Documentation
 
-* **[HubSpot CRM Associations Schema Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot developer app and obtaining the OAuth 2.0 credentials required to use the HubSpot CRM Associations Schema connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot developer app and obtaining the OAuth 2.0 credentials required to use the HubSpot CRM Associations Schema connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

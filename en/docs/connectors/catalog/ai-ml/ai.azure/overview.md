@@ -29,9 +29,9 @@ Actions are operations you invoke on Azure OpenAI from your integration — send
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## Azure OpenAI connector documentation
+## Documentation
 
-* **[Azure OpenAI Connector Setup Guide](setup-guide.md)**: This guide walks you through setting up Azure OpenAI Service and Azure AI Search resources and obtaining the credentials required to use the Azure OpenAI connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through setting up Azure OpenAI Service and Azure AI Search resources and obtaining the credentials required to use the Azure OpenAI connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

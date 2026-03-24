@@ -6,7 +6,7 @@ description: "Overview of the ballerinax/hubspot.crm.engagement.notes connector 
 HubSpot CRM Engagement Notes is part of HubSpot's CRM platform, enabling teams to create, manage, and associate notes with CRM records such as contacts, companies, and deals. The Ballerina `ballerinax/hubspot.crm.engagement.notes` connector (v2.0.0) provides programmatic access to the HubSpot Notes API, allowing you to perform CRUD operations, batch processing, and search across engagement notes.
 
 
-## Key features
+## Key Features
 
 - Full CRUD operations on engagement notes — create, read, update, and archive individual notes
 - Batch operations for creating, reading, updating, upserting, and archiving notes in bulk
@@ -26,14 +26,14 @@ Actions are operations you invoke on HubSpot from your integration — creating 
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## HubSpot CRM engagement notes connector documentation
+## Documentation
 
-* **[HubSpot CRM Engagement Notes Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot developer app and obtaining the OAuth 2.0 credentials required to use the HubSpot CRM Engagement Notes connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot developer app and obtaining the OAuth 2.0 credentials required to use the HubSpot CRM Engagement Notes connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

@@ -17,7 +17,7 @@ The `ballerinax/hubspot.crm.commerce.carts` package exposes the following client
 
 Manages HubSpot cart objects — CRUD, search, and batch operations via the HubSpot CRM v3 API.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

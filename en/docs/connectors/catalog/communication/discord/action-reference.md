@@ -17,7 +17,7 @@ The `ballerinax/discord` package exposes the following clients:
 
 Discord REST API v10 — messages, channels, guilds, members, roles, webhooks, commands, events.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

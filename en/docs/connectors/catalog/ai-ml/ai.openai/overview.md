@@ -1,12 +1,9 @@
----
-title: OpenAI (AI) Connector Overview
----
 # OpenAI (AI) Connector Overview
 
 OpenAI is a leading AI research company that provides powerful large language models and embedding models through its API. The Ballerina `ballerinax/ai.openai` connector (v1.3.1) offers model provider and embedding provider interfaces for interacting with OpenAI's GPT and embedding model families, enabling chat completions, structured data generation, tool calling, and text embeddings from your Ballerina integration flows.
 
 
-## Key features
+## Key Features
 
 - Chat completion using OpenAI GPT models via the Chat Completions API
 - Structured data generation with type-safe `generate` method that returns Ballerina typed values from natural language prompts
@@ -29,14 +26,14 @@ Actions are operations you invoke on OpenAI from your integration — sending ch
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## OpenAI (AI) connector documentation
+## Documentation
 
-* **[OpenAI (AI) Connector Setup Guide](setup-guide.md)**: This guide walks you through creating an OpenAI account and obtaining the API key required to use the OpenAI connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating an OpenAI account and obtaining the API key required to use the OpenAI connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

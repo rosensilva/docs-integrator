@@ -17,7 +17,7 @@ The `ballerinax/aws.redshiftdata` package exposes the following clients:
 
 Executes SQL statements, retrieves results, and monitors execution status via the Redshift Data API.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

@@ -1,12 +1,9 @@
----
-title: DocuSign Admin Connector Overview
----
 # DocuSign Admin Connector Overview
 
 DocuSign is a digital transaction management platform that enables users to securely sign, send, and manage documents electronically. The Ballerina `ballerinax/docusign.dsadmin` connector (v2.0.0) integrates with the DocuSign Admin API, providing programmatic access to manage organizations, users, permissions, groups, identity providers, bulk imports/exports, and account settings across your DocuSign environment.
 
 
-## Key features
+## Key Features
 
 - List and manage organizations the authenticated user belongs to
 - Create, retrieve, update, and close user accounts within an organization
@@ -28,14 +25,14 @@ Actions are operations you invoke on the DocuSign Admin API from your integratio
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## DocuSign admin connector documentation
+## Documentation
 
-* **[DocuSign Admin Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a DocuSign developer account and obtaining the OAuth 2.0 credentials required to use the DocuSign Admin connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a DocuSign developer account and obtaining the OAuth 2.0 credentials required to use the DocuSign Admin connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

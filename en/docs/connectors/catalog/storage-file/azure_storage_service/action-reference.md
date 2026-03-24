@@ -25,7 +25,7 @@ Available clients:
 
 Perform blob CRUD operations, block staging, page blob range writes, and append blob operations.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
@@ -889,7 +889,7 @@ Sample response:
 
 Manage containers and query storage account-level information.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
@@ -1226,7 +1226,7 @@ Sample response:
 
 Manage files and directories within Azure File Shares.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
@@ -1638,7 +1638,7 @@ check fileClient->deleteDirectory(
 
 Manage Azure File Shares and configure file service properties.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

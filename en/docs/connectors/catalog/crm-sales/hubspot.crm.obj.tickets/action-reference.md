@@ -17,7 +17,7 @@ The `ballerinax/hubspot.crm.obj.tickets` package exposes the following clients:
 
 Provides CRUD, search, merge, and batch operations for HubSpot CRM ticket records.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

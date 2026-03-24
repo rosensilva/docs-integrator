@@ -1,12 +1,9 @@
----
-title: HubSpot CRM Companies Connector Overview
----
 # HubSpot CRM Companies Connector Overview
 
 HubSpot CRM Companies is a cloud-based CRM platform that enables you to manage company records, properties, and associations at scale. The Ballerina `ballerinax/hubspot.crm.obj.companies` connector (v2.0.0) provides programmatic access to the HubSpot CRM Companies API, letting you create, read, update, archive, merge, batch-process, and search company records directly from your Ballerina integration flows.
 
 
-## Key features
+## Key Features
 
 - Full CRUD operations on HubSpot CRM company records (create, read, update, archive)
 - Batch operations for high-throughput data ingestion and retrieval (batch create, read, update, archive, upsert)
@@ -28,14 +25,14 @@ Actions are operations you invoke on HubSpot CRM from your integration — listi
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## HubSpot CRM companies connector documentation
+## Documentation
 
-* **[HubSpot CRM Companies Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot app and obtaining the OAuth 2.0 credentials required to use the HubSpot CRM Companies connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot app and obtaining the OAuth 2.0 credentials required to use the HubSpot CRM Companies connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

@@ -1,12 +1,9 @@
----
-title: Confluent Schema Registry Connector Overview
----
 # Confluent Schema Registry Connector Overview
 
 Confluent Schema Registry is a centralized schema management service for Apache Kafka that provides schema storage, versioning, and compatibility enforcement for Avro, JSON Schema, and Protobuf formats. The Ballerina `ballerinax/confluent.cregistry` connector (v0.4.3) enables you to register schemas and retrieve them by ID from a Confluent Schema Registry instance, supporting integration with Kafka-based data pipelines.
 
 
-## Key features
+## Key Features
 
 - Register Avro schemas to Confluent Schema Registry under a given subject
 - Retrieve schemas by their unique schema ID
@@ -27,14 +24,14 @@ Actions let you interact with Confluent Schema Registry from your Ballerina inte
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## Confluent schema registry connector documentation
+## Documentation
 
-* **[Confluent Schema Registry Connector Setup Guide](setup-guide.md)**: This guide walks you through setting up a Confluent Schema Registry instance and obtaining the credentials required to use the connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through setting up a Confluent Schema Registry instance and obtaining the credentials required to use the connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

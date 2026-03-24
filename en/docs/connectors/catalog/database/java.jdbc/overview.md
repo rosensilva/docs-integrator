@@ -1,12 +1,9 @@
----
-title: Java JDBC Connector Overview
----
 # Java JDBC Connector Overview
 
 Java JDBC is a standard API for connecting to relational databases from Java-based platforms. The Ballerina `ballerinax/java.jdbc` connector (v1.14.1) provides a lightweight, generic interface to any JDBC-compatible database — including MySQL, PostgreSQL, Oracle, SQL Server, Snowflake, and more — enabling you to execute queries, perform CRUD operations, and call stored procedures within your Ballerina integration flows.
 
 
-## Key features
+## Key Features
 
 - Generic connectivity to any JDBC-compatible database using standard JDBC URLs
 - Parameterized query support to prevent SQL injection and ensure safe data binding
@@ -27,14 +24,14 @@ Actions are operations you invoke on a JDBC database from your integration — q
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## Java JDBC connector documentation
+## Documentation
 
-* **[Java JDBC Connector Setup Guide](setup-guide.md)**: This guide walks you through setting up your database and obtaining the JDBC connection details required to use the Java JDBC connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through setting up your database and obtaining the JDBC connection details required to use the Java JDBC connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

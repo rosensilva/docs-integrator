@@ -1,12 +1,9 @@
----
-title: HubSpot CRM Deals Connector Overview
----
 # HubSpot CRM Deals Connector Overview
 
 HubSpot CRM is a cloud-based customer relationship management platform that helps teams manage deals, contacts, and sales pipelines. The Ballerina `ballerinax/hubspot.crm.obj.deals` connector (v1.0.0) provides programmatic access to the HubSpot CRM Deals API, enabling you to create, read, update, archive, search, and batch-manage deal records from your Ballerina integration flows.
 
 
-## Key features
+## Key Features
 
 - Full CRUD operations on HubSpot CRM deal records by internal deal ID
 - Batch create, read, update, archive, and upsert deals in a single API call
@@ -26,14 +23,14 @@ Actions are operations you invoke on HubSpot from your integration — creating 
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## HubSpot CRM deals connector documentation
+## Documentation
 
-* **[HubSpot CRM Deals Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot app and obtaining the OAuth 2.0 credentials (or private app token) required to use the HubSpot CRM Deals connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot app and obtaining the OAuth 2.0 credentials (or private app token) required to use the HubSpot CRM Deals connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

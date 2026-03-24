@@ -17,7 +17,7 @@ The `ballerinax/zoom.meetings` package exposes the following clients:
 
 Provides access to all Zoom Meetings REST API v2 operations — meeting management, webinars, registrants, polls, recordings, and reports.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

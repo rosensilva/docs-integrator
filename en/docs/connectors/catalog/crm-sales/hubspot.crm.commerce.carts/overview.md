@@ -6,7 +6,7 @@ description: "Overview of the ballerinax/hubspot.crm.commerce.carts connector fo
 HubSpot CRM Commerce Carts is part of HubSpot's commerce suite, enabling management of shopping cart objects within the HubSpot CRM. The Ballerina `ballerinax/hubspot.crm.commerce.carts` connector (v2.0.0) provides programmatic access to the HubSpot Carts API, allowing you to create, read, update, delete, search, and batch-manage cart records in your integration flows.
 
 
-## Key features
+## Key Features
 
 - Full CRUD operations on HubSpot cart objects — create, read, update, and archive individual carts
 - Batch operations for creating, reading, updating, upserting, and archiving multiple carts in a single request
@@ -26,14 +26,14 @@ Actions are operations you invoke on HubSpot to manage cart objects — listing 
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## HubSpot CRM commerce carts connector documentation
+## Documentation
 
-* **[HubSpot CRM Commerce Carts Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot App and obtaining the OAuth 2.0 credentials required to use the HubSpot CRM Commerce Carts connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot App and obtaining the OAuth 2.0 credentials required to use the HubSpot CRM Commerce Carts connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

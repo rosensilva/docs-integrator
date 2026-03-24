@@ -1,12 +1,9 @@
----
-title: HubSpot Marketing Transactional Connector Overview
----
 # HubSpot Marketing Transactional Connector Overview
 
 HubSpot Marketing Transactional enables sending single transactional emails and managing SMTP API tokens through the HubSpot Marketing API. The Ballerina `ballerinax/hubspot.marketing.transactional` connector (v1.0.0) provides programmatic access to the HubSpot Transactional Email API, allowing you to send transactional emails and manage SMTP tokens from your Ballerina integration flows.
 
 
-## Key features
+## Key Features
 
 - Send single transactional emails asynchronously with customizable properties and recipient overrides
 - Query SMTP API tokens with filtering by campaign name or email campaign ID
@@ -26,14 +23,14 @@ Actions are operations you invoke on HubSpot from your integration — sending t
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## HubSpot marketing transactional connector documentation
+## Documentation
 
-* **[HubSpot Marketing Transactional Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot app and obtaining the OAuth 2.0 credentials required to use the HubSpot Marketing Transactional connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot app and obtaining the OAuth 2.0 credentials required to use the HubSpot Marketing Transactional connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

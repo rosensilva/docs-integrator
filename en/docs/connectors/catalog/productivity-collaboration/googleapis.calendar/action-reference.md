@@ -17,7 +17,7 @@ The `ballerinax/googleapis.calendar` package exposes the following clients:
 
 Manages calendars and events through the Google Calendar API V3.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

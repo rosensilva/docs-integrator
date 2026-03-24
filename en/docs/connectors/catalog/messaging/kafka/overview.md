@@ -1,12 +1,9 @@
----
-title: Kafka Connector Overview
----
 # Kafka Connector Overview
 
 Apache Kafka is a distributed event streaming platform used for building real-time data pipelines and streaming applications. The Ballerina `ballerinax/kafka` connector (v4.6.3) provides a Producer client for publishing messages, a Consumer client for polling messages, and a Listener for event-driven consumption — enabling seamless Kafka integration in Ballerina workflows.
 
 
-## Key features
+## Key Features
 
 - Produce messages to Kafka topics with configurable acknowledgments, compression, and partitioning
 - Consume messages by polling with type-safe deserialization via `typedesc` generics
@@ -41,16 +38,16 @@ Supported trigger events:
 
 See the **[Trigger Reference](trigger-reference.md)** for listener configuration, service callbacks, and the `EventData` payload structure.
 
-## Kafka connector documentation
+## Documentation
 
-* **[Kafka Connector Setup Guide](setup-guide.md)**: This guide walks you through setting up an Apache Kafka cluster and obtaining the connection details required to use the Kafka connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through setting up an Apache Kafka cluster and obtaining the connection details required to use the Kafka connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 
 * **[Trigger Reference](trigger-reference.md)**: Reference for event-driven integration using the listener and service model.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 

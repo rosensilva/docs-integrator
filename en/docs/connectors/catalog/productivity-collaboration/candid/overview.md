@@ -1,12 +1,9 @@
----
-title: Candid Connector Overview
----
 # Candid Connector Overview
 
 Candid (formerly GuideStar) is a nonprofit data platform that provides comprehensive information on U.S. nonprofits, including financials, people, DEI data, and IRS compliance validation. The Ballerina `ballerinax/candid` connector (v0.2.0) provides programmatic access to Candid's Essentials search API, Premier profile API, and Charity Check PDF API, enabling you to integrate nonprofit data into your Ballerina integration flows.
 
 
-## Key features
+## Key Features
 
 - Search for nonprofits using keywords, geographic filters, financial filters, and organization filters via the Essentials API
 - Retrieve comprehensive nonprofit profiles including financials, people, DEI data, and program descriptions via the Premier API
@@ -28,14 +25,14 @@ Actions are operations you invoke on Candid from your integration — searching 
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## Candid connector documentation
+## Documentation
 
-* **[Candid Connector Setup Guide](setup-guide.md)**: This guide walks you through obtaining API credentials from Candid to use the connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through obtaining API credentials from Candid to use the connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 
-## How to contribute
+## How to Contribute
 
 As an open source project, WSO2 welcomes contributions from the community.
 
