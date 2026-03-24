@@ -43,6 +43,7 @@ jobs:
         run: |
           mkdir -p deploy/dev
           cp -r en/build/* deploy/dev/
+          echo '<meta http-equiv="refresh" content="0; url=./dev/">' > deploy/index.html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
