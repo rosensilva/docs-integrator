@@ -40,7 +40,6 @@ A scheduled automation that compares customer records between a CRM (Salesforce)
 - WSO2 Integrator VS Code extension installed
 - Salesforce developer account with API access
 - PostgreSQL database with customer data
-- Basic familiarity with [Automations](/docs/develop/build/automations)
 
 **Time estimate:** 30--45 minutes
 

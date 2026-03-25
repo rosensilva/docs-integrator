@@ -410,4 +410,3 @@ public function main() returns error? {
 
 - [JSON Processing](json.md) -- Work with JSON data
 - [CSV & Flat File Processing](csv-flat-file.md) -- Handle tabular data formats
-- [Configuration Management](/docs/develop/build/configuration-management) -- Manage environment-specific settings

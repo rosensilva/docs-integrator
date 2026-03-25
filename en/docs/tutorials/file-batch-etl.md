@@ -35,7 +35,6 @@ A file-based ETL (Extract, Transform, Load) pipeline that watches an SFTP direct
 - WSO2 Integrator VS Code extension installed
 - SFTP server (or local directory for testing)
 - PostgreSQL database
-- Basic familiarity with [File Processing](/docs/develop/build/file-processing)
 
 **Time estimate:** 30--45 minutes
 

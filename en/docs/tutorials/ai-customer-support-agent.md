@@ -39,7 +39,6 @@ An AI-powered customer support agent that receives requests over HTTP, reasons a
 - WSO2 Integrator VS Code extension installed
 - An OpenAI API key (or compatible LLM provider)
 - A running PostgreSQL database for order data
-- Basic familiarity with [AI Agents & Natural Functions](/docs/develop/build/ai-agents)
 
 **Time estimate:** 30--45 minutes
 

@@ -25,4 +25,3 @@ Handle errors specific to connector operations — connection failures, authenti
 
 ## What's Next
 
-- [Error Handling & Retry Patterns](/docs/develop/build/error-handling) — General error handling

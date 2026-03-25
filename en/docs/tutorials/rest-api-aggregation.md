@@ -40,7 +40,6 @@ An API aggregation service that receives a single request, fans out to multiple 
 
 - WSO2 Integrator VS Code extension installed
 - Three backend REST APIs (or mock services for testing)
-- Basic familiarity with [Services](/docs/develop/build/services)
 
 **Time estimate:** 30--45 minutes
 

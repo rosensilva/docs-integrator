@@ -139,23 +139,6 @@ const sidebars: SidebarsConfig = {
             },
           ],
         },
-        // 6.4 Build Integrations
-        {
-          type: 'category',
-          label: 'Build Integrations',
-          items: [
-            'develop/build/services',
-            'develop/build/event-handlers',
-            'develop/build/file-processing',
-            'develop/build/automations',
-            'develop/build/ai-agents',
-            'develop/build/rag-applications',
-            'develop/build/control-flow',
-            'develop/build/error-handling',
-            'develop/build/configuration-management',
-            'develop/build/ballerina-pro-code',
-          ],
-        },
         // 6.4 Design Integration Logic
         {
           type: 'category',

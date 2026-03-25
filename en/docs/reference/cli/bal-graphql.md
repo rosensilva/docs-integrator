@@ -213,5 +213,4 @@ bal graphql -i service.bal --mode schema -o specs/
 ## See Also
 
 - [bal Command Reference](bal-commands.md) -- All bal subcommands
-- [Services Guide](/develop/build/services.md) -- Building services
 - [Ballerina by Example](/reference/by-example.md) -- Runnable examples

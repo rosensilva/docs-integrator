@@ -317,6 +317,4 @@ curl http://localhost:8090/notifications/templates
 ## What's Next
 
 - [Communication Connectors](../../connectors/communication.md) -- Email, SMS, and Slack connectors
-- [Error Handling](../../develop/build/error-handling.md) -- Robust error handling patterns
-- [Automations](../../develop/build/automations.md) -- Schedule recurring email tasks
 - [Content-Based Routing](content-based-routing.md) -- Route notifications by type

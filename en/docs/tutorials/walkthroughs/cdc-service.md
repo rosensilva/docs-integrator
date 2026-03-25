@@ -369,7 +369,6 @@ UPDATE orders SET status = 'shipped' WHERE id = 1;
 
 ## What's Next
 
-- [Event Handlers](../../develop/build/event-handlers.md) -- Event-driven development patterns
 - [Databases Connectors](../../connectors/databases.md) -- Database connector reference
 - [Messaging Connectors](../../connectors/messaging.md) -- Kafka, RabbitMQ, and more
 - [Kafka Event Processing Pipeline](../kafka-event-pipeline.md) -- Full Kafka tutorial

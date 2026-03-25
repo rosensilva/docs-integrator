@@ -205,5 +205,4 @@ service /api/v1 on new http:Listener(8080) {
 ## See Also
 
 - [bal Command Reference](bal-commands.md) -- All bal subcommands
-- [Services Guide](/develop/build/services.md) -- Building HTTP services
 - [Ballerina by Example](/reference/by-example.md) -- Runnable examples

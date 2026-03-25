@@ -41,7 +41,6 @@ A real-time event processing pipeline that consumes order events from Kafka, enr
 - WSO2 Integrator VS Code extension installed
 - Apache Kafka running locally (or use Docker Compose)
 - PostgreSQL database with customer data
-- Basic familiarity with [Event Handlers](/docs/develop/build/event-handlers)
 
 **Time estimate:** 30--45 minutes
 

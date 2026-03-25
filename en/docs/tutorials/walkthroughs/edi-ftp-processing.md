@@ -474,6 +474,5 @@ Check the service logs for processing status and verify the file was moved to th
 ## What's Next
 
 - [Data Formats & Standards Connectors](../../connectors/data-formats-standards.md) -- EDI, FHIR, and SOAP connectors
-- [File Processing](../../develop/build/file-processing.md) -- File handling patterns
 - [EDI Transformation](../../develop/transform/edi.md) -- EDI data transformation reference
 - [FTP EDI to Salesforce](../pre-built/ftp-edi-salesforce.md) -- Pre-built sample for EDI to Salesforce

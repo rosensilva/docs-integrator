@@ -10,23 +10,23 @@ This page introduces every major product component in 2–3 sentences. Think of 
 
 ## Services
 
-Expose your integrations over HTTP, GraphQL, gRPC, WebSocket, or TCP. Services are the most common artifact — they define endpoints that external systems call. → [Build Services](/docs/develop/build/services)
+Expose your integrations over HTTP, GraphQL, gRPC, WebSocket, or TCP. Services are the most common artifact — they define endpoints that external systems call.
 
 ## Automations
 
-Scheduled or manually triggered integrations that run without an external request. Use automations for periodic data sync, cleanup tasks, or report generation. → [Build Automations](/docs/develop/build/automations)
+Scheduled or manually triggered integrations that run without an external request. Use automations for periodic data sync, cleanup tasks, or report generation.
 
 ## Event Handlers
 
-Reactive integrations triggered by messages from Kafka, RabbitMQ, NATS, or MQTT. Event handlers process streaming data in real time. → [Build Event Handlers](/docs/develop/build/event-handlers)
+Reactive integrations triggered by messages from Kafka, RabbitMQ, NATS, or MQTT. Event handlers process streaming data in real time.
 
 ## File Processors
 
-Integrations triggered by file arrival on FTP, SFTP, or local directories. Process CSV, JSON, XML, or fixed-width files in batch or one at a time. → [Build File Processing](/docs/develop/build/file-processing)
+Integrations triggered by file arrival on FTP, SFTP, or local directories. Process CSV, JSON, XML, or fixed-width files in batch or one at a time.
 
 ## AI Agents
 
-Intelligent artifacts backed by large language models (LLMs). Agents can reason, use tools, maintain conversation memory, and orchestrate multi-step workflows. → [Build AI Agents](/docs/develop/build/ai-agents)
+Intelligent artifacts backed by large language models (LLMs). Agents can reason, use tools, maintain conversation memory, and orchestrate multi-step workflows.
 
 ## Connectors
 
@@ -38,11 +38,11 @@ A drag-and-drop data transformation tool in the VS Code extension. Map fields be
 
 ## Natural Functions
 
-LLM calls treated as typed function calls in your integration code. Define an input type and output type, and the platform handles the prompt, API call, and response parsing. → [AI Agents & Natural Functions](/docs/develop/build/ai-agents)
+LLM calls treated as typed function calls in your integration code. Define an input type and output type, and the platform handles the prompt, API call, and response parsing.
 
 ## Config.toml
 
-The file where you define environment-specific configuration — database URLs, API keys, feature flags. Different environments (dev, test, prod) get different Config.toml files. → [Configuration Management](/docs/develop/build/configuration-management)
+The file where you define environment-specific configuration — database URLs, API keys, feature flags. Different environments (dev, test, prod) get different Config.toml files.
 
 ## Integration Control Plane (ICP)
 
@@ -50,7 +50,7 @@ A dashboard for monitoring, managing, and troubleshooting running integrations i
 
 ## Ballerina
 
-The programming language powering everything under the hood. You don't need to be a Ballerina expert to use the visual designer, but knowing the basics unlocks pro-code capabilities. → [Working with Ballerina Pro-Code](/docs/develop/build/ballerina-pro-code)
+The programming language powering everything under the hood. You don't need to be a Ballerina expert to use the visual designer, but knowing the basics unlocks pro-code capabilities.
 
 ## Low-Code ↔ Pro-Code
 
