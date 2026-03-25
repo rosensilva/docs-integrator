@@ -19,7 +19,7 @@ If your code is still on your machine, you're in **Develop**. Once you're pushin
 | | |
 |---|---|
 | **[Create Integrations](create-integrations/create-new-integration.md)** | Start new projects, explore samples, or migrate from MuleSoft / TIBCO |
-| **[Project Views](project-views/project-view.md)** | Switch between Project, Integration, and Library views in VS Code |
+| **[Project Views](project-views/project-view.md)** | Switch between Project, Integration, and Library views in the IDE |
 | **[Organize Code](organize-code/packages-modules.md)** | Packages, modules, dependencies, workspaces, and code style |
 
 ## Build

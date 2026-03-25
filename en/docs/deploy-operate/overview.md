@@ -25,7 +25,7 @@ Get your integration running in any environment:
 | **[Docker & Kubernetes](deploy/docker-kubernetes.md)** | Containerized deployments with orchestration |
 | **[OpenShift](deploy/openshift.md)** | Red Hat OpenShift deployments |
 | **[Serverless](deploy/serverless.md)** | AWS Lambda, Azure Functions |
-| **[WSO2 Devant (iPaaS)](deploy/devant.md)** | One-click deploy from VS Code |
+| **[Push to Cloud](deploy/devant.md)** | One-click deploy from WSO2 Integrator IDE |
 | **[Cloud Providers](deploy/cloud-providers.md)** | Deploy to AWS, Azure, or GCP |
 | **[GraalVM Native](deploy/graalvm.md)** | Ahead-of-time compiled binaries for fast startup |
 
@@ -48,7 +48,7 @@ Monitor, trace, and debug in production:
 |---|---|
 | **[Observability Overview](observe/overview.md)** | Logging, metrics, and tracing concepts |
 | **[Integration Control Plane](observe/icp.md)** | Centralized management dashboard |
-| **[WSO2 Devant](observe/devant.md)** | Cloud-native observability |
+| **[WSO2 Integration Platform](observe/devant.md)** | Cloud-native observability |
 | **[Prometheus & Grafana](observe/prometheus.md)** | Metrics collection and dashboards |
 | **[Jaeger & Zipkin](observe/jaeger.md)** | Distributed tracing |
 | **[Custom Metrics](observe/custom-metrics.md)** | Application-specific counters and gauges |
