@@ -812,3 +812,11 @@ hr {
 [data-theme='dark'] hr {
   background: linear-gradient(90deg, #1E293B, transparent 80%);
 }
+
+/* ================================================================
+   WIP ANNOUNCEMENT BAR — Dark mode
+   ================================================================ */
+[data-theme='dark'] div[class*='announcementBar'] {
+  background-color: rgba(53, 19, 1, 0.918);
+  color: #fbcd9c;
+}

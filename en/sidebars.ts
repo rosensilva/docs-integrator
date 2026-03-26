@@ -184,7 +184,6 @@ const sidebars: SidebarsConfig = {
           label: 'Try & Test',
           items: [
             'develop/test/try-it',
-            'develop/test/ai-test-generation',
             'develop/test/unit-testing',
             'develop/test/test-services-clients',
             'develop/test/data-driven-tests',

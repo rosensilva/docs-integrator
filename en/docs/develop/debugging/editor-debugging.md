@@ -4,6 +4,9 @@ title: Editor Debugging
 description: Set breakpoints, watch variables, and step through Ballerina code in VS Code.
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Editor Debugging
 
 Debug your integrations step-by-step in VS Code using the WSO2 Integrator extension. Set breakpoints on any line, inspect variables and payloads in real time, and step through data transformations to understand exactly how your integration processes data.
@@ -12,19 +15,26 @@ Debug your integrations step-by-step in VS Code using the WSO2 Integrator extens
 
 The WSO2 Integrator VS Code extension includes built-in debugging support. No additional configuration is required for basic debugging.
 
-### From Source Code View
+<Tabs>
+<TabItem value="ui" label="Visual Designer" default>
+
+1. Open your integration in the design view.
+2. Click the three dots (**...**) on any node in the flow diagram.
+3. Select **Add Breakpoint** from the context menu.
+4. Click **Debug Integration** (top-right corner of the design view).
+
+<!-- TODO: Screenshot showing Debug Integration button in design view -->
+
+</TabItem>
+<TabItem value="code" label="Ballerina Code">
 
 1. Open your Ballerina project in VS Code.
 2. Open any `.bal` file.
 3. Click in the gutter (left margin) next to a line number to set a breakpoint.
 4. Press `F5` or click **Run > Start Debugging**.
 
-### From the Visual Designer
-
-1. Open your integration in the design view.
-2. Click the three dots (**...**) on any node in the flow diagram.
-3. Select **Add Breakpoint** from the context menu.
-4. Click **Debug Integration** (top-right corner of the design view).
+</TabItem>
+</Tabs>
 
 The debugger supports three session types:
 - **Program debugging** -- standard application debugging
@@ -34,6 +44,22 @@ The debugger supports three session types:
 ## Setting Breakpoints
 
 ### Line Breakpoints
+
+<Tabs>
+<TabItem value="ui" label="Visual Designer" default>
+
+Set breakpoints on flow nodes to pause execution at specific steps:
+
+1. Open your integration in the design view.
+2. Click the three dots (**...**) on the node where you want to pause.
+3. Select **Add Breakpoint** from the context menu.
+
+A red dot appears on the node to indicate the breakpoint.
+
+<!-- TODO: Screenshot showing a breakpoint set on a flow node -->
+
+</TabItem>
+<TabItem value="code" label="Ballerina Code">
 
 Click the gutter next to any executable line to add a red dot breakpoint.
 
@@ -52,6 +78,9 @@ service /api on new http:Listener(9090) {
     }
 }
 ```
+
+</TabItem>
+</Tabs>
 
 ### Conditional Breakpoints
 
@@ -89,6 +118,22 @@ Once paused at a breakpoint, use the debug toolbar controls:
 
 ### Step Through Example
 
+<Tabs>
+<TabItem value="ui" label="Visual Designer" default>
+
+When paused at a breakpoint, the active node is highlighted in the flow diagram. Use the debug toolbar to step through the flow:
+
+1. **Step Over** (`F10`) -- execute the current node and move to the next node in the flow.
+2. **Step Into** (`F11`) -- enter a function node to debug its internal logic.
+3. **Step Out** (`Shift+F11`) -- finish the current function and return to the calling flow.
+
+The flow diagram updates in real time to show which node is currently executing.
+
+<!-- TODO: Screenshot showing highlighted active node in the flow diagram -->
+
+</TabItem>
+<TabItem value="code" label="Ballerina Code">
+
 ```ballerina
 public function processOrder(Order order) returns OrderResult|error {
     // Step 1: F10 - validate order
@@ -105,7 +150,25 @@ public function processOrder(Order order) returns OrderResult|error {
 }
 ```
 
+</TabItem>
+</Tabs>
+
 ## Inspecting Variables
+
+<Tabs>
+<TabItem value="ui" label="Visual Designer" default>
+
+When paused at a breakpoint, the **Variables** panel appears alongside the flow diagram. Click any node in the flow to see the variables in scope at that point.
+
+- **Local** -- variables in the current function scope
+- **Global** -- module-level variables and constants
+
+Expand records and maps to inspect nested fields. JSON and XML payloads display their full structure.
+
+<!-- TODO: Screenshot showing Variables panel alongside the flow diagram -->
+
+</TabItem>
+<TabItem value="code" label="Ballerina Code">
 
 ### Variables Panel
 
@@ -117,6 +180,15 @@ The Variables panel shows all in-scope variables with their current values, orga
 <!-- TODO: Screenshot of Variables panel showing record fields expanded -->
 
 Expand records and maps to inspect nested fields. JSON and XML payloads display their full structure.
+
+### Hover Inspection
+
+Hover over any variable in the editor to see its current value in a tooltip.
+
+<!-- TODO: Screenshot of hover inspection tooltip -->
+
+</TabItem>
+</Tabs>
 
 ### Watch Expressions
 
@@ -130,15 +202,31 @@ Useful watch expressions for integrations:
 - `total * 1.08` -- compute derived values
 - `response.statusCode` -- check HTTP response status
 
-### Hover Inspection
-
-Hover over any variable in the editor to see its current value in a tooltip.
-
-<!-- TODO: Screenshot of hover inspection tooltip -->
-
 ## Debugging HTTP Services
 
-When debugging an HTTP service, the debugger starts the service and waits for requests. Send requests using the built-in Try-It tool, `curl`, or any HTTP client.
+When debugging an HTTP service, the debugger starts the service and waits for requests.
+
+<Tabs>
+<TabItem value="ui" label="Visual Designer" default>
+
+1. Click **Debug Integration** in the top-right corner of the design view.
+2. The service starts and the **Try It** panel opens automatically.
+3. Select the resource function you want to test (for example, **GET /users/\{id\}**).
+4. Fill in the request parameters and click **Send**.
+5. The debugger pauses at your breakpoints -- inspect variables in the **Variables** panel alongside the flow diagram.
+
+<!-- TODO: Screenshot showing Debug Integration with Try It panel open -->
+
+### Debugging request payloads
+
+1. Set a breakpoint on the node that processes the incoming request.
+2. Send a request from the **Try It** panel with a sample payload.
+3. When the debugger pauses, expand the request variable in the **Variables** panel to inspect the body, headers, and query parameters.
+
+</TabItem>
+<TabItem value="code" label="Ballerina Code">
+
+Send requests using the built-in Try-It tool, `curl`, or any HTTP client.
 
 ```ballerina
 import ballerina/http;
@@ -157,7 +245,7 @@ service /api on new http:Listener(9090) {
 }
 ```
 
-### Debugging Request Payloads
+### Debugging request payloads
 
 Inspect incoming HTTP request details at a breakpoint:
 
@@ -174,7 +262,28 @@ resource function post orders(http:Request req) returns json|error {
 }
 ```
 
+</TabItem>
+</Tabs>
+
 ## Debugging Data Transformations
+
+<Tabs>
+<TabItem value="ui" label="Visual Designer" default>
+
+Debug data transformations directly in the data mapper:
+
+1. Open the data mapper for your transformation.
+2. Set breakpoints on the transformation nodes you want to inspect.
+3. Click **Debug Integration** to start the debugger.
+4. When paused, inspect the source and target values in the **Variables** panel.
+5. Step through each mapping to verify intermediate values.
+
+The data mapper highlights the active mapping and shows the current source and target values side by side.
+
+<!-- TODO: Screenshot showing data mapper debugging with source and target values -->
+
+</TabItem>
+<TabItem value="code" label="Ballerina Code">
 
 Step through complex transformations to verify intermediate values.
 
@@ -214,6 +323,9 @@ function normalizePhone(string phone) returns string {
     return phone.trim();
 }
 ```
+
+</TabItem>
+</Tabs>
 
 ## Debug Configuration
 

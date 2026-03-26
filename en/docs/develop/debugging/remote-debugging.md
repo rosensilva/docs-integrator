@@ -4,6 +4,9 @@ title: Remote Debugging
 description: Attach a debugger to Ballerina services running in remote environments.
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Remote Debugging
 
 Attach the VS Code debugger to Ballerina services running in Docker containers, Kubernetes pods, or remote servers. Remote debugging lets you investigate issues that only occur in specific environments without adding log statements and redeploying.
@@ -119,13 +122,31 @@ Add a remote attach configuration to `.vscode/launch.json`.
 
 ### Attach to the Remote Service
 
-1. Open your project in VS Code (the source code must match the deployed version)
-2. Set breakpoints in your source files
-3. Open the Run and Debug panel (`Ctrl+Shift+D`)
-4. Select the remote debug configuration
-5. Click the green play button to attach
+<Tabs>
+<TabItem value="ui" label="Visual Designer" default>
+
+1. Open your project in VS Code (the source code must match the deployed version).
+2. Open your integration in the design view and set breakpoints on the flow nodes you want to inspect.
+3. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on macOS) and select **Ballerina: Attach to Remote**.
+4. Enter the remote host and port (for example, `127.0.0.1:5005`).
+
+Once attached, the debugger pauses at your breakpoints and highlights the active node in the flow diagram.
+
+<!-- TODO: Screenshot showing Attach to Remote command in Command Palette -->
+
+</TabItem>
+<TabItem value="code" label="Ballerina Code">
+
+1. Open your project in VS Code (the source code must match the deployed version).
+2. Set breakpoints in your source files.
+3. Open the Run and Debug panel (`Ctrl+Shift+D`).
+4. Select the remote debug configuration.
+5. Click the green play button to attach.
 
 <!-- TODO: Screenshot of VS Code Run and Debug panel with remote config selected -->
+
+</TabItem>
+</Tabs>
 
 Once attached, the debugger behaves the same as local debugging -- you can step through code, inspect variables, and evaluate expressions.
 
