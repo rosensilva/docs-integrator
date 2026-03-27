@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useLocation } from '@docusaurus/router';
 import { Prism } from 'prism-react-renderer';
 
@@ -58,9 +58,23 @@ const sectionPaths = [
   '/docs/reference',
 ];
 
+// Map section paths to their sidebar label text for matching.
+const sectionLabels = {
+  '/docs/get-started': 'Get Started',
+  '/docs/develop': 'Develop',
+  '/docs/connectors': 'Connectors',
+  '/docs/genai': 'GenAI',
+  '/docs/tutorials': 'Tutorials',
+  '/docs/deploy-operate': 'Deploy & Operate',
+  '/docs/reference': 'Reference',
+};
+
 function useNavbarActiveState() {
   const { pathname } = useLocation();
+  const prevSectionRef = useRef(null);
+
   useEffect(() => {
+    // Update navbar active link highlights
     const links = document.querySelectorAll('.navbar__items .navbar__link');
     links.forEach((link) => {
       const href = link.getAttribute('href');
@@ -72,6 +86,35 @@ function useNavbarActiveState() {
         link.classList.remove('navbar__link--active');
       }
     });
+
+    // Collapse non-active top-level sidebar categories when section changes
+    const currentSection = sectionPaths.find((p) => pathname.startsWith(p));
+    if (currentSection && currentSection !== prevSectionRef.current) {
+      prevSectionRef.current = currentSection;
+      // Small delay to let Docusaurus render the sidebar first
+      requestAnimationFrame(() => {
+        const topItems = document.querySelectorAll(
+          '.theme-doc-sidebar-menu > .theme-doc-sidebar-item-category-level-1'
+        );
+        topItems.forEach((li) => {
+          const labelEl = li.querySelector(
+            ':scope > .menu__list-item-collapsible .menu__link'
+          );
+          const label = labelEl?.textContent?.trim();
+          const isActive = label === sectionLabels[currentSection];
+          const toggleBtn = li.querySelector(
+            ':scope > .menu__list-item-collapsible .clean-btn'
+          );
+          const isCollapsed = li.classList.contains('menu__list-item--collapsed');
+
+          if (!isActive && !isCollapsed && toggleBtn) {
+            toggleBtn.click();
+          } else if (isActive && isCollapsed && toggleBtn) {
+            toggleBtn.click();
+          }
+        });
+      });
+    }
   }, [pathname]);
 }
 

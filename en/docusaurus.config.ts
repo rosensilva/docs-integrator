@@ -115,7 +115,7 @@ const config: Config = {
           activeBaseRegex: '/docs/genai(/|$)',
         },
         {
-          to: '/docs/tutorials',
+          to: '/docs/tutorials/overview',
           label: 'Tutorials',
           position: 'left',
           activeBaseRegex: '/docs/tutorials(/|$)',
