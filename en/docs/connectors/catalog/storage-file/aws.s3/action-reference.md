@@ -7,7 +7,7 @@ The `ballerinax/aws.s3` package exposes the following clients:
 
 | Client | Purpose |
 |--------|---------|
-| [`Client`](#s3client) | Provides operations to manage S3 buckets and objects via the Amazon S3 REST API. |
+| [`Client`](#client) | Provides operations to manage S3 buckets and objects via the Amazon S3 REST API. |
 
 ---
 

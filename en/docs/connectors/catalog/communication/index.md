@@ -18,8 +18,3 @@ description: "Communication connectors available in WSO2 Integrator."
 | [Twilio](twilio/overview.md) | Cloud communications platform for SMS, voice calls, WhatsApp, and messaging APIs | Create Message, Fetch Message, List Messages, Create Call, Fetch Call, List Calls, Manage Recordings | HTTP Basic (Account SID + Auth Token) / API Key |
 | [Zoom Meetings](zoom.meetings/overview.md) | Video conferencing platform for scheduling, managing, and reporting on meetings and webinars | Create, Read, Update, Delete, List, Register, Record, Report | OAuth 2.0 |
 | [Zoom Scheduler](zoom.scheduler/overview.md) | Zoom scheduling service for managing availability windows, meeting schedules, and bookings | Create, Read, Update, Delete, List, Analytics | OAuth 2.0 |
-
-## What's next
-
-- [Connection Configuration](configuration.md) — How to set up connections
-- [Authentication Methods](authentication.md) — Supported auth types

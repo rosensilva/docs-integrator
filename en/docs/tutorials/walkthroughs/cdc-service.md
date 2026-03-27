@@ -369,6 +369,6 @@ UPDATE orders SET status = 'shipped' WHERE id = 1;
 
 ## What's Next
 
-- [Databases Connectors](../../connectors/databases.md) -- Database connector reference
-- [Messaging Connectors](../../connectors/messaging.md) -- Kafka, RabbitMQ, and more
+- [Databases Connectors](../../connectors/catalog/database) -- Database connector reference
+- [Messaging Connectors](../../connectors/catalog/messaging) -- Kafka, RabbitMQ, and more
 - [Kafka Event Processing Pipeline](../kafka-event-pipeline.md) -- Full Kafka tutorial

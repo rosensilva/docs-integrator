@@ -30,8 +30,3 @@ description: "AI and machine learning connectors available in WSO2 Integrator."
 | [pgvector](ai.pgvector/overview.md) | Vector similarity search in PostgreSQL with dense, sparse, and hybrid embeddings | Add, Query, Delete | Username/Password |
 | [Pinecone](ai.pinecone/overview.md) | Vector database with dense, sparse, and hybrid similarity search | Add, Query, Delete | API Key |
 | [Weaviate](ai.weaviate/overview.md) | Vector database with semantic search, metadata filtering, and embedding storage | Add, Query, Delete | API Key |
-
-## What's next
-
-- [Connection Configuration](configuration.md) — How to set up connections
-- [Authentication Methods](authentication.md) — Supported auth types

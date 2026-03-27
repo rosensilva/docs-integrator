@@ -11,8 +11,3 @@ description: "Healthcare connectors available in WSO2 Integrator."
 
 | Connector | Description | Operations | Authentication |
 |-----------|-------------|------------|----------------|
-
-## What's next
-
-- [Connection Configuration](configuration.md) — How to set up connections
-- [Authentication Methods](authentication.md) — Supported auth types

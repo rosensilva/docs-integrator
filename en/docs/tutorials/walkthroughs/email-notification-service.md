@@ -316,5 +316,5 @@ curl http://localhost:8090/notifications/templates
 
 ## What's Next
 
-- [Communication Connectors](../../connectors/communication.md) -- Email, SMS, and Slack connectors
+- [Communication Connectors](../../connectors/catalog/communication) -- Email, SMS, and Slack connectors
 - [Content-Based Routing](content-based-routing.md) -- Route notifications by type

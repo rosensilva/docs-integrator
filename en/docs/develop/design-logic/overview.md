@@ -117,5 +117,5 @@ service /api on new http:Listener(8090) {
 
 ## What's next
 
-- [Integration Artifacts](/docs/develop/integration-artifacts) — Understand the artifact types that contain your logic
+- [Integration Artifacts](/docs/develop/integration-artifacts/overview) — Understand the artifact types that contain your logic
 - [Test](/docs/develop/test/try-it) — Validate your logic with the built-in Try-It tool

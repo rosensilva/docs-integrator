@@ -21,4 +21,4 @@ Share your custom connector with the community by publishing it to Ballerina Cen
 
 ## What's next
 
-- [Custom Connector Development](custom-development.md) — Build more connectors
+- [Custom Connector Development](build-your-own/custom-development.md) — Build more connectors

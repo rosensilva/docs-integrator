@@ -22,8 +22,3 @@ description: "Database connectors available in WSO2 Integrator."
 | [PostgreSQL](postgresql/overview.md) | Object-relational database with SQL queries, batch operations, stored procedures, and CDC triggers | Query, Execute, Batch Execute, Call, CDC | Username/Password |
 | [Redis](redis/overview.md) | In-memory data store with string, list, set, sorted set, and hash operations | Get, Set, List, Hash, Set, Sorted Set, Key Management | Password / ACL |
 | [Snowflake](snowflake/overview.md) | Cloud data warehouse with SQL queries, DML/DDL execution, batch operations, and stored procedures | Query, Execute, Batch Execute, Call | Basic Auth, Key-Pair Auth |
-
-## What's next
-
-- [Connection Configuration](configuration.md) — How to set up connections
-- [Authentication Methods](authentication.md) — Supported auth types

@@ -13,8 +13,3 @@ description: "Security and identity connectors available in WSO2 Integrator."
 |-----------|-------------|------------|----------------|
 | [AWS Secrets Manager](aws.secretmanager/overview.md) | Secrets management service for retrieving and describing AWS secrets | Describe, Get Secret Value, Batch Get | AWS Access Keys / IAM Role |
 | [SCIM](scim/overview.md) | SCIM 2.0 identity provisioning with user, group, and bulk management operations | Create, Read, Update, Delete, Search, Bulk | OAuth 2.0 (Client Credentials) |
-
-## What's next
-
-- [Connection Configuration](configuration.md) — How to set up connections
-- [Authentication Methods](authentication.md) — Supported auth types

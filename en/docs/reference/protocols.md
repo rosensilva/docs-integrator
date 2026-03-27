@@ -198,5 +198,5 @@ service "emailObserver" on imapListener {
 ## See Also
 
 - [Ballerina API Documentation](api/ballerina-api-docs.md) -- Full API docs for all modules
-- [Connectors - Protocols](/connectors/protocols.md) -- Protocol connector guides
+- [Connectors Catalog](/docs/connectors/catalog) -- Protocol connector guides
 - [Data Formats](data-formats.md) -- Supported data formats

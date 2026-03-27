@@ -20,8 +20,3 @@ description: "Productivity and collaboration connectors available in WSO2 Integr
 | [Jira](jira/overview.md) | Project tracking and issue management with JQL search, workflows, and full CRUD operations | Create, Read, Update, Delete, Search, Transition, Bulk | Basic Auth (API Token) / OAuth 2.0 |
 | [Smartsheet](smartsheet/overview.md) | Work management platform with sheets, rows, columns, folders, workspaces, and collaboration | Create, Read, Update, Delete, Share, Search, Webhooks | API Token / OAuth 2.0 |
 | [Trello](trello/overview.md) | Project management with boards, lists, cards, checklists, and team collaboration | Create, Read, Update, Delete, Search | API Key + Token |
-
-## What's next
-
-- [Connection Configuration](configuration.md) — How to set up connections
-- [Authentication Methods](authentication.md) — Supported auth types

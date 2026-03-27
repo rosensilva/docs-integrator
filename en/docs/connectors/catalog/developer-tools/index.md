@@ -18,8 +18,3 @@ description: "Developer tools connectors available in WSO2 Integrator."
 | [Moesif](moesif/overview.md) | API observability provider for forwarding distributed traces and metrics to Moesif | Distributed Tracing, Metrics Reporting | API Key (Application ID) |
 | [New Relic](newrelic/overview.md) | Observability extension that auto-exports Ballerina runtime metrics and distributed traces to New Relic | Metrics Export, Distributed Tracing, Multi-account Fan-out | API Key (License Key) |
 | [WSO2 APIM Catalog](wso2.apim.catalog/overview.md) | WSO2 API Manager Service Catalog for registering and managing backend service definitions | Create, Read, Update, Delete, Import, Export, Settings | OAuth 2.0 Password Grant |
-
-## What's next
-
-- [Connection Configuration](configuration.md) — How to set up connections
-- [Authentication Methods](authentication.md) — Supported auth types

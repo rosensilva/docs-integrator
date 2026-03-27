@@ -16,8 +16,3 @@ description: "Cloud and infrastructure connectors available in WSO2 Integrator."
 | [AWS Marketplace MPM](aws.marketplace.mpm/overview.md) | AWS Marketplace metering for customer resolution and usage billing | Resolve Customer, Batch Meter Usage | AWS Access Key |
 | [Azure Functions](azure.functions/overview.md) | Serverless Azure Functions framework with HTTP, Queue, Blob, CosmosDB, and Timer triggers | HTTP Trigger, Queue Trigger, Blob Trigger, CosmosDB Trigger, Timer Trigger, Output Bindings | Azure App Settings (storage connection strings, function keys, CosmosDB connection strings) |
 | [Elastic Cloud](elastic.elasticcloud/overview.md) | Elastic Cloud management with deployments, traffic filters, organizations, API keys, and stack versions | Create, List, Search, Update, Shutdown, Restore, Delete | API Key |
-
-## What's next
-
-- [Connection Configuration](configuration.md) — How to set up connections
-- [Authentication Methods](authentication.md) — Supported auth types

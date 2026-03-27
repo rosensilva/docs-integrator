@@ -21,8 +21,3 @@ description: "Marketing and social media connectors available in WSO2 Integrator
 | [Mailchimp Transactional](mailchimp.transactional/overview.md) | Transactional email service with message sending, templates, webhooks, and delivery analytics | Send, Search, Templates, Webhooks, Tags, Senders, Rejects | API Key |
 | [Salesforce Marketing Cloud](salesforce.marketingcloud/overview.md) | Digital marketing platform with journeys, campaigns, contacts, data extensions, assets, and transactional email | Create, Read, Update, Delete, Search, Send, Import | OAuth 2.0 (Client Credentials) |
 | [Twitter](twitter/overview.md) | Social media platform with tweet management, user lookup, DMs, likes, retweets, bookmarks, and lists | Create, Read, Delete, Search, Like, Retweet, Bookmark, DM, Follow | OAuth 2.0 (PKCE / App-Only Bearer Token) |
-
-## What's next
-
-- [Connection Configuration](configuration.md) — How to set up connections
-- [Authentication Methods](authentication.md) — Supported auth types

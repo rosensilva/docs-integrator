@@ -24,8 +24,3 @@ description: "ERP and business operations connectors available in WSO2 Integrato
 | [SAP Sales Quotation](sap.s4hana.api_sales_quotation_srv/overview.md) | SAP S/4HANA Sales Quotation API with full CRUD, partners, pricing, texts, process flow, and approval actions | Create, Read, Update, Delete, Approve, Reject, Batch | Basic Auth |
 | [SAP SD Incoterms](sap.s4hana.api_sd_incoterms_srv/overview.md) | SAP S/4HANA OData API for reading Incoterms classification and version master data with multilingual text support | List, Read | Basic Authentication |
 | [SAP SD Sold-to-Party Determination](sap.s4hana.api_sd_sa_soldtopartydetn/overview.md) | SAP S/4HANA OData service for querying sold-to party assignments in sales scheduling agreements | Read, List | Basic Auth |
-
-## What's next
-
-- [Connection Configuration](configuration.md) — How to set up connections
-- [Authentication Methods](authentication.md) — Supported auth types

@@ -16,8 +16,3 @@ description: "Finance and accounting connectors available in WSO2 Integrator."
 | [PayPal Payments](paypal.payments/overview.md) | Payment platform with authorization, capture, void, and refund operations | Authorize, Capture, Void, Refund, Show Details | OAuth 2.0 (Client Credentials) |
 | [PayPal Subscriptions](paypal.subscriptions/overview.md) | PayPal recurring billing platform for creating subscription plans and managing subscription lifecycles | Create, Read, Update, Activate, Deactivate, Suspend, Cancel, Revise, Capture, List | OAuth 2.0 |
 | [Stripe](stripe/overview.md) | Payment processing platform with customers, charges, invoices, subscriptions, and payouts | Create, Read, Update, Delete, List | API Key (Bearer Token) |
-
-## What's next
-
-- [Connection Configuration](configuration.md) — How to set up connections
-- [Authentication Methods](authentication.md) — Supported auth types

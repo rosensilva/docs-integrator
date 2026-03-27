@@ -29,4 +29,4 @@ Connections define how your integration communicates with external systems — t
 
 ## What's next
 
-- [Authentication Methods](authentication.md) — Secure your connections
+- [Build Your Own Connector](build-your-own/) — Create custom connectors

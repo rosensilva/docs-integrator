@@ -16,7 +16,7 @@ Three components work together:
 | `af:CosmosDBListener` | Subscribes to the CosmosDB change feed and invokes `onUpdate` when documents are created or updated. |
 | `af:TimerListener` | Fires on a CRON schedule and invokes `onTrigger` at each scheduled interval. |
 
-For action-based record operations, see the [Action Reference](action-reference.md).
+For action-based record operations, see the [Overview](overview.md).
 
 ---
 

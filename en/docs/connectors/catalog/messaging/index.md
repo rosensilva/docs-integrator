@@ -22,8 +22,3 @@ description: "Messaging connectors available in WSO2 Integrator."
 | [NATS](nats/overview.md) | High-performance pub/sub and persistent JetStream messaging with publish, subscribe, request-reply, and stream management | Publish, Subscribe, Request-Reply, Stream Create/Update/Delete/Purge, Consume, Ack/Nak | None / Username-Password / Token / Mutual TLS |
 | [RabbitMQ](rabbitmq/overview.md) | AMQP 0-9-1 message broker with queue/exchange management, pub/sub, and consumer services | Publish, Consume, Queue Declare, Exchange Declare, Bind, Ack, Nack | Username / Password |
 | [Solace](solace/overview.md) | Event broker with publish/subscribe, queuing, durable subscriptions, and listener triggers | Send, Receive, Acknowledge, Commit, Rollback | Basic Auth, Kerberos, OAuth 2.0 |
-
-## What's next
-
-- [Connection Configuration](configuration.md) — How to set up connections
-- [Authentication Methods](authentication.md) — Supported auth types
