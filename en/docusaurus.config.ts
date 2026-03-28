@@ -69,13 +69,6 @@ const config: Config = {
   ],
 
   themeConfig: {
-    announcementBar: {
-      id: 'wip_banner',
-      content: '🚧 This documentation is a <strong>Work in Progress</strong>. Content may be incomplete or subject to change.',
-      backgroundColor: '#FFF7ED',
-      textColor: '#9A3412',
-      isCloseable: false,
-    },
     image: 'img/logo.svg',
     colorMode: {
       defaultMode: 'light',
