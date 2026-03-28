@@ -16,7 +16,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(160deg, #1B3A5C 0%, #2563A0 40%, #4A9BD9 70%, #7CC4F0 100%);
+  background: linear-gradient(180deg, #0F172A 0%, #1B2A49 100%);
   color: #FFFFFF;
 }
 
@@ -50,9 +50,16 @@
   pointer-events: none;
 }
 
-/* Dark theme hero — deeper navy */
+/* Dark theme hero */
 [data-theme='dark'] .heroBanner {
   background: linear-gradient(180deg, #0F172A 0%, #1B2A49 100%);
+}
+
+/* Stronger glow in dark mode for visual interest */
+[data-theme='dark'] .heroBanner::before {
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.12) 0%, rgba(56, 189, 248, 0.03) 40%, transparent 65%);
 }
 
 @media screen and (max-width: 996px) {
@@ -75,13 +82,13 @@
   margin-top: 1.5rem;
 }
 
-/* Hero CTA — white button on blue gradient (light), sky blue on navy (dark) */
+/* Hero CTA — sky blue button on dark navy background */
 .heroBtn {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: #FFFFFF;
-  color: #1B3A5C;
+  background: #38BDF8;
+  color: #0F172A;
   font-size: 0.95rem;
   font-weight: 600;
   padding: 0.7rem 1.5rem;
@@ -91,22 +98,11 @@
 }
 
 .heroBtn:hover {
-  background: #E0F2FE;
-  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.25);
-  text-decoration: none;
-  color: #1B3A5C;
-  transform: translateY(-1px);
-}
-
-[data-theme='dark'] .heroBtn {
-  background: #38BDF8;
-  color: #0F172A;
-}
-
-[data-theme='dark'] .heroBtn:hover {
   background: #56CBFA;
   box-shadow: 0 4px 20px rgba(56, 189, 248, 0.35);
+  text-decoration: none;
   color: #0F172A;
+  transform: translateY(-1px);
 }
 
 .heroBtn svg {
@@ -277,11 +273,11 @@
    ================================================================ */
 .sectionCards {
   padding: 3.5rem 0 3rem;
-  background: #FFFFFF;
+  background: linear-gradient(180deg, #EFF6FF 0%, #F0F7FF 40%, #F8FAFC 100%);
 }
 
 [data-theme='dark'] .sectionCards {
-  background: #0B1120;
+  background: linear-gradient(180deg, #141D30 0%, #0E1629 50%, #0B1120 100%);
 }
 
 .sectionGrid {
@@ -307,33 +303,38 @@
 .sectionCard {
   position: relative;
   padding: 1.25rem;
-  border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  background: #FFFFFF;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 16px rgba(0, 0, 0, 0.03), inset 0 1px 0 rgba(255, 255, 255, 0.8);
   text-decoration: none;
   color: inherit;
-  transition: all 0.2s ease;
+  transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
   display: flex;
   flex-direction: column;
 }
 
 .sectionCard:hover {
-  border-color: rgba(0, 0, 0, 0.12);
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 24px rgba(0, 119, 182, 0.08), 0 8px 32px rgba(0, 0, 0, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  transform: translateY(-3px);
   text-decoration: none;
   color: inherit;
 }
 
 [data-theme='dark'] .sectionCard {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.04);
   border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 [data-theme='dark'] .sectionCard:hover {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.07);
   border-color: rgba(255, 255, 255, 0.14);
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 24px rgba(56, 189, 248, 0.08), 0 8px 32px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 /* Icon badge — color-coded via CSS custom properties */
@@ -409,6 +410,11 @@
 .whatsNew {
   padding: 1.5rem 0 4rem;
   text-align: center;
+  background: #F8FAFC;
+}
+
+[data-theme='dark'] .whatsNew {
+  background: #0E1629;
 }
 
 .whatsNewLink {
@@ -416,20 +422,23 @@
   align-items: center;
   gap: 0.6rem;
   font-size: 0.85rem;
-  color: #565656;
+  color: #475569;
   text-decoration: none;
   padding: 0.6rem 1.25rem;
   border-radius: 100px;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  background: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   transition: all 0.2s ease;
 }
 
 .whatsNewLink:hover {
-  border-color: rgba(0, 0, 0, 0.12);
+  border-color: rgba(255, 255, 255, 0.8);
   color: #262626;
   text-decoration: none;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .whatsNewLink svg {

@@ -140,8 +140,9 @@
   /* === Code === */
   --docusaurus-highlighted-code-line-bg: rgba(56, 189, 248, 0.1);
 
-  /* === Navbar === */
-  --ifm-navbar-background-color: rgba(11, 17, 32, 0.85);
+  /* === Navbar — transparent to blend with hero === */
+  --ifm-navbar-background-color: rgba(11, 17, 32, 0.6);
+  --ifm-navbar-shadow: none;
 
   /* === Sidebar === */
   --ifm-menu-color: #94A3B8;
@@ -160,7 +161,11 @@
   backdrop-filter: blur(40px) saturate(180%);
   -webkit-backdrop-filter: blur(40px) saturate(180%);
   border-bottom: 1px solid var(--wso2-surface-border);
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+[data-theme='dark'] .navbar {
+  border-bottom-color: rgba(255, 255, 255, 0.06);
 }
 
 .navbar__title {
@@ -813,10 +818,3 @@ hr {
   background: linear-gradient(90deg, #1E293B, transparent 80%);
 }
 
-/* ================================================================
-   WIP ANNOUNCEMENT BAR — Dark mode
-   ================================================================ */
-[data-theme='dark'] div[class*='announcementBar'] {
-  background-color: rgba(53, 19, 1, 0.918);
-  color: #fbcd9c;
-}
