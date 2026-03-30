@@ -17,7 +17,7 @@ The `ballerinax/hubspot.crm.obj.schemas` package exposes the following clients:
 
 Manage HubSpot custom object schemas, their properties, and inter-object associations.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

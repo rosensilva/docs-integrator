@@ -17,7 +17,7 @@ The `ballerinax/hubspot.marketing.emails` package exposes the following clients:
 
 Manage HubSpot marketing emails — CRUD, publish, clone, A/B test, drafts, revisions, and statistics.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

@@ -17,7 +17,7 @@ The `ballerinax/sap.s4hana.ce_salesorder_0001` package exposes the following cli
 
 Provides full CRUD access to SAP S/4HANA sales orders and all related entities via the OData v4 Sales Order API.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

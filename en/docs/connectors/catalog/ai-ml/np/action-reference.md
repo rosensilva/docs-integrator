@@ -18,7 +18,7 @@ The `ballerinax/np` package exposes the following clients:
 
 Implements the `np:ModelProvider` interface for OpenAI Chat Completions, enabling Ballerina `natural` expression blocks to send prompts to an OpenAI model and receive parsed, strongly-typed responses.
 
-### Configuration (`ModelConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
@@ -115,7 +115,7 @@ Sample response:
 
 Implements the `np:ModelProvider` interface for Azure OpenAI Chat Completions, enabling Ballerina `natural` expression blocks to send prompts to an Azure-hosted OpenAI deployment and receive parsed, strongly-typed responses.
 
-### Configuration (`ModelConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

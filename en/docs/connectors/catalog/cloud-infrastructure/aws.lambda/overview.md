@@ -1,6 +1,3 @@
----
-title: AWS Lambda Connector Overview
----
 # AWS Lambda Connector Overview
 
 AWS Lambda is a serverless, event-driven compute service that lets you run code without provisioning or managing servers. The Ballerina `ballerinax/aws.lambda` connector (v3.3.0) is a compiler extension that enables you to write Ballerina functions and deploy them directly as AWS Lambda functions by annotating them with `@lambda:Function`. It supports generic JSON input as well as domain-specific event types for S3, SQS, DynamoDB, SES, and API Gateway triggers.
@@ -22,9 +19,9 @@ The AWS Lambda connector is not a traditional client-based connector. Instead of
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## AWS Lambda connector documentation
+## Documentation
 
-* **[AWS Lambda Connector Setup Guide](setup-guide.md)**: This guide walks you through setting up an AWS account, creating an IAM role, and configuring the AWS CLI — the prerequisites needed before deploying Ballerina functions to AWS Lambda.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through setting up an AWS account, creating an IAM role, and configuring the AWS CLI — the prerequisites needed before deploying Ballerina functions to AWS Lambda.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

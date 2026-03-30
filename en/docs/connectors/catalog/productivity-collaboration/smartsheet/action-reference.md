@@ -17,7 +17,7 @@ The `ballerinax/smartsheet` package exposes the following clients:
 
 Manages all Smartsheet resources — sheets, rows, columns, folders, workspaces, users, reports, and more.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

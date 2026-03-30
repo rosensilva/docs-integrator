@@ -1,6 +1,3 @@
----
-title: Milvus Connector Overview
----
 # Milvus Connector Overview
 
 Milvus is an open-source, high-performance vector database designed for scalable similarity search and AI applications. The Ballerina `ballerinax/milvus` connector (v1.1.0) provides programmatic access to Milvus through the Java SDK, enabling you to manage collections, index vector data, and perform similarity searches directly from your Ballerina integration flows.
@@ -28,9 +25,9 @@ Actions are operations you invoke on Milvus from your integration — managing c
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## Milvus connector documentation
+## Documentation
 
-* **[Milvus Connector Setup Guide](setup-guide.md)**: This guide walks you through setting up a Milvus instance and obtaining the connection details required to use the Milvus connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through setting up a Milvus instance and obtaining the connection details required to use the Milvus connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

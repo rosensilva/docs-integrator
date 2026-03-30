@@ -17,7 +17,7 @@ The `ballerinax/hubspot.automation.actions` package exposes the following client
 
 Manages HubSpot custom workflow extension definitions, functions, revisions, and callback completions.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

@@ -1,6 +1,3 @@
----
-title: Discord Connector Overview
----
 # Discord Connector Overview
 
 Discord is a communication platform for communities, teams, and gamers, offering text channels, voice chat, and rich integrations. The Ballerina `ballerinax/discord` connector (v2.0.0) provides programmatic access to the Discord REST API v10, enabling you to manage guilds, channels, messages, members, roles, webhooks, application commands, and more from your Ballerina integration flows.
@@ -28,9 +25,9 @@ Actions are operations you invoke on Discord from your integration — sending m
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## Discord connector documentation
+## Documentation
 
-* **[Discord Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a Discord application and obtaining the credentials required to use the Discord connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a Discord application and obtaining the credentials required to use the Discord connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

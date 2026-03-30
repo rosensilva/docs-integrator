@@ -17,7 +17,7 @@ The `ballerinax/sap.s4hana.api_sales_order_srv` package exposes the following cl
 
 Provides full CRUD access to SAP S/4HANA Sales Orders and all associated sub-entities via the OData A2X API.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

@@ -17,7 +17,7 @@ The `ballerinax/ai.pgvector` package exposes the following clients:
 
 Store, search, and manage vector embeddings in PostgreSQL with pgvector.
 
-### Configuration (`Constructor Parameters`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

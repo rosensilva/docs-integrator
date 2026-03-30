@@ -1,6 +1,3 @@
----
-title: Microsoft OneDrive Connector Overview
----
 # Microsoft OneDrive Connector Overview
 
 Microsoft OneDrive is a cloud-based file hosting and synchronization service from Microsoft that enables storing, sharing, and collaborating on files. The Ballerina `ballerinax/microsoft.onedrive` connector (v3.0.1) provides programmatic access to OneDrive through the Microsoft Graph v1.0 API, enabling you to manage drives, files, folders, sharing permissions, and content uploads/downloads within your Ballerina integration flows.
@@ -28,9 +25,9 @@ Actions are operations you invoke on Microsoft OneDrive from your integration â€
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## Microsoft OneDrive connector documentation
+## Documentation
 
-* **[Microsoft OneDrive Connector Setup Guide](setup-guide.md)**: This guide walks you through registering an application in Microsoft Entra ID (Azure AD) and obtaining the OAuth 2.0 credentials required to use the Microsoft OneDrive connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through registering an application in Microsoft Entra ID (Azure AD) and obtaining the OAuth 2.0 credentials required to use the Microsoft OneDrive connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients â€” operations, parameters, return types, and sample code.

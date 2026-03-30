@@ -1,6 +1,3 @@
----
-title: AWS Redshift Data Connector Overview
----
 # AWS Redshift Data Connector Overview
 
 Amazon Redshift is a fully-managed data warehouse service provided by AWS, designed to efficiently analyze large datasets with high performance and scalability. The Ballerina `ballerinax/aws.redshiftdata` connector (v1.1.0) provides programmatic access to Amazon Redshift through the Data API, enabling you to execute SQL statements, retrieve results, and manage queries without persistent database connections or JDBC drivers.
@@ -27,9 +24,9 @@ Actions are operations you invoke on Amazon Redshift from your integration — e
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## AWS Redshift data connector documentation
+## Documentation
 
-* **[AWS Redshift Data Connector Setup Guide](setup-guide.md)**: This guide walks you through setting up your AWS account and Amazon Redshift environment to obtain the credentials and configuration required to use the AWS Redshift Data connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through setting up your AWS account and Amazon Redshift environment to obtain the credentials and configuration required to use the AWS Redshift Data connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

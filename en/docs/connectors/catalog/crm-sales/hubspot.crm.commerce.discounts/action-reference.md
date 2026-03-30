@@ -17,7 +17,7 @@ The `ballerinax/hubspot.crm.commerce.discounts` package exposes the following cl
 
 Manages HubSpot CRM discount objects — CRUD, batch operations, and search.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

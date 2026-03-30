@@ -18,7 +18,7 @@ For event-driven integration, see the [Trigger Reference](trigger-reference.md).
 
 Publishes messages to Kafka topics with configurable serialization, compression, and delivery guarantees.
 
-### Configuration (`ProducerConfiguration`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
@@ -187,7 +187,7 @@ check producer->close();
 
 Subscribes to Kafka topics and polls for messages with manual offset management.
 
-### Configuration (`ConsumerConfiguration`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

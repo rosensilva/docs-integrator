@@ -17,7 +17,7 @@ The `ballerinax/confluent.cregistry` package exposes the following clients:
 
 Registers and retrieves schemas from Confluent Schema Registry.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

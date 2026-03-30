@@ -17,7 +17,7 @@ The `ballerinax/sap.s4hana.salesarea_0001` package exposes the following clients
 
 Retrieves SAP Sales Area master data via the SAP S/4HANA OData API.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

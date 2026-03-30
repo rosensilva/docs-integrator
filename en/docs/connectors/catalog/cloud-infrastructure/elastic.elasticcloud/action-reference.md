@@ -17,7 +17,7 @@ The `ballerinax/elastic.elasticcloud` package exposes the following clients:
 
 Provides access to the Elastic Cloud REST API for deployment management, organization admin, traffic filters, extensions, API keys, and more.
 
-### Configuration (`ApiKeysConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

@@ -17,7 +17,7 @@ The `ballerinax/scim` package exposes the following clients:
 
 SCIM 2.0 RESTful API client for user, group, bulk operations, service provider configuration, and resource type management.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

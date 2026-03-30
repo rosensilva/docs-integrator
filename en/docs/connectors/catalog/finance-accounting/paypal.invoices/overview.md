@@ -1,6 +1,3 @@
----
-title: PayPal Invoices Connector Overview
----
 # PayPal Invoices Connector Overview
 
 PayPal Invoicing is a service that lets merchants create, send, and manage invoices online through PayPal. The Ballerina `ballerinax/paypal.invoices` connector (v1.0.1) provides programmatic access to the PayPal Invoicing API v2, enabling you to create and manage invoices, record payments and refunds, and manage invoice templates from your Ballerina integration flows.
@@ -28,9 +25,9 @@ Actions are operations you invoke on PayPal Invoicing from your integration — 
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## PayPal invoices connector documentation
+## Documentation
 
-* **[PayPal Invoices Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a PayPal Developer application and obtaining the OAuth 2.0 client credentials required to use the PayPal Invoices connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a PayPal Developer application and obtaining the OAuth 2.0 client credentials required to use the PayPal Invoices connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

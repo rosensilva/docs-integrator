@@ -22,7 +22,7 @@ Available clients:
 
 Executes SQL queries, DML/DDL statements, batch operations, and stored procedures using basic authentication.
 
-### Configuration (`Constructor Parameters`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
@@ -282,7 +282,7 @@ check snowflakeClient.close();
 
 Executes SQL operations with support for both basic and key-pair authentication.
 
-### Configuration (`Constructor Parameters`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

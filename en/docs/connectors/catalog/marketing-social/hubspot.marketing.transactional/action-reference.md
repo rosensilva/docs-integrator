@@ -17,7 +17,7 @@ The `ballerinax/hubspot.marketing.transactional` package exposes the following c
 
 Send transactional emails and manage SMTP API tokens via the HubSpot Marketing API.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

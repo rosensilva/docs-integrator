@@ -17,7 +17,7 @@ The `ballerinax/copybook` package exposes the following clients:
 
 Converts Ballerina records to COBOL copybook-formatted byte arrays and deserializes copybook byte arrays back to Ballerina JSON maps.
 
-### Configuration (`Converter`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

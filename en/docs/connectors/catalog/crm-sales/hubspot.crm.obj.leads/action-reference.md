@@ -17,7 +17,7 @@ The `ballerinax/hubspot.crm.obj.leads` package exposes the following clients:
 
 Provides full CRUD, batch, and search operations on HubSpot CRM lead objects.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

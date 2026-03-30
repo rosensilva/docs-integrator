@@ -24,7 +24,7 @@ For event-driven integration, see the [Trigger Reference](trigger-reference.md).
 
 Connects to a Microsoft SQL Server database and executes SQL queries, DML statements, batch operations, and stored procedures.
 
-### Configuration (`Client init parameters`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

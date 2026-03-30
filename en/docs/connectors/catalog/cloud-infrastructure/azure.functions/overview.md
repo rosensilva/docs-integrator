@@ -1,6 +1,3 @@
----
-title: Azure Functions Connector Overview
----
 # Azure Functions Connector Overview
 
 Azure Functions is a serverless compute service from Microsoft that lets you run event-driven code without managing infrastructure. The Ballerina `ballerinax/azure.functions` connector (v4.2.0) enables you to build Azure Functions in Ballerina, supporting HTTP, Queue, Blob, CosmosDB, and Timer triggers together with input and output bindings, and compiles to a native Azure Functions deployment artifact.
@@ -34,9 +31,9 @@ Supported trigger events:
 
 See the **[Trigger Reference](trigger-reference.md)** for listener configuration, service callbacks, and the `EventData` payload structure.
 
-## Azure functions connector documentation
+## Documentation
 
-* **[Azure Functions Connector Setup Guide](setup-guide.md)**: This guide walks you through creating an Azure Function App and configuring the Azure resources and credentials required by the Azure Functions connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating an Azure Function App and configuring the Azure resources and credentials required by the Azure Functions connector.
 
 * **[Trigger Reference](trigger-reference.md)**: Reference for event-driven integration using the listener and service model.
 

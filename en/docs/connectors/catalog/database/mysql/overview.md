@@ -1,6 +1,3 @@
----
-title: MySQL Connector Overview
----
 # MySQL Connector Overview
 
 MySQL is one of the world's most popular open-source relational database management systems. The Ballerina `ballerinax/mysql` connector (v1.16.2) provides programmatic access to MySQL databases through the standard SQL interface, supporting queries, inserts, updates, deletes, batch operations, stored procedure calls, and real-time Change Data Capture (CDC) via a Debezium-based listener.
@@ -44,9 +41,9 @@ Supported trigger events:
 
 See the **[Trigger Reference](trigger-reference.md)** for listener configuration, service callbacks, and the `EventData` payload structure.
 
-## MySQL connector documentation
+## Documentation
 
-* **[MySQL Connector Setup Guide](setup-guide.md)**: This guide walks you through setting up a MySQL database and obtaining the connection credentials required to use the Ballerina MySQL connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through setting up a MySQL database and obtaining the connection credentials required to use the Ballerina MySQL connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

@@ -17,7 +17,7 @@ The `ballerinax/openai` package exposes the following clients:
 
 Comprehensive client for the full OpenAI REST API — chat, images, audio, embeddings, assistants, files, fine-tuning, and more.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

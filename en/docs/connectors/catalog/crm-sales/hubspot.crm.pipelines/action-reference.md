@@ -17,7 +17,7 @@ The `ballerinax/hubspot.crm.pipelines` package exposes the following clients:
 
 Manage HubSpot CRM pipelines and pipeline stages via the Pipelines REST API.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

@@ -1,6 +1,3 @@
----
-title: Mistral Connector Overview
----
 # Mistral Connector Overview
 
 Mistral AI is a generative AI platform offering large language models for chat completions, code generation, embeddings, moderation, and more. The Ballerina `ballerinax/mistral` connector (v1.0.1) provides programmatic access to the full Mistral REST API, enabling you to integrate chat completions, fill-in-the-middle code generation, OCR, embeddings, fine-tuning, batch processing, and model management into your Ballerina integration flows.
@@ -28,9 +25,9 @@ Actions are operations you invoke on Mistral AI from your integration — genera
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## Mistral connector documentation
+## Documentation
 
-* **[Mistral Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a Mistral AI account and obtaining the API key required to use the Mistral connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a Mistral AI account and obtaining the API key required to use the Mistral connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

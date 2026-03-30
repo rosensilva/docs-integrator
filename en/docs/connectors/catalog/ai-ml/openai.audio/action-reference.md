@@ -17,7 +17,7 @@ The `ballerinax/openai.audio` package exposes the following clients:
 
 Provides text-to-speech generation, audio transcription, and audio translation via the OpenAI Audio API.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

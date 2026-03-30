@@ -1,5 +1,4 @@
 ---
-title: Twilio Connector Overview
 connector: true
 connector_name: "twilio"
 connector_version: "5.0.x"
@@ -32,9 +31,9 @@ Actions are operations you invoke on Twilio from your integration — sending me
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## Twilio connector documentation
+## Documentation
 
-* **[Twilio Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a Twilio account and obtaining the credentials required to use the Twilio connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a Twilio account and obtaining the credentials required to use the Twilio connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

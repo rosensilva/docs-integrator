@@ -1,6 +1,3 @@
----
-title: Guidewire InsuranceNow Connector Overview
----
 # Guidewire InsuranceNow Connector Overview
 
 Guidewire InsuranceNow is a cloud-based insurance platform that provides core systems for policy administration, billing, and claims management. The Ballerina `ballerinax/guidewire.insnow` connector provides programmatic access to the InsuranceNow REST API (v5.0.0), enabling you to manage applications, policies, claims, drivers, documents, and addresses within your Ballerina integration flows.
@@ -27,9 +24,9 @@ Actions are operations you invoke on Guidewire InsuranceNow from your integratio
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## Guidewire insuranceNow connector documentation
+## Documentation
 
-* **[Guidewire InsuranceNow Connector Setup Guide](setup-guide.md)**: This guide walks you through obtaining the credentials required to connect to the Guidewire InsuranceNow REST API.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through obtaining the credentials required to connect to the Guidewire InsuranceNow REST API.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

@@ -17,7 +17,7 @@ The `ballerinax/hubspot.crm.commerce.quotes` package exposes the following clien
 
 Manage HubSpot CRM quote objects — CRUD, batch operations, and search.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

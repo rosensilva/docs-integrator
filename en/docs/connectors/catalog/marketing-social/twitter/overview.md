@@ -1,6 +1,3 @@
----
-title: Twitter Connector Overview
----
 # Twitter Connector Overview
 
 Twitter (X) is a widely-used social networking service provided by X Corp., enabling users to post and interact with messages known as "tweets." The Ballerina `ballerinax/twitter` connector (v5.0.0) provides programmatic access to the Twitter (X) API v2 endpoints, allowing you to manage tweets, users, direct messages, bookmarks, likes, and more from your Ballerina integration flows.
@@ -28,9 +25,9 @@ Actions are operations you invoke on Twitter (X) from your integration — posti
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## Twitter connector documentation
+## Documentation
 
-* **[Twitter Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a Twitter Developer App and obtaining the OAuth 2.0 credentials required to use the Twitter connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a Twitter Developer App and obtaining the OAuth 2.0 credentials required to use the Twitter connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

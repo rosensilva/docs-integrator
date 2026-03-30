@@ -1,6 +1,3 @@
----
-title: AWS SQS Connector Overview
----
 # AWS SQS Connector Overview
 
 Amazon Simple Queue Service (SQS) is a fully managed message queuing service that enables decoupled communication between distributed application components. The Ballerina `ballerinax/aws.sqs` connector (v4.1.2) provides programmatic access to SQS through the AWS SDK, enabling you to send, receive, and manage messages and queues directly from your Ballerina integration flows.
@@ -42,9 +39,9 @@ Supported trigger events:
 
 See the **[Trigger Reference](trigger-reference.md)** for listener configuration, service callbacks, and the `EventData` payload structure.
 
-## AWS SQS connector documentation
+## Documentation
 
-* **[AWS SQS Connector Setup Guide](setup-guide.md)**: This guide walks you through setting up an AWS account and obtaining the credentials required to use the AWS SQS connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through setting up an AWS account and obtaining the credentials required to use the AWS SQS connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

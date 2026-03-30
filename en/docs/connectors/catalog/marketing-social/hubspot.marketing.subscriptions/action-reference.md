@@ -17,7 +17,7 @@ The `ballerinax/hubspot.marketing.subscriptions` package exposes the following c
 
 Manages contact subscription statuses, opt-outs, and subscription definitions via the HubSpot Communication Preferences API v4.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

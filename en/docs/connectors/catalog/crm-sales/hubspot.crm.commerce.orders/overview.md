@@ -26,9 +26,9 @@ Actions are operations you invoke on HubSpot from your integration — creating 
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## HubSpot CRM commerce orders connector documentation
+## Documentation
 
-* **[HubSpot CRM Commerce Orders Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot developer app or private app and obtaining the credentials required to use the HubSpot CRM Commerce Orders connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot developer app or private app and obtaining the credentials required to use the HubSpot CRM Commerce Orders connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

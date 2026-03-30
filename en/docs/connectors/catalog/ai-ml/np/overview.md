@@ -1,6 +1,3 @@
----
-title: NP Connector Overview
----
 # NP Connector Overview
 
 The `ballerinax/np` module provides model provider implementations for Ballerina's Natural Programming (NP) feature, enabling seamless integration with OpenAI and Azure OpenAI large language models. By implementing the `np:ModelProvider` interface, it allows Ballerina's built-in `natural` expression blocks to dispatch prompts to an LLM and automatically parse structured responses back into strongly-typed Ballerina records.
@@ -27,9 +24,9 @@ Actions in the NP connector are powered by two model provider clients that imple
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## NP connector documentation
+## Documentation
 
-* **[NP Connector Setup Guide](setup-guide.md)**: This guide walks you through obtaining the credentials required to use the NP connector with either OpenAI or Azure OpenAI as your model provider.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through obtaining the credentials required to use the NP connector with either OpenAI or Azure OpenAI as your model provider.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

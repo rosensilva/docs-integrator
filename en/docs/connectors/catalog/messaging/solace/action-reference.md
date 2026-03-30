@@ -20,7 +20,7 @@ For event-driven integration, see the [Trigger Reference](trigger-reference.md).
 
 Publishes messages to Solace queues and topics with optional transacted session support.
 
-### Configuration (`ProducerConfiguration`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
@@ -156,7 +156,7 @@ check producer->close();
 
 Consumes messages from Solace queues and topics with blocking/non-blocking receive and data binding.
 
-### Configuration (`ConsumerConfiguration`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

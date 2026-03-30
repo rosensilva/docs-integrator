@@ -17,7 +17,7 @@ The `ballerinax/paypal.invoices` package exposes the following clients:
 
 PayPal Invoicing API v2 — invoice CRUD, send/remind/cancel, payments, refunds, search, QR codes, and templates.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

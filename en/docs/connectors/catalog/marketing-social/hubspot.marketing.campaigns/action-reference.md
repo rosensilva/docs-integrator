@@ -17,7 +17,7 @@ The `ballerinax/hubspot.marketing.campaigns` package exposes the following clien
 
 Manage HubSpot marketing campaigns — CRUD, batch operations, asset associations, metrics, revenue, contacts, and budget.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

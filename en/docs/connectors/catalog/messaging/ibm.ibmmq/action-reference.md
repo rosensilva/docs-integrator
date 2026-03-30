@@ -21,7 +21,7 @@ For event-driven integration, see the [Trigger Reference](trigger-reference.md).
 
 Connects to an IBM MQ queue manager and provides access to queues and topics.
 
-### Configuration (`QueueManagerConfiguration`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
@@ -156,7 +156,7 @@ check queueManager.disconnect();
 
 Provides operations to put messages onto and get messages from an IBM MQ queue.
 
-### Configuration (`QueueManagerConfiguration`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
@@ -291,7 +291,7 @@ check queue->close();
 
 Provides operations to publish messages to and receive messages from an IBM MQ topic.
 
-### Configuration (`QueueManagerConfiguration`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

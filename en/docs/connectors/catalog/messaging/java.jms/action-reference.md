@@ -22,7 +22,7 @@ For event-driven integration, see the [Trigger Reference](trigger-reference.md).
 
 Establishes a connection to the JMS broker and creates sessions.
 
-### Configuration (`ConnectionConfiguration`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
@@ -147,7 +147,7 @@ check connection->close();
 
 Manages transactions and creates message producers and consumers.
 
-### Configuration (`SessionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
@@ -330,7 +330,7 @@ check session->close();
 
 Sends messages to JMS queues and topics.
 
-### Configuration (`ProducerConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
@@ -432,7 +432,7 @@ check producer->close();
 
 Receives and acknowledges messages from JMS queues and topics.
 
-### Configuration (`ConsumerOptions`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

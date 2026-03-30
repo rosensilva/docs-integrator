@@ -17,7 +17,7 @@ The `ballerinax/microsoft.onedrive` package exposes the following clients:
 
 Microsoft Graph v1.0 API — drive and item CRUD, content management, sharing, search, and actions.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

@@ -17,7 +17,7 @@ The `ballerinax/sap.s4hana.api_salesdistrict_srv` package exposes the following 
 
 Provides read access to SAP S/4HANA sales district master data and multilingual text descriptions via OData v2.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

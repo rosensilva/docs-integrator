@@ -17,7 +17,7 @@ The `ballerinax/milvus` package exposes the following clients:
 
 Manage collections, indexes, and vector data; perform similarity search and query operations.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

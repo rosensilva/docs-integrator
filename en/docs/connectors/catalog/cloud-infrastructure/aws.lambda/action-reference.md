@@ -17,7 +17,7 @@ The `ballerinax/aws.lambda` package exposes the following clients:
 
 Marks a Ballerina function for deployment as an AWS Lambda function. This is a compiler extension — not a client you instantiate.
 
-### Configuration (`Function Signature`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

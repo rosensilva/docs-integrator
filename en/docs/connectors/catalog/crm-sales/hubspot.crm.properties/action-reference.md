@@ -17,7 +17,7 @@ The `ballerinax/hubspot.crm.properties` package exposes the following clients:
 
 Manage CRM object properties and property groups via the HubSpot Properties API.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

@@ -17,7 +17,7 @@ The `ballerinax/paypal.subscriptions` package exposes the following clients:
 
 Manages PayPal billing plans and subscriptions via the PayPal Subscriptions REST API.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

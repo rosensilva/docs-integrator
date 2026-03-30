@@ -17,7 +17,7 @@ The `ballerinax/ai.ollama` package exposes the following clients:
 
 Connects to an Ollama server to perform chat completions and structured output generation.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

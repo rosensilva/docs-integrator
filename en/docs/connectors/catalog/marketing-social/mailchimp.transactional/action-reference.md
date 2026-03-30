@@ -17,7 +17,7 @@ The `ballerinax/mailchimp.transactional` package exposes the following clients:
 
 Provides access to all Mandrill API endpoints for transactional email sending, template management, webhooks, and more.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

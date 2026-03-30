@@ -1,6 +1,3 @@
----
-title: Google Calendar Connector Overview
----
 # Google Calendar Connector Overview
 
 Google Calendar is a time-management and scheduling service that allows users to create and manage calendars, events, and access control rules. The Ballerina `ballerinax/googleapis.gcalendar` connector (v4.0.1) provides programmatic access to the Google Calendar API v3, enabling you to create, read, update, and delete calendars, events, ACL rules, free/busy queries, and calendar list entries from your Ballerina integration flows.
@@ -28,9 +25,9 @@ Actions are operations you invoke on Google Calendar from your integration — c
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## Google calendar connector documentation
+## Documentation
 
-* **[Google Calendar Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a Google Cloud project, enabling the Google Calendar API, and obtaining the OAuth 2.0 credentials required to use the connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a Google Cloud project, enabling the Google Calendar API, and obtaining the OAuth 2.0 credentials required to use the connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

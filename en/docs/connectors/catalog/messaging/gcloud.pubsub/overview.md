@@ -1,6 +1,3 @@
----
-title: Google Cloud Pub/Sub Connector Overview
----
 # Google Cloud Pub/Sub Connector Overview
 
 Google Cloud Pub/Sub is a fully managed, real-time messaging service from Google Cloud that enables asynchronous communication between independent applications. The Ballerina `ballerinax/gcloud.pubsub` connector provides a `Publisher` client for publishing messages to topics and a `Listener` for consuming messages from subscriptions, allowing you to integrate Google Cloud Pub/Sub into your Ballerina integration flows.
@@ -41,9 +38,9 @@ Supported trigger events:
 
 See the **[Trigger Reference](trigger-reference.md)** for listener configuration, service callbacks, and the `EventData` payload structure.
 
-## Google cloud pub/Sub connector documentation
+## Documentation
 
-* **[Google Cloud Pub/Sub Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a Google Cloud project, enabling the Pub/Sub API, and generating a service account key to authenticate the connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a Google Cloud project, enabling the Pub/Sub API, and generating a service account key to authenticate the connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

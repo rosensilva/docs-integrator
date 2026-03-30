@@ -17,7 +17,7 @@ The `ballerinax/java.jdbc` package exposes the following clients:
 
 Executes SQL queries, DML statements, batch operations, and stored procedure calls against any JDBC-compatible database.
 
-### Configuration (`Client init parameters`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

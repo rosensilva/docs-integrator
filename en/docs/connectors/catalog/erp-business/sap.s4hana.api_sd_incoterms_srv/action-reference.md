@@ -17,7 +17,7 @@ The `ballerinax/sap.s4hana.api_sd_incoterms_srv` package exposes the following c
 
 Provides read access to SAP S/4HANA Incoterms classifications, versions, and their multilingual text descriptions via OData.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

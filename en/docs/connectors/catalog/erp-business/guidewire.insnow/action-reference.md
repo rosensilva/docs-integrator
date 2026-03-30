@@ -17,7 +17,7 @@ The `ballerinax/guidewire.insnow` package exposes the following clients:
 
 Provides access to the Guidewire InsuranceNow REST API for applications, policies, claims, drivers, documents, and addresses.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

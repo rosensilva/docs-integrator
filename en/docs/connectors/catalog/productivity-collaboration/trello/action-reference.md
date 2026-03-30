@@ -17,7 +17,7 @@ The `ballerinax/trello` package exposes the following clients:
 
 Trello REST API — boards, lists, cards, members, labels, checklists, search, webhooks.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
