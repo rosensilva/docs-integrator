@@ -529,6 +529,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'connectors/catalog/communication/discord/setup-guide',
             'connectors/catalog/communication/discord/action-reference',
+            'connectors/catalog/communication/discord/example',
           ],
         },
         {
