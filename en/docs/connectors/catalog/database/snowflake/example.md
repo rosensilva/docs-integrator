@@ -25,7 +25,7 @@ flowchart TD
 
 ## Setting up the Snowflake integration
 
-Set up a new WSO2 Integrator project by following the [project creation guide](../setup/project-creation.md) before proceeding with the steps below.
+Set up a new WSO2 Integrator project by following the [project creation guide](../../../../develop/create-integrations/create-new-integration.md) before proceeding with the steps below.
 
 ## Adding the Snowflake connector
 
@@ -41,7 +41,7 @@ In the palette search box, type **snowflake** to filter the results. Click the *
 
 ## Configuring the Snowflake connection
 
-### Step 3: Bind connection parameters to Configurable variables
+### Step 3: Bind connection parameters to configurable variables
 
 Fill in the connection form by binding each required field to a Configurable variable so that credentials are injected at runtime rather than hard-coded. For each field, click the **Expression** toggle to switch it to expression mode, then use the Configurables tab to create and assign a new variable.
 
@@ -67,7 +67,7 @@ Click **Configurations** in the left panel of WSO2 Integrator (at the bottom of 
 
 ## Configuring the Snowflake Query operation
 
-### Step 6: Add an Automation entry point and open the flow editor
+### Step 6: Add an automation entry point and open the flow editor
 
 In the left sidebar, locate the **Entry Points** section, click **＋ Add Entry Point**, and select **Automation**. A new Automation node named `main` appears on the canvas. Click the node to open its flow editor, then click the **＋** button between the Start and End nodes to add a new step.
 
