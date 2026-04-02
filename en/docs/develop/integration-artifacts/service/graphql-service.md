@@ -124,6 +124,8 @@ Click **Save Changes** to apply the configuration. Use **+ Attach Listener** at 
 
 ![GraphQL Operations panel](../../../../static/img/develop/integration-artifacts/service/graphql-service/step-create-operations.png)
 
+Once fields are added, they appear as rows in the panel. Click a field row (for example, `query1` or `mutation1`) to open the **flow designer view** for that operation, where you can define the resolver logic using the visual designer. Use the pencil icon to edit the field definition, or the trash icon to delete it.
+
 </TabItem>
 <TabItem value="code" label="Ballerina Code">
 
@@ -200,7 +202,7 @@ service /graphql on graphqlListener {
 
 For basic scalar types (`int`, `decimal`, `float`, `string`), the field type editor displays an **ID Type** checkbox to mark the field as a GraphQL ID type. All field types support a **Nullable** option to allow null values.
 
-![Scalar field type editor](../../../../static/img/develop/integration-artifacts/service/graphql-service/step-field-type-scalar.png)
+<!-- ![Scalar field type editor](../../../../static/img/develop/integration-artifacts/service/graphql-service/step-field-type-scalar.png) -->
 
 ### Complex types
 
@@ -211,7 +213,7 @@ When setting a field type, the type picker shows a dropdown of available types g
 - **+ Create New Type** — create a new type inline
 - **↗ Open Type Browser** — browse all available types
 
-![Field type dropdown](../../../../static/img/develop/integration-artifacts/service/graphql-service/step-field-type-dropdown.png)
+<!-- ![Field type dropdown](../../../../static/img/develop/integration-artifacts/service/graphql-service/step-field-type-dropdown.png) -->
 
 :::note Type constraints
 For **output field types**, WSO2 Integrator supports Object, Enum, and Union types. For **argument types**, only Input Object and Enum types are supported.
@@ -229,20 +231,32 @@ As you add fields with complex return types, the canvas displays a type diagram 
 
 ## Implementing service logic
 
-### Editing a type
+WSO2 Integrator provides two levels at which you can implement resolver logic for a GraphQL service:
 
-To edit a type shown in the canvas, click the three-dot menu (**⋮**) on a type node. The **Edit Type** panel opens on the right, showing the type name, description, and fields. You can add, edit, or delete fields from this panel.
+| Level | Entry point | Use case |
+|---|---|---|
+| **Operation level** | Click a field row in the GraphQL Operations panel | Implement the top-level resolver for a query, mutation, or subscription — the logic that runs when a client calls that operation |
+| **Service class level** | Edit Type → **Implement** in the canvas | Implement field-level resolvers for a complex return type — the logic that resolves individual fields of an object type |
 
-![Edit Type panel](../../../../static/img/develop/integration-artifacts/service/graphql-service/step-edit-type.png)
+### Operation-level logic
+
+To implement logic for a root query, mutation, or subscription, click the field row in the **GraphQL Operations** panel (for example, `query1` or `mutation1`). This opens the **flow designer view** directly for that operation, where you can define the integration logic — such as calling a database, invoking an API, or transforming data — that produces the operation's response.
 
 ### Service class designer
 
-Click **Implement** in the **Edit Type** panel to open the **Service Class Designer**. This view lets you:
+When a field returns a complex object type, you can implement field-level resolvers through the **Service Class Designer**. To access it:
+
+1. In the canvas, click the three-dot menu (**⋮**) on a type node to open the **Edit Type** panel.
+2. Click **Implement** to open the **Service Class Designer**.
+
+![Edit Type panel](../../../../static/img/develop/integration-artifacts/service/graphql-service/step-edit-type.png)
+
+The Service Class Designer lets you:
 
 - Manage **class variables** using **+ Variable**
-- View resolver methods generated for each field — displayed as **GET** methods
+- View the resolver methods generated for each field of the type — displayed as **GET** methods
 - Add additional methods using **+ Method**
 
 ![Service Class Designer](../../../../static/img/develop/integration-artifacts/service/graphql-service/step-service-class-designer.png)
 
-Click any resolver method to navigate to the **flow diagram view**, where you can define the integration logic for that resolver using the visual designer.
+Click any resolver method (for example, `GET name1`) to open the **flow diagram view** for that field resolver, where you can define the logic for resolving that specific field of the object type.
