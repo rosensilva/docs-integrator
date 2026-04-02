@@ -2,7 +2,7 @@
 
 ## What you'll build
 
-Build an Oracle Database integration using the OracleDB connector in WSO2 Integrator's low-code canvas. The integration establishes an Oracle DB connection with Configurable variables and executes a SQL INSERT statement to add a record to a database table.
+Build an Oracle Database integration using the OracleDB connector in WSO2 Integrator's low-code canvas. The integration establishes an Oracle DB connection with configurable variables and executes a SQL INSERT statement to add a record to a database table.
 
 **Operations used:**
 - **execute** — Runs a SQL INSERT statement against the Oracle Database and returns an execution result.
