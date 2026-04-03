@@ -9,17 +9,18 @@ description: "End-to-end walkthrough: Build a healthcare integration with HL7/FH
 
 A healthcare integration service that receives HL7v2 ADT (Admit-Discharge-Transfer) messages from a hospital information system, transforms them into FHIR R4 Patient and Encounter resources, and publishes the FHIR resources to a FHIR server.
 
-```
- ┌────────────────┐     ┌──────────────────────────────────────┐     ┌────────────┐
- │  Hospital       │     │      HL7-to-FHIR Service             │     │  FHIR      │
- │  Information    │────►│                                      │────►│  Server    │
- │  System (HIS)   │TCP  │  1. Receive HL7v2 message            │HTTP │  (HAPI)   │
- └────────────────┘     │  2. Parse HL7 segments (MSH,PID,PV1) │     └────────────┘
-                        │  3. Map to FHIR Patient resource      │
-                        │  4. Map to FHIR Encounter resource    │     ┌────────────┐
-                        │  5. POST Bundle to FHIR server        │────►│  Audit     │
-                        │  6. Send HL7 ACK                      │     │  Log       │
-                        └──────────────────────────────────────┘     └────────────┘
+```mermaid
+flowchart LR
+    HIS["Hospital Information<br/>System (HIS)"]
+    subgraph Service["HL7-to-FHIR Service"]
+        Steps["1. Receive HL7v2 message<br/>2. Parse HL7 segments (MSH,PID,PV1)<br/>3. Map to FHIR Patient resource<br/>4. Map to FHIR Encounter resource<br/>5. POST Bundle to FHIR server<br/>6. Send HL7 ACK"]
+    end
+    FHIR["FHIR Server<br/>(HAPI)"]
+    Audit["Audit Log"]
+
+    HIS -- TCP --> Service
+    Service -- HTTP --> FHIR
+    Service ----> Audit
 ```
 
 ## What You'll Learn

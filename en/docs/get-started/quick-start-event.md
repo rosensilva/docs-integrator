@@ -3,6 +3,7 @@ sidebar_position: 8
 title: "Quick Start: Event Integration"
 description: Build an event-driven integration that reacts to messages from a message broker.
 ---
+import ThemedImage from '@theme/ThemedImage';
 
 # Quick Start: Event Integration
 
@@ -15,49 +16,85 @@ Event integrations are ideal for reactive workflows triggered by messages from K
 - [WSO2 Integrator extension installed](install.md)
 - A running RabbitMQ instance (or use Docker: `docker run -d -p 5672:5672 -p 15672:15672 rabbitmq:management`)
 
-## Step 1: Create the Project
+## Step 1: Create a New Integration Project
 
-1. Open the WSO2 Integrator sidebar in VS Code.
-2. Click **Create New Integration**.
-3. Enter the integration name (e.g., `OrderProcessor`).
+1. Open WSO2 Integrator.
+2. Select **Create**.
+3. Set **Integration Name** to `OrderProcessor`.
+4. Set **Project Name** to `Quick_Start`.
+5. Select **Browse**.
+6. Select the project location and select **Open**.
+7. Select **Create Integration**.
 
-## Step 2: Add an Event Integration Artifact
+<ThemedImage
+    alt="Create a New Integration Project"
+    sources={{
+        light: '/img/get-started/quick-start-event/create-a-new-integration-project-light.gif',
+        dark: '/img/get-started/quick-start-event/create-a-new-integration-project-dark.gif',
+    }}
+/>
 
-1. In the design view, add a **RabbitMQ** event integration artifact.
-2. Configure the connection:
-   - **Queue:** `Orders`
-   - **Host:** `localhost`
-   - **Port:** `5672`
-   - **Username:** `guest`
-   - **Password:** `guest`
+## Step 2: Add a RabbitMQ Event Integration Artifact
 
-## Step 3: Add Message Processing Logic
+1. Select **OrderProcessor**.
+2. In the design view, select **Add Artifact**.
+3. Select **RabbitMQ** under Event Integration.
 
-Add an `onMessage` handler to process incoming messages:
+<ThemedImage
+    alt="Add a RabbitMQ Event Integration Artifact"
+    sources={{
+        light: '/img/get-started/quick-start-event/add-a-rabbitmq-event-integration-artifact-light.gif',
+        dark: '/img/get-started/quick-start-event/add-a-rabbitmq-event-integration-artifact-dark.gif',
+    }}
+/>
 
-```ballerina
-import ballerinax/rabbitmq;
-import ballerina/log;
+## Step 3: Configure the RabbitMQ Connection
 
-listener rabbitmq:Listener orderListener = new (
-    host = "localhost",
-    port = 5672
-);
+1. Set **Queue Name** to `Orders`.
+2. Set **Host** to `localhost`.
+3. Set **Port** to `5672`.
+4. Select **Create**.
 
-@rabbitmq:ServiceConfig {queueName: "Orders"}
-service on orderListener {
-    remote function onMessage(rabbitmq:AnydataMessage message) returns error? {
-        log:printInfo("Received order", content = message.content.toString());
-    }
-}
-```
+<ThemedImage
+    alt="Configure the RabbitMQ Connection"
+    sources={{
+        light: '/img/get-started/quick-start-event/configure-the-rabbitmq-connection-light.gif',
+        dark: '/img/get-started/quick-start-event/configure-the-rabbitmq-connection-dark.gif',
+    }}
+/>
 
-## Step 4: Run and Test
+## Step 4: Add Message Processing Logic
 
-1. Click **Run** in the toolbar.
-2. The service starts listening for messages on the `Orders` queue.
-3. Publish a test message to RabbitMQ using the management UI at `http://localhost:15672` or a client.
-4. Check the terminal output for the logged message.
+1. Select **+ Add Handler**.
+2. Select **onMessage**.
+3. Select **Save**.
+4. Select **+** inside the resource flow.
+5. Select **Call Function**.
+6. Select **printInfo**.
+7. Set **Msg** to `Received order`.
+8. Select **Save**.
+
+<ThemedImage
+    alt="Add Message Processing Logic"
+    sources={{
+        light: '/img/get-started/quick-start-event/add-message-processing-logic-light.gif',
+        dark: '/img/get-started/quick-start-event/add-message-processing-logic-dark.gif',
+    }}
+/>
+
+## Step 5: Run and Test the Integration
+
+1. Select **Run**.
+2. The integration starts and listens for messages on the `Orders` queue.
+3. Publish a test message to the RabbitMQ `Orders` queue to see the log output.
+
+<ThemedImage
+    alt="Run and Test the Integration"
+    sources={{
+        light: '/img/get-started/quick-start-event/run-and-test-the-integration-light.gif',
+        dark: '/img/get-started/quick-start-event/run-and-test-the-integration-dark.gif',
+    }}
+/>
 
 ## Supported Event Sources
 

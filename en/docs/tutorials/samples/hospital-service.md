@@ -11,22 +11,22 @@ A hospital management service that exposes REST APIs for managing doctors, patie
 
 ## Architecture Diagram
 
-```
-                    ┌───────────────────────────────────────┐
-                    │         Hospital Service               │
-                    │                                       │
- GET /doctors ─────►│  ┌──────────────────────────┐         │
- GET /doctors/{id} ►│  │    Doctor Management     │         │
- POST /doctors ────►│  └──────────────────────────┘         │
-                    │                                       │
- GET /patients ────►│  ┌──────────────────────────┐         │     ┌────────────┐
- POST /patients ───►│  │    Patient Management    │─────────┼────►│ PostgreSQL │
-                    │  └──────────────────────────┘         │     └────────────┘
-                    │                                       │
- POST /appointments►│  ┌──────────────────────────┐         │     ┌────────────┐
- GET /appointments ►│  │  Appointment Scheduling  │─────────┼────►│   SMTP     │
-                    │  └──────────────────────────┘         │     │  (email)   │
-                    └───────────────────────────────────────┘     └────────────┘
+```mermaid
+flowchart LR
+    subgraph HospitalService["Hospital Service"]
+        direction TB
+        Doctors["Doctor Management<br/>GET /doctors<br/>POST /doctors"]
+        Patients["Patient Management<br/>GET /patients<br/>POST /patients"]
+        Appointments["Appointment Scheduling<br/>POST /appointments<br/>GET /appointments"]
+    end
+    
+    DB[(PostgreSQL)]
+    SMTP[SMTP<br/>(email)]
+
+    Doctors ----> DB
+    Patients ----> DB
+    Appointments ----> DB
+    Appointments ----> SMTP
 ```
 
 ## Features Demonstrated

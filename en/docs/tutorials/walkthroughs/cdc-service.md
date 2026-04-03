@@ -31,16 +31,20 @@ A CDC pipeline that monitors a MySQL orders table for changes and pushes those c
 
 ## Architecture
 
-```
-┌──────────────┐    ┌───────────────────┐    ┌──────────────┐
-│              │    │                   ├───►│ Elasticsearch│
-│   MySQL DB   ├───►│   CDC Service     │    │ (Search)     │
-│  (orders)    │    │                   │    └──────────────┘
-│              │    │  - Poll changes   │
-│  updated_at  │    │  - Track cursor   │    ┌──────────────┐
-│  is_deleted  │    │  - Fan-out        ├───►│ Kafka Topic  │
-│              │    │                   │    │ (Events)     │
-└──────────────┘    └───────────────────┘    └──────────────┘
+```mermaid
+flowchart LR
+    DB["MySQL DB<br/>(orders)<br/>updated_at<br/>is_deleted"]
+    subgraph CDC["CDC Service"]
+        Poll["Poll changes"]
+        Cursor["Track cursor"]
+        FanOut["Fan-out"]
+    end
+    ES["Elasticsearch<br/>(Search)"]
+    Kafka["Kafka Topic<br/>(Events)"]
+
+    DB ----> CDC
+    CDC ----> ES
+    CDC ----> Kafka
 ```
 
 ## Step 1: Create the Project

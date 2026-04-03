@@ -13,18 +13,20 @@ You need to query multiple independent services (or data sources) and combine th
 
 Apply the **Scatter-Gather** pattern: send requests to multiple backends simultaneously, collect all responses, and merge them into a unified result. This is also known as parallel fan-out/fan-in.
 
-```
-                         ┌─────────┐
-                    ┌───►│Service A │───┐
-                    │    └─────────┘   │
- Request ──►Scatter─┤    ┌─────────┐   ├──►Gather──► Response
-                    ├───►│Service B │───┤
-                    │    └─────────┘   │
-                    └───►┌─────────┐───┘
-                         │Service C │
-                         └─────────┘
+```mermaid
+flowchart LR
+    Request([Request])
+    Scatter((Scatter))
+    ServiceA["Service A"]
+    ServiceB["Service B"]
+    ServiceC["Service C"]
+    Gather((Gather))
+    Response([Response])
 
- Total latency = max(A, B, C)  instead of  A + B + C
+    Request ----> Scatter
+    Scatter ----> ServiceA & ServiceB & ServiceC
+    ServiceA & ServiceB & ServiceC ----> Gather
+    Gather ----> Response
 ```
 
 The gather phase can use different strategies:

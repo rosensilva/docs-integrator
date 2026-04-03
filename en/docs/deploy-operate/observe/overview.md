@@ -42,17 +42,22 @@ tracingProvider = "jaeger"
 
 ## Architecture
 
-```
-┌──────────────────────┐
-│  Ballerina Runtime    │
-│  ┌────────────────┐  │       ┌──────────────┐
-│  │ Metrics Agent   │──┼──────▶│ Prometheus   │──▶ Grafana
-│  ├────────────────┤  │       └──────────────┘
-│  │ Tracing Agent   │──┼──────▶ Jaeger / Zipkin
-│  ├────────────────┤  │
-│  │ Log Agent       │──┼──────▶ ELK / OpenSearch / Loki
-│  └────────────────┘  │
-└──────────────────────┘
+```mermaid
+flowchart LR
+    subgraph Runtime["Ballerina Runtime"]
+        Metrics["Metrics Agent"]
+        Tracing["Tracing Agent"]
+        Logging["Log Agent"]
+    end
+    
+    Prometheus[Prometheus]
+    Grafana[Grafana]
+    Jaeger[Jaeger / Zipkin]
+    ELK[ELK / OpenSearch / Loki]
+
+    Metrics ----> Prometheus ----> Grafana
+    Tracing ----> Jaeger
+    Logging ----> ELK
 ```
 
 ## Supported Integrations

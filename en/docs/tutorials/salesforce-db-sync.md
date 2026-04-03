@@ -9,21 +9,17 @@ description: "End-to-end walkthrough: Synchronize data between Salesforce and a 
 
 A bidirectional sync integration that keeps Salesforce contacts in sync with a PostgreSQL database. The integration listens for Salesforce Change Data Capture (CDC) events for real-time outbound sync and runs a scheduled poll for inbound sync from the database back to Salesforce.
 
-```
- ┌──────────────┐                                           ┌──────────────┐
- │  Salesforce   │     Outbound (SF → DB)                    │  PostgreSQL  │
- │              │─────────────────────────────────────────────►│              │
- │  Contact     │  CDC event → transform → upsert            │  contacts    │
- │  Object      │                                            │  table       │
- │              │◄─────────────────────────────────────────────│              │
- └──────────────┘     Inbound (DB → SF)                      └──────────────┘
-                   poll changes → transform → upsert
-                         ┌───────────────┐
-                         │  Conflict      │
-                         │  Resolution    │
-                         │  (last-write   │
-                         │   wins)        │
-                         └───────────────┘
+```mermaid
+flowchart LR
+    SF[Salesforce<br/>Contact Object]
+    DB[(PostgreSQL<br/>contacts table)]
+
+    SF -->|Outbound: CDC event → transform → upsert| DB
+    DB -->|Inbound: poll changes → transform → upsert| SF
+
+    CR[Conflict Resolution: last-write wins]
+    SF -.- CR
+    DB -.- CR
 ```
 
 ## What You'll Learn

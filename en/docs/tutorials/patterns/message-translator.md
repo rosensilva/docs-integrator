@@ -16,12 +16,13 @@ Two systems need to exchange data, but they use different message formats, field
 
 Insert a translator between the sender and receiver that converts the message from the source format to the target format. The translator handles field mapping, type conversion, structural changes, and any enrichment or filtering required.
 
-```
-┌──────────┐    ┌────────────────────┐    ┌──────────┐
-│ System A  │    │  Message           │    │ System B  │
-│           ├───►│  Translator        ├───►│           │
-│ Format A  │    │  (A → B)           │    │ Format B  │
-└──────────┘    └────────────────────┘    └──────────┘
+```mermaid
+flowchart LR
+    SysA["System A<br/>(Format A)"]
+    Translator["Message Translator<br/>(A → B)"]
+    SysB["System B<br/>(Format B)"]
+
+    SysA ----> Translator ----> SysB
 ```
 
 ## When to Use It

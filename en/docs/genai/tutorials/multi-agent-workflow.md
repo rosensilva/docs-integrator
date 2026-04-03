@@ -18,22 +18,32 @@ In this tutorial, you build a customer support system that uses multiple special
 
 ## Architecture
 
-```
-                     ┌─────────────────┐
-User Message ───────►│   Coordinator   │
-                     │   (Router)      │
-                     └────────┬────────┘
-                              │ classifies
-              ┌───────────────┼───────────────┐
-              ▼               ▼               ▼
-     ┌──────────────┐ ┌──────────────┐ ┌──────────────┐
-     │   Billing    │ │  Technical   │ │   General    │
-     │   Agent      │ │   Agent      │ │   Agent      │
-     │              │ │              │ │              │
-     │ getInvoice   │ │ checkApiStat │ │ getAccount   │
-     │ processRefund│ │ getErrorLogs │ │ searchFAQ    │
-     │ updatePlan   │ │ getDocs      │ │ submitFeedba │
-     └──────────────┘ └──────────────┘ └──────────────┘
+```mermaid
+flowchart TD
+    User([User Message])
+    subgraph Coordinator["Coordinator (Router)"]
+        Router{Classifies}
+    end
+    subgraph Billing["Billing Agent"]
+        B1[getInvoice]
+        B2[processRefund]
+        B3[updatePlan]
+    end
+    subgraph Technical["Technical Agent"]
+        T1[checkApiStat]
+        T2[getErrorLogs]
+        T3[getDocs]
+    end
+    subgraph General["General Agent"]
+        G1[getAccount]
+        G2[searchFAQ]
+        G3[submitFeedba]
+    end
+
+    User ----> Router
+    Router ---->|billing| Billing
+    Router ---->|technical| Technical
+    Router ---->|general| General
 ```
 
 ## Step 1: Create the Project

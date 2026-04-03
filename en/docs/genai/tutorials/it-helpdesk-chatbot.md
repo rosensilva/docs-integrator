@@ -19,29 +19,28 @@ In this tutorial, you build an IT support chatbot with persistent memory so that
 
 ## Architecture
 
-```
-                     WebSocket
-Employee ◄──────────────────────────► IT Helpdesk Agent
-                                     │
-                                     ├── LLM (GPT-4o)
-                                     ├── Memory (Redis)
-                                     │
-                              ┌──────┴──────┐
-                              │   Tools     │
-                              ├─────────────┤
-                              │ ticketLookup│
-                              │ createTicket│
-                              │ searchKB    │
-                              │ checkStatus │
-                              │ resetPwd    │
-                              └─────────────┘
-                                     │
-                    ┌────────────────┼────────────────┐
-                    ▼                ▼                ▼
-            ┌──────────┐    ┌──────────────┐  ┌──────────┐
-            │ Ticket   │    │ Knowledge    │  │ IT Admin │
-            │ System   │    │ Base (Wiki)  │  │   API    │
-            └──────────┘    └──────────────┘  └──────────┘
+```mermaid
+flowchart TD
+    Employee([Employee])
+    subgraph Agent["IT Helpdesk Agent"]
+        LLM["LLM (GPT-4o)"]
+        Memory["Memory (Redis)"]
+        subgraph Tools["Tools"]
+            T1["ticketLookup"]
+            T2["createTicket"]
+            T3["searchKB"]
+            T4["checkStatus"]
+            T5["resetPwd"]
+        end
+        LLM --- Memory
+        LLM --- Tools
+    end
+    System[Ticket System]
+    KB[Knowledge Base (Wiki)]
+    Admin[IT Admin API]
+
+    Employee <-->|WebSocket| LLM
+    Tools ----> System & KB & Admin
 ```
 
 ## Step 1: Create the Project

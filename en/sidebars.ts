@@ -401,6 +401,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'connectors/catalog/communication/aws.sns/setup-guide',
             'connectors/catalog/communication/aws.sns/action-reference',
+            'connectors/catalog/communication/aws.sns/example',
           ],
         },
         {
@@ -529,6 +530,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'connectors/catalog/communication/discord/setup-guide',
             'connectors/catalog/communication/discord/action-reference',
+            'connectors/catalog/communication/discord/example',
           ],
         },
         {
@@ -584,6 +586,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'connectors/catalog/communication/googleapis.gmail/setup-guide',
             'connectors/catalog/communication/googleapis.gmail/action-reference',
+            'connectors/catalog/communication/googleapis-gmail/example',
           ],
         },
         {
@@ -1321,6 +1324,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'connectors/catalog/database/redis/setup-guide',
             'connectors/catalog/database/redis/action-reference',
+            'connectors/catalog/database/redis/example',
           ],
         },
         {

@@ -32,20 +32,25 @@ An automated pipeline that polls an SFTP server for incoming X12 850 Purchase Or
 
 ## Architecture
 
-```
-┌─────────────┐    ┌────────────────────────────────────┐    ┌──────────┐
-│   Trading   │    │          EDI Processing Service     │    │          │
-│   Partner   │    │                                     │    │   ERP    │
-│             │    │  ┌─────────┐  ┌────────┐  ┌──────┐ │    │  System  │
-│  Sends EDI  ├───►│  │  Poll   ├─►│ Parse  ├─►│Valdt.│ ├───►│          │
-│  via SFTP   │    │  │  SFTP   │  │  EDI   │  │      │ │    │ (REST)   │
-│             │    │  └─────────┘  └────────┘  └──┬───┘ │    │          │
-└─────────────┘    │                              │      │    └──────────┘
-                   │  ┌─────────┐  ┌────────────┐ │      │
-                   │  │ Archive ◄──┤ Transform  │◄┘      │
-                   │  │ File    │  │ to JSON    │        │
-                   │  └─────────┘  └────────────┘        │
-                   └────────────────────────────────────┘
+```mermaid
+flowchart LR
+    Partner["Trading Partner<br/>(Sends EDI via SFTP)"]
+    subgraph Service["EDI Processing Service"]
+        Poll["Poll SFTP"]
+        Parse["Parse EDI"]
+        Validate["Validate"]
+        Transform["Transform to JSON"]
+        Archive["Archive File"]
+
+        Poll ----> Parse
+        Parse ----> Validate
+        Validate ----> Transform
+        Transform ----> Archive
+    end
+    ERP["ERP System<br/>(REST)"]
+
+    Partner ----> Poll
+    Transform ----> ERP
 ```
 
 ## Step 1: Create the Project

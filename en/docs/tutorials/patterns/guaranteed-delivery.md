@@ -16,15 +16,17 @@ In distributed integrations, the target system may be down, overloaded, or unrea
 
 Store messages in a durable medium (message broker, database, or persistent queue) before attempting delivery. Retry delivery until the receiver acknowledges success. This decouples the sender from the receiver and ensures no messages are lost during outages.
 
-```
-┌──────────┐    ┌──────────────┐    ┌───────────────┐    ┌──────────┐
-│  Sender  ├───►│  Persistent  ├───►│  Delivery     ├───►│ Receiver │
-│          │    │  Store       │    │  Processor    │    │          │
-└──────────┘    │  (Kafka/DB)  │    │  (retry loop) │    └────┬─────┘
-                └──────────────┘    └───────────────┘         │
-                       ▲                                       │
-                       │              ACK                      │
-                       └───────────────────────────────────────┘
+```mermaid
+flowchart LR
+    Sender([Sender])
+    Store["Persistent Store<br/>(Kafka/DB)"]
+    Processor["Delivery Processor<br/>(retry loop)"]
+    Receiver([Receiver])
+
+    Sender ----> Store
+    Store ----> Processor
+    Processor ----> Receiver
+    Receiver -- ACK ----> Store
 ```
 
 ## When to Use It
