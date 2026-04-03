@@ -26,9 +26,9 @@ Actions are operations you invoke on HubSpot from your integration — listing o
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## HubSpot CRM owners connector documentation
+## Documentation
 
-* **[HubSpot CRM Owners Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot Private App or OAuth app and obtaining the credentials required to use the HubSpot CRM Owners connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot Private App or OAuth app and obtaining the credentials required to use the HubSpot CRM Owners connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

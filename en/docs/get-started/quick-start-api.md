@@ -4,6 +4,8 @@ title: "Quick Start: Integration as API"
 description: Build an HTTP service that calls an external API and returns a greeting.
 ---
 
+import ThemedImage from '@theme/ThemedImage';
+
 # Quick Start: Integration as API
 
 **Time:** Under 10 minutes | **What you'll build:** An HTTP service that receives requests, calls an external API, and returns the response.
@@ -14,66 +16,121 @@ description: Build an HTTP service that calls an external API and returns a gree
 
 ## Architecture
 
-```
-Client                    Your Service               External API
-  │                      /hello:9090              apis.wso2.com
-  │  GET /greeting            │                        │
-  │──────────────────────────►│   GET /mi-qsg/v1.0     │
-  │                           │───────────────────────►│
-  │                           │◄───────────────────────│
-  │◄──────────────────────────│   {"message":"Hello"}  │
-  │  {"message":"Hello!!!"}   │                        │
-```
+```mermaid
+sequenceDiagram
+    participant Client
+    participant Service as Your Service<br/>/hello:9090
+    participant ExtAPI as External API<br/>apis.wso2.com
 
-## Step 1: Create the Project
-
-1. Open the WSO2 Integrator sidebar in VS Code.
-2. Click **Create New Integration**.
-3. Enter the integration name (e.g., `HelloWorld`).
-4. Click **Create Integration**.
-
-## Step 2: Add an HTTP Service
-
-1. In the design view, add an **HTTP Service** artifact.
-2. Set the base path to `/hello` and port to `9090`.
-3. Add a **GET** resource at the path `/greeting`.
-
-## Step 3: Connect to an External API
-
-1. Add an HTTP connection to `https://apis.wso2.com/zvdz/mi-qsg/v1.0`.
-2. In the GET resource, invoke the external API and return its response.
-
-In code, this looks like:
-
-```ballerina
-import ballerina/http;
-
-final http:Client externalApi = check new ("https://apis.wso2.com/zvdz/mi-qsg/v1.0");
-
-service /hello on new http:Listener(9090) {
-    resource function get greeting() returns json|error {
-        json response = check externalApi->get("/");
-        return response;
-    }
-}
+    Client->>Service: GET /greeting
+    Service->>ExtAPI: GET /mi-qsg/v1.0
+    ExtAPI-->>Service: {"message":"Hello"}
+    Service-->>Client: {"message":"Hello!!!"}
 ```
 
-## Step 4: Run and Test
 
-1. Click **Run** in the toolbar (top-right corner).
-2. Once the service starts, test with curl:
+## Step 1: Create the project
 
-```bash
-curl http://localhost:9090/hello/greeting
-```
+1. Open WSO2 Integrator.
+2. Select **Create**.
+3. Set **Integration Name** to `Hello_World_API`.
+4. Set **Project Name** to `Quick_Start`.
+5. Select **Browse**.
+6. Select the project location and select **Open**.
+7. Select **Create Integration**.
 
-Expected response:
+<ThemedImage
+    alt="Create the project"
+    sources={{
+        light: '/img/get-started/quick-start-api/create-the-project-light.gif',
+        dark: '/img/get-started/quick-start-api/create-the-project-dark.gif',
+    }}
+/>
 
-```json
-{"message": "Hello World!!!"}
-```
+## Step 2: Add an HTTP service
 
-You can also use the built-in **Try It** panel in VS Code to test the endpoint interactively.
+1. Select **Hello_World_API**.
+2. In the design view, select **Add Artifact**.
+3. Select **HTTP Service** under **Integration as API**.
+4. Keep **Service contract** as **Design from scratch**.
+5. Set **Service base path** to `/hello`.
+6. Select **Create**.
+
+<ThemedImage
+    alt="Add an HTTP service"
+    sources={{
+        light: '/img/get-started/quick-start-api/add-an-http-service-light.gif',
+        dark: '/img/get-started/quick-start-api/add-an-http-service-dark.gif',
+    }}
+/>
+
+## Step 3: Design the integration flow
+
+1. In the HTTP service design view, select **+ Add Resouses** resource.
+2. Select **GET**.
+2. Set the **resource path** to `greeting`.
+3. Select **Save**.
+4. Select **+** inside the resource flow.
+5. Select **Add Connection**.
+6. Select **HTTP**.
+1. Set the **Url** to `https://apis.wso2.com/zvdz/mi-qsg/v1.0`.
+2. Set the **Connection Name** to `externalApi` and select **Save Connection**.
+3. Select **externalApi**.
+
+<ThemedImage
+    alt="Design the integration flow"
+    sources={{
+        light: '/img/get-started/quick-start-api/design-the-integration-flow-light.gif',
+        dark: '/img/get-started/quick-start-api/design-the-integration-flow-dark.gif',
+    }}
+/>
+
+## Step 4: Configure HTTP
+
+1. Select **Get**.
+2. Set **Path** to `/`.
+3. Set **Result** to `response`.
+4. Set **Target Type** to `json`.
+5. Select **Target Type**.
+5. Select **Save**.
+
+<ThemedImage
+    alt="Configure HTTP"
+    sources={{
+        light: '/img/get-started/quick-start-api/configure-http-light.gif',
+        dark: '/img/get-started/quick-start-api/configure-http-dark.gif',
+    }}
+/>
+
+## Step 5: Return the response
+
+1. Select **+** inside the resource flow.
+2. Select **Return** node.
+3. Set **Expression** to `response`.
+4. Select **Save**.
+
+<ThemedImage
+    alt="Return the response"
+    sources={{
+        light: '/img/get-started/quick-start-api/return-the-response-light.gif',
+        dark: '/img/get-started/quick-start-api/return-the-response-dark.gif',
+    }}
+/>
+
+## Step 6: Run and test
+
+1. Select **Run**.
+2. Select **Try it**.
+2. Select **Execute Cell**.
+4. The project executes immediately and give 200 response "Hello World".
+
+<ThemedImage
+    alt="Run and test"
+    sources={{
+        light: '/img/get-started/quick-start-api/run-and-test-light.gif',
+        dark: '/img/get-started/quick-start-api/run-and-test-dark.gif',
+    }}
+/>
 
 ## What's Next
 

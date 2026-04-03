@@ -1,5 +1,5 @@
 ---
-title: "Azure Storage Service"
+title: "Azure Storage Service Overview"
 description: "Overview of the ballerinax/azure_storage_service connector for WSO2 Integrator."
 ---
 
@@ -30,9 +30,9 @@ Actions are operations you invoke on Azure Storage from your integration — lis
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## Azure storage service connector documentation
+## Documentation
 
-* **[Azure Storage Service Connector Setup Guide](setup-guide.md)**: This guide walks you through creating an Azure Storage account and obtaining the credentials required to use the Azure Storage Service connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating an Azure Storage account and obtaining the credentials required to use the Azure Storage Service connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

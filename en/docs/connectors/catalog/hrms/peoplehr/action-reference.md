@@ -15,7 +15,7 @@ The `ballerinax/peoplehr` package exposes the following clients:
 
 Provides access to the People HR REST API for managing employees, holidays, salaries, vacancies, applicants, custom screens, appraisals, and queries.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

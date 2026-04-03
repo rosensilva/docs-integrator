@@ -1,6 +1,3 @@
----
-title: SCIM Connector Overview
----
 # SCIM Connector Overview
 
 SCIM (System for Cross-domain Identity Management) is a widely-adopted standard protocol for automating the exchange of user identity information between identity domains or IT systems. The Ballerina `ballerinax/scim` connector (v1.0.1) provides programmatic access to SCIM 2.0 compliant identity providers and services, enabling you to manage users, groups, and bulk provisioning operations through the SCIM 2.0 REST API.
@@ -27,9 +24,9 @@ Actions are operations you invoke on a SCIM 2.0 compliant identity provider from
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## SCIM connector documentation
+## Documentation
 
-* **[SCIM Connector Setup Guide](setup-guide.md)**: This guide walks you through setting up an Asgardeo Machine-to-Machine (M2M) application and obtaining the OAuth 2.0 client credentials required to use the SCIM connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through setting up an Asgardeo Machine-to-Machine (M2M) application and obtaining the OAuth 2.0 client credentials required to use the SCIM connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

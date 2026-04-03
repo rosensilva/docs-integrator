@@ -19,7 +19,7 @@ The `ballerinax/twilio` package exposes the following clients:
 
 Full Twilio REST API access — messaging, voice calls, phone numbers, recordings, conferences, and account management.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

@@ -17,7 +17,7 @@ The `ballerinax/hubspot.marketing.events` package exposes the following clients:
 
 Marketing Events API v3 — event CRUD, attendance, analytics, list associations, and settings.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

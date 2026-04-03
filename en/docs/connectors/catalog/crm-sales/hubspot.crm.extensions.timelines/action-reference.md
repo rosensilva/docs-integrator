@@ -17,7 +17,7 @@ The `ballerinax/hubspot.crm.extensions.timelines` package exposes the following 
 
 Manages timeline event templates, tokens, and events on HubSpot CRM records.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

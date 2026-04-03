@@ -1,6 +1,3 @@
----
-title: HubSpot Marketing Events Connector Overview
----
 # HubSpot Marketing Events Connector Overview
 
 HubSpot Marketing Events is part of the HubSpot CRM platform, enabling you to manage marketing events such as webinars, conferences, and workshops, and track participant attendance. The Ballerina `ballerinax/hubspot.marketing.events` connector (v1.0.0) provides programmatic access to the HubSpot Marketing Events API v3, allowing you to create, update, and delete events, record attendance, retrieve participation analytics, and manage list associations from your Ballerina integration flows.
@@ -28,9 +25,9 @@ Actions are operations you invoke on HubSpot Marketing Events from your integrat
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## HubSpot marketing events connector documentation
+## Documentation
 
-* **[HubSpot Marketing Events Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot app and obtaining the OAuth 2.0 credentials required to use the HubSpot Marketing Events connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot app and obtaining the OAuth 2.0 credentials required to use the HubSpot Marketing Events connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

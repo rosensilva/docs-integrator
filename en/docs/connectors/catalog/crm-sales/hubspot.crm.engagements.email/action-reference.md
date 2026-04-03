@@ -17,7 +17,7 @@ The `ballerinax/hubspot.crm.engagements.email` package exposes the following cli
 
 Manage HubSpot email engagement records — CRUD, batch operations, and search.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

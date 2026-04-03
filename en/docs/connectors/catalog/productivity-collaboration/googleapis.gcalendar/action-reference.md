@@ -17,7 +17,7 @@ The `ballerinax/googleapis.gcalendar` package exposes the following clients:
 
 Provides full access to Google Calendar API v3 — calendars, events, ACL rules, calendar list, free/busy, and colors.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

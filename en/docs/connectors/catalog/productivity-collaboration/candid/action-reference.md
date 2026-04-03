@@ -25,7 +25,7 @@ Available clients:
 
 Search for nonprofits and look up available search filters.
 
-### Configuration (`ApiKeysConfig & ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
@@ -339,7 +339,7 @@ Sample response:
 
 Retrieve detailed nonprofit profiles and download PDF reports.
 
-### Configuration (`ApiKeysConfig & ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
@@ -570,7 +570,7 @@ byte[] pdfBytes = check result.getBinaryPayload();
 
 Download Charity Check PDF reports for IRS compliance verification.
 
-### Configuration (`ApiKeysConfig & ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

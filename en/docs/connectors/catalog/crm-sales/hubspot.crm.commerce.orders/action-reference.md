@@ -17,7 +17,7 @@ The `ballerinax/hubspot.crm.commerce.orders` package exposes the following clien
 
 Manage HubSpot order objects — CRUD, batch operations, and search.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

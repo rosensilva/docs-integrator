@@ -19,7 +19,7 @@ For event-driven integration, see the [Trigger Reference](trigger-reference.md).
 
 Publishes messages to a Google Cloud Pub/Sub topic.
 
-### Configuration (`PublisherConfiguration`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

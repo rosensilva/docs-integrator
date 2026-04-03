@@ -14,27 +14,22 @@ Managing context windows is essential for building reliable agents that handle l
 
 A typical agent request consumes tokens across several components:
 
-```
-┌─────────────────────────────────────────────┐
-│              Context Window (128K)          │
-│                                             │
-│  ┌─────────────────────┐                    │
-│  │ System Prompt        │  ~500 tokens      │
-│  ├─────────────────────┤                    │
-│  │ Tool Definitions     │  ~1,000 tokens    │
-│  ├─────────────────────┤                    │
-│  │ Conversation History │  ~3,000 tokens    │
-│  ├─────────────────────┤                    │
-│  │ Current Message      │  ~200 tokens      │
-│  ├─────────────────────┤                    │
-│  │ Tool Results         │  ~2,000 tokens    │
-│  ├─────────────────────┤                    │
-│  │ Reserved for Response│  ~2,000 tokens    │
-│  └─────────────────────┘                    │
-│                                             │
-│  Used: ~8,700 tokens                        │
-│  Available: ~119,300 tokens                 │
-└─────────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    subgraph Window["Context Window (128K)"]
+        direction TB
+        System["System Prompt<br/>~500 tokens"]
+        Tools["Tool Definitions<br/>~1,000 tokens"]
+        History["Conversation History<br/>~3,000 tokens"]
+        Current["Current Message<br/>~200 tokens"]
+        Results["Tool Results<br/>~2,000 tokens"]
+        Response["Reserved for Response<br/>~2,000 tokens"]
+        
+        System --- Tools --- History --- Current --- Results --- Response
+    end
+    
+    Info["Used: ~8,700 tokens<br/>Available: ~119,300 tokens"]
+    Window -.-> Info
 ```
 
 ### Token Estimation

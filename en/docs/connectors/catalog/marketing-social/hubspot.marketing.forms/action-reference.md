@@ -17,7 +17,7 @@ The `ballerinax/hubspot.marketing.forms` package exposes the following clients:
 
 Manage HubSpot marketing forms — create, list, retrieve, update, and archive form definitions.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

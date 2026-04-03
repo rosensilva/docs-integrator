@@ -18,7 +18,7 @@ The `ballerinax/sap.s4hana.api_sales_order_simulation_srv` package exposes the f
 Simulates SAP S/4HANA sales order creation and manages associated value-added services, returning pricing, availability, and credit information without persisting any data.
 
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

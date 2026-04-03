@@ -9,23 +9,23 @@ description: "End-to-end walkthrough: Aggregate data from multiple REST APIs."
 
 An API aggregation service that receives a single request, fans out to multiple backend REST APIs in parallel (user profile, order history, recommendations), combines the results into a unified response, and handles partial failures gracefully.
 
-```
-                    ┌──────────────────────────────────────────┐
-                    │        API Aggregation Service            │
-                    │                                          │
- GET /customer/123 ─►  ┌────────┐                              │
-                    │  │ Router │───┬──► User Service ──────┐  │
-                    │  └────────┘   │                       │  │
-                    │               ├──► Order Service ─────┤  │◄── Combined
-                    │               │                       │  │    JSON Response
-                    │               └──► Recommendation  ───┤  │
-                    │                    Service            │  │
-                    │               ┌──────────────────────┘  │
-                    │               ▼                          │
-                    │          ┌──────────┐                    │
-                    │          │ Combiner │────────────────────►
-                    │          └──────────┘                    │
-                    └──────────────────────────────────────────┘
+```mermaid
+flowchart LR
+    Request([GET /customer/123])
+    subgraph Service["API Aggregation Service"]
+        Router{Router}
+        User["User Service"]
+        Order["Order Service"]
+        Reco["Recommendation Service"]
+        Combiner[Combiner]
+
+        Router --- User & Order & Reco
+        User & Order & Reco --- Combiner
+    end
+    Response([Combined JSON Response])
+
+    Request ----> Router
+    Combiner ----> Response
 ```
 
 ## What You'll Learn

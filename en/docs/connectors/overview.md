@@ -75,5 +75,5 @@ Most connectors are action-only. Trigger support is available for select connect
 
 ## Next steps
 
-- [Connector catalog](catalog/index.md) — Browse all available connectors
+- [Connector catalog](catalog/index.mdx) — Browse all available connectors
 - [Connections](../develop/integration-artifacts/supporting/connections.md) — Create and manage connections

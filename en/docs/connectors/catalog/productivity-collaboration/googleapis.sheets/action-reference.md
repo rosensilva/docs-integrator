@@ -15,7 +15,7 @@ The `ballerinax/googleapis.sheets` package exposes the following clients:
 
 Provides spreadsheet management, worksheet management, and data-level operations via the Google Sheets API v4.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

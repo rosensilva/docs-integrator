@@ -17,7 +17,7 @@ The `ballerinax/github` package exposes the following clients:
 
 Provides access to the GitHub REST API (241 resource functions) for managing repositories, issues, pull requests, organizations, users, and more.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

@@ -448,6 +448,8 @@ table {
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid #E2E8F0;
+  width: max-content;
+  max-width: 100%;
 }
 
 [data-theme='dark'] table {

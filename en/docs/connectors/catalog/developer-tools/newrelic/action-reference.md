@@ -18,7 +18,7 @@ The `ballerinax/newrelic` package exposes the following clients:
 Observability extension that automatically registers a New Relic metrics reporter and an OpenTelemetry trace provider with the Ballerina runtime on module initialization.
 
 
-### Configuration (`ModuleConfiguration (Config.toml)`)
+### Configuration`)
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

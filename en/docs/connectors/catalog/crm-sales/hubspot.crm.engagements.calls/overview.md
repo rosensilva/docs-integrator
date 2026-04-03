@@ -26,9 +26,9 @@ Actions are operations you invoke on HubSpot to manage call engagement records â
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## HubSpot CRM engagements calls connector documentation
+## Documentation
 
-* **[HubSpot CRM Engagements Calls Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot developer app and obtaining the OAuth 2.0 credentials required to use the HubSpot CRM Engagements Calls connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot developer app and obtaining the OAuth 2.0 credentials required to use the HubSpot CRM Engagements Calls connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients â€” operations, parameters, return types, and sample code.

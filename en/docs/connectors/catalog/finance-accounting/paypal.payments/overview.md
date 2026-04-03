@@ -1,6 +1,3 @@
----
-title: PayPal Payments Connector Overview
----
 # PayPal Payments Connector Overview
 
 PayPal is a global payments platform that enables businesses to authorize, capture, refund, and manage payments online. The Ballerina `ballerinax/paypal.payments` connector (v2.0.1) provides programmatic access to the PayPal Payments API v2, enabling you to authorize payments, capture authorized funds, issue refunds, and retrieve payment details within your Ballerina integration flows.
@@ -27,9 +24,9 @@ Actions are operations you invoke on PayPal from your integration — capturing 
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## PayPal payments connector documentation
+## Documentation
 
-* **[PayPal Payments Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a PayPal Developer account and obtaining the OAuth 2.0 client credentials required to use the PayPal Payments connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a PayPal Developer account and obtaining the OAuth 2.0 client credentials required to use the PayPal Payments connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

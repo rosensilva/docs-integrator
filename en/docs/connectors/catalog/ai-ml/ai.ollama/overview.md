@@ -1,6 +1,3 @@
----
-title: Ollama Connector Overview
----
 # Ollama Connector Overview
 
 Ollama is an open-source tool for running large language models locally. The Ballerina `ballerinax/ai.ollama` connector (v1.2.1) provides programmatic access to Ollama-hosted models through the `ballerina/ai` model provider interface, enabling chat completions and structured output generation within your Ballerina integration flows.
@@ -26,9 +23,9 @@ Actions are operations you invoke on the Ollama model from your integration — 
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## Ollama connector documentation
+## Documentation
 
-* **[Ollama Connector Setup Guide](setup-guide.md)**: This guide walks you through installing and running an Ollama server locally so the Ballerina connector can communicate with it.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through installing and running an Ollama server locally so the Ballerina connector can communicate with it.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

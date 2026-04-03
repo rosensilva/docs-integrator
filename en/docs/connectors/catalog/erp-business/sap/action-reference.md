@@ -17,7 +17,7 @@ The `ballerinax/sap` package exposes the following clients:
 
 HTTP client for SAP APIs with built-in CSRF token authentication.
 
-### Configuration (`ClientConfiguration`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

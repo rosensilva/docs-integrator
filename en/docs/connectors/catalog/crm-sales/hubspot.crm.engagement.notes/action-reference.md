@@ -17,7 +17,7 @@ The `ballerinax/hubspot.crm.engagement.notes` package exposes the following clie
 
 HubSpot Notes API — note CRUD, batch operations, and search.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

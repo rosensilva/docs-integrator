@@ -17,7 +17,7 @@ For event-driven integration, see the [Trigger Reference](trigger-reference.md).
 
 Publish messages, consume messages, and manage queues and exchanges on a RabbitMQ broker.
 
-### Configuration (`ConnectionConfiguration`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

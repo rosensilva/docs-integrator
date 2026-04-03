@@ -1,6 +1,3 @@
----
-title: Azure AI Search Connector Overview
----
 # Azure AI Search Connector Overview
 
 Azure AI Search (formerly Azure Cognitive Search) is a cloud-based search platform that provides full-text search, vector search, and AI-powered enrichment for building intelligent search applications. The Ballerina `ballerinax/azure.ai.search` connector (v1.0.1) provides programmatic access to the Azure AI Search REST API, enabling you to manage indexes, indexers, data sources, skillsets, and synonym maps directly from your Ballerina integration flows.
@@ -27,9 +24,9 @@ Actions are operations you invoke on Azure AI Search from your integration — c
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## Azure AI search connector documentation
+## Documentation
 
-* **[Azure AI Search Connector Setup Guide](setup-guide.md)**: This guide walks you through creating an Azure AI Search service and obtaining the service URL and admin API key required to use the connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating an Azure AI Search service and obtaining the service URL and admin API key required to use the connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

@@ -18,21 +18,23 @@ In this tutorial, you build a conversational interface over an analytics databas
 
 ## Architecture
 
-```
-                    ┌─────────────────────┐
-User: "Show me     │    Data Agent       │
- top customers     │                     │
- by revenue" ─────►│  1. Understand      │
-                   │  2. Generate SQL    │
-                   │  3. Validate SQL    │
-                   │  4. Execute         │
-                   │  5. Format results  │
-                   └──────────┬──────────┘
-                              │
-                    ┌─────────▼──────────┐
-                    │  Analytics         │
-                    │  Database          │
-                    └────────────────────┘
+```mermaid
+flowchart TD
+    User([User: "Show me<br/>top customers<br/>by revenue"])
+    subgraph Agent["Data Agent"]
+        Understand["1. Understand"]
+        Generate["2. Generate SQL"]
+        Validate["3. Validate SQL"]
+        Execute["4. Execute"]
+        Format["5. Format results"]
+        
+        Understand ----> Generate ----> Validate ----> Execute ----> Format
+    end
+    DB[(Analytics Database)]
+
+    User ----> Understand
+    Execute ----> DB
+    DB ----> Execute
 ```
 
 ## Step 1: Create the Project

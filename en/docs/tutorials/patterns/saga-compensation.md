@@ -15,19 +15,27 @@ Break the transaction into a sequence of **local transactions**, each handled by
 
 This is the **orchestration-based saga**, where a central coordinator drives the sequence:
 
-```
-  Saga Orchestrator
-  ─────────────────────────────────────────────────
-  Step 1: Reserve Inventory     ──► Compensate: Release Inventory
-  Step 2: Charge Payment        ──► Compensate: Refund Payment
-  Step 3: Book Shipping         ──► Compensate: Cancel Shipping
-  Step 4: Send Confirmation     ──► (no compensation needed)
-  ─────────────────────────────────────────────────
+```mermaid
+flowchart TD
+    Start([Start Saga])
+    Step1["Step 1: Reserve Inventory"]
+    Step2["Step 2: Charge Payment"]
+    Step3["Step 3: Book Shipping"]
+    Step4["Step 4: Send Confirmation"]
+    End([End Saga])
 
-  If Step 3 fails:
-    → Compensate Step 2 (refund payment)
-    → Compensate Step 1 (release inventory)
-    → Return failure to caller
+    Comp1["Compensate: Release Inventory"]
+    Comp2["Compensate: Refund Payment"]
+    Comp3["Compensate: Cancel Shipping"]
+
+    Start ----> Step1
+    Step1 -- Success ----> Step2
+    Step2 -- Success ----> Step3
+    Step3 -- Success ----> Step4 ----> End
+
+    Step1 -- Failure ----> Fail([Return Failure])
+    Step2 -- Failure ----> Comp1 ----> Fail
+    Step3 -- Failure ----> Comp2 ----> Comp1 ----> Fail
 ```
 
 ## When to Use It

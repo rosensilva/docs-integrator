@@ -17,7 +17,7 @@ The `ballerinax/hubspot.crm.extensions.videoconferencing` package exposes the fo
 
 Manage video conferencing application settings (webhook URLs) for a HubSpot app.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

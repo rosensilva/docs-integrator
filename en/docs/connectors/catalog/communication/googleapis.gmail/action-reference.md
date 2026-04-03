@@ -17,7 +17,7 @@ The `ballerinax/googleapis.gmail` package exposes the following clients:
 
 Gmail REST API — messages, drafts, threads, labels, history, profile, and attachments.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

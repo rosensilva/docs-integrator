@@ -18,7 +18,7 @@ The `ballerinax/sap.s4hana.api_sales_inquiry_srv` package exposes the following 
 Provides typed access to all entities exposed by the SAP S/4HANA API_SALES_INQUIRY_SRV OData service — inquiry headers, line items, business partners, and pricing elements.
 
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

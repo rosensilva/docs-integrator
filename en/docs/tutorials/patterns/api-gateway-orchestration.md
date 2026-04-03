@@ -13,20 +13,26 @@ Clients need to interact with multiple backend services to complete a single bus
 
 Introduce an **API Gateway** service that acts as a single entry point for clients. The gateway accepts one request, orchestrates calls to multiple backend services in the required order, transforms and combines the results, and returns a unified response. The client sees one clean API while the gateway handles the complexity.
 
-```
-                ┌────────────────────────────────────────┐
-                │           API Gateway                   │
-                │                                        │
- Client ───────►│  1. Validate request                   │
- POST /orders   │  2. Check inventory  ──► Inventory Svc │
-                │  3. Process payment  ──► Payment Svc   │
-                │  4. Send confirmation ──► Notify Svc   │
-                │  5. Return unified response             │
-                │                                        │
-                │  On failure at step 3:                  │
-                │    → Release inventory reservation      │
-                │    → Return error to client             │
-                └────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    Client([Client])
+    subgraph Gateway["API Gateway"]
+        Validate["1. Validate request"]
+        Inventory["2. Check inventory"]
+        Payment["3. Process payment"]
+        Notify["4. Send confirmation"]
+        Response["5. Return unified response"]
+        
+        Validate ----> Inventory ----> Payment ----> Notify ----> Response
+    end
+    InventorySvc["Inventory Svc"]
+    PaymentSvc["Payment Svc"]
+    NotifySvc["Notify Svc"]
+
+    Client -- POST /orders ----> Validate
+    Inventory ----> InventorySvc
+    Payment ----> PaymentSvc
+    Notify ----> NotifySvc
 ```
 
 ## When to Use It

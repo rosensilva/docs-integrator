@@ -1,6 +1,3 @@
----
-title: CDC Connector Overview
----
 # CDC Connector Overview
 
 The Ballerina `ballerinax/cdc` connector provides a spec-compliant, production-grade Change Data Capture (CDC) framework built on top of Debezium, enabling real-time streaming of database row changes (inserts, updates, deletes, and snapshot reads) into your Ballerina integration flows. It supports MySQL, Microsoft SQL Server, PostgreSQL, and Oracle databases through dedicated database-specific listener implementations.
@@ -37,9 +34,9 @@ Supported trigger events:
 
 See the **[Trigger Reference](trigger-reference.md)** for listener configuration, service callbacks, and the `EventData` payload structure.
 
-## CDC connector documentation
+## Documentation
 
-* **[CDC Connector Setup Guide](setup-guide.md)**: This guide walks you through configuring your database server to emit change events that the CDC connector can consume.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through configuring your database server to emit change events that the CDC connector can consume.
 
 * **[Trigger Reference](trigger-reference.md)**: Reference for event-driven integration using the listener and service model.
 

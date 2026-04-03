@@ -1,6 +1,3 @@
----
-title: AWS Marketplace MPE Connector Overview
----
 # AWS Marketplace MPE Connector Overview
 
 AWS Marketplace Entitlement Service (MPE) enables AWS Marketplace sellers to programmatically determine the entitlements of customers who have subscribed to their products. The Ballerina `ballerinax/aws.marketplace.mpe` connector (v0.2.0) wraps the AWS Marketplace Entitlement Service API, allowing you to query customer entitlements from your Ballerina integration flows.
@@ -26,9 +23,9 @@ Actions are operations you invoke on the AWS Marketplace Entitlement Service fro
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## AWS marketplace MPE connector documentation
+## Documentation
 
-* **[AWS Marketplace MPE Connector Setup Guide](setup-guide.md)**: This guide walks you through setting up your AWS account and obtaining the credentials required to use the AWS Marketplace MPE connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through setting up your AWS account and obtaining the credentials required to use the AWS Marketplace MPE connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

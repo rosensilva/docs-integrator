@@ -1,6 +1,3 @@
----
-title: Zoom Meetings Connector Overview
----
 # Zoom Meetings Connector Overview
 
 Zoom Meetings is a widely used cloud-based video conferencing platform for virtual meetings, webinars, and online collaboration. The Ballerina `ballerinax/zoom.meetings` connector (v1.0.1) provides programmatic access to the Zoom Meetings REST API v2, enabling you to automate meeting lifecycle management, handle registrations, manage cloud recordings, and access reporting data directly from your Ballerina integration flows.
@@ -28,9 +25,9 @@ Actions are operations you invoke on Zoom from your integration — creating mee
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## Zoom meetings connector documentation
+## Documentation
 
-* **[Zoom Meetings Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a Zoom OAuth app on the Zoom App Marketplace and obtaining the credentials required to authenticate the Zoom Meetings connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a Zoom OAuth app on the Zoom App Marketplace and obtaining the credentials required to authenticate the Zoom Meetings connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

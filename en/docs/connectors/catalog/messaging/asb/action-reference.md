@@ -19,7 +19,7 @@ For event-driven integration, see the [Trigger Reference](trigger-reference.md).
 
 Send individual, batch, and scheduled messages to Azure Service Bus queues and topics.
 
-### Configuration (`ASBServiceSenderConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
@@ -194,7 +194,7 @@ check sender->close();
 
 Receive messages from queues and subscriptions, settle messages, and manage locks.
 
-### Configuration (`ASBServiceReceiverConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
@@ -453,7 +453,7 @@ check receiver->close();
 
 Manage Azure Service Bus entities — create, get, update, delete, and list queues, topics, subscriptions, and rules.
 
-### Configuration (`AdminConfiguration`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

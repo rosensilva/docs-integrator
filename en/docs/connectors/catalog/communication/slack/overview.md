@@ -1,6 +1,3 @@
----
-title: Slack Connector Overview
----
 # Slack Connector Overview
 
 Slack is a cloud-based team communication platform that enables real-time messaging, file sharing, and collaboration across channels and workspaces. The Ballerina `ballerinax/slack` connector (v5.0.0) provides programmatic access to the Slack Web API, allowing you to send messages, manage conversations, upload files, search content, and administer workspaces from your Ballerina integration flows.
@@ -28,9 +25,9 @@ Actions are operations you invoke on Slack from your integration — posting mes
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## Slack connector documentation
+## Documentation
 
-* **[Slack Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a Slack App and obtaining the Bot User OAuth token required to use the Slack connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a Slack App and obtaining the Bot User OAuth token required to use the Slack connector.
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.
 

@@ -17,7 +17,7 @@ The `ballerinax/hubspot.crm.engagements.communications` package exposes the foll
 
 Manage HubSpot communication records — CRUD, batch operations, and search.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

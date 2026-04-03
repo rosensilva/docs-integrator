@@ -28,7 +28,7 @@ For event-driven integration, see the [Trigger Reference](trigger-reference.md).
 
 REST API — record CRUD, SOQL/SOSL, metadata, reports, actions.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
@@ -430,7 +430,7 @@ salesforce:ReportResults results = check salesforceClient->runReport("00O5g00000
 
 Execute custom Apex REST endpoints exposed by your Salesforce org.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
@@ -587,7 +587,7 @@ check apexClient->delete("/MyApexEndpoint/EXT-001");
 
 Bulk API v1 — manage jobs and batches for large-scale CSV/JSON/XML data operations.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
@@ -750,7 +750,7 @@ bulk:Result[] results = check bulkClient->getBatchResults(job.id, batch.id);
 
 Bulk API v2 — simplified ingest and query jobs optimised for large-scale data loads.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
@@ -976,7 +976,7 @@ string resultCsv = check bulkV2Client->getQueryJobResults(queryJob.id, maxRecord
 
 SOAP API — lead conversion using the Salesforce SOAP protocol.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

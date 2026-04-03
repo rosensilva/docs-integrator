@@ -1,6 +1,3 @@
----
-title: Mailchimp Marketing Connector Overview
----
 # Mailchimp Marketing Connector Overview
 
 Mailchimp is a leading email marketing and automation platform that helps businesses manage audiences, create campaigns, and track engagement. The Ballerina `ballerinax/mailchimp.marketing` connector (v1.0.1) provides programmatic access to the Mailchimp Marketing API v3.0, enabling you to manage audiences, subscribers, campaigns, automations, templates, and more from your Ballerina integration flows.
@@ -28,9 +25,9 @@ Actions are operations you invoke on Mailchimp from your integration — managin
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## Mailchimp marketing connector documentation
+## Documentation
 
-* **[Mailchimp Marketing Connector Setup Guide](setup-guide.md)**: This guide walks you through obtaining a Mailchimp API key required to use the Mailchimp Marketing connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through obtaining a Mailchimp API key required to use the Mailchimp Marketing connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

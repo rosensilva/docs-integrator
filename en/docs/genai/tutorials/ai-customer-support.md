@@ -18,21 +18,18 @@ In this tutorial, you build a fully functional AI customer support agent that co
 
 ## Architecture
 
-```
-                        ┌─────────────────┐
-                        │   Chat Agent    │
-                        │                 │
-User Message ──────────►│  System Prompt  │
-                        │  + LLM (GPT-4o) │
-                        │  + Tools        │
-                        └────────┬────────┘
-                                 │
-                    ┌────────────┼────────────┐
-                    ▼            ▼            ▼
-            ┌──────────┐ ┌──────────┐ ┌──────────┐
-            │ Product  │ │  Order   │ │ Ticket   │
-            │ Database │ │   API    │ │  System  │
-            └──────────┘ └──────────┘ └──────────┘
+```mermaid
+flowchart TD
+    User([User Message])
+    subgraph Agent["Chat Agent"]
+        Prompt["System Prompt<br/>+ LLM (GPT-4o)<br/>+ Tools"]
+    end
+    DB[(Product Database)]
+    API[Order API]
+    System[Ticket System]
+
+    User ----> Prompt
+    Prompt ----> DB & API & System
 ```
 
 ## Step 1: Create the Project

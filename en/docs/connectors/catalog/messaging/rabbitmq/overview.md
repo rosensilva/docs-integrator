@@ -1,6 +1,3 @@
----
-title: RabbitMQ Connector Overview
----
 # RabbitMQ Connector Overview
 
 RabbitMQ is an open-source message broker that supports multiple messaging protocols including AMQP 0-9-1. The Ballerina `ballerinax/rabbitmq` connector (v3.3.2) provides programmatic access to RabbitMQ, enabling you to publish messages, consume messages synchronously or asynchronously via listener services, declare and manage queues and exchanges, and build event-driven integration flows.
@@ -42,9 +39,9 @@ Supported trigger events:
 
 See the **[Trigger Reference](trigger-reference.md)** for listener configuration, service callbacks, and the `EventData` payload structure.
 
-## RabbitMQ connector documentation
+## Documentation
 
-* **[RabbitMQ Connector Setup Guide](setup-guide.md)**: This guide walks you through installing and configuring a RabbitMQ server so you can connect to it with the Ballerina RabbitMQ connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through installing and configuring a RabbitMQ server so you can connect to it with the Ballerina RabbitMQ connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

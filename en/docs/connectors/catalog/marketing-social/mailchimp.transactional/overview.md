@@ -1,6 +1,3 @@
----
-title: Mailchimp Transactional Connector Overview
----
 # Mailchimp Transactional Connector Overview
 
 Mailchimp Transactional (formerly Mandrill) is a powerful transactional email service for sending personalized, one-to-one emails such as password resets, order confirmations, and welcome messages. The Ballerina `ballerinax/mailchimp.transactional` connector (v1.0.1) provides programmatic access to the Mandrill API, enabling you to send transactional emails, manage templates, configure webhooks, and monitor delivery from your Ballerina integration flows.
@@ -28,9 +25,9 @@ Actions are operations you invoke on Mailchimp Transactional from your integrati
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## Mailchimp transactional connector documentation
+## Documentation
 
-* **[Mailchimp Transactional Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a Mailchimp Transactional (Mandrill) account and obtaining the API key required to use the connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a Mailchimp Transactional (Mandrill) account and obtaining the API key required to use the connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

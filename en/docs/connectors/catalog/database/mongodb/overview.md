@@ -1,6 +1,3 @@
----
-title: MongoDB Connector Overview
----
 # MongoDB Connector Overview
 
 MongoDB is a document-oriented NoSQL database used for high-volume data storage and flexible schema design. The Ballerina `ballerinax/mongodb` connector (v5.2.3) provides programmatic access to MongoDB through a three-level client hierarchy (Client → Database → Collection), enabling you to perform CRUD operations, aggregation pipelines, and index management from your Ballerina integration flows.
@@ -30,9 +27,9 @@ Actions are operations you invoke on MongoDB from your integration — inserting
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## MongoDB connector documentation
+## Documentation
 
-* **[MongoDB Connector Setup Guide](setup-guide.md)**: This guide walks you through setting up a MongoDB instance and obtaining the connection details required to use the MongoDB connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through setting up a MongoDB instance and obtaining the connection details required to use the MongoDB connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

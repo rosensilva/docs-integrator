@@ -19,7 +19,7 @@ The `ballerinax/mongodb` package exposes the following clients:
 
 Top-level client for connecting to MongoDB, listing databases, and obtaining Database references.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
@@ -119,7 +119,7 @@ check mongoClient->close();
 
 Represents a MongoDB database — manage collections and drop the database.
 
-### Configuration (`N/A`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
@@ -244,7 +244,7 @@ check moviesDb->drop();
 
 Document CRUD, queries, aggregation pipelines, distinct values, and index management.
 
-### Configuration (`N/A`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

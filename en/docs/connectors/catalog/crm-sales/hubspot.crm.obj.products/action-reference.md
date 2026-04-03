@@ -17,7 +17,7 @@ The `ballerinax/hubspot.crm.obj.products` package exposes the following clients:
 
 Manage HubSpot CRM product records — individual and batch CRUD, upsert, and search.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

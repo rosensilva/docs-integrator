@@ -9,6 +9,7 @@ import { useConnectorVersion } from '@site/src/utils/connectorVersion';
 import styles from './styles.module.css';
 
 const CATEGORY_TAGS = {
+  'built-in':                   { label: 'Built-in',                    color: '#059669', bg: '#ecfdf5', border: '#a7f3d0' },
   'ai-ml':                      { label: 'AI & Machine Learning',       color: '#7c3aed', bg: '#f5f3ff', border: '#ddd6fe' },
   'cloud-infrastructure':       { label: 'Cloud & Infrastructure',       color: '#0369a1', bg: '#f0f9ff', border: '#bae6fd' },
   'communication':              { label: 'Communication',                color: '#0d9488', bg: '#f0fdfa', border: '#99f6e4' },

@@ -24,23 +24,19 @@ RAG addresses all three by grounding LLM responses in your actual documents, dat
 
 A RAG pipeline consists of two main phases: **ingestion** (offline) and **retrieval + generation** (online).
 
-```
-┌─────────────────── Ingestion (Offline) ───────────────────┐
-│                                                            │
-│  Documents   →   Chunking   →   Embedding   →   Vector DB │
-│  (PDF, HTML,     (Split into    (Convert to     (Store     │
-│   JSON, etc.)     passages)      vectors)        vectors)  │
-│                                                            │
-└────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    subgraph Ingestion["Ingestion (Offline)"]
+        Docs[Documents<br/>(PDF, HTML, JSON, etc.)] --> Chunking[Chunking<br/>(Split into passages)]
+        Chunking --> Embedding[Embedding<br/>(Convert to vectors)]
+        Embedding --> VectorDB[(Vector DB<br/>(Store vectors))]
+    end
 
-┌─────────── Retrieval + Generation (Online) ───────────────┐
-│                                                            │
-│  User Query  →  Embed Query  →  Vector Search  →  LLM     │
-│                                  (Find top-k      (Generate│
-│                                   similar          answer  │
-│                                   chunks)          from    │
-│                                                    context)│
-└────────────────────────────────────────────────────────────┘
+    subgraph Retrieval["Retrieval + Generation (Online)"]
+        Query([User Query]) --> EmbedQuery[Embed Query]
+        EmbedQuery --> Search[Vector Search<br/>(Find top-k similar chunks)]
+        Search --> LLM[LLM<br/>(Generate answer from context)]
+    end
 ```
 
 ## Pipeline Components

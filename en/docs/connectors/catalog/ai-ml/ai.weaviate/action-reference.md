@@ -17,7 +17,7 @@ The `ballerinax/ai.weaviate` package exposes the following clients:
 
 Provides vector storage, similarity search, and deletion operations against a Weaviate collection.
 
-### Configuration (`Configuration & ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

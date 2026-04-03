@@ -18,23 +18,16 @@ In this tutorial, you build a Model Context Protocol (MCP) server that connects 
 
 ## Architecture
 
-```
-┌────────────────────┐        ┌─────────────────────────────┐
-│   MCP Client       │        │    MCP Server               │
-│                    │        │    (WSO2 Integrator)         │
-│  Claude Desktop    │◄──────►│                             │
-│  GitHub Copilot    │  MCP   │  ┌─────────────────────┐    │
-│  Custom Agent      │ Proto  │  │ search_customers    │    │
-│                    │  col   │  │ check_inventory     │    │
-│                    │        │  │ get_sales_report    │    │
-│                    │        │  │ get_customer_orders │    │
-└────────────────────┘        │  └──────────┬──────────┘    │
-                              │             │               │
-                              │     ┌───────┴───────┐       │
-                              │     │   Enterprise  │       │
-                              │     │   Database    │       │
-                              │     └───────────────┘       │
-                              └─────────────────────────────┘
+```mermaid
+flowchart LR
+    Client["MCP Client<br/>(Claude, Copilot, Custom)"]
+    subgraph Server["MCP Server (WSO2 Integrator)"]
+        Tools["search_customers<br/>check_inventory<br/>get_sales_report<br/>get_customer_orders"]
+    end
+    DB[("Enterprise Database")]
+
+    Client <==> |MCP Protocol| Tools
+    Tools ----> DB
 ```
 
 ## Step 1: Create the Project

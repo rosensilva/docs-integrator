@@ -17,7 +17,7 @@ The `ballerinax/openai.finetunes` package exposes the following clients:
 
 Provides access to OpenAI fine-tuning, files, and models REST API endpoints.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

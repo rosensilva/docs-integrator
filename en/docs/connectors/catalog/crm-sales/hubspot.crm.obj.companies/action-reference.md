@@ -17,7 +17,7 @@ The `ballerinax/hubspot.crm.obj.companies` package exposes the following clients
 
 Perform CRUD, batch, search, and merge operations on HubSpot CRM company records.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

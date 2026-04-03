@@ -26,9 +26,9 @@ Actions are operations you invoke on HubSpot to manage discount records — crea
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## HubSpot CRM commerce discounts connector documentation
+## Documentation
 
-* **[HubSpot CRM Commerce Discounts Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot private app or OAuth app and obtaining the credentials required to use the HubSpot CRM Commerce Discounts connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot private app or OAuth app and obtaining the credentials required to use the HubSpot CRM Commerce Discounts connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

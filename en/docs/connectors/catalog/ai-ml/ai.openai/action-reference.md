@@ -18,7 +18,7 @@ The `ballerinax/ai.openai` package exposes the following clients:
 
 Provides chat completion and structured generation using OpenAI GPT models.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
@@ -273,7 +273,7 @@ Sample response:
 
 Generates text embeddings using OpenAI embedding models for semantic search, clustering, and similarity tasks.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

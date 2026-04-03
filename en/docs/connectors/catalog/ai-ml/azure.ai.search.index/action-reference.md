@@ -17,7 +17,7 @@ The `ballerinax/azure.ai.search.index` package exposes the following clients:
 
 Perform search, document lookup, indexing, autocomplete, and suggestion operations on an Azure AI Search index.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

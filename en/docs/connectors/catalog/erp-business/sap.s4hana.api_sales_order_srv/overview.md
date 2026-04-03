@@ -1,6 +1,3 @@
----
-title: SAP Sales Order Connector Overview
----
 # SAP Sales Order Connector Overview
 
 SAP Sales Order is an S/4HANA OData (A2X) API that provides programmatic access to sales order processing, covering the full lifecycle from order creation to delivery and billing. The Ballerina `ballerinax/sap.s4hana.api_sales_order_srv` connector enables you to create, read, update, and delete sales orders, line items, billing plans, schedule lines, pricing elements, partners, and related documents directly from your Ballerina integration flows.
@@ -28,9 +25,9 @@ Actions are operations you invoke on SAP S/4HANA from your Ballerina integration
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## SAP sales order connector documentation
+## Documentation
 
-* **[SAP Sales Order Connector Setup Guide](setup-guide.md)**: This guide walks you through configuring SAP S/4HANA Communication Management to expose the Sales Order (A2X) API and obtaining the credentials required to use the connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through configuring SAP S/4HANA Communication Management to expose the Sales Order (A2X) API and obtaining the credentials required to use the connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

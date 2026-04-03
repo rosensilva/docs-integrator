@@ -17,7 +17,7 @@ The `ballerinax/hubspot.crm.owners` package exposes the following clients:
 
 Access the HubSpot Owners API to list and retrieve owner information.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

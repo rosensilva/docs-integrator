@@ -16,7 +16,7 @@ The `ballerinax/nats` package exposes the following clients:
 
 Connects to a NATS server to publish messages and perform request-reply exchanges.
 
-### Configuration (`ConnectionConfiguration`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
@@ -160,7 +160,7 @@ check natsClient->close();
 
 Manages JetStream streams and publishes or pull-consumes persistent messages.
 
-### Configuration (`StreamConfiguration`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

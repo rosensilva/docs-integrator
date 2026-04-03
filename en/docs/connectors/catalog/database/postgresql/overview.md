@@ -1,6 +1,3 @@
----
-title: PostgreSQL Connector Overview
----
 # PostgreSQL Connector Overview
 
 PostgreSQL is a powerful, open-source object-relational database system known for reliability, feature robustness, and performance. The Ballerina `ballerinax/postgresql` connector (v1.16.3) provides programmatic access to PostgreSQL databases through SQL queries, stored procedures, and batch operations, with native support for PostgreSQL-specific data types such as geometric, network, range, JSON, and UUID types. It also includes a CDC (Change Data Capture) listener powered by Debezium for real-time event-driven integration.
@@ -43,9 +40,9 @@ Supported trigger events:
 
 See the **[Trigger Reference](trigger-reference.md)** for listener configuration, service callbacks, and the `EventData` payload structure.
 
-## PostgreSQL connector documentation
+## Documentation
 
-* **[PostgreSQL Connector Setup Guide](setup-guide.md)**: This guide walks you through setting up a PostgreSQL server and configuring it for use with the Ballerina PostgreSQL connector, including optional CDC configuration.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through setting up a PostgreSQL server and configuring it for use with the Ballerina PostgreSQL connector, including optional CDC configuration.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

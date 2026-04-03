@@ -17,7 +17,7 @@ The `ballerinax/stripe` package exposes the following clients:
 
 Provides access to all Stripe REST API V1 resources including customers, payments, invoices, subscriptions, products, and more.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

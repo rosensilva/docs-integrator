@@ -17,7 +17,7 @@ The `ballerinax/hubspot.crm.engagements.tasks` package exposes the following cli
 
 Manage HubSpot task engagement records — CRUD, batch operations, and search.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

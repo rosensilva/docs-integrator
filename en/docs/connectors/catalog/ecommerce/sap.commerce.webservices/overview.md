@@ -1,6 +1,3 @@
----
-title: SAP Commerce Connector Overview
----
 # SAP Commerce Connector Overview
 
 SAP Commerce Cloud is an enterprise e-commerce platform that provides tools for product catalog management, order processing, customer management, and storefront operations. The Ballerina `ballerinax/sap.commerce.webservices` connector (v0.9.0) provides programmatic access to SAP Commerce Cloud through the OCC v2 REST API, enabling you to integrate commerce data and operations into your Ballerina integration flows.
@@ -28,9 +25,9 @@ Actions are operations you invoke on SAP Commerce Cloud from your integration â€
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## SAP commerce connector documentation
+## Documentation
 
-* **[SAP Commerce Connector Setup Guide](setup-guide.md)**: This guide walks you through configuring your SAP Commerce Cloud instance and obtaining the OAuth 2.0 credentials required to use the connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through configuring your SAP Commerce Cloud instance and obtaining the OAuth 2.0 credentials required to use the connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients â€” operations, parameters, return types, and sample code.

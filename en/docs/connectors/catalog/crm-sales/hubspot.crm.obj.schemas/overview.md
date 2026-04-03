@@ -27,9 +27,9 @@ Actions are operations you invoke on HubSpot from your integration — listing s
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## HubSpot CRM schemas connector documentation
+## Documentation
 
-* **[HubSpot CRM Schemas Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot Private App and obtaining the access token required to use the HubSpot CRM Schemas connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot Private App and obtaining the access token required to use the HubSpot CRM Schemas connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

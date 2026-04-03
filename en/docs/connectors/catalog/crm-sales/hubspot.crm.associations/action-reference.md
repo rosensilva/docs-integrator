@@ -17,7 +17,7 @@ The `ballerinax/hubspot.crm.associations` package exposes the following clients:
 
 Manages HubSpot CRM associations — reading, creating, labeling, and archiving relationships between CRM object pairs, plus usage reporting.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

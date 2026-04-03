@@ -21,7 +21,7 @@ Available clients:
 
 Connects to an Amazon Redshift cluster via JDBC for SQL queries, DML/DDL execution, batch operations, and stored procedure calls.
 
-### Configuration (`Client init parameters`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

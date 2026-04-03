@@ -27,9 +27,9 @@ Actions are operations you invoke on DeepSeek from your integration — sending 
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## DeepSeek connector documentation
+## Documentation
 
-* **[DeepSeek Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a DeepSeek account and obtaining the API key required to use the DeepSeek connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a DeepSeek account and obtaining the API key required to use the DeepSeek connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

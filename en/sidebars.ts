@@ -271,6 +271,15 @@ const sidebars: SidebarsConfig = {
         // ── Connector categories (alphabetical) ──
         {
           type: 'category',
+          label: 'AI',
+          link: { type: 'doc', id: 'connectors/catalog/built-in/ai/overview' },
+          items: [
+            'connectors/catalog/built-in/ai/action-reference',
+            'connectors/catalog/built-in/ai/trigger-reference',
+          ],
+        },
+        {
+          type: 'category',
           label: 'AI Devant',
           link: { type: 'doc', id: 'connectors/catalog/ai-ml/ai.devant/overview' },
           items: [
@@ -366,6 +375,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'connectors/catalog/database/aws.redshiftdata/setup-guide',
             'connectors/catalog/database/aws.redshiftdata/action-reference',
+            'connectors/catalog/database/aws.redshiftdata/example',
           ],
         },
         {
@@ -393,6 +403,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'connectors/catalog/communication/aws.sns/setup-guide',
             'connectors/catalog/communication/aws.sns/action-reference',
+            'connectors/catalog/communication/aws.sns/example',
           ],
         },
         {
@@ -521,6 +532,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'connectors/catalog/communication/discord/setup-guide',
             'connectors/catalog/communication/discord/action-reference',
+            'connectors/catalog/communication/discord/example',
           ],
         },
         {
@@ -543,6 +555,25 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'category',
+          label: 'Email',
+          link: { type: 'doc', id: 'connectors/catalog/built-in/email/overview' },
+          items: [
+            'connectors/catalog/built-in/email/setup-guide',
+            'connectors/catalog/built-in/email/action-reference',
+            'connectors/catalog/built-in/email/trigger-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'FTP',
+          link: { type: 'doc', id: 'connectors/catalog/built-in/ftp/overview' },
+          items: [
+            'connectors/catalog/built-in/ftp/action-reference',
+            'connectors/catalog/built-in/ftp/trigger-reference',
+          ],
+        },
+        {
+          type: 'category',
           label: 'Github',
           link: { type: 'doc', id: 'connectors/catalog/developer-tools/github/overview' },
           items: [
@@ -557,6 +588,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'connectors/catalog/communication/googleapis.gmail/setup-guide',
             'connectors/catalog/communication/googleapis.gmail/action-reference',
+            'connectors/catalog/communication/googleapis-gmail/example',
           ],
         },
         {
@@ -598,11 +630,38 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'category',
+          label: 'gRPC',
+          link: { type: 'doc', id: 'connectors/catalog/built-in/grpc/overview' },
+          items: [
+            'connectors/catalog/built-in/grpc/action-reference',
+            'connectors/catalog/built-in/grpc/trigger-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'GraphQL',
+          link: { type: 'doc', id: 'connectors/catalog/built-in/graphql/overview' },
+          items: [
+            'connectors/catalog/built-in/graphql/action-reference',
+            'connectors/catalog/built-in/graphql/trigger-reference',
+          ],
+        },
+        {
+          type: 'category',
           label: 'Guidewire InsuranceNow',
           link: { type: 'doc', id: 'connectors/catalog/erp-business/guidewire.insnow/overview' },
           items: [
             'connectors/catalog/erp-business/guidewire.insnow/setup-guide',
             'connectors/catalog/erp-business/guidewire.insnow/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'HTTP',
+          link: { type: 'doc', id: 'connectors/catalog/built-in/http/overview' },
+          items: [
+            'connectors/catalog/built-in/http/action-reference',
+            'connectors/catalog/built-in/http/trigger-reference',
           ],
         },
         {
@@ -1015,6 +1074,15 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'category',
+          label: 'MCP',
+          link: { type: 'doc', id: 'connectors/catalog/built-in/mcp/overview' },
+          items: [
+            'connectors/catalog/built-in/mcp/action-reference',
+            'connectors/catalog/built-in/mcp/trigger-reference',
+          ],
+        },
+        {
+          type: 'category',
           label: 'Microsoft OneDrive',
           link: { type: 'doc', id: 'connectors/catalog/storage-file/microsoft.onedrive/overview' },
           items: [
@@ -1258,6 +1326,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'connectors/catalog/database/redis/setup-guide',
             'connectors/catalog/database/redis/action-reference',
+            'connectors/catalog/database/redis/example',
           ],
         },
         {
@@ -1412,6 +1481,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'connectors/catalog/communication/slack/setup-guide',
             'connectors/catalog/communication/slack/action-reference',
+            'connectors/catalog/communication/slack/example',
           ],
         },
         {
@@ -1454,6 +1524,15 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'category',
+          label: 'TCP',
+          link: { type: 'doc', id: 'connectors/catalog/built-in/tcp/overview' },
+          items: [
+            'connectors/catalog/built-in/tcp/action-reference',
+            'connectors/catalog/built-in/tcp/trigger-reference',
+          ],
+        },
+        {
+          type: 'category',
           label: 'Trello',
           link: { type: 'doc', id: 'connectors/catalog/productivity-collaboration/trello/overview' },
           items: [
@@ -1469,6 +1548,7 @@ const sidebars: SidebarsConfig = {
             'connectors/catalog/communication/twilio/setup-guide',
             'connectors/catalog/communication/twilio/action-reference',
             ...connectorVersionedDocs('connectors/catalog/communication/twilio'),
+            'connectors/catalog/communication/twilio/example',
           ],
         },
         {
@@ -1491,11 +1571,39 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'category',
+          label: 'UDP',
+          link: { type: 'doc', id: 'connectors/catalog/built-in/udp/overview' },
+          items: [
+            'connectors/catalog/built-in/udp/action-reference',
+            'connectors/catalog/built-in/udp/trigger-reference',
+          ],
+        },
+        {
+          type: 'category',
           label: 'WSO2 APIM Catalog',
           link: { type: 'doc', id: 'connectors/catalog/developer-tools/wso2.apim.catalog/overview' },
           items: [
             'connectors/catalog/developer-tools/wso2.apim.catalog/setup-guide',
             'connectors/catalog/developer-tools/wso2.apim.catalog/action-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'WebSocket',
+          link: { type: 'doc', id: 'connectors/catalog/built-in/websocket/overview' },
+          items: [
+            'connectors/catalog/built-in/websocket/action-reference',
+            'connectors/catalog/built-in/websocket/trigger-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'WebSub',
+          link: { type: 'doc', id: 'connectors/catalog/built-in/websub/overview' },
+          items: [
+            'connectors/catalog/built-in/websub/setup-guide',
+            'connectors/catalog/built-in/websub/action-reference',
+            'connectors/catalog/built-in/websub/trigger-reference',
           ],
         },
         {
@@ -1993,7 +2101,23 @@ const sidebars: SidebarsConfig = {
           ],
         },
         'reference/protocols',
-        'reference/data-formats',
+        {
+          type: 'category',
+          label: 'Supported Data Formats',
+          link: { type: 'doc', id: 'reference/data-formats/index' },
+          items: [
+            'reference/data-formats/avro',
+            'reference/data-formats/csv',
+            'reference/data-formats/edi',
+            'reference/data-formats/fhir',
+            'reference/data-formats/hl7',
+            'reference/data-formats/json',
+            'reference/data-formats/protocol-buffers',
+            'reference/data-formats/toml',
+            'reference/data-formats/xml',
+            'reference/data-formats/yaml',
+          ],
+        },
         'reference/by-example',
         'reference/specifications',
         // Appendix

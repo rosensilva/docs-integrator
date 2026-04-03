@@ -13,14 +13,18 @@ A producing system needs to notify multiple consuming systems about events, but 
 
 Introduce a **message broker** (Kafka, NATS, RabbitMQ) between producers and consumers. The producer publishes events to a **topic** (or subject/exchange). Each consumer subscribes to the topics it cares about and processes events independently. The broker handles delivery, buffering, and (depending on the system) persistence.
 
-```
-                          ┌──────────────────┐
-                          │   Message Broker  │
-                          │   (Kafka/NATS)    │
-  Producer ──publish──►   │                  │   ──subscribe──► Consumer A
-  (Order Service)         │  "order-events"  │   ──subscribe──► Consumer B
-                          │      topic       │   ──subscribe──► Consumer C
-                          └──────────────────┘
+```mermaid
+flowchart LR
+    Producer["Producer<br/>(Order Service)"]
+    subgraph Broker["Message Broker<br/>(Kafka/NATS)"]
+        Topic(("order-events<br/>topic"))
+    end
+    ConsumerA["Consumer A"]
+    ConsumerB["Consumer B"]
+    ConsumerC["Consumer C"]
+
+    Producer -- publish ----> Topic
+    Topic -- subscribe ----> ConsumerA & ConsumerB & ConsumerC
 ```
 
 Each consumer processes the event at its own pace:

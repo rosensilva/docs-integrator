@@ -17,7 +17,7 @@ The `ballerinax/mistral` package exposes the following clients:
 
 Full Mistral REST API — chat, FIM, embeddings, OCR, moderation, agents, models, files, fine-tuning, and batch jobs.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

@@ -27,9 +27,9 @@ Actions let you manage timeline event templates and create timeline events on Hu
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## HubSpot CRM extensions timelines connector documentation
+## Documentation
 
-* **[HubSpot CRM Extensions Timelines Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot developer app and obtaining the credentials required to use the HubSpot CRM Extensions Timelines connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot developer app and obtaining the credentials required to use the HubSpot CRM Extensions Timelines connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

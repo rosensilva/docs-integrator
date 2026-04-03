@@ -17,7 +17,7 @@ The `ballerinax/ai.mistral` package exposes the following clients:
 
 Interacts with Mistral AI LLMs for chat completions and structured text generation.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

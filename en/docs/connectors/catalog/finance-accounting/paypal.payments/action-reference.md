@@ -17,7 +17,7 @@ The `ballerinax/paypal.payments` package exposes the following clients:
 
 PayPal Payments API v2 — authorize, capture, void, and refund payments.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

@@ -1,6 +1,3 @@
----
-title: OpenAI Connector Overview
----
 # OpenAI Connector Overview
 
 OpenAI is an AI research and deployment company providing powerful language models, image generation, audio processing, and more through its REST API. The Ballerina `ballerinax/openai` connector (v1.0.1) provides comprehensive programmatic access to the OpenAI API, covering chat completions, image generation, audio, embeddings, assistants, fine-tuning, vector stores, file management, and more — enabling you to integrate AI capabilities into your Ballerina integration flows.
@@ -28,9 +25,9 @@ Actions are operations you invoke on the OpenAI API from your integration — ge
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## OpenAI connector documentation
+## Documentation
 
-* **[OpenAI Connector Setup Guide](setup-guide.md)**: This guide walks you through creating an OpenAI account and obtaining the API key required to use the OpenAI connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating an OpenAI account and obtaining the API key required to use the OpenAI connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

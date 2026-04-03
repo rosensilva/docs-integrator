@@ -1,6 +1,3 @@
----
-title: Alfresco Connector Overview
----
 # Alfresco Connector Overview
 
 Alfresco is a modern, open-source content management platform that enables organizations to manage enterprise documents, digital assets, and records with efficiency and control. The Ballerina `ballerinax/alfresco` connector (v2.0.1) provides programmatic access to Alfresco Content Services through the REST API Version 1, enabling you to perform core content operations such as uploading and downloading files, managing nodes and folders, setting metadata, handling permissions, and managing sites, groups, and people within your Ballerina integration flows.
@@ -28,9 +25,9 @@ Actions are operations you invoke on Alfresco from your integration — managing
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## Alfresco connector documentation
+## Documentation
 
-* **[Alfresco Connector Setup Guide](setup-guide.md)**: This guide walks you through creating an Alfresco account and obtaining the Basic Authentication credentials required to use the Alfresco connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating an Alfresco account and obtaining the Basic Authentication credentials required to use the Alfresco connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

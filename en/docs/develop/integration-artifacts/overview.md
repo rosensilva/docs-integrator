@@ -48,17 +48,17 @@ WSO2 Integrator supports the following artifact types:
 
 A typical integration combines multiple artifact types. For example, an order processing system might include:
 
-```
-┌─────────────────┐     ┌──────────────────┐     ┌──────────────────┐
-│  HTTP Service    │────▶│  Event Handler   │────▶│  Data Persistence│
-│  (receive order) │     │  (process order)  │     │  (store order)   │
-└─────────────────┘     └──────────────────┘     └──────────────────┘
-        │                        │
-        ▼                        ▼
-┌─────────────────┐     ┌──────────────────┐
-│  Email           │     │  Automation       │
-│  (confirmation)  │     │  (daily report)   │
-└─────────────────┘     └──────────────────┘
+```mermaid
+flowchart TD
+    HTTP["HTTP Service<br/>(receive order)"]
+    Handler["Event Handler<br/>(process order)"]
+    Persistence[(Data Persistence<br/>(store order))]
+    Email["Email<br/>(confirmation)"]
+    Automation["Automation<br/>(daily report)"]
+
+    HTTP ----> Handler ----> Persistence
+    HTTP ----> Email
+    Handler ----> Automation
 ```
 
 ## Creating Artifacts

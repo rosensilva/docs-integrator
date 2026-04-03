@@ -1,6 +1,3 @@
----
-title: pgvector Connector Overview
----
 # pgvector Connector Overview
 
 pgvector is a PostgreSQL extension that adds support for vector similarity search, enabling storage and retrieval of high-dimensional embeddings alongside relational data. The Ballerina `ballerinax/ai.pgvector` connector (v1.0.3) provides a `VectorStore` client that implements the `ai:VectorStore` interface, allowing you to add, query, and delete vector entries in a PostgreSQL database with pgvector installed.
@@ -27,9 +24,9 @@ Actions are operations you invoke on PostgreSQL with pgvector from your integrat
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## Pgvector connector documentation
+## Documentation
 
-* **[pgvector Connector Setup Guide](setup-guide.md)**: This guide walks you through setting up a PostgreSQL instance with the pgvector extension required to use the pgvector connector.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through setting up a PostgreSQL instance with the pgvector extension required to use the pgvector connector.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

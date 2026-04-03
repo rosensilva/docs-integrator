@@ -17,7 +17,7 @@ The `ballerinax/twitter` package exposes the following clients:
 
 Provides access to Twitter API v2 endpoints — tweets, users, DMs, bookmarks, likes, lists, and more.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

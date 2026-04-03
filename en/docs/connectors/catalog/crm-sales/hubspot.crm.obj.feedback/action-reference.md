@@ -17,7 +17,7 @@ The `ballerinax/hubspot.crm.obj.feedback` package exposes the following clients:
 
 Provides full access to HubSpot Feedback Submissions — list, read, search, create, update, upsert, and archive individual and batch records.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

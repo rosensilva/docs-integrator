@@ -1,5 +1,4 @@
 ---
-title: Actions
 toc_max_heading_level: 4
 ---
 
@@ -18,7 +17,7 @@ The `ballerinax/ai.devant` package exposes the following clients:
 
 Sends binary documents to the Devant AI API and returns an array of semantic chunks.
 
-### Configuration (`Chunker init Parameters`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
@@ -103,7 +102,7 @@ Sample response:
 
 Loads binary documents from a local file or directory into `ai:Document` objects ready for processing.
 
-### Configuration (`BinaryDataLoader init Parameters`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

@@ -16,16 +16,21 @@ In integration scenarios with guaranteed delivery and retry logic, the same mess
 
 Give each message a unique identifier. Before processing a message, check whether that identifier has already been processed. If it has, skip processing (or return the previous result). If it has not, process the message and record the identifier as completed.
 
-```
-                    ┌────────────────────────────────────────┐
-                    │        Idempotent Receiver              │
-                    │                                        │
- Message ──────────►│  1. Extract message ID                 │
- (may be            │  2. Check: already processed?          │
-  duplicate)        │     ├─ YES → Return cached result      │
-                    │     └─ NO  → Process & record ID       │
-                    │                                        │
-                    └────────────────────────────────────────┘
+```mermaid
+flowchart LR
+    Message([Message<br/>may be duplicate])
+    subgraph Receiver["Idempotent Receiver"]
+        Extract["1. Extract message ID"]
+        Check{2. Already processed?}
+        Cached["Return cached result"]
+        Process["Process & record ID"]
+        
+        Extract ----> Check
+        Check -- YES ----> Cached
+        Check -- NO ----> Process
+    end
+
+    Message ----> Extract
 ```
 
 ## When to Use It

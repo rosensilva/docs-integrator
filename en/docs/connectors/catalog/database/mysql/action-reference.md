@@ -24,7 +24,7 @@ For event-driven integration, see the [Trigger Reference](trigger-reference.md).
 
 Provides standard SQL operations — query, execute, batch execute, and stored procedure calls — against a MySQL database.
 
-### Configuration (`Client constructor parameters`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

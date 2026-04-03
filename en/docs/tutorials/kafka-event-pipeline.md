@@ -9,23 +9,20 @@ description: "End-to-end walkthrough: Build a Kafka event processing pipeline."
 
 A real-time event processing pipeline that consumes order events from Kafka, enriches them with customer data from a database, applies business rules (fraud detection, inventory checks), and publishes processed events to downstream topics.
 
-```
-                    ┌────────────────────────────────────────────┐
- ┌───────────┐     │          Event Processing Pipeline          │     ┌──────────────┐
- │  orders   │────►│                                            │────►│  processed-  │
- │  topic    │     │  1. Consume order event                    │     │  orders topic│
- └───────────┘     │  2. Deserialize & validate                 │     └──────────────┘
-                   │  3. Enrich with customer data (DB)         │
-                   │  4. Apply fraud detection rules            │     ┌──────────────┐
-                   │  5. Check inventory (HTTP)                 │────►│  fraud-      │
-                   │  6. Route to appropriate output topic      │     │  alerts topic│
-                   └────────────────────────────────────────────┘     └──────────────┘
-                                        │
-                                        ▼
-                               ┌─────────────────┐
-                               │  Dead Letter     │
-                               │  Queue (DLQ)     │
-                               └─────────────────┘
+```mermaid
+flowchart LR
+    Orders["orders topic"]
+    subgraph Pipeline["Event Processing Pipeline"]
+        Steps["1. Consume order event<br/>2. Deserialize & validate<br/>3. Enrich with customer data (DB)<br/>4. Apply fraud detection rules<br/>5. Check inventory (HTTP)<br/>6. Route to appropriate output topic"]
+    end
+    Processed["processed-orders topic"]
+    Fraud["fraud-alerts topic"]
+    DLQ["Dead Letter Queue (DLQ)"]
+
+    Orders --> Pipeline
+    Pipeline --> Processed
+    Pipeline --> Fraud
+    Pipeline -- "on failure" --> DLQ
 ```
 
 ## What You'll Learn

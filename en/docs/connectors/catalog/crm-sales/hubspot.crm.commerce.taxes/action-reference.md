@@ -17,7 +17,7 @@ The `ballerinax/hubspot.crm.commerce.taxes` package exposes the following client
 
 Manage HubSpot commerce tax objects — CRUD, search, and batch operations.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

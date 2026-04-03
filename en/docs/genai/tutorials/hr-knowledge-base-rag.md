@@ -18,28 +18,26 @@ In this tutorial, you build an end-to-end HR knowledge base agent powered by ret
 
 ## Architecture
 
-```
-Ingestion Pipeline:
-HR Documents (PDF/TXT) → Chunking → Embedding (OpenAI) → pgvector Database
+```mermaid
+flowchart TD
+    subgraph Ingestion["Ingestion Pipeline"]
+        Docs[HR Documents] --> Chunking[Chunking] --> Embedding[Embedding] --> VectorDB[(pgvector Database)]
+    end
 
-Query Pipeline:
-Employee Question → Embed → Vector Search → Top-K Chunks → Agent + Context → Answer
+    subgraph Query["Query Pipeline"]
+        Question([Employee Question]) --> QEmbed[Embed] --> Search[Vector Search] --> TopK[Top-K Chunks] --> Agent
+    end
 
-                         ┌───────────────────┐
-                         │    HR Agent       │
-                         │                   │
-Employee Question ──────►│  System Prompt    │
-                         │  + LLM (GPT-4o)  │
-                         │  + Tools          │
-                         └───────┬───────────┘
-                                 │
-                    ┌────────────┼─────────────┐
-                    ▼            ▼              ▼
-            ┌──────────┐ ┌────────────┐ ┌────────────┐
-            │ pgvector │ │ Leave      │ │ Employee   │
-            │ (Policy  │ │ Balance    │ │ Directory  │
-            │  Search) │ │ API        │ │ API        │
-            └──────────┘ └────────────┘ └────────────┘
+    subgraph HRAgent["HR Agent"]
+        Agent[System Prompt<br/>+ LLM (GPT-4o)<br/>+ Tools]
+    end
+
+    LeaveAPI[Leave Balance API]
+    DirAPI[Employee Directory API]
+
+    Agent ----> VectorDB
+    Agent ----> LeaveAPI
+    Agent ----> DirAPI
 ```
 
 ## Step 1: Create the Project

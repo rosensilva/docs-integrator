@@ -29,9 +29,9 @@ Actions are operations you invoke on HubSpot from your integration — reading a
 
 See the **[Action Reference](action-reference.md)** for the full list of operations, parameters, and sample code for each client.
 
-## HubSpot CRM associations connector documentation
+## Documentation
 
-* **[HubSpot CRM Associations Connector Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot app and obtaining the OAuth 2.0 credentials required to authenticate with the HubSpot CRM Associations API.
+* **[Setup Guide](setup-guide.md)**: This guide walks you through creating a HubSpot app and obtaining the OAuth 2.0 credentials required to authenticate with the HubSpot CRM Associations API.
 
 
 * **[Action Reference](action-reference.md)**: Full reference for all clients — operations, parameters, return types, and sample code.

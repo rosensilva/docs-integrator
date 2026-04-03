@@ -17,7 +17,7 @@ The `ballerinax/ai.memory.mssql` package exposes the following clients:
 
 Persists and retrieves key-scoped AI chat messages in a Microsoft SQL Server database.
 
-### Configuration (`DatabaseConfiguration`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

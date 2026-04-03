@@ -17,7 +17,7 @@ The `ballerinax/aws.sns` package exposes the following clients:
 
 Provides operations to interact with AWS SNS — topic management, publishing, subscriptions, platform applications, SMS, and more.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

@@ -17,7 +17,7 @@ The `ballerinax/slack` package exposes the following clients:
 
 Provides access to all Slack Web API methods for messaging, conversations, users, files, search, reactions, pins, and workspace administration.
 
-### Configuration (`ConnectionConfig`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|

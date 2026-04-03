@@ -17,7 +17,7 @@ The `ballerinax/oracledb` package exposes the following clients:
 
 Connects to an Oracle Database and executes SQL queries, DML statements, batch operations, and stored procedure calls.
 
-### Configuration (`Client init parameters`)
+### Configuration
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
