@@ -31,7 +31,7 @@ flowchart LR
 
 Select the **+** (Add Connection) button next to **Connections** in the component tree to open the **Add Connection** palette on the right side of the canvas.
 
-![Add Connection palette open](/img/connectors/catalog/database/aws-redshiftdata/redshiftdata_screenshot_01_palette.png)
+![Add Connection palette open](/img/connectors/catalog/database/aws.redshiftdata/redshiftdata_screenshot_01_palette.png)
 
 ### Step 2: Search for the AWS Redshift Data connector
 
@@ -49,13 +49,13 @@ Enter a descriptive name for the connection and bind each parameter to a configu
 - **secretAccessKey** : AWS secret access key bound to a configurable variable
 - **sessionToken** : Optional AWS session token bound to a configurable variable
 
-![Connection form with all fields filled](/img/connectors/catalog/database/aws-redshiftdata/redshiftdata_screenshot_02_connection_form_filled.png)
+![Connection form with all fields filled](/img/connectors/catalog/database/aws.redshiftdata/redshiftdata_screenshot_02_connection_form_filled.png)
 
 ### Step 4: Save the connection
 
 Select **Save** to persist the connection. The canvas updates to show the new `redshiftdataClient` connection node, and the sidebar lists it under **Connections**.
 
-![Canvas showing redshiftdataClient connection node after save](/img/connectors/catalog/database/aws-redshiftdata/redshiftdata_screenshot_03_connection_saved.png)
+![Canvas showing redshiftdataClient connection node after save](/img/connectors/catalog/database/aws.redshiftdata/redshiftdata_screenshot_03_connection_saved.png)
 
 ### Step 5: Set actual values for your configurables
 
@@ -85,11 +85,11 @@ Select the empty placeholder node on the canvas to open the node panel, then loc
 - **statementName** : A logical name for the SQL statement to aid traceability (for example, `"executeRedshiftQuery"`)
 - **withEvent** : Whether to send an event to Amazon EventBridge after execution — set to `false`
 
-![Execute operation form with all fields filled](/img/connectors/catalog/database/aws-redshiftdata/redshiftdata_screenshot_05_execute_form_filled.png)
+![Execute operation form with all fields filled](/img/connectors/catalog/database/aws.redshiftdata/redshiftdata_screenshot_05_execute_form_filled.png)
 
 Select **Save**. The canvas updates to show a new **`redshiftdata : execute`** node between the Start and Error Handler nodes. The result variable `redshiftdataExecutionresponse` (of type `redshiftdata:ExecutionResponse`) is now available for downstream steps.
 
-![Completed automation canvas with execute node](/img/connectors/catalog/database/aws-redshiftdata/redshiftdata_screenshot_06_execute_added.png)
+![Completed automation canvas with execute node](/img/connectors/catalog/database/aws.redshiftdata/redshiftdata_screenshot_06_execute_added.png)
 
 ## Try it yourself
 
