@@ -23,7 +23,7 @@ flowchart LR
 
 ## Setting up the Java JDBC integration
 
-> **New to WSO2 Integrator?** Follow the [Create a New Integration](../develop/create-integrations/create-new-integration.md) guide to set up your integration first, then return here to add the connector.
+> **New to WSO2 Integrator?** Follow the [Create a New Integration](../../../../develop/create-integrations/create-new-integration.md) guide to set up your integration first, then return here to add the connector.
 
 ## Adding the Java JDBC connector
 
@@ -41,10 +41,10 @@ flowchart LR
 
 After selecting the connector, the **Configure Jdbc** form opens. Bind each field to a Configurable variable so no literal credentials are stored in source code:
 
-- **url** — the JDBC connection string (e.g., `jdbcUrl` of type `string`)
-- **user** — the database username (e.g., `dbUser` of type `string`; found under **Advanced Configurations**)
-- **password** — the database password (e.g., `dbPassword` of type `string`; found under **Advanced Configurations**)
-- **Connection name** — set to `jdbcClient`
+- **url**: the JDBC connection string (e.g., `jdbcUrl` of type `string`)
+- **user**: the database username (e.g., `dbUser` of type `string`; found under **Advanced Configurations**)
+- **password**: the database password (e.g., `dbPassword` of type `string`; found under **Advanced Configurations**)
+- **Connection name**: set to `jdbcClient`
 
 For each field, click the field textbox, open the **Configurables** tab in the helper panel, click **New Configurable**, enter the variable name and type, and click **Save**.
 
@@ -60,13 +60,13 @@ Click **Save Connection**. The `jdbcClient` connection node appears on the canva
 
 1. In the left panel of WSO2 Integrator, click **Configurations** (at the bottom of the project tree, under Data Mappers).
 2. Set a value for each configurable listed below:
-   - **jdbcUrl** — string — your full JDBC connection URL
-   - **dbUser** — string — your database username
-   - **dbPassword** — string — your database password
+   - **jdbcUrl**: string : your full JDBC connection URL
+   - **dbUser**: string : your database username
+   - **dbPassword**: string : your database password
 
 ## Configuring the Java JDBC execute operation
 
-### Step 5: Add an Automation entry point
+### Step 5: Add an automation entry point
 
 1. Click **+ Add Artifact** on the canvas toolbar.
 2. Select **Automation** from the artifact type list.
