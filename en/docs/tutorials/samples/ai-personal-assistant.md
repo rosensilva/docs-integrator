@@ -11,22 +11,25 @@ A conversational AI assistant that manages your calendar, sends emails, checks t
 
 ## Architecture Diagram
 
-```
-                    ┌────────────────────────────────────┐
-                    │       AI Personal Assistant          │
-                    │                                    │
- HTTP/WebSocket ───►│  ┌─────────┐    ┌──────────────┐  │
- (user message)     │  │   LLM   │───►│ Tool Router  │  │
-                    │  │(OpenAI) │    └──────┬───────┘  │
-                    │  └─────────┘           │          │
-                    │          ┌──────┬──────┼──────┐   │
-                    │          ▼      ▼      ▼      ▼   │
-                    │  ┌──────┐ ┌────┐ ┌──────┐ ┌─────┐ │
-                    │  │Cal-  │ │Email│ │Weather│ │Notes│ │
-                    │  │endar │ │    │ │      │ │     │ │
-                    │  │(Goog)│ │SMTP│ │ API  │ │ DB  │ │
-                    │  └──────┘ └────┘ └──────┘ └─────┘ │
-                    └────────────────────────────────────┘
+```mermaid
+flowchart TD
+    Request([HTTP/WebSocket<br/>user message])
+    subgraph Assistant["AI Personal Assistant"]
+        LLM["LLM<br/>(OpenAI)"]
+        Router["Tool Router"]
+        subgraph Tools["Tool Functions"]
+            Calendar["Calendar<br/>(Goog)"]
+            Email["Email<br/>(SMTP)"]
+            Weather["Weather<br/>(API)"]
+            Notes["Notes<br/>(DB)"]
+        end
+        
+        LLM ----> Router
+        Router ----> Calendar & Email & Weather & Notes
+        Calendar & Email & Weather & Notes ----> LLM
+    end
+
+    Request ----> LLM
 ```
 
 ## Features Demonstrated

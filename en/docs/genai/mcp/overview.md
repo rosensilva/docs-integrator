@@ -22,15 +22,12 @@ MCP defines a protocol for three types of capabilities:
 
 ### How MCP Works
 
-```
-┌──────────────────┐         ┌──────────────────┐
-│   MCP Client     │         │   MCP Server     │
-│  (AI Assistant)  │◄───────►│  (Your Service)  │
-│                  │   MCP   │                  │
-│  Claude Desktop  │ Protocol│  WSO2 Integrator │
-│  GitHub Copilot  │         │  Functions, APIs  │
-│  Custom Agent    │         │  Databases, etc.  │
-└──────────────────┘         └──────────────────┘
+```mermaid
+flowchart LR
+    Client["MCP Client<br/>(AI Assistant)<br/>Claude Desktop<br/>GitHub Copilot<br/>Custom Agent"]
+    Server["MCP Server<br/>(Your Service)<br/>WSO2 Integrator<br/>Functions, APIs<br/>Databases, etc."]
+
+    Client <==> |MCP Protocol| Server
 ```
 
 1. **Discovery** — The client connects and asks the server what tools, resources, and prompts are available

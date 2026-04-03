@@ -30,18 +30,24 @@ A notification API that accepts event payloads (order confirmations, password re
 
 ## Architecture
 
-```
-┌──────────────┐     ┌───────────────────┐     ┌────────────┐
-│ Order Service├────►│                   ├────►│            │
-└──────────────┘     │   Notification    │     │   SMTP     │
-┌──────────────┐     │   Service         │     │   Server   │
-│ Auth Service ├────►│                   ├────►│            │
-└──────────────┘     │  - Template Engine│     └─────┬──────┘
-┌──────────────┐     │  - Retry Logic    │           │
-│ Alert System ├────►│  - Delivery Log   │     ┌─────▼──────┐
-└──────────────┘     └───────────────────┘     │  Recipient │
-                                               │  Inbox     │
-                                               └────────────┘
+```mermaid
+flowchart LR
+    Order["Order Service"]
+    Auth["Auth Service"]
+    Alert["Alert System"]
+    
+    subgraph Service["Notification Service"]
+        Engine["Template Engine"]
+        Retry["Retry Logic"]
+        Log["Delivery Log"]
+    end
+    
+    SMTP["SMTP Server"]
+    Inbox["Recipient Inbox"]
+
+    Order & Auth & Alert ----> Service
+    Service ----> SMTP
+    SMTP ----> Inbox
 ```
 
 ## Step 1: Create the Project

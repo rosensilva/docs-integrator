@@ -16,15 +16,18 @@ You need to send a message to multiple recipients, but the list of recipients va
 
 Inspect each incoming message to determine its list of recipients, then route the message to each one. The recipient list can be derived from the message content, an external registry, a database lookup, or a combination.
 
-```
-                    ┌───────────────────┐
-                    │                   │──────► Recipient A
- Message ──────────►│  Recipient List   │──────► Recipient B
-                    │  (dynamic lookup) │──────► Recipient C
-                    │                   │
-                    └───────────────────┘
-                    Recipients determined
-                    at runtime per message
+```mermaid
+flowchart LR
+    Message([Message])
+    subgraph List["Recipient List"]
+        Lookup["Dynamic Lookup"]
+    end
+    RecipientA["Recipient A"]
+    RecipientB["Recipient B"]
+    RecipientC["Recipient C"]
+
+    Message ----> Lookup
+    Lookup ----> RecipientA & RecipientB & RecipientC
 ```
 
 ## When to Use It

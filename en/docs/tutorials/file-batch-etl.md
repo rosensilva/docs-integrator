@@ -9,17 +9,18 @@ description: "End-to-end walkthrough: Build a file-based ETL pipeline."
 
 A file-based ETL (Extract, Transform, Load) pipeline that watches an SFTP directory for incoming CSV files, parses and transforms the records, validates data quality, and loads the results into a PostgreSQL database.
 
-```
- ┌────────────┐      ┌──────────────────────────────────────┐      ┌────────────┐
- │   SFTP     │      │         ETL Pipeline                 │      │ PostgreSQL │
- │  Directory │─────►│                                      │─────►│  Database  │
- │            │ poll │  1. Detect new CSV file               │ load │            │
- └────────────┘      │  2. Parse CSV rows                   │      └────────────┘
-                     │  3. Validate & clean data             │
-                     │  4. Transform to target schema        │      ┌────────────┐
-                     │  5. Batch insert into database        │─────►│  Error     │
-                     │  6. Move file to processed/           │      │  Log (CSV) │
-                     └──────────────────────────────────────┘      └────────────┘
+```mermaid
+flowchart LR
+    SFTP["SFTP Directory"]
+    subgraph ETL["ETL Pipeline"]
+        Steps["1. Detect new CSV file<br/>2. Parse CSV rows<br/>3. Validate & clean data<br/>4. Transform to target schema<br/>5. Batch insert into database<br/>6. Move file to processed/"]
+    end
+    DB[("PostgreSQL Database")]
+    Error["Error Log (CSV)"]
+
+    SFTP -- "poll" --> ETL
+    ETL -- "load" --> DB
+    ETL -- "log" --> Error
 ```
 
 ## What You'll Learn

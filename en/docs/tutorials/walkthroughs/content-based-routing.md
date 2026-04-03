@@ -30,21 +30,19 @@ An order processing API that receives orders and routes them to different fulfil
 
 ## Architecture
 
-```
-                        ┌──────────────────┐
-                        │  Physical Goods  │
-                        │    Service       │
-                        └────────▲─────────┘
-                                 │
-┌─────────┐    ┌────────────┐    │    ┌──────────────────┐
-│  Client  ├───►  Order     ├────┼───►│  Digital Download │
-│          │    │  Router    │    │    │    Service        │
-└─────────┘    └────────────┘    │    └──────────────────┘
-                                 │
-                        ┌────────▼─────────┐
-                        │  Subscription    │
-                        │    Service       │
-                        └──────────────────┘
+```mermaid
+flowchart LR
+    Client([Client])
+    Router["Order Router"]
+    
+    Physical["Physical Goods Service"]
+    Digital["Digital Download Service"]
+    Subscription["Subscription Service"]
+
+    Client ----> Router
+    Router ----> Physical
+    Router ----> Digital
+    Router ----> Subscription
 ```
 
 ## Step 1: Create the Project

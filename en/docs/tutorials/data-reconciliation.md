@@ -9,22 +9,18 @@ description: "End-to-end walkthrough: Reconcile data across multiple systems."
 
 A scheduled automation that compares customer records between a CRM (Salesforce) and an ERP database (PostgreSQL), identifies mismatches, generates a reconciliation report, and optionally syncs the discrepancies.
 
-```
- ┌──────────────┐          ┌──────────────────────────┐          ┌──────────────┐
- │  Salesforce   │─────────►│   Reconciliation Engine   │◄─────────│  PostgreSQL  │
- │  (CRM)        │  fetch   │                          │  fetch   │  (ERP)       │
- └──────────────┘          │  1. Fetch both datasets   │          └──────────────┘
-                           │  2. Match by email        │
-                           │  3. Compare fields        │
-                           │  4. Generate report       │
-                           │  5. Optionally sync       │
-                           └────────────┬─────────────┘
-                                        │
-                                        ▼
-                              ┌──────────────────┐
-                              │ Reconciliation    │
-                              │ Report (JSON/CSV) │
-                              └──────────────────┘
+```mermaid
+flowchart LR
+    SF["Salesforce<br/>(CRM)"]
+    DB["PostgreSQL<br/>(ERP)"]
+    subgraph Engine["Reconciliation Engine"]
+        Steps["1. Fetch both datasets<br/>2. Match by email<br/>3. Compare fields<br/>4. Generate report<br/>5. Optionally sync"]
+    end
+    Report["Reconciliation Report<br/>(JSON/CSV)"]
+
+    SF -- fetch --> Engine
+    DB -- fetch --> Engine
+    Engine ----> Report
 ```
 
 ## What You'll Learn

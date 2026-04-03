@@ -16,13 +16,16 @@ Your integration receives a stream of messages, but only a subset of them are re
 
 Place a filter between the message source and the processor that evaluates each message against a set of criteria. Messages that match the criteria are forwarded; messages that do not match are discarded or routed to an alternative channel.
 
-```
-                    ┌─────────────────┐
-                    │                 │     Match
- All Messages ────►│  Message Filter  ├──────────► Processor
-                    │  (criteria)     │
-                    │                 ├──────────► Discard / Alt Channel
-                    └─────────────────┘  No Match
+```mermaid
+flowchart LR
+    All([All Messages])
+    Filter{"Message Filter<br/>(criteria)"}
+    Processor([Processor])
+    Discard([Discard / Alt Channel])
+
+    All ----> Filter
+    Filter -- Match ----> Processor
+    Filter -- No Match ----> Discard
 ```
 
 ## When to Use It

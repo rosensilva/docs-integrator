@@ -18,30 +18,30 @@ In this tutorial, you build a customer care agent that uses MCP to bridge the ga
 
 ## Architecture
 
-```
-                          ┌──────────────────┐
-                          │  Customer Care   │
-                          │     Agent        │
-Customer ────────────────►│                  │
-                          │  LLM (GPT-4o)   │
-                          │  + MCP Client   │
-                          └────────┬─────────┘
-                                   │ MCP Protocol
-                      ┌────────────┼────────────┐
-                      ▼                         ▼
-              ┌──────────────┐          ┌──────────────┐
-              │  Order MCP   │          │  CRM MCP     │
-              │   Server     │          │   Server     │
-              │              │          │              │
-              │ - getOrder   │          │ - getCustomer│
-              │ - listOrders │          │ - updateCase │
-              │ - trackShip  │          │ - createCase │
-              └──────┬───────┘          └──────┬───────┘
-                     ▼                         ▼
-              ┌──────────┐              ┌──────────┐
-              │  Order   │              │   CRM    │
-              │ Database │              │ Database │
-              └──────────┘              └──────────┘
+```mermaid
+flowchart TD
+    Customer([Customer])
+    
+    subgraph Agent["Customer Care Agent"]
+        LLM["LLM (GPT-4o)<br/>+ MCP Client"]
+    end
+
+    subgraph OrderServer["Order MCP Server"]
+        OrderTools["- getOrder<br/>- listOrders<br/>- trackShip"]
+    end
+
+    subgraph CRMServer["CRM MCP Server"]
+        CRMTools["- getCustomer<br/>- updateCase<br/>- createCase"]
+    end
+
+    OrderDB[("Order Database")]
+    CRMDB[("CRM Database")]
+
+    Customer ----> LLM
+    LLM <==> |MCP Protocol| OrderServer
+    LLM <==> |MCP Protocol| CRMServer
+    OrderServer ----> OrderDB
+    CRMServer ----> CRMDB
 ```
 
 ## Step 1: Create the Project

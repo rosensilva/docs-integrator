@@ -25,29 +25,14 @@ An agent is an integration component that combines an LLM with tools, memory, an
 
 Every agent in WSO2 Integrator follows the **Reason-Act-Observe** loop:
 
-```
-User Message
-    │
-    ▼
-┌─────────────┐
-│   Reason    │ ← LLM analyzes the message + context + tool descriptions
-│             │   and decides what to do
-└──────┬──────┘
-       │
-       ▼
-┌─────────────┐
-│    Act      │ ← Agent calls one or more tools based on the LLM's decision
-│             │   (may skip if no tool is needed)
-└──────┬──────┘
-       │
-       ▼
-┌─────────────┐
-│  Observe    │ ← Tool results are fed back to the LLM
-│             │   LLM decides: respond or loop again?
-└──────┬──────┘
-       │
-       ▼
-  Final Response
+```mermaid
+flowchart TD
+    User([User Message]) --> Reason["Reason<br/>(LLM analyzes message + context + tool descriptions)"]
+    Reason --> Act["Act<br/>(Agent calls tools)"]
+    Act --> Observe["Observe<br/>(Tool results fed back to LLM)"]
+    Observe --> Loop{Need more?}
+    Loop -->|Yes| Reason
+    Loop -->|No| Response([Final Response])
 ```
 
 This loop can repeat multiple times per request. For example, an agent might look up a customer record (first tool call), then check their order history (second tool call), and finally compose a response using both pieces of information.

@@ -11,31 +11,25 @@ A complete event-driven order processing service for an e-commerce platform. The
 
 ## Architecture Diagram
 
-```
-                    ┌──────────────────────────────────────────────┐
-                    │            Order Service                      │
-                    │                                              │
- POST /orders ─────►│  ┌────────────┐   ┌──────────┐              │
-                    │  │ Validate   │──►│ Reserve   │              │
-                    │  │ Request    │   │ Inventory │              │
-                    │  └────────────┘   └────┬─────┘              │
- GET /orders/{id} ─►│                        │                    │
-                    │                   ┌────▼─────┐              │
-                    │                   │ Process  │              │
-                    │                   │ Payment  │              │
-                    │                   └────┬─────┘              │
-                    │                        │                    │
-                    │                   ┌────▼─────┐              │
-                    │                   │ Publish  │──► Kafka     │
-                    │                   │ Events   │              │
-                    └──────────────────┴──────────┴──────────────┘
-                                             │
-                         ┌───────────────────┼───────────────────┐
-                         ▼                   ▼                   ▼
-                    ┌──────────┐      ┌────────────┐      ┌──────────┐
-                    │Fulfillment│      │Notification│      │Analytics │
-                    │ Service  │      │  Service   │      │ Service  │
-                    └──────────┘      └────────────┘      └──────────┘
+```mermaid
+flowchart TD
+    Request([POST /orders<br/>GET /orders/{id}])
+    subgraph OrderService["Order Service"]
+        Validate["Validate Request"]
+        Reserve["Reserve Inventory"]
+        Payment["Process Payment"]
+        Publish["Publish Events"]
+        
+        Validate ----> Reserve ----> Payment ----> Publish
+    end
+    Kafka((Kafka))
+    Fulfillment["Fulfillment Service"]
+    Notification["Notification Service"]
+    Analytics["Analytics Service"]
+
+    Request ----> Validate
+    Publish ----> Kafka
+    Kafka ----> Fulfillment & Notification & Analytics
 ```
 
 ## Features Demonstrated

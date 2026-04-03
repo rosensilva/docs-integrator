@@ -30,18 +30,22 @@ An employee onboarding pipeline that takes HR system data, transforms it into th
 
 ## Architecture
 
-```
-┌─────────┐    ┌───────────┐    ┌────────────┐    ┌──────────┐
-│ HR System├───►│ Validate  ├───►│  Enrich    ├───►│ Transform│
-└─────────┘    │ & Clean   │    │  (lookup)  │    │ & Fan-out│
-               └───────────┘    └────────────┘    └────┬─────┘
-                                                       │
-                                    ┌──────────────────┼──────────────────┐
-                                    ▼                  ▼                  ▼
-                              ┌──────────┐      ┌───────────┐     ┌───────────┐
-                              │ Payroll  │      │ IT Provisn│     │ Directory │
-                              │ System   │      │ System    │     │ Service   │
-                              └──────────┘      └───────────┘     └───────────┘
+```mermaid
+flowchart LR
+    HR["HR System"]
+    subgraph Pipeline
+        Validate["Validate & Clean"]
+        Enrich["Enrich (lookup)"]
+        Transform["Transform & Fan-out"]
+
+        Validate ----> Enrich ----> Transform
+    end
+    Payroll["Payroll System"]
+    IT["IT Provisioning System"]
+    Directory["Directory Service"]
+
+    HR ----> Validate
+    Transform ----> Payroll & IT & Directory
 ```
 
 ## Step 1: Create the Project

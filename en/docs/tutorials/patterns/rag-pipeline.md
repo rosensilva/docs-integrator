@@ -13,23 +13,24 @@ You need an AI-powered integration that answers questions using your organizatio
 
 Implement **Retrieval-Augmented Generation (RAG)**: before calling the LLM, retrieve only the most relevant documents from a vector database and inject them into the prompt as context. This gives the LLM access to current, domain-specific knowledge without fine-tuning.
 
-```
-                  ┌──────────────────────────────────────┐
-                  │          RAG Pipeline                  │
-                  │                                      │
-  User Query ────►│  1. Generate embedding for query     │
-                  │  2. Search vector DB for similar docs │
-                  │  3. Build prompt with retrieved context│
-                  │  4. Call LLM with augmented prompt    │
-                  │  5. Return grounded answer            │
-                  └──────────────────────────────────────┘
-                            │              │
-                            ▼              ▼
-                  ┌──────────────┐  ┌────────────┐
-                  │  Vector DB   │  │    LLM     │
-                  │  (Pinecone,  │  │  (OpenAI,  │
-                  │   Weaviate)  │  │   Azure)   │
-                  └──────────────┘  └────────────┘
+```mermaid
+flowchart TD
+    User([User Query])
+    subgraph Pipeline["RAG Pipeline"]
+        Step1["1. Generate embedding for query"]
+        Step2["2. Search vector DB for similar docs"]
+        Step3["3. Build prompt with retrieved context"]
+        Step4["4. Call LLM with augmented prompt"]
+        Step5["5. Return grounded answer"]
+
+        Step1 ----> Step2 ----> Step3 ----> Step4 ----> Step5
+    end
+    VectorDB["Vector DB<br/>(Pinecone, Weaviate)"]
+    LLM["LLM<br/>(OpenAI, Azure)"]
+
+    User ----> Step1
+    Step2 <----> VectorDB
+    Step4 <----> LLM
 ```
 
 The pipeline has two phases:

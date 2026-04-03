@@ -19,23 +19,20 @@ In this tutorial, you build a legal Q&A system that brings together two powerful
 
 ## Architecture
 
-```
-                          ┌────────────────────┐
-                          │  Legal Q&A Agent   │
-                          │                    │
-   GraphQL Query ────────►│  LLM (GPT-4o)     │
-                          │  + RAG Pipeline    │
-                          │  + MCP Client      │
-                          └────────┬───────────┘
-                                   │
-                    ┌──────────────┼──────────────┐
-                    ▼              ▼               ▼
-           ┌──────────────┐ ┌───────────┐ ┌──────────────┐
-           │  pgvector    │ │ Legal DB  │ │ Case Law     │
-           │  (Internal   │ │ MCP Server│ │ MCP Server   │
-           │   Documents) │ │           │ │              │
-           └──────────────┘ └───────────┘ └──────────────┘
-                  RAG             MCP             MCP
+```mermaid
+flowchart TD
+    Request([GraphQL Query])
+    subgraph Agent["Legal Q&A Agent"]
+        LLM["LLM (GPT-4o)<br/>+ RAG Pipeline<br/>+ MCP Client"]
+    end
+    Internal[(pgvector<br/>Internal Documents)]
+    LegalDB[Legal DB<br/>MCP Server]
+    CaseLaw[Case Law<br/>MCP Server]
+
+    Request ----> LLM
+    LLM ----> Internal
+    LLM ----> LegalDB
+    LLM ----> CaseLaw
 ```
 
 ## Step 1: Create the Project

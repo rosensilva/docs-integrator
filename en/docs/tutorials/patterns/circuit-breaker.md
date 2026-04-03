@@ -19,19 +19,16 @@ Apply the **Circuit Breaker** pattern to monitor the health of downstream calls.
 
 Combine this with **retry with exponential backoff** for transient failures that resolve quickly.
 
-```
-         ┌────────────┐    failures < threshold    ┌────────────┐
-         │   CLOSED   │◄──────────────────────────│  HALF-OPEN │
-         │ (normal)   │                            │ (probing)  │
-         └─────┬──────┘                            └──────┬─────┘
-               │                                          │
-  failures >= threshold                          probe fails
-               │                                          │
-               ▼                                          ▼
-         ┌────────────┐     cooldown expires        ┌────────────┐
-         │    OPEN    │──────────────────────────►  │  HALF-OPEN │
-         │ (blocking) │                             │ (probing)  │
-         └────────────┘                             └────────────┘
+```mermaid
+flowchart TD
+    CLOSED[CLOSED<br/>(normal)]
+    OPEN[OPEN<br/>(blocking)]
+    HALF_OPEN[HALF-OPEN<br/>(probing)]
+
+    CLOSED ---->|failures >= threshold| OPEN
+    OPEN ---->|cooldown expires| HALF_OPEN
+    HALF_OPEN ---->|probe fails| OPEN
+    HALF_OPEN ---->|failures < threshold| CLOSED
 ```
 
 ## When to Use It

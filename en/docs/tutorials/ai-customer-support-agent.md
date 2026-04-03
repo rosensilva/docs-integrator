@@ -9,21 +9,22 @@ description: "End-to-end walkthrough: Build an AI agent for customer support."
 
 An AI-powered customer support agent that receives requests over HTTP, reasons about the customer's intent using an LLM, and calls backend tools (order lookup, refund processing, FAQ search) to resolve support tickets automatically.
 
-```
-                         ┌─────────────────────────────┐
-                         │      Customer Support Agent  │
-                         │                              │
- HTTP Request ──────────►│  ┌────────┐   ┌───────────┐ │
- (chat message)          │  │  LLM   │──►│Tool Router│ │
-                         │  │(OpenAI)│   └─────┬─────┘ │
-                         │  └────────┘         │       │
-                         │         ┌───────────┼────────┤
-                         │         ▼           ▼        ▼
-                         │  ┌──────────┐ ┌─────────┐ ┌──────┐
-                         │  │Order     │ │Refund   │ │FAQ   │
-                         │  │Lookup DB │ │Service  │ │Search│
-                         │  └──────────┘ └─────────┘ └──────┘
-                         └─────────────────────────────┘
+```mermaid
+flowchart TD
+    User([HTTP Request<br/>(chat message)])
+    subgraph Agent["Customer Support Agent"]
+        LLM[LLM<br/>(OpenAI)]
+        Router{Tool Router}
+        LLM ----> Router
+    end
+    Order[(Order<br/>Lookup DB)]
+    Refund[Refund<br/>Service]
+    FAQ[FAQ<br/>Search]
+
+    User ----> LLM
+    Router ----> Order
+    Router ----> Refund
+    Router ----> FAQ
 ```
 
 ## What You'll Learn

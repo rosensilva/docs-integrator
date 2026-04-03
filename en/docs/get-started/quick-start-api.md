@@ -14,15 +14,16 @@ description: Build an HTTP service that calls an external API and returns a gree
 
 ## Architecture
 
-```
-Client                    Your Service               External API
-  │                      /hello:9090              apis.wso2.com
-  │  GET /greeting            │                        │
-  │──────────────────────────►│   GET /mi-qsg/v1.0     │
-  │                           │───────────────────────►│
-  │                           │◄───────────────────────│
-  │◄──────────────────────────│   {"message":"Hello"}  │
-  │  {"message":"Hello!!!"}   │                        │
+```mermaid
+sequenceDiagram
+    participant Client
+    participant Service as Your Service<br/>/hello:9090
+    participant ExtAPI as External API<br/>apis.wso2.com
+
+    Client->>Service: GET /greeting
+    Service->>ExtAPI: GET /mi-qsg/v1.0
+    ExtAPI-->>Service: {"message":"Hello"}
+    Service-->>Client: {"message":"Hello!!!"}
 ```
 
 ## Step 1: Create the Project

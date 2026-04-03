@@ -13,21 +13,26 @@ You need an integration that makes dynamic, multi-step decisions at runtime -- w
 
 Delegate decision-making to an LLM-backed agent that has access to a set of **tools** (functions). The agent receives a request, reasons about the best course of action, invokes one or more tools, observes the results, and iterates until it can produce a final response. This is sometimes called the ReAct (Reason + Act) pattern.
 
-```
-                ┌───────────────────────────────┐
-                │            Agent               │
- Request ──────►│                               │──────► Response
-                │  ┌─────┐    ┌──────────────┐  │
-                │  │ LLM │───►│ Tool Selector │  │
-                │  └──┬──┘    └──────┬───────┘  │
-                │     │              │           │
-                │     │   ┌──────────┼──────┐   │
-                │     ▼   ▼          ▼      ▼   │
-                │  ┌─────┐ ┌─────┐ ┌─────┐     │
-                │  │Tool │ │Tool │ │Tool │ ... │
-                │  │  A  │ │  B  │ │  C  │     │
-                │  └─────┘ └─────┘ └─────┘     │
-                └───────────────────────────────┘
+```mermaid
+flowchart LR
+    Request([Request])
+    subgraph Agent["Agent"]
+        LLM["LLM"]
+        Selector["Tool Selector"]
+        subgraph Tools["Tools"]
+            ToolA["Tool A"]
+            ToolB["Tool B"]
+            ToolC["Tool C"]
+        end
+        
+        LLM ----> Selector
+        Selector ----> ToolA & ToolB & ToolC
+        ToolA & ToolB & ToolC ----> LLM
+    end
+    Response([Response])
+
+    Request ----> LLM
+    LLM ----> Response
 ```
 
 The agent loop:
