@@ -33,7 +33,7 @@ An FTP listener that monitors `/orders/` for batch CSV files (e.g. `orders_42.cs
 
 ## Architecture
 
-```
+```text
 FTP Server (/orders/)
   ├── orders_42.csv        ← batch data (uploaded first)
   └── orders_42.final      ← marker file (uploaded after CSV is complete)
@@ -108,7 +108,7 @@ import ballerina/data.csv;
 import ballerina/ftp;
 import ballerina/log;
 
-listener ftp:Listener ftpListener = new (protocol = ftp:FTP, host = "127.0.0.1", port = 21,
+listener ftp:Listener ftpListener = new (protocol = ftp:FTP, host = ftpHost, port = ftpPort,
     auth = {credentials: {username: ftpUser, password: ftpPassword}},
     userDirIsRoot = true, pollingInterval = 10
 );
@@ -218,7 +218,7 @@ time=... level=INFO message="New order is processed. Order Id: 1003, Product Id:
 
 The `fileAgeFilter` has two bounds — you can verify each one independently.
 
-**Too young (`minAge = 30s`) — file uploaded but not yet processed:**
+**Scenario 01 — File uploaded but not yet processed:**
 
 Upload both files and immediately check whether the listener fires within the first 30 seconds. It should stay silent until the CSV is at least 30 seconds old:
 
@@ -229,13 +229,9 @@ curl -T sample-data/orders_42.final ftp://127.0.0.1/orders_42.final --user admin
 # wait > 30s — onFileCsv fires on the next poll
 ```
 
-**Too old (`maxAge = 3600s`) — simulate a stale file:**
+**Scenario 02 — Simulate a stale file:**
 
-Override `maxAgeSeconds` to a small value before starting the service so a freshly uploaded file immediately exceeds the limit:
-
-```bash
-bal run -- --maxAgeSeconds=5
-```
+Override `maxAgeSeconds` to a small value before starting the service so a freshly uploaded file immediately exceeds the limit.
 
 Upload the files and wait more than 5 seconds before uploading the marker. The CSV will be skipped as stale and no output will appear.
 
@@ -243,13 +239,7 @@ If you upload both files and wait between 30 seconds and 1 hour, The listener wi
 
 ## Extend It
 
-- **Move processed files** — Use an `ftp:Client` to `rename` the CSV to `/processed/orders/` on success and `/failed/orders/` on error
+- **Move processed files** — Use the `afterProcess` field in `@ftp:FunctionConfig` to move the files to a specific location
 - **Delete the marker file** — Call `ftpClient->delete(markerPath)` after processing to keep the watch directory clean
 - **Validate records** — Add field-level validation before logging and skip or quarantine invalid rows
-- **Write to a database** — Replace the log statement with an insert into a database to persist each order
-
-## What's Next
-
-- [FTP Listener Reference](../reference/ftp-listener.md) — Full `@ftp:ServiceConfig` options
-- [File Age Filter](../reference/file-age-filter.md) — Detailed age window behaviour
-- [File Dependency Conditions](../reference/file-dependency-conditions.md) — Capture group substitution rules
+- **Write to a database** — Improve the business logic in the `onFileCsv` method to insert data into a database after processing.
