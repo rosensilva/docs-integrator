@@ -35,7 +35,6 @@ const sidebars: SidebarsConfig = {
           label: 'Set Up',
           items: [
             'get-started/system-requirements',
-            'get-started/install-ballerina',
             'get-started/install',
             'get-started/first-project',
             'get-started/understand-the-ide',

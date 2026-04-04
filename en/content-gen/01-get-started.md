@@ -89,18 +89,6 @@ Components to cover (in this order):
 
 ---
 
-## Page: Install Ballerina
-
-**File:** `en/docs/get-started/install-ballerina.md`
-
-**What to cover:**
-- Download from ballerina.io
-- macOS (brew), Windows (MSI), Linux (DEB/RPM)
-- Verify with `bal version`
-- Update tool: `bal dist update`
-
----
-
 ## Page: Create Your First Project
 
 **File:** `en/docs/get-started/first-project.md`
