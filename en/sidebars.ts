@@ -1134,6 +1134,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'connectors/catalog/database/mongodb/setup-guide',
             'connectors/catalog/database/mongodb/action-reference',
+            'connectors/catalog/database/mongodb/example',
           ],
         },
         {
