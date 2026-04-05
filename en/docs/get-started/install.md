@@ -8,7 +8,7 @@ description: Download and install WSO2 Integrator IDE to build intelligent integ
 
 Get your development environment ready to build integrations in under 5 minutes.
 
-WSO2 Integrator is a 100% open source IDE that enables you to connect AI agents, APIs, data, and events across cloud, on-premises, and hybrid environments with a unique low-code experience and pro-code parity.
+WSO2 Integrator is a 100% open-source IDE that enables you to connect AI agents, APIs, data, and events across cloud, on-premises, and hybrid environments with a unique low-code experience and pro-code parity.
 
 ## Download options
 
