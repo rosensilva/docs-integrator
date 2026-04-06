@@ -4,6 +4,7 @@ title: "Quick Start: Event Integration"
 description: Build an event-driven integration that reacts to messages from a message broker.
 ---
 import ThemedImage from '@theme/ThemedImage';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Quick Start: Event Integration
 
@@ -29,8 +30,8 @@ Event integrations are ideal for reactive workflows triggered by messages from K
 <ThemedImage
     alt="Create a New Integration Project"
     sources={{
-        light: '/img/get-started/quick-start-event/create-a-new-integration-project-light.gif',
-        dark: '/img/get-started/quick-start-event/create-a-new-integration-project-dark.gif',
+        light: useBaseUrl('/img/get-started/quick-start-event/create-a-new-integration-project-light.gif'),
+        dark: useBaseUrl('/img/get-started/quick-start-event/create-a-new-integration-project-dark.gif'),
     }}
 />
 
@@ -43,8 +44,8 @@ Event integrations are ideal for reactive workflows triggered by messages from K
 <ThemedImage
     alt="Add a RabbitMQ Event Integration Artifact"
     sources={{
-        light: '/img/get-started/quick-start-event/add-a-rabbitmq-event-integration-artifact-light.gif',
-        dark: '/img/get-started/quick-start-event/add-a-rabbitmq-event-integration-artifact-dark.gif',
+        light: useBaseUrl('/img/get-started/quick-start-event/add-a-rabbitmq-event-integration-artifact-light.gif'),
+        dark: useBaseUrl('/img/get-started/quick-start-event/add-a-rabbitmq-event-integration-artifact-dark.gif'),
     }}
 />
 
@@ -58,8 +59,8 @@ Event integrations are ideal for reactive workflows triggered by messages from K
 <ThemedImage
     alt="Configure the RabbitMQ Connection"
     sources={{
-        light: '/img/get-started/quick-start-event/configure-the-rabbitmq-connection-light.gif',
-        dark: '/img/get-started/quick-start-event/configure-the-rabbitmq-connection-dark.gif',
+        light: useBaseUrl('/img/get-started/quick-start-event/configure-the-rabbitmq-connection-light.gif'),
+        dark: useBaseUrl('/img/get-started/quick-start-event/configure-the-rabbitmq-connection-dark.gif'),
     }}
 />
 
@@ -77,8 +78,8 @@ Event integrations are ideal for reactive workflows triggered by messages from K
 <ThemedImage
     alt="Add Message Processing Logic"
     sources={{
-        light: '/img/get-started/quick-start-event/add-message-processing-logic-light.gif',
-        dark: '/img/get-started/quick-start-event/add-message-processing-logic-dark.gif',
+        light: useBaseUrl('/img/get-started/quick-start-event/add-message-processing-logic-light.gif'),
+        dark: useBaseUrl('/img/get-started/quick-start-event/add-message-processing-logic-dark.gif'),
     }}
 />
 
@@ -91,8 +92,8 @@ Event integrations are ideal for reactive workflows triggered by messages from K
 <ThemedImage
     alt="Run and Test the Integration"
     sources={{
-        light: '/img/get-started/quick-start-event/run-and-test-the-integration-light.gif',
-        dark: '/img/get-started/quick-start-event/run-and-test-the-integration-dark.gif',
+        light: useBaseUrl('/img/get-started/quick-start-event/run-and-test-the-integration-light.gif'),
+        dark: useBaseUrl('/img/get-started/quick-start-event/run-and-test-the-integration-dark.gif'),
     }}
 />
 

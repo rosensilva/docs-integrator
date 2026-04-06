@@ -5,6 +5,7 @@ description: Build an HTTP service that calls an external API and returns a gree
 ---
 
 import ThemedImage from '@theme/ThemedImage';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Quick Start: Integration as API
 
@@ -42,8 +43,8 @@ sequenceDiagram
 <ThemedImage
     alt="Create the project"
     sources={{
-        light: '/img/get-started/quick-start-api/create-the-project-light.gif',
-        dark: '/img/get-started/quick-start-api/create-the-project-dark.gif',
+        light: useBaseUrl('/img/get-started/quick-start-api/create-the-project-light.gif'),
+        dark: useBaseUrl('/img/get-started/quick-start-api/create-the-project-dark.gif'),
     }}
 />
 
@@ -59,8 +60,8 @@ sequenceDiagram
 <ThemedImage
     alt="Add an HTTP service"
     sources={{
-        light: '/img/get-started/quick-start-api/add-an-http-service-light.gif',
-        dark: '/img/get-started/quick-start-api/add-an-http-service-dark.gif',
+        light: useBaseUrl('/img/get-started/quick-start-api/add-an-http-service-light.gif'),
+        dark: useBaseUrl('/img/get-started/quick-start-api/add-an-http-service-dark.gif'),
     }}
 />
 
@@ -80,8 +81,8 @@ sequenceDiagram
 <ThemedImage
     alt="Design the integration flow"
     sources={{
-        light: '/img/get-started/quick-start-api/design-the-integration-flow-light.gif',
-        dark: '/img/get-started/quick-start-api/design-the-integration-flow-dark.gif',
+        light: useBaseUrl('/img/get-started/quick-start-api/design-the-integration-flow-light.gif'),
+        dark: useBaseUrl('/img/get-started/quick-start-api/design-the-integration-flow-dark.gif'),
     }}
 />
 
@@ -97,8 +98,8 @@ sequenceDiagram
 <ThemedImage
     alt="Configure HTTP"
     sources={{
-        light: '/img/get-started/quick-start-api/configure-http-light.gif',
-        dark: '/img/get-started/quick-start-api/configure-http-dark.gif',
+        light: useBaseUrl('/img/get-started/quick-start-api/configure-http-light.gif'),
+        dark: useBaseUrl('/img/get-started/quick-start-api/configure-http-dark.gif'),
     }}
 />
 
@@ -112,8 +113,8 @@ sequenceDiagram
 <ThemedImage
     alt="Return the response"
     sources={{
-        light: '/img/get-started/quick-start-api/return-the-response-light.gif',
-        dark: '/img/get-started/quick-start-api/return-the-response-dark.gif',
+        light: useBaseUrl('/img/get-started/quick-start-api/return-the-response-light.gif'),
+        dark: useBaseUrl('/img/get-started/quick-start-api/return-the-response-dark.gif'),
     }}
 />
 
@@ -127,8 +128,8 @@ sequenceDiagram
 <ThemedImage
     alt="Run and test"
     sources={{
-        light: '/img/get-started/quick-start-api/run-and-test-light.gif',
-        dark: '/img/get-started/quick-start-api/run-and-test-dark.gif',
+        light: useBaseUrl('/img/get-started/quick-start-api/run-and-test-light.gif'),
+        dark: useBaseUrl('/img/get-started/quick-start-api/run-and-test-dark.gif'),
     }}
 />
 

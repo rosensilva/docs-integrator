@@ -5,6 +5,7 @@ description: Create a scheduled automation that runs tasks on a timer.
 ---
 
 import ThemedImage from '@theme/ThemedImage';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Quick Start: Build an Automation
 
@@ -29,8 +30,8 @@ Automations are ideal for data synchronization, report generation, and routine m
 <ThemedImage
     alt="Create the project"
     sources={{
-        light: '/img/get-started/quick-start-automation/create-the-project-light.gif',
-        dark: '/img/get-started/quick-start-automation/create-the-project-dark.gif',
+        light: useBaseUrl('/img/get-started/quick-start-automation/create-the-project-light.gif'),
+        dark: useBaseUrl('/img/get-started/quick-start-automation/create-the-project-dark.gif'),
     }}
 />
 
@@ -44,8 +45,8 @@ Automations are ideal for data synchronization, report generation, and routine m
 <ThemedImage
     alt="Add an automation artifact"
     sources={{
-        light: '/img/get-started/quick-start-automation/add-an-automation-artifact-light.gif',
-        dark: '/img/get-started/quick-start-automation/add-an-automation-artifact-dark.gif',
+        light: useBaseUrl('/img/get-started/quick-start-automation/add-an-automation-artifact-light.gif'),
+        dark: useBaseUrl('/img/get-started/quick-start-automation/add-an-automation-artifact-dark.gif'),
     }}
 />
 
@@ -60,8 +61,8 @@ Automations are ideal for data synchronization, report generation, and routine m
 <ThemedImage
     alt="Add logic"
     sources={{
-        light: '/img/get-started/quick-start-automation/add-logic-light.gif',
-        dark: '/img/get-started/quick-start-automation/add-logic-dark.gif',
+        light: useBaseUrl('/img/get-started/quick-start-automation/add-logic-light.gif'),
+        dark: useBaseUrl('/img/get-started/quick-start-automation/add-logic-dark.gif'),
     }}
 />
 
@@ -74,8 +75,8 @@ Automations are ideal for data synchronization, report generation, and routine m
 <ThemedImage
     alt="Run and test"
     sources={{
-        light: '/img/get-started/quick-start-automation/run-and-test-light.gif',
-        dark: '/img/get-started/quick-start-automation/run-and-test-dark.gif',
+        light: useBaseUrl('/img/get-started/quick-start-automation/run-and-test-light.gif'),
+        dark: useBaseUrl('/img/get-started/quick-start-automation/run-and-test-dark.gif'),
     }}
 />
 
