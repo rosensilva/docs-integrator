@@ -25,7 +25,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Get Started',
       collapsed: true,
-      link: { type: 'doc', id: 'get-started/overview' },
+      link: { type: 'doc', id: 'get-started/overview-&-architecture' },
       items: [
         'get-started/overview-&-architecture',
         'get-started/why-wso2-integrator',
@@ -1887,7 +1887,7 @@ const sidebars: SidebarsConfig = {
             'tutorials/walkthroughs/cdc-service',
             'tutorials/healthcare-hl7-fhir',
             'tutorials/walkthroughs/edi-ftp-processing',
-            'tutorials/ftp-listener-with-age-filter-and-file-dependency'
+            'tutorials/walkthroughs/ftp-listener-with-age-filter-and-file-dependency',
             'tutorials/data-reconciliation',
           ],
         },
