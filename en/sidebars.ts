@@ -398,6 +398,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'connectors/catalog/security-identity/aws.secretmanager/setup-guide',
             'connectors/catalog/security-identity/aws.secretmanager/action-reference',
+            'connectors/catalog/security-identity/aws.secretmanager/example',
           ],
         },
         {
