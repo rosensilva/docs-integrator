@@ -387,6 +387,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'connectors/catalog/storage-file/aws.s3/setup-guide',
             'connectors/catalog/storage-file/aws.s3/action-reference',
+            'connectors/catalog/storage-file/aws.s3/example',
           ],
         },
         {
