@@ -200,7 +200,7 @@ Fill in the Poll operation fields:
 
 Select **Save**. The canvas updates to show the complete Automation flow with **Start** → `kafka : poll` → **Error Handler** → **End**.
 
-![Completed Kafka Producer automation flow](/img/connectors/catalog/messaging/kafka/kafka_consumer_screenshots_06_completed_flow.png)
+![Completed Kafka Consumer automation flow](/img/connectors/catalog/messaging/kafka/kafka_consumer_screenshots_06_completed_flow.png)
 
 ### Try it yourself
 
