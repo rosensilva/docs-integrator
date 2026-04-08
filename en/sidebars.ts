@@ -1513,6 +1513,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'connectors/catalog/productivity-collaboration/smartsheet/setup-guide',
             'connectors/catalog/productivity-collaboration/smartsheet/action-reference',
+            'connectors/catalog/productivity-collaboration/smartsheet/example',
           ],
         },
         {
