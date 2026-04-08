@@ -105,7 +105,7 @@ Try this sample in WSO2 Integration Platform.
 
 ## More code examples
 
-The `MailChimp Marketing Emails` connector provides practical examples illustrating usage in various scenarios. Explore these [examples](https://github.com/ballerina-platform/module-ballerinax-mailchimp.marketing/tree/main/examples), covering the following use cases:
+The `Mailchimp Marketing` connector provides practical examples illustrating usage in various scenarios. Explore these [examples](https://github.com/ballerina-platform/module-ballerinax-mailchimp.marketing/tree/main/examples), covering the following use cases:
 
 
 1. [Add Mailchimp Subscriber](https://github.com/ballerina-platform/module-ballerinax-mailchimp.marketing/tree/main/examples/add_subscriber) – Add a new subscriber to a specific Mailchimp audience list.
