@@ -420,6 +420,7 @@ const sidebars: SidebarsConfig = {
             'connectors/catalog/messaging/aws.sqs/setup-guide',
             'connectors/catalog/messaging/aws.sqs/action-reference',
             'connectors/catalog/messaging/aws.sqs/trigger-reference',
+            'connectors/catalog/messaging/aws.sqs/example',
           ],
         },
         {
