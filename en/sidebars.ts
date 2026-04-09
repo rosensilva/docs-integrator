@@ -962,6 +962,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'connectors/catalog/marketing-social/hubspot.marketing.emails/setup-guide',
             'connectors/catalog/marketing-social/hubspot.marketing.emails/action-reference',
+            'connectors/catalog/marketing-social/hubspot.marketing.emails/example',
           ],
         },
         {
@@ -971,6 +972,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'connectors/catalog/marketing-social/hubspot.marketing.events/setup-guide',
             'connectors/catalog/marketing-social/hubspot.marketing.events/action-reference',
+            'connectors/catalog/marketing-social/hubspot.marketing.events/example',
           ],
         },
         {
@@ -980,6 +982,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'connectors/catalog/marketing-social/hubspot.marketing.forms/setup-guide',
             'connectors/catalog/marketing-social/hubspot.marketing.forms/action-reference',
+            'connectors/catalog/marketing-social/hubspot.marketing.forms/example',
           ],
         },
         {
@@ -989,6 +992,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'connectors/catalog/marketing-social/hubspot.marketing.subscriptions/setup-guide',
             'connectors/catalog/marketing-social/hubspot.marketing.subscriptions/action-reference',
+            'connectors/catalog/marketing-social/hubspot.marketing.subscriptions/example',
           ],
         },
         {
@@ -1264,6 +1268,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'connectors/catalog/finance-accounting/paypal.invoices/setup-guide',
             'connectors/catalog/finance-accounting/paypal.invoices/action-reference',
+            'connectors/catalog/finance-accounting/paypal.invoices/example',
           ],
         },
         {
@@ -1273,6 +1278,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'connectors/catalog/finance-accounting/paypal.orders/setup-guide',
             'connectors/catalog/finance-accounting/paypal.orders/action-reference',
+            'connectors/catalog/finance-accounting/paypal.orders/example',
           ],
         },
         {
@@ -1282,6 +1288,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'connectors/catalog/finance-accounting/paypal.payments/setup-guide',
             'connectors/catalog/finance-accounting/paypal.payments/action-reference',
+            'connectors/catalog/finance-accounting/paypal.payments/example',
           ],
         },
         {
@@ -1291,6 +1298,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'connectors/catalog/finance-accounting/paypal.subscriptions/setup-guide',
             'connectors/catalog/finance-accounting/paypal.subscriptions/action-reference',
+            'connectors/catalog/finance-accounting/paypal.subscriptions/example',
           ],
         },
         {
@@ -1300,6 +1308,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'connectors/catalog/hrms/peoplehr/setup-guide',
             'connectors/catalog/hrms/peoplehr/action-reference',
+            'connectors/catalog/hrms/peoplehr/example',
           ],
         },
         {
@@ -1547,6 +1556,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'connectors/catalog/finance-accounting/stripe/setup-guide',
             'connectors/catalog/finance-accounting/stripe/action-reference',
+            'connectors/catalog/finance-accounting/stripe/example',
           ],
         },
         {
