@@ -8,7 +8,7 @@ import TabItem from '@theme/TabItem';
 
 # FTP / SFTP
 
-FTP, SFTP, and FTPS services poll remote file servers for new files and process them as they arrive. Use them for ETL pipelines, batch processing, and B2B integrations where partners exchange data as CSV, XML, JSON, or binary files.
+FTP, SFTP, and FTPS [file integrations](/docs/get-started/key-concepts#file-integrations) poll remote file servers for new files and process them as they arrive. Use them for ETL pipelines, batch processing, and B2B integrations where partners exchange data as CSV, XML, JSON, or binary files.
 
 | Protocol | Description | Transport security | Authentication |
 |---|---|---|---|
@@ -59,7 +59,7 @@ FTP, SFTP, and FTPS services poll remote file servers for new files and process 
    |---|---|
    | **Monitoring Path** | Directory on the remote server to monitor for new files (e.g., `/uploads` or `/incoming`). Defaults to `/`. |
 
-   Expand **Advanced Configurations** to set the polling interval and file name pattern filter. When **ftps** is selected, an additional **Secure Socket** field is available under **Advanced Configurations** to configure SSL/TLS settings (certificate store, key store, and protocol version).
+   When **ftps** is selected, an additional **Secure Socket** field is available under **Advanced Configurations** to configure SSL/TLS settings (certificate store, key store, and protocol version).
 
 4. Click **Create**.
 
@@ -189,9 +189,44 @@ service on ftpsListener {
 </TabItem>
 </Tabs>
 
+## Service and listener
+
+An FTP/SFTP integration uses two constructs that serve different roles:
+
+| Construct | Role | Configured with |
+|---|---|---|
+| **Listener** (`ftp:Listener`) | Represents the **connection to the remote server**. Handles protocol, host, port, authentication, and polling interval. One listener connects to one server. | Constructor arguments |
+| **Service** (`ftp:Service`) | Represents the **processing logic for a specific directory**. Defines which path to monitor, file filters, and file handlers. | `@ftp:ServiceConfig` annotation |
+
+Multiple services can share the same listener. For example, if you need to monitor `/orders` and `/invoices` on the same FTP server, create one listener and attach two services to it:
+
+```ballerina
+listener ftp:Listener ftpListener = new (
+    host = "ftp.example.com",
+    auth = {credentials: {username: ftpUser, password: ftpPassword}},
+    pollingInterval = 30
+);
+
+@ftp:ServiceConfig { path: "/orders", fileNamePattern: ".*\\.csv" }
+service on ftpListener {
+    remote function onFileCsv(string[][] content, ftp:FileInfo fileInfo) returns error? {
+        // Process order CSVs
+    }
+}
+
+@ftp:ServiceConfig { path: "/invoices", fileNamePattern: ".*\\.xml" }
+service on ftpListener {
+    remote function onFileXml(xml content, ftp:FileInfo fileInfo) returns error? {
+        // Process invoice XMLs
+    }
+}
+```
+
+For the general concept, see [Services and listeners](/docs/get-started/key-concepts#services-and-listeners). For the language-level details, see [Integration-specific features](../../../reference/language/integration-features.md).
+
 ## Service configuration
 
-Service configuration sets the monitored directory and applies to all file handlers attached to the service.
+The `@ftp:ServiceConfig` annotation controls **what** the service monitors — the directory path, file filters, age constraints, and dependency conditions.
 
 <Tabs>
 <TabItem value="ui" label="Visual Designer" default>
@@ -200,18 +235,21 @@ In the **Service Designer**, click **Configure** to open the **FTP Integration C
 
 | Field | Description |
 |---|---|
-| **Service Configuration** | Service-level settings. Accepts an `@ftp:ServiceConfig` record expression defining the monitoring path (e.g., `{ path: "/incoming" }`). |
+| **Service Configuration** | Service-level settings. Accepts an `@ftp:ServiceConfig` record expression. |
 
-Under **Attached Listeners**, select **ftpListener** to configure the listener the service is attached to.
+Expand **Advanced Configurations** to access file name pattern, age filter, and dependency conditions.
 
 </TabItem>
 <TabItem value="code" label="Ballerina Code">
 
-The `@ftp:ServiceConfig` annotation placed before the `service` declaration sets the monitored directory:
-
 ```ballerina
 @ftp:ServiceConfig {
-    path: "/incoming/orders"
+    path: "/incoming/orders",
+    fileNamePattern: ".*\\.csv",
+    fileAgeFilter: {
+        minAge: 30,
+        maxAge: 3600
+    }
 }
 service on ftpListener {
 }
@@ -220,9 +258,20 @@ service on ftpListener {
 </TabItem>
 </Tabs>
 
+`@ftp:ServiceConfig` fields:
+
+| Field | Type | Default | Description |
+|---|---|---|---|
+| `path` | `string` | `"/"` | Directory on the remote server to monitor for new files. |
+| `fileNamePattern` | `string?` | — | Regex to filter which files trigger handlers. Only matching files are processed. |
+| `fileAgeFilter` | `FileAgeFilter?` | — | Age bounds to skip files that are too new (still uploading) or too old (stale). See [File dependency and trigger conditions](file-dependency-triggers.md). |
+| `fileDependencyConditions` | `FileDependencyCondition[]?` | — | Conditions that block processing until related files exist. See [File dependency and trigger conditions](file-dependency-triggers.md). |
+
+Under **Attached Listeners**, select **ftpListener** to configure the listener the service is attached to.
+
 ## Listener configuration
 
-The listener connects to the remote server and polls it at a fixed interval for new files.
+The listener controls **how** to connect — protocol, host, authentication, polling interval, and connection behaviour. One listener represents one connection to one remote server.
 
 <Tabs>
 <TabItem value="ui" label="Visual Designer" default>
@@ -233,31 +282,51 @@ In the **FTP Integration Configuration** panel, select **ftpListener** under **A
 |---|---|---|
 | **Name** | Identifier for this listener. | `ftpListener` |
 | **Protocol** | Connection protocol: `ftp:FTP` (unsecured), `ftp:SFTP` (over SSH), or `ftp:FTPS` (over SSL/TLS). | `ftp:FTP` |
+| **Host** | Hostname or IP address of the remote server. | `"127.0.0.1"` |
 | **Port** | Port number of the remote server. | `21` |
-| **Host** | Hostname or IP address of the remote server. | — |
-| **Auth** | Authentication record. See [Authentication](#authentication). | `{}` |
+| **Auth** | Authentication record. See [Authentication](#authentication). | — |
 | **Polling Interval** | Seconds between polls for new files. | `60` |
 | **User Dir Is Root** | If `true`, treats the login home directory as `/` and prevents directory-change commands. Set this for chrooted or jailed servers. | `false` |
+
+Expand **Advanced Configurations** for additional settings.
 
 </TabItem>
 <TabItem value="code" label="Ballerina Code">
 
 ```ballerina
-listener ftp:Listener fileListener = new ({
-    host: "ftp.example.com",
-    auth: {
+listener ftp:Listener ftpListener = new (
+    protocol = ftp:FTP,
+    host = "ftp.example.com",
+    port = 21,
+    auth = {
         credentials: {
             username: "user1",
             password: "pass456"
         }
     },
-    path: "/home/in",
-    fileNamePattern: "(.*).txt"
-});
+    pollingInterval = 30
+);
 ```
 
 </TabItem>
 </Tabs>
+
+`ListenerConfiguration` fields:
+
+| Field | Type | Default | Description |
+|---|---|---|---|
+| `protocol` | `ftp:Protocol` | `ftp:FTP` | Connection protocol (`FTP`, `SFTP`, or `FTPS`). |
+| `host` | `string` | `"127.0.0.1"` | Hostname or IP address of the remote server. |
+| `port` | `int` | `21` | Port number of the remote server. |
+| `auth` | `ftp:AuthConfiguration?` | — | Authentication credentials or private key. See [Authentication](#authentication). |
+| `pollingInterval` | `decimal` | `60` | Interval in seconds between directory polls. |
+| `userDirIsRoot` | `boolean` | `false` | Treat the login home directory as root and prevent directory-change commands. |
+| `laxDataBinding` | `boolean` | `false` | When `true`, data binding errors return `()` instead of an error. |
+| `connectTimeout` | `decimal` | `30.0` | Connection timeout in seconds. |
+| `socketConfig` | `ftp:SocketConfig?` | — | Socket timeout configuration. |
+| `fileTransferMode` | `ftp:FileTransferMode` | `BINARY` | File transfer mode (`BINARY` or `ASCII`). Use `ASCII` only for text-only files on servers that require line-ending conversion. |
+| `retryConfig` | `ftp:RetryConfig?` | — | Retry configuration for failed polling attempts. See [Resiliency](resiliency.md). |
+| `coordination` | `ftp:CoordinationConfig?` | — | Distributed coordination for multi-instance deployments. See [High availability](high-availability.md). |
 
 ## Authentication
 
@@ -543,7 +612,7 @@ Each handler receives an `ftp:FileInfo` parameter with metadata about the incomi
 
 ### Caller operations
 
-The `ftp:Caller` parameter provides typed read and write operations on the connected server.
+For most use cases, the typed handler parameters (`string`, `json`, `xml`, records, streams) and `@ftp:FunctionConfig` post-processing actions are sufficient. When you need additional control — such as reading a related file, writing output to a different path, or managing files manually — add the `ftp:Caller` parameter to your handler. It provides typed read and write operations on the connected server using the same session.
 
 **Reading files:**
 
@@ -608,37 +677,26 @@ service on ftpListener {
 
 ## Writing output files
 
-Use `ftp:Client` to write results back to an FTP or SFTP server from within an integration flow.
+Use `ftp:Caller` inside your file handler to write results back to the same FTP or SFTP server. The caller reuses the existing connection — no separate client configuration is needed.
 
 ```ballerina
-import ballerina/ftp;
+@ftp:ServiceConfig {
+    path: "/incoming"
+}
+service on ftpListener {
 
-configurable string outHost = "ftp.partner.com";
-configurable string outUser = ?;
-configurable string outPassword = ?;
+    remote function onFileJson(json content, ftp:FileInfo fileInfo, ftp:Caller caller) returns error? {
+        // Process the incoming JSON file
+        json result = check transform(content);
 
-final ftp:Client ftpClient = check new ({
-    protocol: ftp:FTP,
-    host: outHost,
-    port: 21,
-    auth: {credentials: {username: outUser, password: outPassword}}
-});
-
-function uploadResult(string filePath, string content) returns error? {
-    check ftpClient->putText(filePath, content);
+        // Write the result to an output directory on the same server
+        string outPath = string `/outgoing/${fileInfo.name}`;
+        check caller->putJson(outPath, result);
+    }
 }
 ```
 
-`ftp:ClientConfiguration` fields:
-
-| Field | Type | Default | Description |
-|---|---|---|---|
-| `protocol` | `ftp:Protocol` | `ftp:FTP` | Connection protocol |
-| `host` | `string` | `"127.0.0.1"` | Remote server hostname or IP address |
-| `port` | `int` | `21` | Remote server port |
-| `auth` | `ftp:AuthConfiguration?` | — | Authentication credentials or private key |
-| `userDirIsRoot` | `boolean` | `false` | Treat login home as root |
-| `laxDataBinding` | `boolean` | `false` | Allow null and missing fields when binding XML/JSON responses |
+See [Caller operations](#caller-operations) for the full list of `caller->put*` write methods and `ftp:FileWriteOption` (overwrite or append).
 
 ## What's next
 
