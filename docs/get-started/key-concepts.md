@@ -6,13 +6,13 @@ title: Key Concepts
 
 This page introduces every major product component in 2–3 sentences. Think of it as your vocabulary guide—it gives you the map. The [Develop](/docs/develop/integration-artifacts/overview) section is the territory.
 
+## Integration
+
+A reusable piece of business logic that connects systems, transforms data, or orchestrates workflows. Integrations are the core building blocks in WSO2 Integrator and are composed using [Services](#services-and-listeners), [Automations](#automations), [Event handlers](#event-integrations), and more.
+
 ## Project
 
 A workspace that contains your integration code, dependencies, configuration, and deployment artifacts. Each project is self-contained with its own `Ballerina.toml` file. For more information, see [Project structure](/docs/develop/project-views/overview).
-
-## Integration
-
-A reusable piece of business logic that connects systems, transforms data, or orchestrates workflows. Integrations are the core building blocks in WSO2 Integrator—you compose them from [Services](#services), [Automations](#automations), [Event handlers](#event-handlers), and more.
 
 ## Library
 
@@ -50,7 +50,7 @@ Intelligent artifacts backed by large language models (LLMs). Agents can reason,
 
 ## Connectors
 
-Pre-built modules for connecting to external systems—Salesforce, databases, Kafka, OpenAI, and 200+ more. Each connector handles authentication, serialization, and error handling. For more information, see [Connectors](/docs/connectors/overview).
+Pre-built modules for connecting to external systems such as SaaS applications, databases, messaging systems, and AI services. Each connector handles authentication, serialization, and error handling. For more information, see [Connectors](/docs/connectors/overview).
 
 ## Visual data mapper
 
@@ -60,9 +60,9 @@ A visual data transformation tool in the WSO2 Integrator design view. Map fields
 
 LLM calls treated as typed function calls in your integration code. Define an input type and output type, and the platform handles the prompt, API call, and response parsing.
 
-## Config.toml
+## Configurations
 
-The file where you define environment-specific configuration—database URLs, API keys, and feature flags. Different environments (dev, test, prod) have different `Config.toml` files.
+The `Config.toml` is the file where you define environment-specific configuration, such as database URLs and API keys. Different environments (dev, test, prod) have different `Config.toml` files.
 
 ## Integration control plane (ICP)
 
@@ -70,8 +70,8 @@ A dashboard for monitoring, managing, and troubleshooting running integrations i
 
 ## Ballerina
 
-The programming language powering everything under the hood. You do not need to be a Ballerina expert to use the WSO2 Integrator design view, but knowing the basics unlocks pro-code capabilities.
+The programming language that powers the platform. You do not need prior experience to use the WSO2 Integrator design view, but understanding the basics of [Ballerina](https://ballerina.io/) enables advanced, code-driven capabilities.
 
 ## Low-code and pro-code
 
-Seamless switching between the design view and the code editor in WSO2 Integrator. Changes in one view instantly appear in the other. This is not a code generation tool—it is a bidirectional synchronization.
+Seamless switching between the design view and the code editor in WSO2 Integrator. Changes in one view instantly appear in the other. This is not a code generation tool, and it provides bidirectional synchronization.

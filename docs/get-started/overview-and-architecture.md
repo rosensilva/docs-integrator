@@ -1,16 +1,18 @@
 ---
-title: Overview & Architecture
+title: Overview and Architecture
 ---
 
-# Overview & Architecture
+# Overview and Architecture
 
-WSO2 Integrator is a Ballerina-powered integration platform that allows you to connect anything and solve any integration challenge. It combines low-code simplicity with pro-code power, enabling you to build AI agents, APIs, data, and events across cloud, on-prem, and hybrid environments.
+[WSO2 Integrator](https://wso2.com/integration-platform/integrator/) is a low-code integration platform that helps you connect systems, build workflows, and expose services across cloud, on-premises, and hybrid environments.
 
-You design integrations visually in the [WSO2 Integrator IDE](https://wso2.com/integration-platform/integrator/), and the platform generates production-ready Ballerina code or you write code directly and see it reflected in the visual designer.
+It combines a visual design experience with code-level flexibility, allowing you to design integrations visually or implement them directly in code. The platform also includes AI-assisted development, built-in connectors, and support for common integration patterns such as APIs, events, and automations.
+
+WSO2 Integrator can be used to build and manage a wide range of integration solutions, from simple service orchestration to complex, enterprise-scale workflows. Whether you are modernizing existing systems or building new digital services, it provides a scalable and productive approach to integration.
 
 ## High-level architecture
 
-![WSO2 Integrator architecture diagram](@site/src/assets/img/get-started/overview-&-architecture/integrator_diagram.webp)
+![WSO2 Integrator architecture diagram](@site/src/assets/img/get-started/overview-and-architecture/integrator_diagram.webp)
 
 The platform follows a three-layer architecture:
 
@@ -40,7 +42,7 @@ Zero infrastructure to manage. WSO2 handles provisioning, upgrades, scaling, and
 
 This is the key differentiator. Every integration can be built two ways, and both stay in sync:
 
-- Low-code (visual designer) : Drag-and-drop components, configure properties visually, see the flow as a diagram
+- Low-code (Visual designer) : Add components through a visual interface, configure properties visually, see the flow as a diagram
 - Pro-code (Ballerina editor) : Write code directly with full IDE support, auto-complete, and type checking
 
 Changes in one view are instantly reflected in the other. There's no "export" step and no loss of fidelity. Both experiences are further enhanced by AI assistance to speed up development.
@@ -58,4 +60,4 @@ Under the hood, every integration is a Ballerina program. This means:
 
 - [Why WSO2 Integrator](why-wso2-integrator.md) : How it compares to alternatives
 - [Key Concepts](key-concepts.md) : Learn the vocabulary
-- [Install WSO2 Integrator IDE](install.md) : Get set up
+- [Install WSO2 Integrator](install.md) : Get set up

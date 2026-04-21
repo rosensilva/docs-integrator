@@ -4,14 +4,14 @@ title: Why WSO2 Integrator
 
 # Why WSO2 Integrator
 
-Connect anything, and solve any integration challenge. Connect AI agents, APIs, data, and events across cloud, on-premises, and hybrid environments. Build any type of integration and AI agent with the 100% open-source WSO2 Integrator.
+WSO2 Integrator enables you to connect systems and solve a wide range of integration challenges. It supports building integrations across AI agents, APIs, data, and events, allowing seamless operation across cloud, on-premises, and hybrid environments. As a 100% open-source platform, it provides the flexibility to build and scale any type of integration or AI-powered solution with confidence.
 
-## Build any type of AI agent or integration
+## Build any type of integration or AI-powered solution
 
 Orchestrate intelligent flows by combining built-in capabilities with a wide array of connectors to seamlessly integrate data, APIs, and Model Context Protocol (MCP) servers.
 
-- AI agents and GenAI applications: Connect AI agents to your preferred models, knowledge bases, and tools to provide access to information and knowledge. Integrate models, knowledge bases, and AI agents into the applications you build.
 - Task automations: Streamline repetitive workflows and improve operational efficiency.
+- AI agents and GenAI applications: Connect AI agents to your preferred models, knowledge bases, and tools to provide access to information and knowledge. Integrate models, knowledge bases, and AI agents into the applications you build.
 - Integrations as APIs: Expose your integrations securely to internal and external consumers.
 - Event-driven integration: React to events in real time across your distributed architecture.
 - File-driven integration: Process batches and large files efficiently and reliably.
@@ -32,29 +32,11 @@ Visually map and transform complex data structures between different formats wit
 ### Ballerina-powered
 Built on Ballerina, a language designed specifically for integration. You get compile-time type safety for data transformations, built-in network primitives, and sequence diagram visualization—capabilities that general-purpose languages can't match.
 
-### More than 200 connectors
-Pre-built connectors for Software as a Service (SaaS) applications, databases, messaging systems, cloud services, AI and LLM providers, and protocols. You also gain the ability to use any Ballerina package from Central.
+### More than 500 connectors
+Pre-built connectors for Software as a Service (SaaS) applications, databases, messaging systems, cloud services, AI and LLM providers, and protocols. You also gain the ability to use any package from [Ballerina Central](https://central.ballerina.io/).
 
 ### Monitoring and management
 Gain centralized control and observability to monitor integrations and agents continuously. Ensure the health and performance of your ecosystem with built-in metrics and logs.
-
-## Run it your way
-
-WSO2 Integrator is the only integration technology available as 100% open-source, self-hostable software, or as a fully managed SaaS.
-
-### Self-hosted
-Maintain full control over your stack. Deploy directly to your own servers, bare metal, or a private cloud environment. Your data never leaves your perimeter. Use the same code for any target, including Docker, Kubernetes, AWS, Azure, and GCP.
-- Complete data sovereignty.
-- Air-gapped environment support.
-- Kubernetes, Docker, virtual machine (VM), or bare metal deployments.
-- Bring your own CI/CD pipeline.
-
-### SaaS
-Manage zero infrastructure. WSO2 handles provisioning, upgrades, scaling, and availability. Get started in minutes with WSO2's Devant integration Platform as a Service (iPaaS).
-- Flexible data plane deployment.
-- Centralized control and observability.
-- Continuous updates with zero downtime.
-- Multi-region availability.
 
 ## Who it's for
 
@@ -65,4 +47,4 @@ Manage zero infrastructure. WSO2 handles provisioning, upgrades, scaling, and av
 ## What's next
 
 - [Key concepts](key-concepts.md): Learn the product vocabulary.
-- [Install WSO2 Integrator IDE](install.md): Get set up in 5 minutes.
+- [Install WSO2 Integrator](install.md): Install and start building in minutes.
