@@ -7,7 +7,7 @@ keywords: [wso2 integrator, core concepts, project, integration, service, listen
 
 # Core concepts
 
-This page introduces every major building block you work with when designing and building integrations in the WSO2 Integrator IDE. Use it as a vocabulary reference before diving into the [Develop](/docs/develop/integration-artifacts/integration-artifacts) section, where each concept is covered in full detail.
+This page introduces every major building block you work with when designing and building integrations in the WSO2 Integrator IDE. Use it as a vocabulary reference before diving into the [Develop](/docs/develop/integration-artifacts) section, where each concept is covered in full detail.
 
 ## Organization
 
@@ -142,5 +142,5 @@ ICP runs on your machine and mirrors enough of the production runtime that an in
 ## What's next
 
 - [WSO2 Integration Cloud concepts](integration-cloud-concepts.md) — data planes, environments, and deployment tracks
-- [Integration artifacts](/docs/develop/integration-artifacts/integration-artifacts) — choose the right artifact for your use case
+- [Integration artifacts](/docs/develop/integration-artifacts) — choose the right artifact for your use case
 - [Introduction](../introduction.md) — platform overview and architecture

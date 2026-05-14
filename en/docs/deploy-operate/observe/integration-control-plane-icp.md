@@ -97,7 +97,7 @@ import wso2/icp.runtime.bridge as _;
 
 ## What's next
 
-- [Logging](logging.md) -- Configure structured logging
-- [Metrics](metrics.md) -- Prometheus metrics and Grafana dashboards
-- [Distributed Tracing](tracing.md) -- Trace requests across services
+- [Logging](logging-overview.md) -- Configure structured logging
+- [Metrics](metrics-overview.md) -- Prometheus metrics and Grafana dashboards
+- [Distributed Tracing](jaeger-distributed-tracing.md) -- Trace requests across services
 - [Observability Setup](../../manage/icp/observability-setup.md) -- Set up centralized logs and metrics monitoring

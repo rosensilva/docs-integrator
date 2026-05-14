@@ -243,7 +243,7 @@ The renderer covers the subset of HTML and CSS needed for document-style templat
 
 The renderer does not support CSS flex, CSS Grid, `position: fixed`, `@font-face` rules, inline `<svg>`, `rowspan`, or non-solid border styles. Unsupported features are silently dropped rather than raising an error. Always preview new templates visually before shipping.
 
-For the full list of supported and unsupported features with recommended workarounds, see the [PDF Generation Service tutorial](../../tutorials/pdf-generation-service.md#limitations-and-supported-subset).
+For the full list of supported and unsupported features with recommended workarounds, refer to the PDF Generation Service tutorial.
 
 ## Integration Example: PDF Generation Service
 
@@ -317,7 +317,7 @@ function buildInvoiceHtml(string customer, decimal amount, string dueDate)
 </TabItem>
 </Tabs>
 
-For a full step-by-step walkthrough covering templates, custom fonts for non-Latin scripts, and the full list of supported features, follow the [PDF Generation Service tutorial](../../tutorials/pdf-generation-service.md).
+For a full step-by-step walkthrough covering templates, custom fonts for non-Latin scripts, and the full list of supported features, follow the PDF Generation Service tutorial.
 
 ## Best Practices
 
@@ -331,5 +331,4 @@ For a full step-by-step walkthrough covering templates, custom fonts for non-Lat
 ## What's Next
 
 - [ballerina/pdf API reference](https://central.ballerina.io/ballerina/pdf/latest) — full signatures, supporting records, and error types.
-- [PDF Generation Service](../../tutorials/pdf-generation-service.md) — end-to-end tutorial covering HTML templates, custom fonts, and production considerations.
 - [HTTP Service](../integration-artifacts/service/http.md) — return PDFs as binary payloads from an HTTP resource.

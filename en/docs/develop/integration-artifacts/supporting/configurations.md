@@ -16,7 +16,7 @@ import TabItem from '@theme/TabItem';
 Because the values live outside the code, the same integration runs unchanged in every environment.
 
 :::note
-WSO2 Integrator's configuration support is built on Ballerina's config variable model. For the underlying model, advanced usage, and resolution priority, see [Configuration management](../../design-logic/configuration-management.md).
+WSO2 Integrator's configuration support is built on Ballerina's config variable model.
 :::
 
 ## Adding a configuration
@@ -136,7 +136,7 @@ slackWebhookUrl = "https://hooks.slack.com/services/..."
 </Tabs>
 
 :::tip Learn more
-For the full list of supported types, alternative value sources (environment variables, CLI arguments, inline TOML), and resolution priority, see [Configuration management](../../design-logic/configuration-management.md). To target different environments, point `BAL_CONFIG_FILES` at a per-environment file — see [Per-environment configuration](../../design-logic/configuration-management.md#per-environment-configuration).
+For details on supported types, alternative value sources (environment variables, CLI arguments, inline TOML), and resolution priority, refer to the Ballerina configurable variables documentation. To target different environments, point `BAL_CONFIG_FILES` at a per-environment file.
 :::
 
 ## Best practices
@@ -150,6 +150,5 @@ For the full list of supported types, alternative value sources (environment var
 
 ## What's next
 
-- [Configuration management](../../design-logic/configuration-management.md) — Deeper reference for configuration sources, priority order, and module-qualified keys.
 - [Secrets and encryption](../../../deploy-operate/secure/secrets-encryption.md) — Securely manage credentials and other sensitive values.
 - [Connections](connections.md) — Use configurable variables to parameterize connections.

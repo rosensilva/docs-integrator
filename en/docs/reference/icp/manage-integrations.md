@@ -100,4 +100,4 @@ Shows request metrics when both runtime and observability are configured:
 - Most Used APIs table
 
 Requires `observabilityIncluded = true` and the metrics module. See
-[Observability Setup](observability-setup.md).
+[Observability Setup](../../manage/icp/observability-setup.md).

@@ -6,7 +6,7 @@ description: Install and configure the Integration Control Plane server.
 # Install ICP
 
 :::tip
-This guide covers manual installation. For evaluation, run via WSO2 Integrator IDE [Integration Control Plane (ICP)](../../deploy-operate/observe/icp.md).
+This guide covers manual installation. For evaluation, run via WSO2 Integrator IDE [Integration Control Plane (ICP)](../../deploy-operate/observe/integration-control-plane-icp.md).
 :::
 
 ## Prerequisites

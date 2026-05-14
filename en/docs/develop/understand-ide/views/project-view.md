@@ -41,10 +41,10 @@ The deployment options panel appears on the right sidebar and provides shortcuts
 
 | Option | Target |
 |---|---|
-| [**Deploy to WSO2 Integration Platform**](/docs/deploy-operate/deploy/devant) | Fully managed cloud platform. |
+| [**Deploy to WSO2 Integration Platform**](/docs/deploy-operate/deploy/devant-ipaas) | Fully managed cloud platform. |
 | [**Deploy with Docker**](/docs/deploy-operate/deploy/docker-kubernetes) | Container orchestration platforms such as Kubernetes and OpenShift. |
-| [**Deploy on a VM**](/docs/deploy-operate/deploy/vm-based) | Virtual machines or bare-metal servers. |
-| [**Integration Control Plane (ICP)**](/docs/deploy-operate/observe/icp) | Centralized observability and management for deployed integrations. |
+| [**Deploy on a VM**](/docs/deploy-operate/deploy/vm-based-deployment) | Virtual machines or bare-metal servers. |
+| [**Integration Control Plane (ICP)**](/docs/deploy-operate/observe/integration-control-plane-icp) | Centralized observability and management for deployed integrations. |
 
 At the project level, click **Enable ICP for all integrations** to activate ICP monitoring for every integration in the project at once.
 

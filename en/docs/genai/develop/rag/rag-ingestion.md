@@ -186,7 +186,7 @@ The in-memory store is rebuilt on every restart, so re-running the integration r
 - Use **Delete By Filter** before re-ingesting a document to avoid duplicates — filter by a metadata field like `source` or `version`.
 - Schedule the automation with a trigger (e.g. an HTTP call, a cron, or a file-watch event) rather than running it once.
 
-See [Knowledge Bases — Delete By Filter](/docs/genai/develop/components/knowledge-bases#public-actions) for details.
+See [Knowledge Bases — Available actions](/docs/genai/develop/components/knowledge-bases#available-actions) for details.
 
 ---
 

@@ -18,7 +18,7 @@ A direct LLM call is the simplest way to use AI in an integration: you send a pr
 
 :::info Prerequisites
 
-- [WSO2 Integrator set up for AI](setting-up-ai.md)
+- WSO2 Integrator set up for AI
 - A project to work in. If you do not have one, see [Create a new integration](../../develop/create-integrations/create-a-new-integration.md).
 :::
 

@@ -75,10 +75,10 @@ The deployment options panel appears on the right sidebar and provides shortcuts
 
 | Option | Target |
 |---|---|
-| [**Deploy to WSO2 Integration Platform**](/docs/deploy-operate/deploy/devant) | Fully managed cloud platform. |
+| [**Deploy to WSO2 Integration Platform**](/docs/deploy-operate/deploy/devant-ipaas) | Fully managed cloud platform. |
 | [**Deploy with Docker**](/docs/deploy-operate/deploy/docker-kubernetes) | Container orchestration platforms such as Kubernetes and OpenShift. |
-| [**Deploy on a VM**](/docs/deploy-operate/deploy/vm-based) | Virtual machines or bare-metal servers. |
-| [**Integration Control Plane (ICP)**](/docs/deploy-operate/observe/icp) | Centralized observability and management for deployed integrations. |
+| [**Deploy on a VM**](/docs/deploy-operate/deploy/vm-based-deployment) | Virtual machines or bare-metal servers. |
+| [**Integration Control Plane (ICP)**](/docs/deploy-operate/observe/integration-control-plane-icp) | Centralized observability and management for deployed integrations. |
 
 Select **Enable ICP monitoring** to activate ICP for this integration, or expand **Publish to local ICP** to push the integration to a local Integration Control Plane instance.
 
@@ -92,6 +92,6 @@ Click **Edit** to modify the README directly. You can also click **Generate with
 
 ## What's next
 
-- [Design integration logic](/docs/develop/design-logic/overview): build logic using the visual designer.
+- [Design integration logic](/docs/develop/overview): build logic using the visual designer.
 - [Integration artifacts](/docs/develop/integration-artifacts): learn about artifact types and their configuration.
-- [Deploy to WSO2 Integration Platform](/docs/deploy-operate/deploy/devant): deploy your integration to the cloud.
+- [Deploy to WSO2 Integration Platform](/docs/deploy-operate/deploy/devant-ipaas): deploy your integration to the cloud.

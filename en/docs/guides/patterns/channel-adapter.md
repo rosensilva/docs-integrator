@@ -22,7 +22,7 @@ A connector client adapts an external application API into the integration flow.
 <PatternImplementationTabs>
 <TabItem value="ui" label="Visual Designer" default>
 
-1. Add the connector client connection for the application channel. See [creating a connection](/docs/develop/design-logic/managing-connections#creating-a-connection); for this example, select the Jira connector as shown in [adding the Jira connector](/docs/connectors/catalog/productivity-collaboration/jira/example#adding-the-jira-connector).
+1. Add the connector client connection for the application channel. See [creating a connection](/docs/develop/integration-artifacts/supporting/connections#adding-a-connection); for this example, select the Jira connector as shown in [adding the Jira connector](/docs/connectors/catalog/productivity-collaboration/jira/example#adding-the-jira-connector).
 2. Configure the endpoint, authentication values, and other connection properties with project configurables. Use the connector-specific [Jira setup guide](/docs/connectors/catalog/productivity-collaboration/jira/setup-guide) and [Jira connection configuration steps](/docs/connectors/catalog/productivity-collaboration/jira/example#configuring-the-jira-connection).
 3. Add the connector operation that reads from or writes to the application channel. Use the [Jira action reference](/docs/connectors/catalog/productivity-collaboration/jira/actions#projects) to select the project operation for this example.
 4. Map the connector response to the message shape used by the rest of the flow.

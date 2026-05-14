@@ -127,6 +127,5 @@ Use these metrics in Grafana with PromQL queries:
 
 ## What's next
 
-- [Prometheus](./prometheus) — Set up Prometheus metrics collection
-- [Grafana](./grafana) — Build dashboards for your metrics
-- [Observability Overview](./overview) — Understand the full observability stack
+- [Prometheus and Grafana](./metrics-prometheus-grafana.md) — Set up Prometheus metrics collection and build dashboards
+- [Observability Overview](./observability-overview.md) — Understand the full observability stack

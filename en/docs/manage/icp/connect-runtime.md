@@ -6,7 +6,7 @@ description: Register an integration runtime with the Integration Control Plane.
 # Connect an Integration to ICP
 
 :::tip
-This guide covers manual configuration. If you are developing in the WSO2 Integrator IDE, the setup is automated — see [Integration Control Plane (ICP)](../../deploy-operate/observe/icp.md).
+This guide covers manual configuration. If you are developing in the WSO2 Integrator IDE, the setup is automated — see [Integration Control Plane (ICP)](../../deploy-operate/observe/integration-control-plane-icp.md).
 :::
 
 An integration connects to ICP by including the `icp-runtime-bridge` module and

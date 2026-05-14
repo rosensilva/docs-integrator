@@ -131,4 +131,4 @@ Be aware of the following limitations:
 
 ## What's next
 
-- [Visual Data Mapper](visual-data-mapper.md) -- Manual mapping for precision
+- [Visual Data Mapper](../integration-artifacts/supporting/data-mapper/data-mapper.md) -- Manual mapping for precision

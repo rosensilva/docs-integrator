@@ -29,4 +29,4 @@ Connections define how your integration communicates with external systems: the 
 
 ## What's next
 
-- [Build Your Own Connector](build-your-own/): Create custom connectors
+- [Build Your Own Connector](build-your-own/build-own.md): Create custom connectors

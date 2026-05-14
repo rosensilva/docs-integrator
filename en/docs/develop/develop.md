@@ -30,8 +30,8 @@ Tools that help **you** code faster (Copilot, AI test generation, AI-assisted da
 | | |
 |---|---|
 | **[Integration artifacts](integration-artifacts/integration-artifacts.md)** | Automations, services (HTTP, GraphQL, gRPC, TCP, WebSub), event handlers (Kafka, RabbitMQ, MQTT, Salesforce, GitHub), file handlers, and supporting artifacts |
-| **[Design integration logic](design-logic/design-logic.md)** | Visual designer, connections, control flow, error handling, expressions, query expressions, and Ballerina pro-code |
-| **[Transform](transform/data-mapper.md)** | Visual Data Mapper together with JSON, XML, CSV, EDI, and YAML/TOML processing |
+| **[Design integration logic](understand-ide/editors/flow-diagram-editor/flow-diagram-editor.md)** | Visual designer, connections, control flow, error handling, expressions, query expressions, and Ballerina pro-code |
+| **[Transform](integration-artifacts/supporting/data-mapper/data-mapper.md)** | Visual Data Mapper together with JSON, XML, CSV, EDI, and YAML/TOML processing |
 
 ## Try, test, and debug
 
@@ -52,5 +52,5 @@ Tools that help **you** code faster (Copilot, AI test generation, AI-assisted da
 ## What's next
 
 - [Create a new integration](create-integrations/create-a-new-integration.md) — Start a project in the WSO2 Integrator IDE or from the CLI
-- [Design integration logic](design-logic/design-logic.md) — Wire up the flow between request and response
+- [Design integration logic](understand-ide/editors/flow-diagram-editor/flow-diagram-editor.md) — Wire up the flow between request and response
 - [Deploy and operate](../deploy-operate/deploy-and-operate.md) — Ship your integration once it's ready

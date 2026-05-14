@@ -328,4 +328,4 @@ public function main() returns error? {
 
 ## What's next
 
-- [Type System & Records](type-system-records.md) — Define EDI record types
+- [Type System & Records](../../reference/language/type-system.md) — Define EDI record types

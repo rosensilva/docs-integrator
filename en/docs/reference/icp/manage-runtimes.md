@@ -42,7 +42,7 @@ is omitted since the scope is already a single integration.
 ## Add a Runtime
 
 Click **+ Add Runtime** on an environment section to generate a secret and
-get a `Config.toml` snippet. See [Connect an Integration to ICP](connect-runtime.md)
+get a `Config.toml` snippet. See [Connect an Integration to ICP](../../manage/icp/connect-runtime.md)
 for the full procedure.
 
 ## Manage Secrets

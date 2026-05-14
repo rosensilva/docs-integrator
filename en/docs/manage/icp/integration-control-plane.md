@@ -31,4 +31,4 @@ The Integration Control Plane (ICP) is a centralized monitoring and management s
 | `https://<host>:9446/icp/observability` | Observability REST API                    |
 | `https://<host>:9446/api/v1`            | REST management API (legacy)              |
 
-See [ICP API](../api/icp.md) for the full REST endpoint reference.
+Refer to the ICP API documentation for the full REST endpoint reference.

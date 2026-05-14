@@ -48,7 +48,6 @@ Monitor, trace, and debug in production:
 |---|---|
 | **[Observability Overview](observe/observability-overview.md)** | Logging, metrics, and tracing concepts |
 | **[Integration Control Plane](observe/integration-control-plane-icp.md)** | Centralized management dashboard |
-| **[WSO2 Integration Platform](observe/observability-devant.md)** | Cloud-native observability |
 | **[Metrics (Prometheus)](observe/metrics-overview.md)** | Metrics collection and custom metrics |
 | **[Jaeger and Zipkin](observe/jaeger-distributed-tracing.md)** | Distributed tracing |
 

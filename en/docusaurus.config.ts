@@ -96,7 +96,7 @@ const config: Config = {
       },
       items: [
         {
-          to: '/docs/get-started/overview-and-architecture',
+          to: '/docs/get-started/introduction',
           label: 'Get started',
           position: 'left',
           activeBaseRegex: '/docs/get-started(/|$)',
@@ -160,7 +160,7 @@ const config: Config = {
         {
           title: 'Get started',
           items: [
-            { label: 'Overview', to: '/docs/get-started/overview-and-architecture' },
+            { label: 'Overview', to: '/docs/get-started/introduction' },
             { label: 'Install', to: '/docs/get-started/install' },
             { label: 'Quick starts', to: '/docs/get-started/build-automation' },
           ],
@@ -169,8 +169,8 @@ const config: Config = {
           title: 'Develop',
           items: [
             { label: 'Integration artifacts', to: '/docs/develop/integration-artifacts' },
-            { label: 'Transform', to: '/docs/develop/transform/data-mapper' },
-            { label: 'Test', to: '/docs/develop/test/try-it' },
+            { label: 'Transform', to: '/docs/develop/transform/json' },
+            { label: 'Test', to: '/docs/develop/test/overview' },
             { label: 'Connectors', to: '/docs/connectors/overview' },
             { label: 'AI Integrations', to: '/docs/genai/overview' },
           ],

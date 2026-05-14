@@ -77,5 +77,5 @@ The platform ships with **WSO2 Integrator Copilot** to assist during design and 
 ## What's next
 
 - [Concepts](concepts/overview.md) — learn the vocabulary used across the platform
-- [Install WSO2 Integrator](setup/install.md) — set up the IDE and create your first integration
-- [Integration artifacts](/docs/develop/integration-artifacts/integration-artifacts) — choose the right artifact for your use case
+- [Install WSO2 Integrator](setup/local-setup.md) — set up the IDE and create your first integration
+- [Integration artifacts](/docs/develop/integration-artifacts) — choose the right artifact for your use case

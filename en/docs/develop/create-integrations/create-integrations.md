@@ -61,5 +61,5 @@ The `Ballerina.toml` file identifies the project and declares its dependencies.
 
 ## What's next
 
-- [Integration Artifacts](/docs/develop/integration-artifacts/overview) -- Learn about the different artifact types you can create
-- [Design Logic](/docs/develop/design-logic/overview) -- Build your integration logic visually or in code
+- [Integration Artifacts](/docs/develop/integration-artifacts) -- Learn about the different artifact types you can create
+- [Design Logic](/docs/develop/overview) -- Build your integration logic visually or in code

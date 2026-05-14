@@ -20,13 +20,13 @@ WSO2 Integrator is available in multiple profiles to suit different use cases:
 
 ## System requirements
 
-Before installation, ensure your system meets the requirements listed on the [System requirements and prerequisites](system-requirements.md) page. Here is a quick overview:
+Before installation, ensure your system meets the requirements listed on the [System requirements and prerequisites](../reference/appendix/system-requirements.md) page. Here is a quick overview:
 
 - **Operating system**: Windows 10+, macOS 14.6+, or Ubuntu 24.04 LTS and later
 - **Memory**: 512 MB minimum (1 GB+ recommended)
 - **Disk space**: 2 GB free space for installation and projects
 
-For detailed information, see [System requirements and prerequisites](system-requirements.md).
+For detailed information, see [System requirements and prerequisites](../reference/appendix/system-requirements.md).
 
 ## Installation steps
 
